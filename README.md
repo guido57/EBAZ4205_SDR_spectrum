@@ -10,7 +10,7 @@ This repository contains:
 to display the 0-32 MHz radio spectrum in a full view and tune HF radio stations.
 This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum which is a 0-32 MHz radio spectrum viewer only. 
 
-![block diagram](docs/SDR block diagram.png)
+![block diagram](docs/SDR-block-diagram.png)
 
 ## Getting Started for FPGA or EBAZ4205 beginners
 
