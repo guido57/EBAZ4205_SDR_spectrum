@@ -1,0 +1,271 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Sun Apr 23 13:36:44 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : report_drc -file ebaz4205_wrapper_drc_opted.rpt -pb ebaz4205_wrapper_drc_opted.pb -rpx ebaz4205_wrapper_drc_opted.rpx
+| Design       : ebaz4205_wrapper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 46
++-----------+----------+-------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                       | Violations |
++-----------+----------+-------------------------------------------------------------------+------------+
+| REQP-1839 | Warning  | RAMB36 async control check                                        | 1          |
+| AVAL-4    | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 10         |
+| AVAL-5    | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 10         |
+| REQP-28   | Advisory | enum_USE_MULT_NONE_connects_CEM_GND                               | 12         |
+| REQP-30   | Advisory | enum_MREG_0_connects_CEM_GND                                      | 12         |
+| REQP-181  | Advisory | writefirst                                                        | 1          |
++-----------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+REQP-1839#1 Warning
+RAMB36 async control check  
+The RAMB36E1 ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN (net: ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#5 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#6 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#7 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#8 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#9 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#10 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-28#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#2 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#3 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#4 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#5 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#6 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#7 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#8 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#9 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#10 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#11 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-28#12 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/FIR_FT_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#2 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#3 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#4 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#5 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#6 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#7 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#8 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#9 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#10 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#11 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-30#12 Advisory
+enum_MREG_0_connects_CEM_GND  
+ebaz4205_i/FILTER_FT/FIR_FT_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-181#1 Advisory
+writefirst  
+Synchronous clocking is detected for BRAM (ebaz4205_i/HDMI/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+Related violations: <none>
+
+

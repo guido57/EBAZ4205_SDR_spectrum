@@ -1,0 +1,24 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.srcs/sources_1/imports/new/DivideBy2N.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DivideBy2N
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlslice_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_xlslice_1_0/sim/design_1_xlslice_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_xlslice_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_myclkgen_0_0/sim/design_1_myclkgen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_myclkgen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_DivideBy2N_0_0/sim/design_1_DivideBy2N_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_DivideBy2N_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_sim_rst_gen_0_0/sim/design_1_sim_rst_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_sim_rst_gen_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_axis2c_combine_0_0/sim/design_1_axis2c_combine_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axis2c_combine_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_axis2c_splitter_0_1/sim/design_1_axis2c_splitter_0_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_axis2c_splitter_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_AXI_Stream_Generator_0_0/sim/design_1_AXI_Stream_Generator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_AXI_Stream_Generator_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/ip/design_1_reset_lengthener_0_0/sim/design_1_reset_lengthener_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_reset_lengthener_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.ip_user_files/bd/design_1/sim/design_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1_wrapper

@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "secureip" --snapshot "ebaz4205_wrapper_func_synth" "xil_defaultlib.ebaz4205_wrapper" "xil_defaultlib.glbl" -log "elaborate.log" 

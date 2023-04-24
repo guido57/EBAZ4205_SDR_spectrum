@@ -1,0 +1,324 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Apr 17 10:27:18 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axis_capture_0_5'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ebaz4205_axis_capture_0_5 (xilinx.com:user:axis_capture:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Apr 17 10:27:18 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axis_capture_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ebaz4205_axis_capture_0_4 (xilinx.com:user:axis_capture:1.0) from (Rev. 11) to (Rev. 12)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Fri Apr 14 09:18:54 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axis_capture_0_4'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ebaz4205_axis_capture_0_4 (xilinx.com:user:axis_capture:1.0) from (Rev. 9) to (Rev. 11)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:13 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_rst_ps7_0_64M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_rst_ps7_0_64M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:12 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_rst_ps7_0_140M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_rst_ps7_0_140M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:12 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:12 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_processing_system7_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_processing_system7_0_0 (xilinx.com:ip:processing_system7:5.5 (Rev. 6)) to Vivado generation flows.
+
+2. Upgrade messages
+-------------------
+
+WARNING: upgrade cannot add parameter PCW_TRACE_INTERNAL_WIDTH with default value 32 : a parameter called PCW_TRACE_INTERNAL_WIDTH already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_USE_AXI_NONSECURE with default value 0 : a parameter called PCW_USE_AXI_NONSECURE already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_EN_PTP_ENET0 with default value 1 : a parameter called PCW_EN_PTP_ENET0 already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP0_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP0_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_WRITE_THREADS with default value 4 : a parameter called PCW_GP1_NUM_WRITE_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_NUM_READ_THREADS with default value 4 : a parameter called PCW_GP1_NUM_READ_THREADS already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP0_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP0_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+WARNING: upgrade cannot add parameter PCW_GP1_EN_MODIFIABLE_TXN with default value 0 : a parameter called PCW_GP1_EN_MODIFIABLE_TXN already exists in processing_system7_v5_5
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:12 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_proc_sys_reset_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_proc_sys_reset_0_1 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:12 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_proc_sys_reset_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_proc_sys_reset_0_0 (xilinx.com:ip:proc_sys_reset:5.0 (Rev. 13)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:11 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_clk_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_clk_wiz_0_0 (xilinx.com:ip:clk_wiz:6.0 (Rev. 11)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:11 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axi_gpio_1_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_axi_gpio_1_0 (xilinx.com:ip:axi_gpio:2.0 (Rev. 29)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:11 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axi_gpio_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_axi_gpio_0_3 (xilinx.com:ip:axi_gpio:2.0 (Rev. 29)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:11 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axi_gpio_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_axi_gpio_0_2 (xilinx.com:ip:axi_gpio:2.0 (Rev. 29)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Thu Apr 13 21:51:11 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_axi_gpio_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of ebaz4205_axi_gpio_0_1 (xilinx.com:ip:axi_gpio:2.0 (Rev. 29)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date         : Mon Apr 10 08:50:47 2023
+| Host         : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command      : upgrade_ip
+| Device       : xc7z010clg400-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ebaz4205_rgb2dvi_0_3'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ebaz4205_rgb2dvi_0_3 (digilentinc.com:ip:rgb2dvi:1.3) from (Rev. 9) to (Rev. 11)
+

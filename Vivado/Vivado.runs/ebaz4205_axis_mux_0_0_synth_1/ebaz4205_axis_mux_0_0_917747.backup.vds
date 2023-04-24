@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 19 11:51:40 2023
+# Process ID: 917747
+# Current directory: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_axis_mux_0_0_synth_1
+# Command line: vivado -log ebaz4205_axis_mux_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ebaz4205_axis_mux_0_0.tcl
+# Log file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_axis_mux_0_0_synth_1/ebaz4205_axis_mux_0_0.vds
+# Journal file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_axis_mux_0_0_synth_1/vivado.jou
+# Running On: guido-UM690, OS: Linux, CPU Frequency: 4187.548 MHz, CPU Physical cores: 16, Host memory: 31270 MB
+#-----------------------------------------------------------
+source ebaz4205_axis_mux_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1397.266 ; gain = 0.023 ; free physical = 259 ; free virtual = 5579
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axi_dynclk'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axis_capture'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_ps2_mouse'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/guido/Xilinx-tools/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ebaz4205_axis_mux_0_0
+Command: synth_design -top ebaz4205_axis_mux_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 918196

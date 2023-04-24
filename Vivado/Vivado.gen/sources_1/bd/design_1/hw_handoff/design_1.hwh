@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 10 13:52:05 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out_0" SIGIS="clk" SIGNAME="clk_vip_0_clk_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_vip_0" PORT="clk_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="2" FULLNAME="/clk_vip_0" HWVERSION="1.0" INSTANCE="clk_vip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_vip" VLNV="xilinx.com:ip:clk_vip:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_vip;v=v1_0;d=pg291-clk-vip.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_CLK_CLOCK_PERIOD" VALUE="10"/>
+        <PARAMETER NAME="C_CLK_INTERFACE_MODE" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clk_vip_0_0"/>
+        <PARAMETER NAME="INTERFACE_MODE" VALUE="MASTER"/>
+        <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out" SIGIS="clk" SIGNAME="clk_vip_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

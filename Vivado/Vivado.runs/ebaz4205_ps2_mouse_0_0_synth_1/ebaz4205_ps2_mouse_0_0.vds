@@ -1,0 +1,346 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 19 12:00:52 2023
+# Process ID: 7700
+# Current directory: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_ps2_mouse_0_0_synth_1
+# Command line: vivado -log ebaz4205_ps2_mouse_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ebaz4205_ps2_mouse_0_0.tcl
+# Log file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_ps2_mouse_0_0_synth_1/ebaz4205_ps2_mouse_0_0.vds
+# Journal file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_ps2_mouse_0_0_synth_1/vivado.jou
+# Running On: guido-UM690, OS: Linux, CPU Frequency: 4201.119 MHz, CPU Physical cores: 16, Host memory: 31270 MB
+#-----------------------------------------------------------
+source ebaz4205_ps2_mouse_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1398.297 ; gain = 0.023 ; free physical = 17939 ; free virtual = 22637
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axi_dynclk'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axis_capture'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_ps2_mouse'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/guido/Xilinx-tools/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ebaz4205_ps2_mouse_0_0
+Command: synth_design -top ebaz4205_ps2_mouse_0_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8206
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/guido/Xilinx-tools/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 2045.465 ; gain = 371.770 ; free physical = 6755 ; free virtual = 11472
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3067.543; parent = 2049.438; children = 1018.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_ps2_mouse_0_0' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/synth/ebaz4205_ps2_mouse_0_0.vhd:74]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter ps2_debounce_counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_mouse_w' declared at '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_mouse_w.vhd:26' bound to instance 'U0' of component 'ps2_mouse_w' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/synth/ebaz4205_ps2_mouse_0_0.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'ps2_mouse_w' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_mouse_w.vhd:50]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter debounce_counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'ps2_transceiver' declared at '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_transceiver.vhd:26' bound to instance 'ps2_transceiver_0' of component 'ps2_transceiver' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_mouse_w.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'ps2_transceiver' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_transceiver.vhd:52]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_transceiver.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'debounce' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/debounce.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/debounce.vhd:36]
+	Parameter counter_size bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'debounce' declared at '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_transceiver.vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'ps2_transceiver' (0#1) [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_transceiver.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'ps2_mouse_w' (0#1) [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/9b21/src/ps2_mouse_w.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_ps2_mouse_0_0' (0#1) [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/synth/ebaz4205_ps2_mouse_0_0.vhd:74]
+WARNING: [Synth 8-7129] Port ps2_clk in module ps2_transceiver is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ps2_data in module ps2_transceiver is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2120.402 ; gain = 446.707 ; free physical = 7434 ; free virtual = 12169
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3138.512; parent = 2120.406; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2135.246 ; gain = 461.551 ; free physical = 7528 ; free virtual = 12266
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3153.355; parent = 2135.250; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2135.246 ; gain = 461.551 ; free physical = 7521 ; free virtual = 12259
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3153.355; parent = 2135.250; children = 1018.105
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2135.246 ; gain = 0.000 ; free physical = 7495 ; free virtual = 12232
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2286.996 ; gain = 0.000 ; free physical = 7362 ; free virtual = 12101
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2286.996 ; gain = 0.000 ; free physical = 7364 ; free virtual = 12104
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/guido/Xilinx-tools/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 7579 ; free virtual = 12356
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 7612 ; free virtual = 12388
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 7627 ; free virtual = 12406
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ps2_transceiver'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 receive |                               00 |                               00
+                 inhibit |                               01 |                               01
+                transact |                               10 |                               10
+             tx_complete |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ps2_transceiver'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 7639 ; free virtual = 12426
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 2     
+	   9 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               26 Bit    Registers := 1     
+	               13 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 2     
+	  23 Input   32 Bit        Muxes := 1     
+	  23 Input   26 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	   4 Input   13 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 3     
+	   4 Input   11 Bit        Muxes := 2     
+	  23 Input    9 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 4     
+	   3 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 5     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 13    
+	  23 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port ps2_clk in module ebaz4205_ps2_mouse_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ps2_data in module ebaz4205_ps2_mouse_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 7470 ; free virtual = 12274
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1241.254; parent = 1117.665; children = 123.589
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++-----------------------+------------+---------------+----------------+
+|Module Name            | RTL Object | Depth x Width | Implemented As | 
++-----------------------+------------+---------------+----------------+
+|ps2_mouse_w            | tx_ena     | 32x1          | LUT            | 
+|ebaz4205_ps2_mouse_0_0 | U0/tx_ena  | 32x1          | LUT            | 
++-----------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 6575 ; free virtual = 11393
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1320.130; parent = 1195.953; children = 124.177
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 6562 ; free virtual = 11379
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1320.197; parent = 1196.021; children = 124.177
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 6543 ; free virtual = 11361
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1321.438; parent = 1197.261; children = 124.177
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11482 ; free virtual = 16289
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.502; parent = 1207.694; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11455 ; free virtual = 16261
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.502; parent = 1207.694; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11447 ; free virtual = 16249
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.539; parent = 1207.732; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11454 ; free virtual = 16255
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.556; parent = 1207.752; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11532 ; free virtual = 16329
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.558; parent = 1207.754; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11593 ; free virtual = 16389
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.558; parent = 1207.754; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    10|
+|2     |LUT1   |    31|
+|3     |LUT2   |    25|
+|4     |LUT3   |    26|
+|5     |LUT4   |    39|
+|6     |LUT5   |    16|
+|7     |LUT6   |    56|
+|8     |FDCE   |    51|
+|9     |FDPE   |     3|
+|10    |FDRE   |   110|
+|11    |FDSE   |    14|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11618 ; free virtual = 16418
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1339.558; parent = 1207.774; children = 131.808
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3273.090; parent = 2254.984; children = 1018.105
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 2286.996 ; gain = 461.551 ; free physical = 11862 ; free virtual = 16655
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:30 . Memory (MB): peak = 2286.996 ; gain = 613.301 ; free physical = 11855 ; free virtual = 16648
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2286.996 ; gain = 0.000 ; free physical = 11949 ; free virtual = 16743
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 3 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2286.996 ; gain = 0.000 ; free physical = 12426 ; free virtual = 17222
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: a4a6c44a
+INFO: [Common 17-83] Releasing license: Synthesis
+38 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 2286.996 ; gain = 888.699 ; free physical = 12582 ; free virtual = 17379
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_ps2_mouse_0_0_synth_1/ebaz4205_ps2_mouse_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ebaz4205_ps2_mouse_0_0, cache-ID = fb914c2257782a8e
+INFO: [Coretcl 2-1174] Renamed 4 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_ps2_mouse_0_0_synth_1/ebaz4205_ps2_mouse_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ebaz4205_ps2_mouse_0_0_utilization_synth.rpt -pb ebaz4205_ps2_mouse_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 12:01:38 2023...

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ebaz4205_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_vdma_pkg" />
+            <top_module name="axi_vip_pkg" />
+            <top_module name="dvi_constants" />
+            <top_module name="ebaz4205_wrapper" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="std" />
+            <top_module name="vcomponents" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="288,178.645 ns"></ZoomStartTime>
+      <ZoomEndTime time="288,647.146 ns"></ZoomEndTime>
+      <Cursor1Time time="288,299.699 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="115"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ADC_clk_64M">
+      <obj_property name="ElementShortName">ADC_clk_64M</obj_property>
+      <obj_property name="ObjectShortName">ADC_clk_64M</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/LED_GREEN">
+      <obj_property name="ElementShortName">LED_GREEN[0:0]</obj_property>
+      <obj_property name="ObjectShortName">LED_GREEN[0:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/DDC/ComplexMult/mult_cos/A">
+      <obj_property name="ElementShortName">A[11:0]</obj_property>
+      <obj_property name="ObjectShortName">A[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/DDC/ComplexMult/mult_cos/P">
+      <obj_property name="ElementShortName">P[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/DDC/ComplexMult/mult_sin/P">
+      <obj_property name="ElementShortName">P[15:0]</obj_property>
+      <obj_property name="ObjectShortName">P[15:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/CIC_IQ_1024/aclk">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/CIC_IQ_1024/s_axis_config_tvalid">
+      <obj_property name="ElementShortName">s_axis_config_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/CIC_IQ_1024/s_axis_config_tready">
+      <obj_property name="ElementShortName">s_axis_config_tready</obj_property>
+      <obj_property name="ObjectShortName">s_axis_config_tready</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/CIC_IQ_1024/s_axis_data_tlast">
+      <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/CIC_IQ_1024/event_tlast_missing">
+      <obj_property name="ElementShortName">event_tlast_missing</obj_property>
+      <obj_property name="ObjectShortName">event_tlast_missing</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/CIC_IQ_1024/event_tlast_unexpected">
+      <obj_property name="ElementShortName">event_tlast_unexpected</obj_property>
+      <obj_property name="ObjectShortName">event_tlast_unexpected</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_CIC/m_axis_tdata0">
+      <obj_property name="ElementShortName">m_axis_tdata0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata0[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_CIC/m_axis_tdata1">
+      <obj_property name="ElementShortName">m_axis_tdata1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata1[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/FIR_IQ_2/s_axis_data_tdata">
+      <obj_property name="ElementShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_CIC/s_axis_data_tlast">
+      <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/FIR_IQ_2/s_axis_data_tvalid">
+      <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/FIR_IQ_2/m_axis_data_tlast">
+      <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/FIR_IQ_2/m_axis_data_tvalid">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/FIR_IQ_2/m_axis_data_tdata">
+      <obj_property name="ElementShortName">m_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_FIR/m_axis_tdata0">
+      <obj_property name="ElementShortName">m_axis_tdata0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata0[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_FIR/m_axis_tdata1">
+      <obj_property name="ElementShortName">m_axis_tdata1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata1[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/AM_demodulator/sqrt32_0/P">
+      <obj_property name="ElementShortName">P[31:0]</obj_property>
+      <obj_property name="ObjectShortName">P[31:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/AM_demodulator/sqrt32_0/U">
+      <obj_property name="ElementShortName">U[15:0]</obj_property>
+      <obj_property name="ObjectShortName">U[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+</wave_config>

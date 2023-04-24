@@ -1,0 +1,205 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.2 (lin64) Build 3671981 Fri Oct 14 04:59:54 MDT 2022
+| Date             : Sun Apr 23 13:39:20 2023
+| Host             : guido-UM690 running 64-bit Ubuntu 20.04.6 LTS
+| Command          : report_power -file ebaz4205_wrapper_power_routed.rpt -pb ebaz4205_wrapper_power_summary_routed.pb -rpx ebaz4205_wrapper_power_routed.rpx
+| Design           : ebaz4205_wrapper
+| Device           : xc7z010clg400-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 2.162        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 2.021        |
+| Device Static (W)        | 0.140        |
+| Effective TJA (C/W)      | 11.5         |
+| Max Ambient (C)          | 60.1         |
+| Junction Temperature (C) | 49.9         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.064 |       12 |       --- |             --- |
+| Slice Logic              |     0.041 |    31589 |       --- |             --- |
+|   LUT as Logic           |     0.032 |     8131 |     17600 |           46.20 |
+|   Register               |     0.004 |    15020 |     35200 |           42.67 |
+|   CARRY4                 |     0.003 |      829 |      4400 |           18.84 |
+|   LUT as Distributed RAM |     0.001 |      122 |      6000 |            2.03 |
+|   LUT as Shift Register  |    <0.001 |     1696 |      6000 |           28.27 |
+|   F7/F8 Muxes            |    <0.001 |      188 |     17600 |            1.07 |
+|   BUFG                   |    <0.001 |        2 |        32 |            6.25 |
+|   Others                 |     0.000 |     1964 |       --- |             --- |
+| Signals                  |     0.060 |    24255 |       --- |             --- |
+| Block RAM                |     0.087 |       46 |        60 |           76.67 |
+| MMCM                     |     0.229 |        2 |         2 |          100.00 |
+| DSPs                     |     0.085 |       68 |        80 |           85.00 |
+| I/O                      |     0.170 |       45 |       100 |           45.00 |
+| PS7                      |     1.286 |        1 |       --- |             --- |
+| Static Power             |     0.140 |          |           |                 |
+| Total                    |     2.161 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint    |       1.000 |     0.343 |       0.333 |      0.011 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.137 |       0.128 |      0.009 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.051 |       0.050 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.012 |       0.007 |      0.004 |       NA    | Unspecified | NA         |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccpint   |       1.000 |     0.710 |       0.674 |      0.036 |       NA    | Unspecified | NA         |
+| Vccpaux   |       1.800 |     0.036 |       0.026 |      0.010 |       NA    | Unspecified | NA         |
+| Vccpll    |       1.800 |     0.018 |       0.015 |      0.003 |       NA    | Unspecified | NA         |
+| Vcco_ddr  |       1.500 |     0.356 |       0.354 |      0.002 |       NA    | Unspecified | NA         |
+| Vcco_mio0 |       3.300 |     0.003 |       0.002 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco_mio1 |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
++-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+------------------------+
+| Ambient Temp (C)      | 25.0                   |
+| ThetaJA (C/W)         | 11.5                   |
+| Airflow (LFM)         | 250                    |
+| Heat Sink             | none                   |
+| ThetaSA (C/W)         | 0.0                    |
+| Board Selection       | medium (10"x10")       |
+| # of Board Layers     | 8to11 (8 to 11 Layers) |
+| Board Temperature (C) | 25.0                   |
++-----------------------+------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------------------------+----------------------------------------------------------------+-----------------+
+| Clock                         | Domain                                                         | Constraint (ns) |
++-------------------------------+----------------------------------------------------------------+-----------------+
+| I                             | ebaz4205_i/HDMI/axi_dynclk_0/U0/Inst_mmcme2_drp/I              |             2.0 |
+| axi_dynclk_0_PXL_CLK_O        | ebaz4205_i/HDMI/axi_dynclk_0/U0/PXL_CLK_O                      |            10.0 |
+| clk_fpga_0                    | ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0] |            10.0 |
+| clk_fpga_1                    | ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK1              |            15.6 |
+| clk_fpga_1                    | ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1] |            15.6 |
+| clk_fpga_2                    | ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[2] |             6.9 |
+| clk_out1_ebaz4205_clk_wiz_0_0 | ebaz4205_i/PS/clk_wiz_128M/inst/clk_out1_ebaz4205_clk_wiz_0_0  |             7.8 |
+| clkfbout_ebaz4205_clk_wiz_0_0 | ebaz4205_i/PS/clk_wiz_128M/inst/clkfbout_ebaz4205_clk_wiz_0_0  |            15.6 |
+| mmcm_fbclk_out                | ebaz4205_i/HDMI/axi_dynclk_0/U0/Inst_mmcme2_drp/mmcm_fbclk_out |            10.0 |
++-------------------------------+----------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++--------------------------------+-----------+
+| Name                           | Power (W) |
++--------------------------------+-----------+
+| ebaz4205_wrapper               |     2.021 |
+|   MDIO_ETHERNET_0_0_mdio_iobuf |     0.004 |
+|   ebaz4205_i                   |     1.983 |
+|     ADC_TestGen                |     0.011 |
+|       TestGen                  |     0.010 |
+|     DDC                        |     0.015 |
+|       ComplexMult              |     0.006 |
+|       LO                       |     0.010 |
+|     DDC_FT                     |     0.016 |
+|       DDS_LO_FT                |     0.009 |
+|       mult_cos                 |     0.003 |
+|       mult_sin                 |     0.003 |
+|     FILTER                     |     0.088 |
+|       CIC_IQ_1024              |     0.037 |
+|       FIR_IQ_2                 |     0.049 |
+|     FILTER_FT                  |     0.110 |
+|       CIC_FT_IQ_4              |     0.032 |
+|       FIR_FT_IQ_2              |     0.046 |
+|       axis_capture_FT          |     0.030 |
+|     HDMI                       |     0.278 |
+|       axi_dynclk_0             |     0.109 |
+|       axi_interconnect_1       |     0.005 |
+|       axi_vdma_0               |     0.009 |
+|       rgb2dvi_0                |     0.134 |
+|       v_axi4s_vid_out_0        |     0.007 |
+|       v_tc_0                   |     0.014 |
+|     PS                         |     1.412 |
+|       clk_wiz_128M             |     0.122 |
+|       processing_system7_0     |     1.290 |
+|     PS2                        |     0.004 |
+|       axi_gpio_ps2_mouse       |     0.002 |
+|       ps2_mouse_0              |     0.002 |
+|     axis_capture_RF            |     0.044 |
+|       U0                       |     0.044 |
+|     ps7_axi_periph             |     0.005 |
+|       s00_couplers             |     0.004 |
+|       xbar                     |     0.001 |
++--------------------------------+-----------+
+
+

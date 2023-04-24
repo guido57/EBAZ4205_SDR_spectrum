@@ -1,0 +1,1129 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Apr 23 13:35:57 2023
+# Process ID: 1393788
+# Current directory: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1
+# Command line: vivado -log ebaz4205_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source ebaz4205_wrapper.tcl -notrace
+# Log file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper.vdi
+# Journal file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/vivado.jou
+# Running On: guido-UM690, OS: Linux, CPU Frequency: 1600.000 MHz, CPU Physical cores: 16, Host memory: 31270 MB
+#-----------------------------------------------------------
+source ebaz4205_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axi_dynclk'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axis_capture'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_ps2_mouse'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/guido/Xilinx-tools/Vivado/2022.2/data/ip'.
+Command: link_design -top ebaz4205_wrapper -part xc7z010clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/ebaz4205_axis_capture_0_4.dcp' for cell 'ebaz4205_i/axis_capture_RF'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_mux_0_0/ebaz4205_axis_mux_0_0.dcp' for cell 'ebaz4205_i/ADC_TestGen/axis_mux_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_0/ebaz4205_dds_compiler_0_0.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/RF_test_10MHz'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_c_addsub_0_1/ebaz4205_c_addsub_0_1.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_2/ebaz4205_dds_axi_interface_0_2.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_2/ebaz4205_dds_compiler_0_2.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/dds_compiler_1KHz'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_2/ebaz4205_mult_gen_0_2.dcp' for cell 'ebaz4205_i/ADC_TestGen/TestGen/mult_gen_AM_modulator'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_1/ebaz4205_mult_gen_0_1.dcp' for cell 'ebaz4205_i/AM_demodulator/I_square'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_1_0/ebaz4205_mult_gen_1_0.dcp' for cell 'ebaz4205_i/AM_demodulator/Q_square'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_c_addsub_0_0/ebaz4205_c_addsub_0_0.dcp' for cell 'ebaz4205_i/AM_demodulator/c_addsub_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_sqrt32_0_0/ebaz4205_sqrt32_0_0.dcp' for cell 'ebaz4205_i/AM_demodulator/sqrt32_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_sin_0/ebaz4205_mult_sin_0.dcp' for cell 'ebaz4205_i/DDC/ComplexMult/mult_cos'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_0/ebaz4205_mult_gen_0_0.dcp' for cell 'ebaz4205_i/DDC/ComplexMult/mult_sin'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_RF_test_1MHz_0/ebaz4205_RF_test_1MHz_0.dcp' for cell 'ebaz4205_i/DDC/LO/DDS_LO'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_0/ebaz4205_dds_axi_interface_0_0.dcp' for cell 'ebaz4205_i/DDC/LO/DDS_LO_axi_interface'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_3/ebaz4205_dds_compiler_0_3.dcp' for cell 'ebaz4205_i/DDC_FT/DDS_LO_FT'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_3/ebaz4205_dds_axi_interface_0_3.dcp' for cell 'ebaz4205_i/DDC_FT/DDS_LO_FT_axi_interface'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_4/ebaz4205_mult_gen_0_4.dcp' for cell 'ebaz4205_i/DDC_FT/mult_cos'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_1_1/ebaz4205_mult_gen_1_1.dcp' for cell 'ebaz4205_i/DDC_FT/mult_sin'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_cic_compiler_0_0/ebaz4205_cic_compiler_0_0.dcp' for cell 'ebaz4205_i/FILTER/CIC_IQ_1024'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/ebaz4205_fir_compiler_0_0.dcp' for cell 'ebaz4205_i/FILTER/FIR_IQ_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.dcp' for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_interface_DEC_RATE_Q_0/ebaz4205_axi_interface_DEC_RATE_Q_0.dcp' for cell 'ebaz4205_i/FILTER/axi_interface_DEC_RATE_IQ'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/ebaz4205_axis2c_combine_0_0.dcp' for cell 'ebaz4205_i/FILTER/axis2c_combine_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_1/ebaz4205_axis2c_splitter_0_1.dcp' for cell 'ebaz4205_i/FILTER/axis2c_splitter_CIC'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_0/ebaz4205_axis2c_splitter_0_0.dcp' for cell 'ebaz4205_i/FILTER/axis2c_splitter_FIR'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_3/ebaz4205_mult_gen_0_3.dcp' for cell 'ebaz4205_i/FILTER/mult_by_GAIN_I'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/ebaz4205_AXI_Stream_Generator_0_0.dcp' for cell 'ebaz4205_i/FILTER_FT/AXI_Stream_Generator_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_cic_compiler_0_1/ebaz4205_cic_compiler_0_1.dcp' for cell 'ebaz4205_i/FILTER_FT/CIC_FT_IQ_4'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/ebaz4205_fir_compiler_0_1.dcp' for cell 'ebaz4205_i/FILTER_FT/FIR_FT_IQ_2'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5.dcp' for cell 'ebaz4205_i/FILTER_FT/axi_gpio_FILTER_FT_GAIN'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_4/ebaz4205_dds_axi_interface_0_4.dcp' for cell 'ebaz4205_i/FILTER_FT/axi_interface_DEC_RATE_FT_IQ'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_1/ebaz4205_axis2c_combine_0_1.dcp' for cell 'ebaz4205_i/FILTER_FT/axis2c_combine_FT'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_3/ebaz4205_axis2c_splitter_0_3.dcp' for cell 'ebaz4205_i/FILTER_FT/axis2c_splitter_CIC_FT'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_2/ebaz4205_axis2c_splitter_0_2.dcp' for cell 'ebaz4205_i/FILTER_FT/axis2c_splitter_FIR_FT'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_capture_0_5/ebaz4205_axis_capture_0_5.dcp' for cell 'ebaz4205_i/FILTER_FT/axis_capture_FT'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_5/ebaz4205_mult_gen_0_5.dcp' for cell 'ebaz4205_i/FILTER_FT/mult_gen_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/ebaz4205_reset_lengthener_0_0.dcp' for cell 'ebaz4205_i/FILTER_FT/reset_lengthener_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_dynclk_0_0/ebaz4205_axi_dynclk_0_0.dcp' for cell 'ebaz4205_i/HDMI/axi_dynclk_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.dcp' for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.dcp' for cell 'ebaz4205_i/HDMI/axi_vdma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/ebaz4205_axis_subset_converter_0_0.dcp' for cell 'ebaz4205_i/HDMI/axis_subset_converter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rgb2dvi_0_3/ebaz4205_rgb2dvi_0_3.dcp' for cell 'ebaz4205_i/HDMI/rgb2dvi_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1.dcp' for cell 'ebaz4205_i/HDMI/v_axi4s_vid_out_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0.dcp' for cell 'ebaz4205_i/HDMI/v_tc_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_0/ebaz4205_auto_pc_0.dcp' for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0.dcp' for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0.dcp' for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_regslice'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy10_0/ebaz4205_DivideBy10_0.dcp' for cell 'ebaz4205_i/I2S/DivideBy10'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_I2S_Transmitter_0_2/ebaz4205_I2S_Transmitter_0_2.dcp' for cell 'ebaz4205_i/I2S/I2S_Transmitter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy4_25MHz_0/ebaz4205_DivideBy4_25MHz_0.dcp' for cell 'ebaz4205_i/PS/DivideBy2_50MHz'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_0/ebaz4205_DivideBy2N_0_0.dcp' for cell 'ebaz4205_i/PS/DivideBy4_25MHz'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.dcp' for cell 'ebaz4205_i/PS/clk_wiz_128M'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.dcp' for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1.dcp' for cell 'ebaz4205_i/PS/proc_sys_reset_128M'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.dcp' for cell 'ebaz4205_i/PS/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.dcp' for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.dcp' for cell 'ebaz4205_i/PS/rst_ps7_0_140M'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.dcp' for cell 'ebaz4205_i/PS/rst_ps7_0_64M'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.dcp' for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4.dcp' for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse_reset'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/ebaz4205_ps2_mouse_0_0.dcp' for cell 'ebaz4205_i/PS2/ps2_mouse_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/ebaz4205_util_vector_logic_0_1.dcp' for cell 'ebaz4205_i/PS2/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_xbar_0/ebaz4205_xbar_0.dcp' for cell 'ebaz4205_i/ps7_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_1/ebaz4205_auto_pc_1.dcp' for cell 'ebaz4205_i/ps7_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.24 . Memory (MB): peak = 1932.508 ; gain = 0.000 ; free physical = 447 ; free virtual = 15526
+INFO: [Netlist 29-17] Analyzing 1450 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. ebaz4205_i/PS/clk_wiz_128M/inst/clkin1_ibufg 
+Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
+WARNING: [Constraints 18-550] Could not create 'IBUF_LOW_PWR' constraint because net 'ebaz4205_i/PS/clk_wiz_128M/clk_in1' is not directly connected to top level port. Synthesis is ignored for IBUF_LOW_PWR but preserved for implementation.
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_board.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_board.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse_reset/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse_reset/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4_board.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse_reset/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4_board.xdc] for cell 'ebaz4205_i/PS2/axi_gpio_ps2_mouse_reset/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5.xdc] for cell 'ebaz4205_i/FILTER_FT/axi_gpio_FILTER_FT_GAIN/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5.xdc] for cell 'ebaz4205_i/FILTER_FT/axi_gpio_FILTER_FT_GAIN/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5_board.xdc] for cell 'ebaz4205_i/FILTER_FT/axi_gpio_FILTER_FT_GAIN/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5_board.xdc] for cell 'ebaz4205_i/FILTER_FT/axi_gpio_FILTER_FT_GAIN/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER_FT/FIR_FT_IQ_2/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER_FT/FIR_FT_IQ_2/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_board.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_board.xdc] for cell 'ebaz4205_i/HDMI/axi_gpio_hdmi/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:60]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:64]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:88]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:92]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:96]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:100]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:104]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:108]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:116]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:120]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:124]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:136]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:140]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:144]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:148]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:152]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:156]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:160]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:164]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:168]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:172]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:176]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:180]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:184]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:192]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:196]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:200]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:204]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:208]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:212]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:216]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-6' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc:220]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_board.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_board.xdc] for cell 'ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER/FIR_IQ_2/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'ebaz4205_i/FILTER/FIR_IQ_2/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_board.xdc] for cell 'ebaz4205_i/PS/clk_wiz_128M/inst'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_board.xdc] for cell 'ebaz4205_i/PS/clk_wiz_128M/inst'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_board.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_board.xdc] for cell 'ebaz4205_i/ADC_TestGen/TestGen/axi_gpio_ADC_TEST/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_64M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ps7_0_140M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_board.xdc] for cell 'ebaz4205_i/PS/rst_ENET0_GMII_RX_CLK_0_100M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc] for cell 'ebaz4205_i/PS/processing_system7_0/inst'
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.468750 which will be rounded to 0.469 to ensure it is an integer multiple of 1 picosecond [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc:27]
+WARNING: [Vivado 12-2489] -input_jitter contains time 0.206250 which will be rounded to 0.206 to ensure it is an integer multiple of 1 picosecond [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc:30]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc] for cell 'ebaz4205_i/PS/processing_system7_0/inst'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_128M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_128M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1_board.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_128M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1_board.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_128M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_board.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_board.xdc] for cell 'ebaz4205_i/PS/proc_sys_reset_0_100M/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc] for cell 'ebaz4205_i/PS/clk_wiz_128M/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc:57]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc] for cell 'ebaz4205_i/PS/clk_wiz_128M/inst'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/constrs_1/imports/new/ebaz4205.xdc]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/constrs_1/imports/new/ebaz4205.xdc]
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_vdma_0/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_tc_0/U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_tc_0/U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_regslice/inst'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-7' -to list should not be empty. [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc:10]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_regslice/inst'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst'
+WARNING: [Vivado_Tcl 4-939] Waiver ID 'LUTAR-1' object list should not be empty (perhaps an invalid wildcard was used or only unsupported objects). [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc:2]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc] for cell 'ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_clocks.xdc] for cell 'ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst'
+INFO: [Project 1-1714] 17 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-1687] 3 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 1036 ; free virtual = 14993
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 242 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 3 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 150 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 78 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+
+83 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:24 . Memory (MB): peak = 3382.492 ; gain = 1449.984 ; free physical = 1036 ; free virtual = 14993
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.52 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 1011 ; free virtual = 14968
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1a13e4126
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.69 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 1003 ; free virtual = 14960
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR/I_SM/vert_count[0]_i_3 into driver instance ebaz4205_i/HDMI/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.ADDR32.I_MM2S_DMA_MNGR/I_SM/zero_vsize_err_i_2, which resulted in an inversion of 77 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/pDataOutRaw[9]_i_1 into driver instance ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[1].DataEncoder/pDataOutRaw[9]_i_2__0, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/pDataOutRaw[9]_i_1__0 into driver instance ebaz4205_i/HDMI/rgb2dvi_0/U0/DataEncoders[2].DataEncoder/pDataOutRaw[9]_i_2__1, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst/FSM_onehot_gen_rst_ic.curr_wrst_state[4]_i_1 into driver instance ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/xpm_fifo_rst_inst//i_, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter ebaz4205_i/PS2/ps2_mouse_0/U0/ps2_transceiver_0/mouse_data[31]_i_2 into driver instance ebaz4205_i/PS2/util_vector_logic_0/Res[0]_INST_0, which resulted in an inversion of 20 pins
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 8 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: c15c059f
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.88 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 808 ; free virtual = 14765
+INFO: [Opt 31-389] Phase Retarget created 398 cells and removed 778 cells
+INFO: [Opt 31-1021] In phase Retarget, 84 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 9fb73ef7
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 808 ; free virtual = 14762
+INFO: [Opt 31-389] Phase Constant propagation created 142 cells and removed 1141 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 420 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 8b790539
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 805 ; free virtual = 14759
+INFO: [Opt 31-389] Phase Sweep created 5 cells and removed 1991 cells
+INFO: [Opt 31-1021] In phase Sweep, 139 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG ebaz4205_i/PS/DivideBy2_50MHz/inst/clk_out_BUFG_inst to drive 178 load(s) on clock net ebaz4205_i/PS/DivideBy2_50MHz/inst/clk_out_BUFG
+INFO: [Opt 31-194] Inserted BUFG ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/m_axis_data_tlast_BUFG_inst to drive 98 load(s) on clock net ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/m_axis_data_tlast_BUFG
+INFO: [Opt 31-193] Inserted 2 BUFG(s) on clock nets
+Phase 4 BUFG optimization | Checksum: 91549197
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 802 ; free virtual = 14757
+INFO: [Opt 31-662] Phase BUFG optimization created 2 cells of which 2 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 139758d42
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 761 ; free virtual = 14716
+INFO: [Opt 31-389] Phase Shift Register Optimization created 2 cells and removed 4 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 17966bff1
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 765 ; free virtual = 14719
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 42 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             398  |             778  |                                             84  |
+|  Constant propagation         |             142  |            1141  |                                            420  |
+|  Sweep                        |               5  |            1991  |                                            139  |
+|  BUFG optimization            |               2  |               0  |                                              0  |
+|  Shift Register Optimization  |               2  |               4  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             42  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.03 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 762 ; free virtual = 14717
+Ending Logic Optimization Task | Checksum: e5f5c475
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 762 ; free virtual = 14717
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 47 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 5 newly gated: 0 Total Ports: 94
+Ending PowerOpt Patch Enables Task | Checksum: 12d20e540
+
+Time (s): cpu = 00:00:00.25 ; elapsed = 00:00:00.23 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 702 ; free virtual = 14663
+Ending Power Optimization Task | Checksum: 12d20e540
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:04 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 821 ; free virtual = 14766
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 12d20e540
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 821 ; free virtual = 14766
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 819 ; free virtual = 14767
+Ending Netlist Obfuscation Task | Checksum: 175052072
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 818 ; free virtual = 14767
+INFO: [Common 17-83] Releasing license: Implementation
+117 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:09 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 819 ; free virtual = 14769
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.18 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3382.492 ; gain = 0.000 ; free physical = 792 ; free virtual = 14750
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ebaz4205_wrapper_drc_opted.rpt -pb ebaz4205_wrapper_drc_opted.pb -rpx ebaz4205_wrapper_drc_opted.rpx
+Command: report_drc -file ebaz4205_wrapper_drc_opted.rpt -pb ebaz4205_wrapper_drc_opted.pb -rpx ebaz4205_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 8 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 786 ; free virtual = 14734
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 7d33bcba
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 786 ; free virtual = 14734
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 786 ; free virtual = 14734
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 8deaa480
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 768 ; free virtual = 14719
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b1012717
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 775 ; free virtual = 14729
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b1012717
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 775 ; free virtual = 14729
+Phase 1 Placer Initialization | Checksum: 1b1012717
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 775 ; free virtual = 14729
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: f1d65e84
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 750 ; free virtual = 14701
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1bab70214
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 739 ; free virtual = 14693
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: f9acd037
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 738 ; free virtual = 14692
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 UpdateTiming Before Physical Synthesis
+Phase 2.4.1 UpdateTiming Before Physical Synthesis | Checksum: 15d9499c8
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:11 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 694 ; free virtual = 14651
+
+Phase 2.4.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 785 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 354 nets or LUTs. Breaked 0 LUT, combined 354 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 689 ; free virtual = 14650
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            354  |                   354  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            354  |                   354  |           0  |           9  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.2 Physical Synthesis In Placer | Checksum: 1bf727665
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 703 ; free virtual = 14663
+Phase 2.4 Global Placement Core | Checksum: 13447f6ae
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 698 ; free virtual = 14658
+Phase 2 Global Placement | Checksum: 13447f6ae
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 697 ; free virtual = 14657
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1e2570934
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:13 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 695 ; free virtual = 14656
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 20211f8ef
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:15 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 701 ; free virtual = 14658
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1b95147d5
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:15 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 701 ; free virtual = 14659
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1edfeffc6
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:15 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 701 ; free virtual = 14659
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 25289d1af
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:16 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 698 ; free virtual = 14656
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 1af0587eb
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:19 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 696 ; free virtual = 14653
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 14be8f20e
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:19 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 699 ; free virtual = 14656
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 2553e83c6
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:20 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 699 ; free virtual = 14656
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 12531a4b7
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:21 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 682 ; free virtual = 14639
+Phase 3 Detail Placement | Checksum: 12531a4b7
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:22 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 682 ; free virtual = 14639
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 18a0e94c7
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.796 | TNS=-361.914 |
+Phase 1 Physical Synthesis Initialization | Checksum: 251abaa6b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.38 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 709 ; free virtual = 14667
+INFO: [Place 46-33] Processed net ebaz4205_i/FILTER/CIC_IQ_1024/U0/i_synth/decimator.decimation_filter/sclr_int, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net ebaz4205_i/HDMI/v_tc_0/U0/U_VIDEO_CTRL/GEN_HAS_IRQ.irq_i_1_n_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 1bff173c4
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.66 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 709 ; free virtual = 14666
+Phase 4.1.1.1 BUFG Insertion | Checksum: 18a0e94c7
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:25 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 708 ; free virtual = 14666
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-8.646. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 2218689a9
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 694 ; free virtual = 14653
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 694 ; free virtual = 14653
+Phase 4.1 Post Commit Optimization | Checksum: 2218689a9
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 694 ; free virtual = 14653
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 2218689a9
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 694 ; free virtual = 14653
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                1x1|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                2x2|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 2218689a9
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 695 ; free virtual = 14653
+Phase 4.3 Placer Reporting | Checksum: 2218689a9
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 695 ; free virtual = 14653
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 695 ; free virtual = 14653
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 695 ; free virtual = 14653
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 27318dc16
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 695 ; free virtual = 14653
+Ending Placer Task | Checksum: 1962ef492
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:58 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 694 ; free virtual = 14653
+INFO: [Common 17-83] Releasing license: Implementation
+159 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:41 ; elapsed = 00:00:59 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 712 ; free virtual = 14670
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 657 ; free virtual = 14654
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file ebaz4205_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 667 ; free virtual = 14641
+INFO: [runtcl-4] Executing : report_utilization -file ebaz4205_wrapper_utilization_placed.rpt -pb ebaz4205_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file ebaz4205_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.15 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 671 ; free virtual = 14647
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:02 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 646 ; free virtual = 14623
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 4.98s |  WALL: 1.61s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 646 ; free virtual = 14623
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 8 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.646 | TNS=-252.486 |
+Phase 1 Physical Synthesis Initialization | Checksum: 2811f1337
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 635 ; free virtual = 14612
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.646 | TNS=-252.486 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 2811f1337
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 635 ; free virtual = 14612
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.646 | TNS=-252.486 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_data[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__117_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__67_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__67_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/P[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0/gpio_core_1/gpio_io_o[1]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0/gpio_core_1/gpio_io_o[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-252.304 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0/gpio_core_1/gpio_io_o[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/Q[31]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/Q[31]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-252.272 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0_sync_ff1[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/Q[31]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_data[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__117_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__67_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/P[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0/gpio_core_1/gpio_io_o[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0_sync_ff1[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1.  Re-placed instance ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1_reg
+INFO: [Physopt 32-735] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-252.095 |
+INFO: [Physopt 32-663] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1.  Re-placed instance ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1_reg
+INFO: [Physopt 32-735] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-252.054 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/Q[31]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-252.054 |
+Phase 3 Critical Path Optimization | Checksum: 14389f041
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:04 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 639 ; free virtual = 14617
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-252.054 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_data[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__117_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__67_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__67_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_cout[1]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/P[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0/gpio_core_1/gpio_io_o[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0_sync_ff1[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/Q[31]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/Q[31]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-251.990 |
+INFO: [Physopt 32-702] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/Q[31]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_s_data_chan_fifo.i_s_data_chan_fifo/wr_data[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__117_carry__0_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__67_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_i_1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.lut_sig. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/mult_by_GAIN_I/U0/i_mult/gLUT.gLUT_speed.iLUT/P[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/FILTER/axi_gpio_FILTER_GAIN/U0/gpio_core_1/gpio_io_o[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0_sync_ff1[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/DDC/LO/DDS_LO_axi_interface/inst/dds_axi_interface_logic_inst/slv_reg_0[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/PS/processing_system7_0/inst/FCLK_CLK_unbuffered[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ebaz4205_i/ADC_TestGen/TestGen/dds_axi_interface_0/inst/dds_axi_interface_logic_inst/Q[31]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-8.633 | TNS=-251.990 |
+Phase 4 Critical Path Optimization | Checksum: 14389f041
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 640 ; free virtual = 14617
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 640 ; free virtual = 14617
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-8.633 | TNS=-251.990 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.013  |          0.496  |            3  |              0  |                     5  |           0  |           2  |  00:00:03  |
+|  Total          |          0.013  |          0.496  |            3  |              0  |                     5  |           0  |           3  |  00:00:03  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 640 ; free virtual = 14617
+Ending Physical Synthesis Task | Checksum: 173f2577a
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 643 ; free virtual = 14620
+INFO: [Common 17-83] Releasing license: Implementation
+262 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:07 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 655 ; free virtual = 14633
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 610 ; free virtual = 14620
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 8 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 27ec531b ConstDB: 0 ShapeSum: d46a1409 RouteDB: 0
+Post Restoration Checksum: NetGraph: 5dbe4535 NumContArr: 3ec41e56 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 9c82638b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 567 ; free virtual = 14564
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 9c82638b
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 538 ; free virtual = 14536
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 9c82638b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 538 ; free virtual = 14536
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 27dff55e2
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:10 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 515 ; free virtual = 14516
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.559 | TNS=-273.577| WHS=-0.729 | THS=-446.503|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 20227eac0
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 525 ; free virtual = 14521
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.559 | TNS=-274.344| WHS=N/A    | THS=N/A    |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 275ae549a
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 525 ; free virtual = 14525
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0398367 %
+  Global Horizontal Routing Utilization  = 0.0307904 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 24380
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 24378
+  Number of Partially Routed Nets     = 2
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 21be8413e
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 520 ; free virtual = 14520
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 21be8413e
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 520 ; free virtual = 14520
+Phase 3 Initial Routing | Checksum: 272c55797
+
+Time (s): cpu = 00:00:34 ; elapsed = 00:00:13 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 482 ; free virtual = 14485
+INFO: [Route 35-580] Design has 98 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++===============================+===============================+======================================================================================================================+
+| Launch Setup Clock            | Launch Hold Clock             | Pin                                                                                                                  |
++===============================+===============================+======================================================================================================================+
+| clk_out1_ebaz4205_clk_wiz_0_0 | clk_out1_ebaz4205_clk_wiz_0_0 | ebaz4205_i/FILTER_FT/axis_capture_FT/U0/axis_capture_inst/finished_sync_ff1_reg/D                                    |
+| clk_out1_ebaz4205_clk_wiz_0_0 | clk_out1_ebaz4205_clk_wiz_0_0 | ebaz4205_i/FILTER_FT/axi_interface_DEC_RATE_FT_IQ/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1_reg/D |
+| clk_out1_ebaz4205_clk_wiz_0_0 | clk_out1_ebaz4205_clk_wiz_0_0 | ebaz4205_i/FILTER/axi_interface_DEC_RATE_IQ/inst/dds_axi_interface_logic_inst/config_tvalid_ack_sync_ff1_reg/D       |
+| clk_fpga_0                    | clk_fpga_0                    | ebaz4205_i/FILTER_FT/axi_interface_DEC_RATE_FT_IQ/inst/dds_axi_interface_logic_inst/slv_reg_0_sync_ff1_reg[31]/D     |
+| clk_fpga_0                    | clk_fpga_0                    | ebaz4205_i/FILTER_FT/axis_capture_FT/U0/axis_capture_inst/start_sync_ff1_reg/D                                       |
++-------------------------------+-------------------------------+----------------------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1190
+ Number of Nodes with overlaps = 72
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.826 | TNS=-1448.213| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1a4c20c5c
+
+Time (s): cpu = 00:01:17 ; elapsed = 00:00:52 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 369 ; free virtual = 14416
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 45
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-9.223 | TNS=-1405.302| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1628cf9a1
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:09 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 411 ; free virtual = 14438
+Phase 4 Rip-up And Reroute | Checksum: 1628cf9a1
+
+Time (s): cpu = 00:01:36 ; elapsed = 00:01:09 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 411 ; free virtual = 14438
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 1f412e3bb
+
+Time (s): cpu = 00:01:37 ; elapsed = 00:01:09 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 409 ; free virtual = 14436
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.826 | TNS=-1445.218| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 89de5718
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 391 ; free virtual = 14415
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 89de5718
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 391 ; free virtual = 14415
+Phase 5 Delay and Skew Optimization | Checksum: 89de5718
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 389 ; free virtual = 14413
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 101d86179
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:11 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 395 ; free virtual = 14418
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-8.826 | TNS=-1223.644| WHS=0.005  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 32a5116a
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:11 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 395 ; free virtual = 14418
+Phase 6 Post Hold Fix | Checksum: 32a5116a
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:11 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 395 ; free virtual = 14418
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 13.7959 %
+  Global Horizontal Routing Utilization  = 15.6482 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 74.7748%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 70.5882%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 72.0588%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 40cbc222
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:11 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 395 ; free virtual = 14419
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 40cbc222
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:11 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 392 ; free virtual = 14415
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 2e2202d7
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:01:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 391 ; free virtual = 14415
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-8.826 | TNS=-1223.644| WHS=0.005  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 2e2202d7
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 386 ; free virtual = 14410
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:12 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 468 ; free virtual = 14498
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+282 Infos, 39 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:48 ; elapsed = 00:01:14 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 468 ; free virtual = 14498
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:04 ; elapsed = 00:00:01 . Memory (MB): peak = 3391.520 ; gain = 0.000 ; free physical = 418 ; free virtual = 14482
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ebaz4205_wrapper_drc_routed.rpt -pb ebaz4205_wrapper_drc_routed.pb -rpx ebaz4205_wrapper_drc_routed.rpx
+Command: report_drc -file ebaz4205_wrapper_drc_routed.rpt -pb ebaz4205_wrapper_drc_routed.pb -rpx ebaz4205_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file ebaz4205_wrapper_methodology_drc_routed.rpt -pb ebaz4205_wrapper_methodology_drc_routed.pb -rpx ebaz4205_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file ebaz4205_wrapper_methodology_drc_routed.rpt -pb ebaz4205_wrapper_methodology_drc_routed.pb -rpx ebaz4205_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 8 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/impl_1/ebaz4205_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file ebaz4205_wrapper_power_routed.rpt -pb ebaz4205_wrapper_power_summary_routed.pb -rpx ebaz4205_wrapper_power_routed.rpx
+Command: report_power -file ebaz4205_wrapper_power_routed.rpt -pb ebaz4205_wrapper_power_summary_routed.pb -rpx ebaz4205_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+294 Infos, 40 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file ebaz4205_wrapper_route_status.rpt -pb ebaz4205_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file ebaz4205_wrapper_timing_summary_routed.rpt -pb ebaz4205_wrapper_timing_summary_routed.pb -rpx ebaz4205_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file ebaz4205_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file ebaz4205_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file ebaz4205_wrapper_bus_skew_routed.rpt -pb ebaz4205_wrapper_bus_skew_routed.pb -rpx ebaz4205_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 8 CPUs
+INFO: [Memdata 28-208] The XPM instance: <ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ebaz4205_i/HDMI/v_axi4s_vid_out_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <ebaz4205_i/HDMI/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ebaz4205_i/HDMI/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <ebaz4205_i/HDMI/axi_vdma_0/U0/GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I/GEN_LINEBUF_NO_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <ebaz4205_i/HDMI/axi_vdma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force ebaz4205_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z010'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 8 threads
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A3' of cell ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A1)+((~A1)*A2*A5)+((~A1)*(~A2)*A6*(~A4)*A5)+((~A1)*(~A2)*(~A6)*A5)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A4' of cell ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0 (pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1__0/I1) is not included in the LUT equation: 'O6=(A1)+((~A1)*A5*A2*A3)+((~A1)*(~A5)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC PDCN-1569] LUT equation term check: Used physical LUT pin 'A5' of cell ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1 (pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/gpregsm1.user_valid_i_1/I1) is not included in the LUT equation: 'O6=(A2)+((~A2)*(~A6)*A3)'. If this cell is a user instantiated LUT in the design, please remove connectivity to the pin or change the equation and/or INIT string of the LUT to prevent this issue. If the cell is inferred or IP created LUT, please regenerate the IP and/or resynthesize the design to attempt to correct the issue.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram has an input control pin ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.NO_BMM_INFO.SDP.WIDE_PRIM36_NO_ECC.ram/ENARDEN (net: ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/inst_blk_mem_gen/gnbram.gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/ENB_I) which is driven by a register (ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/empty_fwft_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 42 net(s) have no routable loads. The problem bus(es) and/or net(s) are ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.rd_rst_reg[1:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.rd_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/reset_gen_cc.rstblk_cc/ngwrdrst.grst.wr_rst_reg[1:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.gaxi_arvld.rach_pkt_reg_slice/rstblk/ngwrdrst.grst.wr_rst_reg[1:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.wr_rst_reg[2:0], ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grdch2.axi_rdch/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, ebaz4205_i/HDMI/axi_interconnect_1/s00_couplers/s00_data_fifo/inst/gen_fifo.fifo_gen_inst/inst_fifo_gen/gaxi_full_lite.gread_ch.grach2.axi_rach/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb... and (the first 15 of 25 listed).
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-4] enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC AVAL-5] enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-28] enum_USE_MULT_NONE_connects_CEM_GND: ebaz4205_i/FILTER_FT/FIR_FT_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER/FIR_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/comb/gen_stages[1].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/CIC_FT_IQ_4/U0/i_synth/decimator.decimation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-30] enum_MREG_0_connects_CEM_GND: ebaz4205_i/FILTER_FT/FIR_FT_IQ_2/U0/i_synth/g_polyphase_decimation.i_polyphase_decimation/g_parallel.g_paths[0].g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e1.i_dsp48e1: When the DSP48E1 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (ebaz4205_i/HDMI/axi_vdma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 5 Warnings, 45 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 8 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./ebaz4205_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+60 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 3646.371 ; gain = 254.840 ; free physical = 607 ; free virtual = 14294
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 23 13:39:34 2023...

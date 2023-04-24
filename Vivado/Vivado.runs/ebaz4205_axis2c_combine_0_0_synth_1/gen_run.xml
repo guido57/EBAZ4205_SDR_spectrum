@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="ebaz4205_axis2c_combine_0_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1681898441">
+  <File Type="RDS-RDS" Name="ebaz4205_axis2c_combine_0_0.vds"/>
+  <File Type="REPORTS-TCL" Name="ebaz4205_axis2c_combine_0_0_reports.tcl"/>
+  <File Type="PA-TCL" Name="ebaz4205_axis2c_combine_0_0.tcl"/>
+  <File Type="RDS-DCP" Name="ebaz4205_axis2c_combine_0_0.dcp"/>
+  <File Type="RDS-UTIL" Name="ebaz4205_axis2c_combine_0_0_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ebaz4205_axis2c_combine_0_0_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ebaz4205_axis2c_combine_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/ebaz4205_axis2c_combine_0_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/Vivado_projects/ebaz4205/ebaz4205.srcs/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/ebaz4205_axis2c_combine_0_0.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ebaz4205_axis2c_combine_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ebaz4205_axis2c_combine_0_0">
+    <File Path="$PSRCDIR/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/ebaz4205_axis2c_combine_0_0.xci">
+      <FileInfo>
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/Vivado_projects/ebaz4205/ebaz4205.srcs/sources_1/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/ebaz4205_axis2c_combine_0_0.xci"/>
+        <Attr Name="ImportTime" Val="0"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="ebaz4205_axis2c_combine_0_0"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

@@ -1,0 +1,75 @@
+{
+	"version": "1.0",
+	"modules": {
+		"design_1": {
+			"proto_instances": {
+				"/axis2c_combine_0/interface_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "clk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "tdata"},
+						"TLAST": { "actual": "tlast"},
+						"TREADY": { "actual": "tready"},
+						"TVALID": { "actual": "tvalid"}
+					}
+				},
+				"/axis2c_splitter_0/s_axis": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s_axis_tdata"},
+						"TLAST": { "actual": "s_axis_tlast"},
+						"TREADY": { "actual": "s_axis_tready"},
+						"TVALID": { "actual": "s_axis_tvalid"}
+					}
+				},
+				"/cic_compiler_0/M_AXIS_DATA": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "m_axis_data_tdata"},
+						"TLAST": { "actual": "m_axis_data_tlast"},
+						"TUSER": { "actual": "m_axis_data_tuser"},
+						"TVALID": { "actual": "m_axis_data_tvalid"}
+					}
+				},
+				"/cic_compiler_0/S_AXIS_DATA": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s_axis_data_tdata"},
+						"TLAST": { "actual": "s_axis_data_tlast"},
+						"TREADY": { "actual": "s_axis_data_tready"},
+						"TVALID": { "actual": "s_axis_data_tvalid"}
+					}
+				},
+				"/cic_compiler_1/M_AXIS_DATA": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "m_axis_data_tdata"},
+						"TLAST": { "actual": "m_axis_data_tlast"},
+						"TUSER": { "actual": "m_axis_data_tuser"},
+						"TVALID": { "actual": "m_axis_data_tvalid"}
+					}
+				},
+				"/cic_compiler_1/S_AXIS_DATA": {
+					"interface": "xilinx.com:interface:axis:1.0",
+					"ports": {
+						"ACLK": { "actual": "aclk"},
+						"ARESETN": { "actual": "aresetn"},
+						"TDATA": { "actual": "s_axis_data_tdata"},
+						"TLAST": { "actual": "s_axis_data_tlast"},
+						"TREADY": { "actual": "s_axis_data_tready"},
+						"TVALID": { "actual": "s_axis_data_tvalid"}
+					}
+				}
+			}
+		}
+	}
+}

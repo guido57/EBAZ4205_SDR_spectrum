@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" --include "../../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" --include "../../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" --include "../../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" --include "../../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" --include "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"ebaz4205_wrapper_func_synth.v" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Apr 10 13:43:28 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="design_sim_axis2c" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="15" NAME="m_axis_tdata_0" RIGHT="0" SIGIS="undef" SIGNAME="axis2c_0_m_axis_tdata">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="axis2c_0" PORT="m_axis_tdata"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out_0" SIGIS="clk" SIGNAME="clk_vip_0_clk_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clk_vip_0" PORT="clk_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/DivideBy2N_0" HWVERSION="1.0" INSTANCE="DivideBy2N_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DivideBy2N" VLNV="xilinx.com:module_ref:DivideBy2N:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="WIDTH" VALUE="2"/>
+        <PARAMETER NAME="N" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_sim_axis2c_DivideBy2N_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clk_vip_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clk_vip_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="DivideBy2N_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis2c_0" PORT="aclk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/axis2c_0" HWVERSION="1.0" INSTANCE="axis2c_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axis2c" VLNV="xilinx.com:module_ref:axis2c:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="C_TDATA_NUM_BYTES" VALUE="2"/>
+        <PARAMETER NAME="C_TDATA_VALUE" VALUE="0x0004"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_sim_axis2c_axis2c_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tdata0" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_x23_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_x23" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_axis_tdata1" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_xBC_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_xBC" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="axis2c_0_m_axis_tdata">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="m_axis_tdata_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef"/>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="DivideBy2N_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DivideBy2N_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aclk2x" SIGIS="undef"/>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="m_axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="0"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/clk_vip_0" HWVERSION="1.0" INSTANCE="clk_vip_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clk_vip" VLNV="xilinx.com:ip:clk_vip:1.0">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=clk_vip;v=v1_0;d=pg291-clk-vip.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_CLK_CLOCK_PERIOD" VALUE="10"/>
+        <PARAMETER NAME="C_CLK_INTERFACE_MODE" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_sim_axis2c_clk_vip_0_0"/>
+        <PARAMETER NAME="INTERFACE_MODE" VALUE="MASTER"/>
+        <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk_out" SIGIS="clk" SIGNAME="clk_vip_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_out_0"/>
+            <CONNECTION INSTANCE="DivideBy2N_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_sim_axis2c_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DivideBy2N_0" PORT="resetn"/>
+            <CONNECTION INSTANCE="axis2c_0" PORT="aresetn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_x23" HWVERSION="1.1" INSTANCE="xlconstant_x23" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0023"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_sim_axis2c_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_x23_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis2c_0" PORT="s_axis_tdata0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_xBC" HWVERSION="1.1" INSTANCE="xlconstant_xBC" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x00BC"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_sim_axis2c_xlconstant_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_xBC_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="axis2c_0" PORT="s_axis_tdata1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

@@ -1,0 +1,479 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 19 12:00:53 2023
+# Process ID: 7715
+# Current directory: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1
+# Command line: vivado -log ebaz4205_fir_compiler_0_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ebaz4205_fir_compiler_0_1.tcl
+# Log file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/ebaz4205_fir_compiler_0_1.vds
+# Journal file: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/vivado.jou
+# Running On: guido-UM690, OS: Linux, CPU Frequency: 4313.571 MHz, CPU Physical cores: 16, Host memory: 31270 MB
+#-----------------------------------------------------------
+source ebaz4205_fir_compiler_0_1.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_rgb2dvi'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axi_dynclk'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axis_capture'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_ps2_mouse'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/guido/Xilinx-tools/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: ebaz4205_fir_compiler_0_1
+Command: synth_design -top ebaz4205_fir_compiler_0_1 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7813
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/guido/Xilinx-tools/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2045.809 ; gain = 370.770 ; free physical = 7902 ; free virtual = 12616
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1242.612; parent = 1118.980; children = 123.632
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3026.977; parent = 2049.781; children = 977.195
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ebaz4205_fir_compiler_0_1' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/synth/ebaz4205_fir_compiler_0_1.vhd:76]
+	Parameter C_XDEVICEFAMILY bound to: zynq - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: ebaz4205_fir_compiler_0_1 - type: string 
+	Parameter C_COEF_FILE bound to: ebaz4205_fir_compiler_0_1.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 56 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 1 - type: integer 
+	Parameter C_INTERP_RATE bound to: 1 - type: integer 
+	Parameter C_DECIM_RATE bound to: 2 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 111 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 2 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 1 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 28 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_COEF_WIDTH bound to: 16 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 34 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 16 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 34 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 28 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 1 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 2 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 35 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 2 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 0 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_18' declared at '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d172/hdl/fir_compiler_v7_2_vh_rfs.vhd:67113' bound to instance 'U0' of component 'fir_compiler_v7_2_18' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/synth/ebaz4205_fir_compiler_0_1.vhd:227]
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-3919] null assignment ignored
+INFO: [Synth 8-256] done synthesizing module 'ebaz4205_fir_compiler_0_1' (0#1) [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/synth/ebaz4205_fir_compiler_0_1.vhd:76]
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized47 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized46 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized45 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized44 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADDSUB in module calc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PRE_ADD_BYPASS in module calc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CED in module calc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port WE in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR_ALT in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module delay__parameterized42 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][57] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][56] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][55] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][54] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][53] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][52] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][51] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][50] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][49] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[fab][48] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][62] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][61] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][60] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][59] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][58] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][57] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][56] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][55] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][54] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][53] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][52] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][51] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][50] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][49] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port POUT[casc][48] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][57] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][56] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][55] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][54] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][53] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][52] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][51] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][50] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][49] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][48] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][47] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][46] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][45] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][44] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][43] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][42] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][41] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][40] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][39] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][38] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][37] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][36] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][35] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][34] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][33] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][32] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][31] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][30] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][29] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][28] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][27] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][26] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][25] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][24] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][23] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][22] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][21] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][20] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][19] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][18] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][17] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][16] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][15] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][14] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][13] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][12] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][11] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][10] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][9] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][8] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][7] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][6] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][5] in module add_accum is either unconnected or has no load
+WARNING: [Synth 8-7129] Port PIN[fab][4] in module add_accum is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 2281.746 ; gain = 606.707 ; free physical = 7572 ; free virtual = 12379
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 123.632
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3258.945; parent = 2281.750; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2299.559 ; gain = 624.520 ; free physical = 7516 ; free virtual = 12327
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 123.632
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3276.758; parent = 2299.562; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2299.559 ; gain = 624.520 ; free physical = 7509 ; free virtual = 12317
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 123.632
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3276.758; parent = 2299.562; children = 977.195
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.2 . Memory (MB): peak = 2305.496 ; gain = 0.000 ; free physical = 7350 ; free virtual = 12158
+INFO: [Netlist 29-17] Analyzing 29 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/ebaz4205_fir_compiler_0_1_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/ebaz4205_fir_compiler_0_1_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.309 ; gain = 0.000 ; free physical = 6578 ; free virtual = 11392
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.18 . Memory (MB): peak = 2449.309 ; gain = 0.000 ; free physical = 6541 ; free virtual = 11355
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/home/guido/Xilinx-tools/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 11458 ; free virtual = 16259
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 131.707
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 11452 ; free virtual = 16254
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 131.735
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:32 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 11440 ; free virtual = 16241
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 131.735
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:34 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 12863 ; free virtual = 17646
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 135.998
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 19938 ; free virtual = 24714
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1372.340; parent = 1248.738; children = 161.431
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22405 ; free virtual = 27183
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1564.770; parent = 1381.273; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22379 ; free virtual = 27157
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:44 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22363 ; free virtual = 27141
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22280 ; free virtual = 27059
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:46 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22273 ; free virtual = 27052
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22258 ; free virtual = 27037
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22249 ; free virtual = 27028
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22237 ; free virtual = 27016
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22229 ; free virtual = 27008
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++---------------------+----------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name          | DSP Mapping                                  | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++---------------------+----------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|calc__parameterized0 | Dynamic                                      | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|calc_106             | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_105             | (PCIN+((D'+A')'*B')')'                       | 30     | 9      | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_104             | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_103             | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_102             | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_101             | (PCIN+((D'+A')'*B')')'                       | 30     | 10     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_100             | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_99              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_98              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_97              | (PCIN+((D'+A')'*B')')'                       | 30     | 11     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_96              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_95              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_94              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_93              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_92              | (PCIN+((D'+A')'*B')')'                       | 30     | 13     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_91              | (PCIN+((D'+A')'*B')')'                       | 30     | 12     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_90              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_89              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_88              | (PCIN+((D'+A')'*B')')'                       | 30     | 15     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_87              | (C'+((Dynamically Configured Multiplier))')' | -      | -      | 0      | -      | 48     | -    | -    | 1    | -    | 1     | 1    | 1    | 
+|calc_86              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_85              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_84              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_83              | (PCIN+((D'+A')'*B')')'                       | 30     | 9      | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_82              | (PCIN+((D'+A')'*B')')'                       | 30     | 9      | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_81              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc_80              | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
+|calc                 | (PCIN+((D'+A')'*B')')'                       | 30     | 18     | -      | 25     | 48     | 1    | 1    | -    | 1    | 1     | 1    | 1    | 
++---------------------+----------------------------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |DSP48E1  |    29|
+|3     |LUT1     |    31|
+|4     |LUT2     |    15|
+|5     |LUT3     |    10|
+|6     |LUT4     |    13|
+|7     |LUT5     |    15|
+|8     |LUT6     |     9|
+|9     |RAM16X1D |    16|
+|10    |SRL16E   |  1159|
+|11    |SRLC32E  |   163|
+|12    |FDRE     |  1598|
+|13    |FDSE     |    19|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22221 ; free virtual = 27000
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1583.511; parent = 1398.253; children = 185.587
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3394.492; parent = 2417.297; children = 977.195
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 518 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:42 . Memory (MB): peak = 2449.309 ; gain = 624.520 ; free physical = 22266 ; free virtual = 27046
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:47 . Memory (MB): peak = 2449.309 ; gain = 774.270 ; free physical = 22263 ; free virtual = 27042
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2449.309 ; gain = 0.000 ; free physical = 22479 ; free virtual = 27259
+INFO: [Netlist 29-17] Analyzing 45 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2449.309 ; gain = 0.000 ; free physical = 22773 ; free virtual = 27552
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 16 instances
+
+Synth Design complete, checksum: 1b0bea6e
+INFO: [Common 17-83] Releasing license: Synthesis
+33 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2449.309 ; gain = 1056.699 ; free physical = 23016 ; free virtual = 27795
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/ebaz4205_fir_compiler_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 252 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.runs/ebaz4205_fir_compiler_0_1_synth_1/ebaz4205_fir_compiler_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ebaz4205_fir_compiler_0_1_utilization_synth.rpt -pb ebaz4205_fir_compiler_0_1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 19 12:01:55 2023...
