@@ -1,1 +1,0 @@
-vopt -64 +acc=npr -l elaborate.log  -L xil_defaultlib -L xilinx_vip -L xpm -L clk_vip_v1_0_2 -L xlconstant_v1_1_7 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -work xil_defaultlib xil_defaultlib.design_sim_axis2c xil_defaultlib.glbl -o design_sim_axis2c_opt

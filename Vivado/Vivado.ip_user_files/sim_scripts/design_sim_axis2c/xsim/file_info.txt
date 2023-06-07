@@ -1,8 +1,0 @@
-design_sim_axis2c_axis2c_0_0.v,verilog,xil_defaultlib,../../../bd/design_sim_axis2c/ip/design_sim_axis2c_axis2c_0_0/sim/design_sim_axis2c_axis2c_0_0.v,
-design_sim_axis2c_clk_vip_0_0.sv,systemverilog,xil_defaultlib,../../../bd/design_sim_axis2c/ip/design_sim_axis2c_clk_vip_0_0/sim/design_sim_axis2c_clk_vip_0_0.sv,
-design_sim_axis2c_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/design_sim_axis2c/ip/design_sim_axis2c_xlconstant_0_0/sim/design_sim_axis2c_xlconstant_0_0.v,
-design_sim_axis2c_xlconstant_1_0.v,verilog,xil_defaultlib,../../../bd/design_sim_axis2c/ip/design_sim_axis2c_xlconstant_1_0/sim/design_sim_axis2c_xlconstant_1_0.v,
-design_sim_axis2c_xlconstant_1_1.v,verilog,xil_defaultlib,../../../bd/design_sim_axis2c/ip/design_sim_axis2c_xlconstant_1_1/sim/design_sim_axis2c_xlconstant_1_1.v,
-design_sim_axis2c_DivideBy2N_0_0.v,verilog,xil_defaultlib,../../../bd/design_sim_axis2c/ip/design_sim_axis2c_DivideBy2N_0_0/sim/design_sim_axis2c_DivideBy2N_0_0.v,
-design_sim_axis2c.v,verilog,xil_defaultlib,../../../bd/design_sim_axis2c/sim/design_sim_axis2c.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v
