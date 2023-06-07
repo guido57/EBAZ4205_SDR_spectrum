@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.01512",
-   "Default View_TopLeft":"1117,936",
+   "Default View_ScaleFactor":"0.641432",
+   "Default View_TopLeft":"1165,2561",
    "ExpandedHierarchyInLayout":"",
    "PinnedBlocks":"",
    "PinnedPorts":"",
@@ -14,170 +14,175 @@
    "font_comment_0":"11",
    "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 4190 -y 1900 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 4190 -y 1920 -defaultsOSRD
-preplace port MDIO_ETHERNET_0_0 -pg 1 -lvl 4 -x 4190 -y 1880 -defaultsOSRD
-preplace port HDMI_HPD -pg 1 -lvl 4 -x 4190 -y 2330 -defaultsOSRD
-preplace port ps2_clock_0 -pg 1 -lvl 4 -x 4190 -y 2560 -defaultsOSRD
-preplace port ps2_dat_0 -pg 1 -lvl 4 -x 4190 -y 2540 -defaultsOSRD
-preplace port port-id_ENET0_GMII_RX_CLK_0 -pg 1 -lvl 0 -x -10 -y 1720 -defaultsOSRD
-preplace port port-id_ENET0_GMII_RX_DV_0 -pg 1 -lvl 0 -x -10 -y 1740 -defaultsOSRD
-preplace port port-id_ENET0_GMII_TX_CLK_0 -pg 1 -lvl 0 -x -10 -y 1820 -defaultsOSRD
-preplace port port-id_CLK25M -pg 1 -lvl 4 -x 4190 -y 2020 -defaultsOSRD
-preplace port port-id_ADC_clk_64M -pg 1 -lvl 4 -x 4190 -y 2240 -defaultsOSRD
-preplace port port-id_OTR -pg 1 -lvl 0 -x -10 -y 1760 -defaultsOSRD
-preplace port port-id_SCLK -pg 1 -lvl 4 -x 4190 -y 2710 -defaultsOSRD
-preplace port port-id_LRCLK -pg 1 -lvl 4 -x 4190 -y 2730 -defaultsOSRD
-preplace port port-id_I2SDATA -pg 1 -lvl 4 -x 4190 -y 2750 -defaultsOSRD
-preplace port port-id_TMDS_Clk_p_0 -pg 1 -lvl 4 -x 4190 -y 2650 -defaultsOSRD
-preplace port port-id_TMDS_Clk_n_0 -pg 1 -lvl 4 -x 4190 -y 2370 -defaultsOSRD
-preplace portBus ENET0_GMII_TX_EN_0 -pg 1 -lvl 4 -x 4190 -y 1960 -defaultsOSRD
-preplace portBus enet0_gmii_rxd -pg 1 -lvl 0 -x -10 -y 1800 -defaultsOSRD
-preplace portBus enet0_gmii_txd -pg 1 -lvl 4 -x 4190 -y 2050 -defaultsOSRD
-preplace portBus ADC_in -pg 1 -lvl 0 -x -10 -y 1780 -defaultsOSRD
-preplace portBus LED_GREEN -pg 1 -lvl 4 -x 4190 -y 1820 -defaultsOSRD
-preplace portBus HDMI_OEN -pg 1 -lvl 4 -x 4190 -y 2350 -defaultsOSRD
-preplace portBus TMDS_Data_p_0 -pg 1 -lvl 4 -x 4190 -y 2390 -defaultsOSRD
-preplace portBus TMDS_Data_n_0 -pg 1 -lvl 4 -x 4190 -y 2410 -defaultsOSRD
-preplace inst PS -pg 1 -lvl 3 -x 3880 -y 2080 -defaultsOSRD -resize 304 476
-preplace inst ADC_TestGen -pg 1 -lvl 2 -x 880 -y 2080 -defaultsOSRD
-preplace inst DDC -pg 1 -lvl 2 -x 880 -y 560 -defaultsOSRD
-preplace inst AM_demodulator -pg 1 -lvl 2 -x 880 -y 90 -defaultsOSRD
-preplace inst FILTER -pg 1 -lvl 2 -x 880 -y 310 -defaultsOSRD -resize 327 242
-preplace inst I2S -pg 1 -lvl 3 -x 3880 -y 2730 -defaultsOSRD
-preplace inst HDMI -pg 1 -lvl 2 -x 880 -y 2310 -defaultsOSRD
-preplace inst ps7_axi_periph -pg 1 -lvl 1 -x 200 -y 2220 -defaultsOSRD
-preplace inst DDC_FT -pg 1 -lvl 2 -x 880 -y 1850 -defaultsOSRD
-preplace inst FILTER_FT -pg 1 -lvl 2 -x 880 -y 1010 -defaultsOSRD
-preplace inst PS2 -pg 1 -lvl 3 -x 3880 -y 2560 -defaultsOSRD
-preplace inst axis_capture_RF -pg 1 -lvl 2 -x 880 -y 750 -defaultsOSRD
-preplace inst FILTER_FT|axi_interface_DEC_RATE_FT_IQ -pg 1 -lvl 1 -x 1080 -y 1080 -defaultsOSRD
-preplace inst FILTER_FT|CIC_FT_IQ_4 -pg 1 -lvl 2 -x 1540 -y 1090 -defaultsOSRD
-preplace inst FILTER_FT|FIR_FT_IQ_2 -pg 1 -lvl 4 -x 2260 -y 1140 -defaultsOSRD
-preplace inst FILTER_FT|axi_gpio_FILTER_FT_GAIN -pg 1 -lvl 2 -x 1540 -y 1600 -defaultsOSRD
-preplace inst FILTER_FT|mult_gen_0 -pg 1 -lvl 3 -x 1900 -y 1370 -defaultsOSRD
-preplace inst FILTER_FT|axis_capture_FT -pg 1 -lvl 7 -x 3300 -y 1350 -defaultsOSRD
-preplace inst FILTER_FT|xlconcat_0 -pg 1 -lvl 6 -x 2950 -y 1130 -defaultsOSRD
-preplace inst FILTER_FT|axis2c_splitter_FIR_FT -pg 1 -lvl 5 -x 2660 -y 1140 -defaultsOSRD
-preplace inst FILTER_FT|axis2c_combine_FT -pg 1 -lvl 1 -x 1080 -y 1390 -defaultsOSRD
-preplace inst FILTER_FT|AXI_Stream_Generator_0 -pg 1 -lvl 6 -x 2950 -y 1410 -defaultsOSRD
-preplace inst FILTER_FT|axis2c_splitter_CIC_FT -pg 1 -lvl 7 -x 3300 -y 1010 -defaultsOSRD
-preplace inst FILTER_FT|reset_lengthener_0 -pg 1 -lvl 3 -x 1900 -y 1190 -defaultsOSRD
-preplace netloc ADC_TestGen_LED_GREEN1 1 2 2 3580J 1820 NJ
-preplace netloc ADC_in_1 1 0 2 NJ 1780 470J
-preplace netloc ADCandTestGen_output_axis_tvalid 1 1 2 630 2440 3530
-preplace netloc AM_dem_clk_1 1 1 2 360 10 3590
-preplace netloc AM_demodulator_U 1 2 1 3630 90n
-preplace netloc ARESETN_1 1 1 3 650 2450 NJ 2450 4090
-preplace netloc DDC_DDC_I 1 1 2 580 450 3580
-preplace netloc DDC_DDC_Q 1 1 2 590 460 3550
-preplace netloc DDC_FT_P 1 1 2 610 2460 3560
-preplace netloc DDC_FT_P1 1 1 2 620 2470 3550
-preplace netloc ENET0_GMII_RX_CLK_0_1 1 0 3 10J 1730 530J 1940 3680J
-preplace netloc ENET0_GMII_RX_DV_0_1 1 0 3 20J 1720 540J 1950 3650J
-preplace netloc ENET0_GMII_TX_CLK_0_1 1 0 3 10J 1790 490J 1960 3640J
-preplace netloc FIR_I_m_axis_data_tdata 1 1 2 360 160 3580
-preplace netloc FIR_Q_m_axis_data_tdata 1 1 2 380 170 3550
-preplace netloc I2S_Transmitter_0_bclk 1 3 1 NJ 2710
-preplace netloc I2S_Transmitter_0_lrclk 1 3 1 NJ 2730
-preplace netloc I2S_Transmitter_0_sdata 1 3 1 NJ 2750
-preplace netloc IRQ_F2P_1 1 2 1 3600 2170n
-preplace netloc In0_0_1 1 0 3 NJ 1800 410J 2530 3640J
-preplace netloc In3_1 1 1 3 640 2480 3670J 2460 4060
-preplace netloc Net 1 1 3 600 2490 3660J 2400 4070
-preplace netloc OTR_1 1 0 2 NJ 1760 510J
-preplace netloc PS_ARESETN 1 0 4 50 1770 480 2550 3680 2380 4080
-preplace netloc PS_FCLK_CLK0 1 0 4 40 1750 450 2600 3660 2650 4110
-preplace netloc PS_FCLK_CLK1 1 1 3 550 2500 3650J 2360 4130
-preplace netloc PS_FCLK_CLK1_128M 1 1 3 600 1730 NJ 1730 4100
-preplace netloc PS_FCLK_CLK3_0 1 3 1 NJ 2020
-preplace netloc PS_clk_out 1 2 2 3690 2420 4060
-preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 3 1 NJ 1960
-preplace netloc rgb2dvi_0_TMDS_Clk_n 1 2 2 3590J 2370 NJ
-preplace netloc rgb2dvi_0_TMDS_Clk_p 1 2 2 3610J 2340 4120J
-preplace netloc rgb2dvi_0_TMDS_Data_n 1 2 2 3570J 2410 NJ
-preplace netloc rgb2dvi_0_TMDS_Data_p 1 2 2 3580J 2390 NJ
-preplace netloc rst_ps7_0_128M_peripheral_aresetn 1 1 3 570 1750 NJ 1750 4090
-preplace netloc xlconcat_1_dout 1 1 2 560 2510 3540
-preplace netloc xlconstant_0_dout 1 2 2 3620J 2350 NJ
-preplace netloc xlslice_0_Dout 1 3 1 NJ 2050
-preplace netloc S00_AXI_2 1 0 4 30 1740 NJ 1740 NJ 1740 4080
-preplace netloc S_AXI1_1 1 1 1 380 230n
-preplace netloc S_AXI_1 1 1 1 N 2270
-preplace netloc S_AXI_2 1 1 1 460 2020n
-preplace netloc S_AXI_HP0_1 1 2 1 3590 1990n
-preplace netloc S_AXI_LITE_1 1 1 1 440 2110n
-preplace netloc axi_gpio_hdmi_GPIO 1 2 2 3680J 2330 NJ
-preplace netloc ctrl_1 1 1 1 400 2190n
-preplace netloc ctrl_s_axi1_1 1 1 1 360 250n
-preplace netloc ctrl_s_axi_1 1 1 1 490 2040n
-preplace netloc ctrl_s_axi_2 1 1 1 430 520n
-preplace netloc processing_system7_0_DDR 1 3 1 NJ 1900
-preplace netloc processing_system7_0_FIXED_IO 1 3 1 NJ 1920
-preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 3 1 NJ 1880
-preplace netloc ps2_mouse_0_ps2_clock 1 3 1 NJ 2560
-preplace netloc ps2_mouse_0_ps2_dat 1 3 1 NJ 2540
-preplace netloc ps7_axi_periph_M00_AXI 1 1 1 370 690n
-preplace netloc ps7_axi_periph_M01_AXI 1 1 1 420 1040n
-preplace netloc ps7_axi_periph_M11_AXI 1 1 2 370 2520 NJ
-preplace netloc ps7_axi_periph_M12_AXI 1 1 1 350 1810n
-preplace netloc ps7_axi_periph_M13_AXI 1 1 1 500 1290n
-preplace netloc ps7_axi_periph_M14_AXI 1 1 2 360 2540 NJ
-preplace netloc ps7_axi_periph_M15_AXI 1 1 1 520 1580n
-preplace netloc s00_axi_1 1 1 1 390 2210n
-preplace netloc FILTER_FT|DDC_FT_P 1 0 1 860 1400n
-preplace netloc FILTER_FT|DDC_FT_P1 1 0 1 870 1420n
-preplace netloc FILTER_FT|PS_FCLK_CLK1_128M 1 0 7 820 1180 1310 1220 1760 1280 2020 1260 2500 1260 2810 1280 3110
-preplace netloc FILTER_FT|axis2c_splitter_FIR_FT_m_axis_tdata0 1 5 1 N 1120
-preplace netloc FILTER_FT|axis2c_splitter_FIR_FT_m_axis_tdata1 1 5 1 N 1140
-preplace netloc FILTER_FT|axis2c_splitter_FIR_FT_m_axis_tvalid 1 5 2 2820 1270 3090J
-preplace netloc FILTER_FT|ctrl_s_axi_aclk_1 1 0 7 830 1480 1300 1450 NJ 1450 2020J 1310 NJ 1310 NJ 1310 3080J
-preplace netloc FILTER_FT|ctrl_s_axi_aresetn_1 1 0 7 850 1620 1310 1680 NJ 1680 NJ 1680 NJ 1680 NJ 1680 3100J
-preplace netloc FILTER_FT|rst_ps7_0_128M_peripheral_aresetn 1 0 7 840 1190 1320 1230 1770 1270 NJ 1270 2490 1060 NJ 1060 NJ
-preplace netloc FILTER_FT|xlconcat_0_dout 1 6 1 3100 1130n
-preplace netloc FILTER_FT|CIC_FT_IQ_4_m_axis_data_tdata 1 2 5 N 1050 2030 1010 NJ 1010 NJ 1010 3110J
-preplace netloc FILTER_FT|CIC_FT_IQ_4_m_axis_data_tlast 1 2 5 NJ 1070 2010 1000 NJ 1000 NJ 1000 NJ
-preplace netloc FILTER_FT|CIC_FT_IQ_4_m_axis_data_tvalid 1 2 5 NJ 1110 2020 1020 NJ 1020 NJ 1020 NJ
-preplace netloc FILTER_FT|axi_interface_DEC_RATE_FT_IQ_ctrl_m_axis_tdata 1 1 1 N 1070
-preplace netloc FILTER_FT|axi_interface_DEC_RATE_FT_IQ_ctrl_m_axis_tvalid 1 1 2 1300 1210 NJ
-preplace netloc FILTER_FT|reset_lengthener_0_rst 1 3 1 2020 1180n
-preplace netloc FILTER_FT|axi_gpio_FILTER_FT_GAIN_gpio_io_o 1 2 1 1770 1390n
-preplace netloc FILTER_FT|Conn2 1 0 2 NJ 1580 NJ
-preplace netloc FILTER_FT|axis2c_combine_FT_interface_axis 1 1 1 1290 1030n
-preplace netloc FILTER_FT|ctrl_s_axi1_1 1 0 7 NJ 1290 NJ 1290 NJ 1290 NJ 1290 NJ 1290 NJ 1290 N
-preplace netloc FILTER_FT|ps7_axi_periph_M01_AXI 1 0 1 N 1040
-preplace netloc FILTER_FT|FIR_FT_IQ_2_M_AXIS_DATA 1 4 1 N 1120
+preplace port DDR -pg 1 -lvl 4 -x 2530 -y 1910 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 2530 -y 1930 -defaultsOSRD
+preplace port MDIO_ETHERNET_0_0 -pg 1 -lvl 4 -x 2530 -y 1890 -defaultsOSRD
+preplace port HDMI_HPD -pg 1 -lvl 4 -x 2530 -y 1770 -defaultsOSRD
+preplace port ps2_clock_0 -pg 1 -lvl 4 -x 2530 -y 2500 -defaultsOSRD
+preplace port ps2_dat_0 -pg 1 -lvl 4 -x 2530 -y 2480 -defaultsOSRD
+preplace port port-id_ENET0_GMII_RX_CLK_0 -pg 1 -lvl 0 -x -20 -y 2060 -defaultsOSRD
+preplace port port-id_ENET0_GMII_RX_DV_0 -pg 1 -lvl 0 -x -20 -y 2080 -defaultsOSRD
+preplace port port-id_ENET0_GMII_TX_CLK_0 -pg 1 -lvl 0 -x -20 -y 2370 -defaultsOSRD
+preplace port port-id_CLK25M -pg 1 -lvl 4 -x 2530 -y 2030 -defaultsOSRD
+preplace port port-id_ADC_clk_64M -pg 1 -lvl 4 -x 2530 -y 2080 -defaultsOSRD
+preplace port port-id_OTR -pg 1 -lvl 0 -x -20 -y 680 -defaultsOSRD
+preplace port port-id_SCLK -pg 1 -lvl 4 -x 2530 -y 2590 -defaultsOSRD
+preplace port port-id_LRCLK -pg 1 -lvl 4 -x 2530 -y 2630 -defaultsOSRD
+preplace port port-id_I2SDATA -pg 1 -lvl 4 -x 2530 -y 2610 -defaultsOSRD
+preplace port port-id_TMDS_Clk_p_0 -pg 1 -lvl 4 -x 2530 -y 1810 -defaultsOSRD
+preplace port port-id_TMDS_Clk_n_0 -pg 1 -lvl 4 -x 2530 -y 1830 -defaultsOSRD
+preplace portBus ENET0_GMII_TX_EN_0 -pg 1 -lvl 4 -x 2530 -y 1970 -defaultsOSRD
+preplace portBus enet0_gmii_rxd -pg 1 -lvl 0 -x -20 -y 2350 -defaultsOSRD
+preplace portBus enet0_gmii_txd -pg 1 -lvl 4 -x 2530 -y 2060 -defaultsOSRD
+preplace portBus ADC_in -pg 1 -lvl 0 -x -20 -y 700 -defaultsOSRD
+preplace portBus LED_GREEN -pg 1 -lvl 4 -x 2530 -y 1090 -defaultsOSRD
+preplace portBus HDMI_OEN -pg 1 -lvl 4 -x 2530 -y 1790 -defaultsOSRD
+preplace portBus TMDS_Data_p_0 -pg 1 -lvl 4 -x 2530 -y 1850 -defaultsOSRD
+preplace portBus TMDS_Data_n_0 -pg 1 -lvl 4 -x 2530 -y 1870 -defaultsOSRD
+preplace inst PS -pg 1 -lvl 3 -x 1420 -y 2086 -defaultsOSRD -resize 304 476
+preplace inst ADC_TestGen -pg 1 -lvl 2 -x 820 -y 1070 -defaultsOSRD
+preplace inst DDC -pg 1 -lvl 2 -x 820 -y 420 -defaultsOSRD
+preplace inst AM_demodulator -pg 1 -lvl 1 -x 190 -y 600 -defaultsOSRD
+preplace inst FILTER -pg 1 -lvl 2 -x 820 -y 140 -defaultsOSRD -resize 327 242
+preplace inst I2S -pg 1 -lvl 3 -x 1420 -y 2708 -defaultsOSRD
+preplace inst HDMI -pg 1 -lvl 2 -x 820 -y 1890 -defaultsOSRD
+preplace inst ps7_axi_periph -pg 1 -lvl 1 -x 190 -y 1220 -defaultsOSRD
+preplace inst DDC_FT -pg 1 -lvl 2 -x 820 -y 610 -defaultsOSRD
+preplace inst FILTER_FT -pg 1 -lvl 2 -x 820 -y 1300 -defaultsOSRD
+preplace inst PS2 -pg 1 -lvl 3 -x 1420 -y 2496 -defaultsOSRD
+preplace inst axis_capture_RF -pg 1 -lvl 2 -x 820 -y 830 -defaultsOSRD
+preplace inst SSB_demodulator -pg 1 -lvl 2 -x 820 -y 1570 -defaultsOSRD
+preplace inst Audio_DMA -pg 1 -lvl 2 -x 820 -y 2240 -defaultsOSRD
+preplace inst I2S|DivideBy250_1_536M -pg 1 -lvl 2 -x 1810 -y 3208 -defaultsOSRD
+preplace inst I2S|xlconstant_DB4E -pg 1 -lvl 2 -x 1810 -y 2938 -defaultsOSRD
+preplace inst I2S|xlconstant_CA3D -pg 1 -lvl 2 -x 1810 -y 2838 -defaultsOSRD
+preplace inst I2S|clk_wiz_384M -pg 1 -lvl 1 -x 1500 -y 3208 -defaultsOSRD
+preplace inst I2S|DivideBy32_48K -pg 1 -lvl 2 -x 1810 -y 3068 -defaultsOSRD
+preplace inst I2S|util_vector_logic_0 -pg 1 -lvl 1 -x 1500 -y 3058 -defaultsOSRD
+preplace inst I2S|dds_compiler_1khx -pg 1 -lvl 2 -x 1810 -y 2708 -defaultsOSRD
+preplace inst I2S|xlslice_0 -pg 1 -lvl 3 -x 2120 -y 2698 -defaultsOSRD
+preplace inst I2S|xlslice_1 -pg 1 -lvl 3 -x 2120 -y 2798 -defaultsOSRD
+preplace inst I2S|i2s_transmitter_16_0 -pg 1 -lvl 3 -x 2120 -y 2948 -defaultsOSRD
+preplace netloc ADC_TestGen_LED_GREEN1 1 2 2 NJ 1090 NJ
+preplace netloc ADC_in_1 1 0 2 0J 710 520J
+preplace netloc ADCandTestGen_output_axis_tvalid 1 1 2 620 950 1030
+preplace netloc AM_dem_clk_1 1 0 3 20 290 NJ 290 1030
+preplace netloc AM_demodulator_U 1 1 1 510 600n
+preplace netloc ARESETN_1 1 1 3 620 1730 NJ 1730 2400
+preplace netloc Audio_DMA_irq_s2mm 1 1 2 620 2040 1030
+preplace netloc DDC_DDC_I 1 1 2 610 320 1020
+preplace netloc DDC_DDC_Q 1 1 2 620 300 1030
+preplace netloc DDC_FT_P 1 1 2 600 700 1030
+preplace netloc DDC_FT_P1 1 1 2 610 710 1020
+preplace netloc ENET0_GMII_RX_CLK_0_1 1 0 3 NJ 2060 NJ 2060 1040J
+preplace netloc ENET0_GMII_RX_DV_0_1 1 0 3 NJ 2080 NJ 2080 1060J
+preplace netloc ENET0_GMII_TX_CLK_0_1 1 0 3 20J 2100 NJ 2100 1080J
+preplace netloc FIR_I_m_axis_data_tdata 1 0 3 30 510 490 510 1100
+preplace netloc FIR_Q_m_axis_data_tdata 1 0 3 40 520 540 310 1090
+preplace netloc I2S_Transmitter_0_bclk 1 1 3 620 2588 NJ 2588 2460
+preplace netloc I2S_Transmitter_0_sdata 1 1 3 580 2598 NJ 2598 2450
+preplace netloc IRQ_F2P_1 1 2 1 1070 1960n
+preplace netloc In0_0_1 1 0 3 NJ 2350 340J 2360 1100J
+preplace netloc In1_1 1 2 1 1090 1570n
+preplace netloc In3_1 1 1 3 600 2370 1110J 2366 2370
+preplace netloc In4_1 1 1 2 610 2090 1020
+preplace netloc Net 1 1 3 570 2380 1130J 2376 2380
+preplace netloc OTR_1 1 0 2 NJ 680 530J
+preplace netloc PS_ARESETN 1 0 4 40 720 470 2420 1140 2356 2390
+preplace netloc PS_FCLK_CLK0 1 0 4 30 700 460 2400 1160 2396 2440
+preplace netloc PS_FCLK_CLK1 1 1 3 550 2410 1120J 2336 2460
+preplace netloc PS_FCLK_CLK1_128M 1 1 3 570 1700 NJ 1700 2380
+preplace netloc PS_FCLK_CLK3_0 1 3 1 2460J 2026n
+preplace netloc PS_clk_out 1 2 2 1170 2346 2370
+preplace netloc PS_peripheral_aresetn_64M 1 1 3 560 3190 1100 3308 2420
+preplace netloc PS_peripheral_reset 1 1 3 610 2390 1150J 2386 2410
+preplace netloc audio_clk_out1 1 2 1 1170 2196n
+preplace netloc lrclk_in_1 1 1 3 590 2608 NJ 2608 2440
+preplace netloc processing_system7_0_ENET0_GMII_TX_EN 1 3 1 2450J 1966n
+preplace netloc rgb2dvi_0_TMDS_Clk_n 1 2 2 1070J 1816 2440J
+preplace netloc rgb2dvi_0_TMDS_Clk_p 1 2 2 1050J 1806 2460J
+preplace netloc rgb2dvi_0_TMDS_Data_n 1 2 2 1080J 1826 2430J
+preplace netloc rgb2dvi_0_TMDS_Data_p 1 2 2 1040J 1786 2450J
+preplace netloc rst_ps7_0_128M_peripheral_aresetn 1 1 3 560 1430 NJ 1430 2420
+preplace netloc xlconcat_1_dout 1 1 2 590 1710 1020
+preplace netloc xlconstant_0_dout 1 2 2 1030J 1796 2460J
+preplace netloc xlslice_0_Dout 1 3 1 2460J 2056n
+preplace netloc S00_AXI_2 1 0 4 10 280 NJ 280 NJ 280 2410
+preplace netloc S_AXI1_1 1 1 1 390 60n
+preplace netloc S_AXI_1 1 1 1 390 1230n
+preplace netloc S_AXI_2 1 1 1 420 1010n
+preplace netloc S_AXI_HP0_1 1 2 1 1100 1840n
+preplace netloc S_AXI_HP2_1 1 2 1 1050 2006n
+preplace netloc S_AXI_LITE_1 1 1 1 450 1070n
+preplace netloc axi_gpio_hdmi_GPIO 1 2 2 1020J 1770 NJ
+preplace netloc ctrl_1 1 1 1 400 1150n
+preplace netloc ctrl_s_axi1_1 1 1 1 370 80n
+preplace netloc ctrl_s_axi_1 1 1 1 430 1030n
+preplace netloc ctrl_s_axi_2 1 1 1 410 380n
+preplace netloc processing_system7_0_DDR 1 3 1 2450J 1906n
+preplace netloc processing_system7_0_FIXED_IO 1 3 1 2440J 1926n
+preplace netloc processing_system7_0_MDIO_ETHERNET_0 1 3 1 2440J 1886n
+preplace netloc ps2_mouse_0_ps2_clock 1 3 1 2460J 2496n
+preplace netloc ps2_mouse_0_ps2_dat 1 3 1 2450J 2476n
+preplace netloc ps7_axi_periph_M00_AXI 1 1 1 400 770n
+preplace netloc ps7_axi_periph_M01_AXI 1 1 1 500 1050n
+preplace netloc ps7_axi_periph_M11_AXI 1 1 2 370 2456 NJ
+preplace netloc ps7_axi_periph_M12_AXI 1 1 1 440 570n
+preplace netloc ps7_axi_periph_M13_AXI 1 1 1 480 1240n
+preplace netloc ps7_axi_periph_M14_AXI 1 1 2 350 2476 NJ
+preplace netloc ps7_axi_periph_M15_AXI 1 1 1 500 1260n
+preplace netloc ps7_axi_periph_M16_AXI 1 1 1 430 1350n
+preplace netloc ps7_axi_periph_M17_AXI 1 1 1 410 1370n
+preplace netloc ps7_axi_periph_M18_AXI 1 1 1 380 1390n
+preplace netloc ps7_axi_periph_M19_AXI 1 1 1 360 1410n
+preplace netloc s00_axi_1 1 1 1 420 1170n
+preplace netloc I2S|DivideBy10_clk_out 1 0 4 1350 3278 NJ 3278 1970 3058 NJ
+preplace netloc I2S|DivideBy32_62_5_K_clk_out 1 2 2 1990 3098 NJ
+preplace netloc I2S|PS_ARESETN 1 0 3 NJ 3118 1650 2998 1960J
+preplace netloc I2S|PS_FCLK_CLK0 1 0 2 NJ 2708 N
+preplace netloc I2S|clk_in1_1 1 0 1 1340 3178n
+preplace netloc I2S|clk_wiz_23_04M_clk_out1 1 1 2 1660 3138 1980
+preplace netloc I2S|dds_compiler_0_m_axis_data_tdata 1 2 1 1990 2698n
+preplace netloc I2S|i2s_transmitter_16_0_sd 1 3 1 2250 2948n
+preplace netloc I2S|resetn_1 1 0 1 N 3198
+preplace netloc I2S|util_vector_logic_0_Res 1 1 1 NJ 3058
+preplace netloc I2S|Net 1 0 3 N 2688 1650 2778 1970
 preplace cgraphic comment_0 place left 105 215 textcolor 4 linecolor 3 linewidth 2
-levelinfo -pg 1 -10 200 880 3880 4190
-levelinfo -hier FILTER_FT * 1080 1540 1900 2260 2660 2950 3300 *
-pagesize -pg 1 -db -bbox -sgen -230 0 4430 2800
-pagesize -hier FILTER_FT -db -bbox -sgen 790 900 3500 1710
+levelinfo -pg 1 -20 190 820 1420 2530
+levelinfo -hier I2S * 1500 1810 2120 *
+pagesize -pg 1 -db -bbox -sgen -240 0 2770 3420
+pagesize -hier I2S -db -bbox -sgen 1310 2638 2280 3288
 "
 }
 {
-   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
-   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"3",
-   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
-   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
-   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
-   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""""""""""""""""""""""""""":"1",
-   """"""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""":"10",
-   """"""""""""""""""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""""""""""""""":"1",
-   """"""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""":"4",
-   """"""""""""""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""""""""""":"2",
-   """"""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""":"1",
-   """""""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""""":"1",
-   """""""""""da_board_cnt""""""""""":"1",
-   """""""""""da_clkrst_cnt""""""""""":"1"
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"3",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"10",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"4",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"2",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt"""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""da_board_cnt"""""""""""""""""""""""""""""""""":"1",
+   """"""""""""""""""""""""""""""""""da_clkrst_cnt"""""""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""da_clkrst_cnt""""""""""""""""""""""":"2",
+   """""""""""""""""""da_axi4_cnt""""""""""""""""""":"6",
+   """""""""""""""""""da_board_cnt""""""""""""""""""":"4",
+   """""""""""""""""""da_clkrst_cnt""""""""""""""""""":"6",
+   """""""""""""""""da_axi4_cnt""""""""""""""""":"1"
 }
 {
    "/comment_0":"comment_0"

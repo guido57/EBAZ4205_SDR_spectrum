@@ -46,8 +46,15 @@ verilog xil_defaultlib  --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/sim/ebaz4205_axis_subset_converter_0_0.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlconstant_0_3/sim/ebaz4205_xlconstant_0_3.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlconcat_0_3/sim/ebaz4205_xlconcat_0_3.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/sim/ebaz4205_s00_regslice_0.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/sim/ebaz4205_s00_data_fifo_0.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/sim/ebaz4205_v_axi4s_vid_out_0_1.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xbar_0/sim/ebaz4205_xbar_0.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_tier2_xbar_0_0/sim/ebaz4205_tier2_xbar_0_0.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_tier2_xbar_1_0/sim/ebaz4205_tier2_xbar_1_0.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_tier2_xbar_2_0/sim/ebaz4205_tier2_xbar_2_0.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_auto_pc_1/sim/ebaz4205_auto_pc_1.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_0_5/sim/ebaz4205_xlslice_0_5.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_1_1/sim/ebaz4205_xlslice_1_1.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_2_0/sim/ebaz4205_xlslice_2_0.v" \
@@ -57,15 +64,18 @@ verilog xil_defaultlib  --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlconcat_0_4/sim/ebaz4205_xlconcat_0_4.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_2/sim/ebaz4205_axis2c_splitter_0_2.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_1/sim/ebaz4205_axis2c_combine_0_1.v" \
-"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/sim/ebaz4205_util_vector_logic_0_1.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/sim/ebaz4205_AXI_Stream_Generator_0_0.v" \
-"../../../../Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_3/sim/ebaz4205_axis2c_splitter_0_3.v" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/sim/ebaz4205_reset_lengthener_0_0.v" \
-"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/sim/ebaz4205_s00_regslice_0.v" \
-"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/sim/ebaz4205_s00_data_fifo_0.v" \
-"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
-"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_auto_pc_1/sim/ebaz4205_auto_pc_1.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/sim/ebaz4205_util_vector_logic_0_1.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_0_6/sim/ebaz4205_xlslice_0_6.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_0_7/sim/ebaz4205_xlslice_0_7.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_5/sim/ebaz4205_dds_axi_interface_0_5.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axis_mux_0_1/sim/ebaz4205_axis_mux_0_1.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_1_2/sim/ebaz4205_xlslice_1_2.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlslice_0_8/sim/ebaz4205_xlslice_0_8.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_xlconstant_0_5/sim/ebaz4205_xlconstant_0_5.v" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v" \
 "../../../../Vivado.gen/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v" \
 
 # compile glbl module

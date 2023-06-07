@@ -13,6 +13,7 @@ verilog xil_defaultlib --include "/home/guido/Xilinx-tools/Vivado/2022.2/data/xi
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_2_3/sim/ebaz4205_xlconstant_2_3.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_3_0/sim/ebaz4205_xlconstant_3_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_2/sim/ebaz4205_dds_axi_interface_0_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_6/sim/ebaz4205_xlconstant_0_6.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_0/sim/ebaz4205_xlconstant_0_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_1_0/sim/ebaz4205_xlconstant_1_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_2_0/sim/ebaz4205_xlconstant_2_0.v" \
@@ -25,12 +26,18 @@ verilog xil_defaultlib --include "/home/guido/Xilinx-tools/Vivado/2022.2/data/xi
 "../../../bd/ebaz4205/ip/ebaz4205_sqrt32_0_0/sim/ebaz4205_sqrt32_0_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axi_interface_DEC_RATE_Q_0/sim/ebaz4205_axi_interface_DEC_RATE_Q_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_0/sim/ebaz4205_axis2c_splitter_0_0.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_1/sim/ebaz4205_axis2c_splitter_0_1.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/sim/ebaz4205_axis2c_combine_0_0.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_xlconcat_0_2/sim/ebaz4205_xlconcat_0_2.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_1_1/sim/ebaz4205_xlconstant_1_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_1/sim/ebaz4205_reset_lengthener_0_1.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_DivideBy10_0/sim/ebaz4205_DivideBy10_0.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_I2S_Transmitter_0_2/sim/ebaz4205_I2S_Transmitter_0_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_7/sim/ebaz4205_xlconstant_0_7.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_8/sim/ebaz4205_xlconstant_0_8.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_clk_wiz.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_1/sim/ebaz4205_DivideBy2N_0_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_2/sim/ebaz4205_util_vector_logic_0_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_9/sim/ebaz4205_xlslice_0_9.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_1_3/sim/ebaz4205_xlslice_1_3.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_i2s_transmitter_16_0_0/sim/ebaz4205_i2s_transmitter_16_0_0.v" \
 "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9097/src/mmcme2_drp.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/hdl/tdata_ebaz4205_axis_subset_converter_0_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/hdl/tuser_ebaz4205_axis_subset_converter_0_0.v" \
@@ -54,15 +61,34 @@ verilog xil_defaultlib --include "/home/guido/Xilinx-tools/Vivado/2022.2/data/xi
 "../../../bd/ebaz4205/ip/ebaz4205_xlconcat_0_4/sim/ebaz4205_xlconcat_0_4.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_2/sim/ebaz4205_axis2c_splitter_0_2.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_1/sim/ebaz4205_axis2c_combine_0_1.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/sim/ebaz4205_util_vector_logic_0_1.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/sim/ebaz4205_AXI_Stream_Generator_0_0.v" \
-"../../../bd/ebaz4205/sim/ebaz4205.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_3/sim/ebaz4205_axis2c_splitter_0_3.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/sim/ebaz4205_reset_lengthener_0_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/sim/ebaz4205_util_vector_logic_0_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_6/sim/ebaz4205_xlslice_0_6.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_7/sim/ebaz4205_xlslice_0_7.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_5/sim/ebaz4205_dds_axi_interface_0_5.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_axis_mux_0_1/sim/ebaz4205_axis_mux_0_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_1_2/sim/ebaz4205_xlslice_1_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_8/sim/ebaz4205_xlslice_0_8.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_5/sim/ebaz4205_xlconstant_0_5.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_clk_wiz.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_audio_formatter_0_0/sim/ebaz4205_audio_formatter_0_0.v" \
+
+sv xil_defaultlib --include "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" \
+"../../../bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0/sim/ebaz4205_i2s_receiver_0_0.sv" \
+
+verilog xil_defaultlib --include "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" --include "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" \
 "../../../bd/ebaz4205/ip/ebaz4205_s00_regslice_0/sim/ebaz4205_s00_regslice_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/sim/ebaz4205_s00_data_fifo_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_0_0/sim/ebaz4205_tier2_xbar_0_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_1_0/sim/ebaz4205_tier2_xbar_1_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_2_0/sim/ebaz4205_tier2_xbar_2_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_1/sim/ebaz4205_auto_pc_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_auto_pc_2/sim/ebaz4205_auto_pc_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_auto_us_0/sim/ebaz4205_auto_us_0.v" \
+"../../../bd/ebaz4205/sim/ebaz4205.v" \
 
 verilog xil_defaultlib "glbl.v"
 

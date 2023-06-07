@@ -6,7 +6,7 @@
 <Project Version="7" Minor="61" Path="/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.tmp/axis_capture_v1_0_project/axis_capture_v1_0_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="dba50deeef0845b8bbc24c5a7fba482f"/>
+    <Option Name="Id" Val="e9628e48848d470b9e1aacca7c64937d"/>
     <Option Name="Part" Val="xc7z010clg400-1"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -46,8 +46,6 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../IP_axis_capture_dual_files"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../../../IP_axis_capture_dual"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../IP_rgb2dvi"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../IP_axi_dynclk"/>
     <Option Name="IPRepoPath" Val="$PPRDIR/../../../IP_axis_capture"/>

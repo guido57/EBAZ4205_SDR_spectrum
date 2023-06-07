@@ -135,6 +135,7 @@
   "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/sim/ebaz4205_axi_gpio_1_0.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_6/sim/ebaz4205_xlconstant_0_6.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_0/sim/ebaz4205_xlconstant_0_0.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_1_0/sim/ebaz4205_xlconstant_1_0.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_2_0/sim/ebaz4205_xlconstant_2_0.v" \
@@ -185,12 +186,28 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_0/sim/ebaz4205_axis2c_splitter_0_0.v" \
-  "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_1/sim/ebaz4205_axis2c_splitter_0_1.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/sim/ebaz4205_axis2c_combine_0_0.v" \
-  "../../../bd/ebaz4205/ip/ebaz4205_xlconcat_0_2/sim/ebaz4205_xlconcat_0_2.v" \
-  "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_1_1/sim/ebaz4205_xlconstant_1_1.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_1/sim/ebaz4205_reset_lengthener_0_1.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_DivideBy10_0/sim/ebaz4205_DivideBy10_0.v" \
-  "../../../bd/ebaz4205/ip/ebaz4205_I2S_Transmitter_0_2/sim/ebaz4205_I2S_Transmitter_0_2.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_7/sim/ebaz4205_xlconstant_0_7.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_8/sim/ebaz4205_xlconstant_0_8.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_clk_wiz.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_1/sim/ebaz4205_DivideBy2N_0_1.v" \
+-endlib
+-makelib xcelium_lib/util_vector_logic_v2_0_2 \
+  "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_2/sim/ebaz4205_util_vector_logic_0_2.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_dds_compiler_0_5/sim/ebaz4205_dds_compiler_0_5.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_9/sim/ebaz4205_xlslice_0_9.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlslice_1_3/sim/ebaz4205_xlslice_1_3.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_i2s_transmitter_16_0_0/sim/ebaz4205_i2s_transmitter_16_0_0.v" \
   "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9097/src/mmcme2_drp.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
@@ -335,6 +352,8 @@
   "../../../bd/ebaz4205/ip/ebaz4205_xlconcat_0_4/sim/ebaz4205_xlconcat_0_4.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_2/sim/ebaz4205_axis2c_splitter_0_2.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_1/sim/ebaz4205_axis2c_combine_0_1.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/sim/ebaz4205_AXI_Stream_Generator_0_0.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/sim/ebaz4205_reset_lengthener_0_0.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/sim/ebaz4205_axi_gpio_0_4.vhd" \
@@ -343,21 +362,52 @@
   "../../../bd/ebaz4205/ipshared/9b21/src/ps2_mouse_w.vhd" \
   "../../../bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/sim/ebaz4205_ps2_mouse_0_0.vhd" \
 -endlib
--makelib xcelium_lib/util_vector_logic_v2_0_2 \
-  "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v" \
--endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/sim/ebaz4205_util_vector_logic_0_1.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/sim/ebaz4205_axi_gpio_0_3.vhd" \
   "../../../bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/sim/ebaz4205_axis_capture_0_4.vhd" \
+  "../../../bd/ebaz4205/ip/ebaz4205_mult_gen_1_2/sim/ebaz4205_mult_gen_1_2.vhd" \
+  "../../../bd/ebaz4205/ip/ebaz4205_mult_gen_0_6/sim/ebaz4205_mult_gen_0_6.vhd" \
+  "../../../bd/ebaz4205/ip/ebaz4205_c_addsub_1_0/sim/ebaz4205_c_addsub_1_0.vhd" \
+  "../../../bd/ebaz4205/ip/ebaz4205_dds_compiler_0_4/sim/ebaz4205_dds_compiler_0_4.vhd" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
-  "../../../bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/sim/ebaz4205_AXI_Stream_Generator_0_0.v" \
-  "../../../bd/ebaz4205/sim/ebaz4205.v" \
-  "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_3/sim/ebaz4205_axis2c_splitter_0_3.v" \
-  "../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/sim/ebaz4205_reset_lengthener_0_0.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_6/sim/ebaz4205_xlslice_0_6.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_7/sim/ebaz4205_xlslice_0_7.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_5/sim/ebaz4205_dds_axi_interface_0_5.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_axis_mux_0_1/sim/ebaz4205_axis_mux_0_1.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/sim/ebaz4205_axi_gpio_0_6.vhd" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlslice_1_2/sim/ebaz4205_xlslice_1_2.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_8/sim/ebaz4205_xlslice_0_8.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_5/sim/ebaz4205_xlconstant_0_5.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_clk_wiz.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/sim/ebaz4205_proc_sys_reset_0_2.vhd" \
+-endlib
+-makelib xcelium_lib/audio_formatter_v1_0_9 \
+  "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9554/hdl/audio_formatter_v1_0_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_audio_formatter_0_0/sim/ebaz4205_audio_formatter_0_0.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/sim/ebaz4205_proc_sys_reset_0_3.vhd" \
+-endlib
+-makelib xcelium_lib/i2s_receiver_v1_0_5 -sv \
+  "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9736/hdl/i2s_receiver_v1_0_rfs.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib -sv \
+  "../../../bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0/sim/ebaz4205_i2s_receiver_0_0.sv" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_s00_regslice_0/sim/ebaz4205_s00_regslice_0.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/sim/ebaz4205_s00_data_fifo_0.v" \
 -endlib
@@ -366,7 +416,21 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_0_0/sim/ebaz4205_tier2_xbar_0_0.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_1_0/sim/ebaz4205_tier2_xbar_1_0.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_2_0/sim/ebaz4205_tier2_xbar_2_0.v" \
   "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_1/sim/ebaz4205_auto_pc_1.v" \
+  "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_2/sim/ebaz4205_auto_pc_2.v" \
+-endlib
+-makelib xcelium_lib/axi_clock_converter_v2_1_26 \
+  "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/b8be/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/axi_dwidth_converter_v2_1_27 \
+  "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+-endlib
+-makelib xcelium_lib/xil_defaultlib \
+  "../../../bd/ebaz4205/ip/ebaz4205_auto_us_0/sim/ebaz4205_auto_us_0.v" \
+  "../../../bd/ebaz4205/sim/ebaz4205.v" \
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   glbl.v

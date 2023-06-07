@@ -52,7 +52,7 @@
 
 (* X_CORE_INFO = "DivideBy2N,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "ebaz4205_DivideBy10_0,DivideBy2N,{}" *)
-(* CORE_GENERATION_INFO = "ebaz4205_DivideBy10_0,DivideBy2N,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=DivideBy2N,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,WIDTH=3,N=5}" *)
+(* CORE_GENERATION_INFO = "ebaz4205_DivideBy10_0,DivideBy2N,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=DivideBy2N,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,WIDTH=8,N=125}" *)
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module ebaz4205_DivideBy10_0 (
@@ -61,7 +61,7 @@ module ebaz4205_DivideBy10_0 (
   clk_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET resetn, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET resetn, FREQ_HZ 384000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /I2S/clk_wiz_384M_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -70,8 +70,8 @@ input wire resetn;
 output wire clk_out;
 
   DivideBy2N #(
-    .WIDTH(3),
-    .N(5)
+    .WIDTH(8),
+    .N(125)
   ) inst (
     .clk(clk),
     .resetn(resetn),

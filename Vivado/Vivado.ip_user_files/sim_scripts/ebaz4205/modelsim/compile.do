@@ -29,6 +29,7 @@ vlib modelsim_lib/msim/interrupt_control_v3_1_4
 vlib modelsim_lib/msim/axi_gpio_v2_0_29
 vlib modelsim_lib/msim/cic_compiler_v4_0_16
 vlib modelsim_lib/msim/fir_compiler_v7_2_18
+vlib modelsim_lib/msim/util_vector_logic_v2_0_2
 vlib modelsim_lib/msim/lib_pkg_v1_0_2
 vlib modelsim_lib/msim/fifo_generator_v13_2_7
 vlib modelsim_lib/msim/lib_fifo_v1_0_16
@@ -48,8 +49,11 @@ vlib modelsim_lib/msim/generic_baseblocks_v2_1_0
 vlib modelsim_lib/msim/axi_register_slice_v2_1_27
 vlib modelsim_lib/msim/axi_data_fifo_v2_1_26
 vlib modelsim_lib/msim/axi_crossbar_v2_1_28
-vlib modelsim_lib/msim/util_vector_logic_v2_0_2
+vlib modelsim_lib/msim/audio_formatter_v1_0_9
+vlib modelsim_lib/msim/i2s_receiver_v1_0_5
 vlib modelsim_lib/msim/axi_protocol_converter_v2_1_27
+vlib modelsim_lib/msim/axi_clock_converter_v2_1_26
+vlib modelsim_lib/msim/axi_dwidth_converter_v2_1_27
 
 vmap xilinx_vip modelsim_lib/msim/xilinx_vip
 vmap xpm modelsim_lib/msim/xpm
@@ -79,6 +83,7 @@ vmap interrupt_control_v3_1_4 modelsim_lib/msim/interrupt_control_v3_1_4
 vmap axi_gpio_v2_0_29 modelsim_lib/msim/axi_gpio_v2_0_29
 vmap cic_compiler_v4_0_16 modelsim_lib/msim/cic_compiler_v4_0_16
 vmap fir_compiler_v7_2_18 modelsim_lib/msim/fir_compiler_v7_2_18
+vmap util_vector_logic_v2_0_2 modelsim_lib/msim/util_vector_logic_v2_0_2
 vmap lib_pkg_v1_0_2 modelsim_lib/msim/lib_pkg_v1_0_2
 vmap fifo_generator_v13_2_7 modelsim_lib/msim/fifo_generator_v13_2_7
 vmap lib_fifo_v1_0_16 modelsim_lib/msim/lib_fifo_v1_0_16
@@ -98,10 +103,13 @@ vmap generic_baseblocks_v2_1_0 modelsim_lib/msim/generic_baseblocks_v2_1_0
 vmap axi_register_slice_v2_1_27 modelsim_lib/msim/axi_register_slice_v2_1_27
 vmap axi_data_fifo_v2_1_26 modelsim_lib/msim/axi_data_fifo_v2_1_26
 vmap axi_crossbar_v2_1_28 modelsim_lib/msim/axi_crossbar_v2_1_28
-vmap util_vector_logic_v2_0_2 modelsim_lib/msim/util_vector_logic_v2_0_2
+vmap audio_formatter_v1_0_9 modelsim_lib/msim/audio_formatter_v1_0_9
+vmap i2s_receiver_v1_0_5 modelsim_lib/msim/i2s_receiver_v1_0_5
 vmap axi_protocol_converter_v2_1_27 modelsim_lib/msim/axi_protocol_converter_v2_1_27
+vmap axi_clock_converter_v2_1_26 modelsim_lib/msim/axi_clock_converter_v2_1_26
+vmap axi_dwidth_converter_v2_1_27 modelsim_lib/msim/axi_dwidth_converter_v2_1_27
 
-vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+vlog -work xilinx_vip -64 -incr -mfcu  -sv -L i2s_receiver_v1_0_5 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/hdl/axi4stream_vip_axi4streampc.sv" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/hdl/axi_vip_axi4pc.sv" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/hdl/xil_common_vip_pkg.sv" \
@@ -112,7 +120,7 @@ vlog -work xilinx_vip -64 -incr -mfcu  -sv -L axi_vip_v1_1_13 -L processing_syst
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/hdl/clk_vip_if.sv" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/hdl/rst_vip_if.sv" \
 
-vlog -work xpm -64 -incr -mfcu  -sv -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+vlog -work xpm -64 -incr -mfcu  -sv -L i2s_receiver_v1_0_5 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv" \
 "/home/guido/Xilinx-tools/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv" \
@@ -155,10 +163,10 @@ vcom -work xil_defaultlib -64 -93  \
 vlog -work axi_infrastructure_v1_1_0 -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
 
-vlog -work axi_vip_v1_1_13 -64 -incr -mfcu  -sv -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+vlog -work axi_vip_v1_1_13 -64 -incr -mfcu  -sv -L i2s_receiver_v1_0_5 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ffc2/hdl/axi_vip_v1_1_vl_rfs.sv" \
 
-vlog -work processing_system7_vip_v1_0_15 -64 -incr -mfcu  -sv -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+vlog -work processing_system7_vip_v1_0_15 -64 -incr -mfcu  -sv -L i2s_receiver_v1_0_5 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl/processing_system7_vip_v1_0_vl_rfs.sv" \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
@@ -238,6 +246,7 @@ vcom -work xil_defaultlib -64 -93  \
 "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/sim/ebaz4205_axi_gpio_1_0.vhd" \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_6/sim/ebaz4205_xlconstant_0_6.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_0/sim/ebaz4205_xlconstant_0_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_1_0/sim/ebaz4205_xlconstant_1_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_xlconstant_2_0/sim/ebaz4205_xlconstant_2_0.v" \
@@ -288,12 +297,28 @@ vcom -work xil_defaultlib -64 -93  \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_0/sim/ebaz4205_axis2c_splitter_0_0.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_1/sim/ebaz4205_axis2c_splitter_0_1.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/sim/ebaz4205_axis2c_combine_0_0.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_xlconcat_0_2/sim/ebaz4205_xlconcat_0_2.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_1_1/sim/ebaz4205_xlconstant_1_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_1/sim/ebaz4205_reset_lengthener_0_1.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_DivideBy10_0/sim/ebaz4205_DivideBy10_0.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_I2S_Transmitter_0_2/sim/ebaz4205_I2S_Transmitter_0_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_7/sim/ebaz4205_xlconstant_0_7.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_8/sim/ebaz4205_xlconstant_0_8.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_clk_wiz.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_1/sim/ebaz4205_DivideBy2N_0_1.v" \
+
+vlog -work util_vector_logic_v2_0_2 -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_2/sim/ebaz4205_util_vector_logic_0_2.v" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/ebaz4205/ip/ebaz4205_dds_compiler_0_5/sim/ebaz4205_dds_compiler_0_5.vhd" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_9/sim/ebaz4205_xlslice_0_9.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_1_3/sim/ebaz4205_xlslice_1_3.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_i2s_transmitter_16_0_0/sim/ebaz4205_i2s_transmitter_16_0_0.v" \
 "../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9097/src/mmcme2_drp.v" \
 
 vcom -work xil_defaultlib -64 -93  \
@@ -438,6 +463,8 @@ vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sourc
 "../../../bd/ebaz4205/ip/ebaz4205_xlconcat_0_4/sim/ebaz4205_xlconcat_0_4.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_2/sim/ebaz4205_axis2c_splitter_0_2.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_1/sim/ebaz4205_axis2c_combine_0_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/sim/ebaz4205_AXI_Stream_Generator_0_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/sim/ebaz4205_reset_lengthener_0_0.v" \
 
 vcom -work xil_defaultlib -64 -93  \
 "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/sim/ebaz4205_axi_gpio_0_4.vhd" \
@@ -446,21 +473,52 @@ vcom -work xil_defaultlib -64 -93  \
 "../../../bd/ebaz4205/ipshared/9b21/src/ps2_mouse_w.vhd" \
 "../../../bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/sim/ebaz4205_ps2_mouse_0_0.vhd" \
 
-vlog -work util_vector_logic_v2_0_2 -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
-"../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/3d84/hdl/util_vector_logic_v2_0_vl_rfs.v" \
-
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_1/sim/ebaz4205_util_vector_logic_0_1.v" \
 
 vcom -work xil_defaultlib -64 -93  \
 "../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/sim/ebaz4205_axi_gpio_0_3.vhd" \
 "../../../bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/sim/ebaz4205_axis_capture_0_4.vhd" \
+"../../../bd/ebaz4205/ip/ebaz4205_mult_gen_1_2/sim/ebaz4205_mult_gen_1_2.vhd" \
+"../../../bd/ebaz4205/ip/ebaz4205_mult_gen_0_6/sim/ebaz4205_mult_gen_0_6.vhd" \
+"../../../bd/ebaz4205/ip/ebaz4205_c_addsub_1_0/sim/ebaz4205_c_addsub_1_0.vhd" \
+"../../../bd/ebaz4205/ip/ebaz4205_dds_compiler_0_4/sim/ebaz4205_dds_compiler_0_4.vhd" \
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
-"../../../bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/sim/ebaz4205_AXI_Stream_Generator_0_0.v" \
-"../../../bd/ebaz4205/sim/ebaz4205.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_3/sim/ebaz4205_axis2c_splitter_0_3.v" \
-"../../../bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/sim/ebaz4205_reset_lengthener_0_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_6/sim/ebaz4205_xlslice_0_6.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_7/sim/ebaz4205_xlslice_0_7.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_5/sim/ebaz4205_dds_axi_interface_0_5.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_axis_mux_0_1/sim/ebaz4205_axis_mux_0_1.v" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/sim/ebaz4205_axi_gpio_0_6.vhd" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_1_2/sim/ebaz4205_xlslice_1_2.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlslice_0_8/sim/ebaz4205_xlslice_0_8.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_xlconstant_0_5/sim/ebaz4205_xlconstant_0_5.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_clk_wiz.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1.v" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/sim/ebaz4205_proc_sys_reset_0_2.vhd" \
+
+vlog -work audio_formatter_v1_0_9 -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9554/hdl/audio_formatter_v1_0_rfs.v" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_audio_formatter_0_0/sim/ebaz4205_audio_formatter_0_0.v" \
+
+vcom -work xil_defaultlib -64 -93  \
+"../../../bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/sim/ebaz4205_proc_sys_reset_0_3.vhd" \
+
+vlog -work i2s_receiver_v1_0_5 -64 -incr -mfcu  -sv -L i2s_receiver_v1_0_5 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/9736/hdl/i2s_receiver_v1_0_rfs.sv" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  -sv -L i2s_receiver_v1_0_5 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xilinx_vip "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0/sim/ebaz4205_i2s_receiver_0_0.sv" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../bd/ebaz4205/ip/ebaz4205_s00_regslice_0/sim/ebaz4205_s00_regslice_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/sim/ebaz4205_s00_data_fifo_0.v" \
 
@@ -469,7 +527,21 @@ vlog -work axi_protocol_converter_v2_1_27 -64 -incr -mfcu  "+incdir+../../../../
 
 vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_0/sim/ebaz4205_auto_pc_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_0_0/sim/ebaz4205_tier2_xbar_0_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_1_0/sim/ebaz4205_tier2_xbar_1_0.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_tier2_xbar_2_0/sim/ebaz4205_tier2_xbar_2_0.v" \
 "../../../bd/ebaz4205/ip/ebaz4205_auto_pc_1/sim/ebaz4205_auto_pc_1.v" \
+"../../../bd/ebaz4205/ip/ebaz4205_auto_pc_2/sim/ebaz4205_auto_pc_2.v" \
+
+vlog -work axi_clock_converter_v2_1_26 -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/b8be/hdl/axi_clock_converter_v2_1_vl_rfs.v" \
+
+vlog -work axi_dwidth_converter_v2_1_27 -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/4675/hdl/axi_dwidth_converter_v2_1_vl_rfs.v" \
+
+vlog -work xil_defaultlib -64 -incr -mfcu  "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/7698" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ec67/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/ee60/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/415b/hdl" "+incdir+../../../../Vivado.gen/sources_1/bd/ebaz4205/ipshared/8713/hdl" "+incdir+/home/guido/Xilinx-tools/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../bd/ebaz4205/ip/ebaz4205_auto_us_0/sim/ebaz4205_auto_us_0.v" \
+"../../../bd/ebaz4205/sim/ebaz4205.v" \
 
 vlog -work xil_defaultlib \
 "glbl.v"

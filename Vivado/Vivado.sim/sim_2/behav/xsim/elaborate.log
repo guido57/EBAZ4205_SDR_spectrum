@@ -1,11 +1,11 @@
 Vivado Simulator v2022.2
 Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
-Running: /home/guido/Xilinx-tools/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xlslice_v1_0_2 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_29 -L axi_utils_v2_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_22 -L cic_compiler_v4_0_16 -L fir_compiler_v7_2_18 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_7 -L lib_fifo_v1_0_16 -L blk_mem_gen_v8_4_5 -L lib_bmg_v1_0_14 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_29 -L axi_vdma_v6_3_15 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_27 -L axis_subset_converter_v1_1_27 -L v_tc_v6_2_5 -L v_tc_v6_1_13 -L v_vid_in_axi4s_v4_0_9 -L v_axi4s_vid_out_v4_0_15 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_27 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L util_vector_logic_v2_0_2 -L axi_protocol_converter_v2_1_27 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ebaz4205_wrapper_behav xil_defaultlib.ebaz4205_wrapper xil_defaultlib.glbl -log elaborate.log 
+Running: /home/guido/Xilinx-tools/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xlslice_v1_0_2 -L xlconcat_v2_1_4 -L xlconstant_v1_1_7 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_13 -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_13 -L processing_system7_vip_v1_0_15 -L xbip_utils_v3_0_10 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L axi_utils_v2_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_22 -L axi_lite_ipif_v3_0_4 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_29 -L cic_compiler_v4_0_16 -L fir_compiler_v7_2_18 -L util_vector_logic_v2_0_2 -L lib_pkg_v1_0_2 -L fifo_generator_v13_2_7 -L lib_fifo_v1_0_16 -L blk_mem_gen_v8_4_5 -L lib_bmg_v1_0_14 -L lib_srl_fifo_v1_0_2 -L axi_datamover_v5_1_29 -L axi_vdma_v6_3_15 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_27 -L axis_subset_converter_v1_1_27 -L v_tc_v6_2_5 -L v_tc_v6_1_13 -L v_vid_in_axi4s_v4_0_9 -L v_axi4s_vid_out_v4_0_15 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_27 -L axi_data_fifo_v2_1_26 -L axi_crossbar_v2_1_28 -L audio_formatter_v1_0_9 -L i2s_receiver_v1_0_5 -L axi_protocol_converter_v2_1_27 -L axi_clock_converter_v2_1_26 -L axi_dwidth_converter_v2_1_27 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ebaz4205_wrapper_behav xil_defaultlib.ebaz4205_wrapper xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 3 for port 's_axi_awsize' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/sim/ebaz4205_s00_regslice_0.v:209]
-WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'IRQ_F2P' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/sim/ebaz4205_processing_system7_0_0.v:707]
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 16 for port 'IRQ_F2P' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/sim/ebaz4205_processing_system7_0_0.v:797]
 WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2022.2_1014_8888/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_15_axi_gp.v:208]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5546]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5564]
@@ -24,22 +24,34 @@ WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
 WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
 WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
-WARNING: [VRFC 10-3091] actual bit length 27 differs from formal bit length 36 for port 'm_axi_arprot' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:5538]
-WARNING: [VRFC 10-3091] actual bit length 27 differs from formal bit length 36 for port 'm_axi_awprot' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:5542]
-WARNING: [VRFC 10-5021] port 'mouse_data_new' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3331]
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2486]
-WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1681]
-WARNING: [VRFC 10-5021] port 's_axis_config_tready' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:692]
-WARNING: [VRFC 10-5021] port 's_axis_data_tready' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:704]
-WARNING: [VRFC 10-5021] port 'mm2s_frame_ptr_out' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1395]
-WARNING: [VRFC 10-5021] port 'fsync_out' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1487]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2087]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2095]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2218]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2224]
-WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2231]
-WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/sim/ebaz4205_processing_system7_0_0.v:319]
+WARNING: [VRFC 10-3091] actual bit length 18 differs from formal bit length 24 for port 'm_axi_arprot' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:8940]
+WARNING: [VRFC 10-3091] actual bit length 18 differs from formal bit length 24 for port 'm_axi_awprot' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:8944]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 12 for port 'm_axi_arprot' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:8981]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 12 for port 'm_axi_awprot' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:8985]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'm_axi_wstrb' [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:8997]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:4024]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:698]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:705]
+WARNING: [VRFC 10-5021] port 'mm2s_halt_cmplt' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/audio_formatter_v1_0/hdl/audio_formatter_v1_0_rfs.v:2319]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_dwidth_converter_v2_1/hdl/axi_dwidth_converter_v2_1_vl_rfs.v:13138]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2576]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:867]
+WARNING: [VRFC 10-5021] port 's_axis_config_tready' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1653]
+WARNING: [VRFC 10-5021] port 's_axis_data_tready' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1665]
+WARNING: [VRFC 10-5021] port 's_axis_config_tready' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1330]
+WARNING: [VRFC 10-5021] port 's_axis_data_tready' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:1342]
+WARNING: [VRFC 10-5021] port 'mm2s_frame_ptr_out' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2267]
+WARNING: [VRFC 10-5021] port 'fsync_out' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2359]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2454]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3310]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3318]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3475]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3481]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3488]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/sim/ebaz4205_processing_system7_0_0.v:409]
 WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
+WARNING: [VRFC 10-5021] port 'mouse_data_new' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:2836]
+WARNING: [VRFC 10-5021] port 'm_axis_data_tvalid' is not connected on this instance [/home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.ip_user_files/bd/ebaz4205/sim/ebaz4205.v:3758]
 WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4376]
 WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4631]
 WARNING: [VRFC 10-3705] select index 2 into 'g7s_cc_rst_nsckt.arst_sync_wr' is out of bounds [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_2/simulation/fifo_generator_vlog_beh.v:4830]
@@ -90,6 +102,7 @@ Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
 Compiling package c_reg_fd_v12_0_6.c_reg_fd_v12_0_6_viv_comp
 Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_viv_comp
 Compiling package mult_gen_v12_0_18.mult_gen_v12_0_18_pkg
+Compiling package lib_pkg_v1_0_2.lib_pkg
 Compiling package cic_compiler_v4_0_16.cic_compiler_v4_0_16_viv_comp
 Compiling package ieee.std_logic_textio
 Compiling package cic_compiler_v4_0_16.toolbox_pkg
@@ -98,7 +111,7 @@ Compiling package cic_compiler_v4_0_16.cic_compiler_v4_0_16_hdl_comps
 Compiling package fir_compiler_v7_2_18.fir_compiler_v7_2_18_viv_comp
 Compiling package fir_compiler_v7_2_18.globals_pkg
 Compiling package fir_compiler_v7_2_18.components
-Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package mult_gen_v12_0_18.dsp_pkg
 Compiling package axi_vdma_v6_3_15.axi_vdma_pkg
 Compiling package xpm.vcomponents
 Compiling package xil_defaultlib.dvi_constants
@@ -173,9 +186,10 @@ Compiling architecture xilinx of entity mult_gen_v12_0_18.multmxn_lut6 [\multmxn
 Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
 Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_optimize_go...]
 Compiling architecture ebaz4205_mult_gen_0_2_arch of entity xil_defaultlib.ebaz4205_mult_gen_0_2 [ebaz4205_mult_gen_0_2_default]
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.ebaz4205_xlconstant_0_6
 Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant
 Compiling module xil_defaultlib.ebaz4205_xlconstant_2_3
-Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
 Compiling module xil_defaultlib.ebaz4205_xlconstant_3_0
 Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
 Compiling module xil_defaultlib.ebaz4205_xlslice_1_0
@@ -216,6 +230,130 @@ Compiling architecture circuits of entity xil_defaultlib.Sb [sb_default]
 Compiling architecture circuits of entity xil_defaultlib.sqrt32 [sqrt32_default]
 Compiling module xil_defaultlib.ebaz4205_sqrt32_0_0
 Compiling module xil_defaultlib.AM_demodulator_imp_UCGGQS
+Compiling module xpm.xpm_cdc_async_rst(DEST_SYNC_FF=2...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_s2mm_regi...
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=2)
+Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
+Compiling module xpm.xpm_cdc_pulse(REG_OUTPUT=1)
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_reset_def...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_s2mm_sync...
+Compiling module xpm.xpm_fifo_rst_default
+Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=5...
+Compiling module xpm.xpm_counter_updn
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_fifo_sync(FIFO_WRITE_DEPTH=1...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=6...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=3...
+Compiling module xpm.xpm_fifo_sync(FIFO_WRITE_DEPTH=3...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_s2mm_buff...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_s2mm_comm...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_aes_dec
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_mm2s_omit_wrap [\axi_datamover_mm2s_omit_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_strb_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_strb_gen2 [\axi_datamover_strb_gen2(c_op_mo...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_pcc [\axi_datamover_pcc(c_dre_align_w...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_reset [axi_datamover_reset_default]
+Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
+Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=100...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_cmd_status [\axi_datamover_cmd_status(c_addr...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=7...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=7,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=7,c_depth=6...]
+Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=7,c...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=4,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=6,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=2,c_dep...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=2,c_depth=6...]
+Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=2,c...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_wr_status_cntl [\axi_datamover_wr_status_cntl(c_...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=3,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=9...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=91,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=91,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=91,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_addr_cntl [\axi_datamover_addr_cntl(c_addr_...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=2...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=27,c_de...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=27,c_depth=...]
+Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=27,...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_wrdata_cntl [\axi_datamover_wrdata_cntl(c_sf_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_wr_demux [\axi_datamover_wr_demux(c_sel_ad...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_skid2mm_buf [\axi_datamover_skid2mm_buf(c_add...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_s2mm_full_wrap [\axi_datamover_s2mm_full_wrap(c_...]
+Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover [\axi_datamover(c_include_mm2s=0,...]
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_s2mm(C_FA...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9_s2mm_top(...
+Compiling module audio_formatter_v1_0_9.audio_formatter_v1_0_9(C_FAMILY=...
+Compiling module xil_defaultlib.ebaz4205_audio_formatter_0_0
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_s...
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_bhv_ver_p...
+WARNING: [VRFC 10-3705] select index 2 into 'g7s_cc_rst_nsckt.arst_sync_wr' is out of bounds [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_2/simulation/fifo_generator_vlog_beh.v:4830]
+Compiling module fifo_generator_v13_2_7.fifo_generator_v13_2_7_CONV_VER(...
+Compiling module fifo_generator_v13_2_7.fifo_generator_vlog_beh(C_COMMON...
+Compiling module axi_data_fifo_v2_1_26.axi_data_fifo_v2_1_26_fifo_gen(C...
+Compiling module axi_data_fifo_v2_1_26.axi_data_fifo_v2_1_26_axic_fifo(...
+Compiling module axi_protocol_converter_v2_1_27.axi_protocol_converter_v2_1_27_a...
+Compiling module axi_protocol_converter_v2_1_27.axi_protocol_converter_v2_1_27_w...
+Compiling module axi_protocol_converter_v2_1_27.axi_protocol_converter_v2_1_27_b...
+Compiling module axi_protocol_converter_v2_1_27.axi_protocol_converter_v2_1_27_a...
+Compiling module axi_protocol_converter_v2_1_27.axi_protocol_converter_v2_1_27_a...
+Compiling module xil_defaultlib.ebaz4205_auto_pc_2
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axi_r...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_comman...
+Compiling module axi_dwidth_converter_v2_1_27.axi_dwidth_converter_v2_1_27_a_u...
+Compiling module axi_dwidth_converter_v2_1_27.axi_dwidth_converter_v2_1_27_w_u...
+Compiling module axi_dwidth_converter_v2_1_27.axi_dwidth_converter_v2_1_27_axi...
+Compiling module axi_dwidth_converter_v2_1_27.axi_dwidth_converter_v2_1_27_top...
+Compiling module xil_defaultlib.ebaz4205_auto_us_0
+Compiling module xil_defaultlib.s00_couplers_imp_1HLA5RH
+Compiling module xil_defaultlib.ebaz4205_axi_interconnect_0_3
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKOUT1_DIVIDE=40)
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.ebaz4205_clk_wiz_0_1_clk_wiz
+Compiling module xil_defaultlib.ebaz4205_clk_wiz_0_1
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_array_single(DEST_SYNC_F...
+Compiling module xpm.xpm_cdc_single(DEST_SYNC_FF=2,SR...
+Compiling module xpm.xpm_cdc_pulse(DEST_SYNC_FF=2,REG...
+Compiling module xpm.xpm_cdc_sync_rst(DEST_SYNC_FF=2,...
+Compiling module xpm.xpm_fifo_rst(COMMON_CLOCK=0)
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=9...
+Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=8...
+Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=2,INIT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=8)
+Compiling module xpm.xpm_cdc_gray(INIT_SYNC_FF=1,WIDT...
+Compiling module xpm.xpm_fifo_reg_vec(REG_WIDTH=9)
+Compiling module xpm.xpm_cdc_gray(DEST_SYNC_FF=2,INIT...
+Compiling module xpm.xpm_fifo_base(COMMON_CLOCK=0,FIF...
+Compiling module xpm.xpm_fifo_async(FIFO_MEMORY_TYPE=...
+Compiling module xil_defaultlib.ebaz4205_i2s_receiver_0_0
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture ebaz4205_proc_sys_reset_0_3_arch of entity xil_defaultlib.ebaz4205_proc_sys_reset_0_3 [ebaz4205_proc_sys_reset_0_3_defa...]
+Compiling architecture ebaz4205_proc_sys_reset_0_2_arch of entity xil_defaultlib.ebaz4205_proc_sys_reset_0_2 [ebaz4205_proc_sys_reset_0_2_defa...]
+Compiling module xil_defaultlib.Audio_DMA_imp_1Q46PM9
 Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ai_width=12,swap_oper...]
 Compiling architecture xilinx of entity mult_gen_v12_0_18.luts [\luts(c_xdevicefamily="zynq",c_a...]
 Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
@@ -247,8 +385,21 @@ Compiling module xil_defaultlib.LO_imp_1P3EDMO
 Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_FROM=...
 Compiling module xil_defaultlib.ebaz4205_xlslice_0_4
 Compiling module xil_defaultlib.DDC_imp_9GECP5
-Compiling module xil_defaultlib.DivideBy2N(WIDTH=2)
-Compiling module xil_defaultlib.ebaz4205_DivideBy4_25MHz_0
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_rdy [\dds_compiler_v6_0_22_rdy(c_has_...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.accum [\accum(c_xdevicefamily="zynq",c_...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_core [\dds_compiler_v6_0_22_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_viv [\dds_compiler_v6_0_22_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22 [\dds_compiler_v6_0_22(c_xdevicef...]
+Compiling architecture ebaz4205_dds_compiler_0_3_arch of entity xil_defaultlib.ebaz4205_dds_compiler_0_3 [ebaz4205_dds_compiler_0_3_defaul...]
+Compiling module xil_defaultlib.ebaz4205_dds_axi_interface_0_3
+Compiling architecture ebaz4205_mult_gen_0_4_arch of entity xil_defaultlib.ebaz4205_mult_gen_0_4 [ebaz4205_mult_gen_0_4_default]
+Compiling architecture ebaz4205_mult_gen_1_1_arch of entity xil_defaultlib.ebaz4205_mult_gen_1_1 [ebaz4205_mult_gen_1_1_default]
+Compiling module xil_defaultlib.ebaz4205_xlconstant_0_4
+Compiling module xil_defaultlib.ebaz4205_xlslice_0_5
+Compiling module xil_defaultlib.ebaz4205_xlslice_1_1
+Compiling module xil_defaultlib.ebaz4205_xlslice_2_0
+Compiling module xil_defaultlib.DDC_FT_imp_7O51XY
 Compiling architecture synth of entity cic_compiler_v4_0_16.dec_shifter [\dec_shifter(in_width=82,shft_ra...]
 Compiling architecture synth of entity cic_compiler_v4_0_16.dec_scaler [\dec_scaler(in_width=82,rate_wid...]
 Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=2,family=(p...]
@@ -429,22 +580,111 @@ Compiling architecture synth of entity fir_compiler_v7_2_18.polyphase_decimation
 Compiling architecture synth of entity fir_compiler_v7_2_18.fir_compiler_v7_2_18_viv [\fir_compiler_v7_2_18_viv(c_xdev...]
 Compiling architecture xilinx of entity fir_compiler_v7_2_18.fir_compiler_v7_2_18 [\fir_compiler_v7_2_18(c_xdevicef...]
 Compiling architecture ebaz4205_fir_compiler_0_0_arch of entity xil_defaultlib.ebaz4205_fir_compiler_0_0 [ebaz4205_fir_compiler_0_0_defaul...]
-Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_dout_default...]
-Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_all_...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=1...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
 Compiling architecture ebaz4205_axi_gpio_0_1_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_1 [ebaz4205_axi_gpio_0_1_default]
 Compiling architecture arch_imp of entity xil_defaultlib.dds_axi_interface [\dds_axi_interface(c_ctrl_m_axis...]
 Compiling module xil_defaultlib.ebaz4205_axi_interface_DEC_RATE_...
 Compiling architecture rtl of entity xil_defaultlib.axis2c_combine [axis2c_combine_default]
 Compiling module xil_defaultlib.ebaz4205_axis2c_combine_0_0
 Compiling architecture behavioral of entity xil_defaultlib.axis2c_splitter [axis2c_splitter_default]
-Compiling module xil_defaultlib.ebaz4205_axis2c_splitter_0_1
 Compiling module xil_defaultlib.ebaz4205_axis2c_splitter_0_0
-Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(bi_width=32,swap_oper...]
-Compiling architecture xilinx of entity mult_gen_v12_0_18.luts [\luts(c_xdevicefamily="zynq",c_a...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(ao_width=25)\]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.dsp [\dsp(c_xdevicefamily="zynq",c_a_...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.op_resize [\op_resize(swap_operands=1,ao_wi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.hybrid [\hybrid(c_xdevicefamily="zynq",c...]
 Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
-Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_optimize_go...]
 Compiling architecture ebaz4205_mult_gen_0_3_arch of entity xil_defaultlib.ebaz4205_mult_gen_0_3 [ebaz4205_mult_gen_0_3_default]
+Compiling architecture rtl of entity xil_defaultlib.reset_lengthener [reset_lengthener_default]
+Compiling module xil_defaultlib.ebaz4205_reset_lengthener_0_1
 Compiling module xil_defaultlib.FILTER_imp_WBNR09
+Compiling architecture behavior of entity xil_defaultlib.AXI_Stream_Generator [\AXI_Stream_Generator(data_0="00...]
+Compiling module xil_defaultlib.ebaz4205_AXI_Stream_Generator_0_...
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=1,family=(p...]
+Compiling architecture implementation of entity cic_compiler_v4_0_16.dpr_ram [\dpr_ram(param=((p_dsp48e1,false...]
+Compiling architecture arch1 of entity cic_compiler_v4_0_16.compare_dualval [\compare_dualval(value1=0,value2...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.twopage_address [\twopage_address(param=((p_dsp48...]
+Compiling architecture arch1 of entity cic_compiler_v4_0_16.compare [\compare(value=0,family=(p_dsp48...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.chan_cnt [\chan_cnt(family=(p_dsp48e1,fals...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=0,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=2,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=3,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=2,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_mul...]
+Compiling architecture structural of entity cic_compiler_v4_0_16.add_sub [\add_sub(family=(p_mult18s,true,...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_mul...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_mul...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=1,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_mult18s,true...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=2,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=4,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_section [\int_comb_section(c_int_or_comb=...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=6,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay_bit [\delay_bit(delay_len=5,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_folded [\int_comb_stage_folded(c_int_or_...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_16.delay [\delay(delay_len=6,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_stage_folded [\int_comb_stage_folded(c_int_or_...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.int_comb_section [\int_comb_section(c_int_or_comb=...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.decimate [\decimate(c_num_stages=6,c_input...]
+Compiling architecture synth of entity cic_compiler_v4_0_16.cic_compiler_v4_0_16_viv [\cic_compiler_v4_0_16_viv(c_comp...]
+Compiling architecture xilinx of entity cic_compiler_v4_0_16.cic_compiler_v4_0_16 [\cic_compiler_v4_0_16(c_componen...]
+Compiling architecture ebaz4205_cic_compiler_0_1_arch of entity xil_defaultlib.ebaz4205_cic_compiler_0_1 [ebaz4205_cic_compiler_0_1_defaul...]
+Compiling architecture synth of entity fir_compiler_v7_2_18.polyphase_decimation [\polyphase_decimation(c_xdevicef...]
+Compiling architecture synth of entity fir_compiler_v7_2_18.fir_compiler_v7_2_18_viv [\fir_compiler_v7_2_18_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_18.fir_compiler_v7_2_18 [\fir_compiler_v7_2_18(c_xdevicef...]
+Compiling architecture ebaz4205_fir_compiler_0_1_arch of entity xil_defaultlib.ebaz4205_fir_compiler_0_1 [ebaz4205_fir_compiler_0_1_defaul...]
+Compiling architecture ebaz4205_axi_gpio_0_5_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_5 [ebaz4205_axi_gpio_0_5_default]
+Compiling module xil_defaultlib.ebaz4205_dds_axi_interface_0_4
+Compiling module xil_defaultlib.ebaz4205_axis2c_combine_0_1
+Compiling module xil_defaultlib.ebaz4205_axis2c_splitter_0_2
+Compiling architecture syn of entity xil_defaultlib.dp_ram_1r_1w_2clk [\dp_ram_1r_1w_2clk(bitwidth_data...]
+Compiling architecture arch_imp of entity xil_defaultlib.axis_capture_logic [axis_capture_logic_default]
+Compiling architecture arch_imp of entity xil_defaultlib.axis_capture [axis_capture_default]
+Compiling architecture ebaz4205_axis_capture_0_5_arch of entity xil_defaultlib.ebaz4205_axis_capture_0_5 [ebaz4205_axis_capture_0_5_defaul...]
+Compiling architecture ebaz4205_mult_gen_0_5_arch of entity xil_defaultlib.ebaz4205_mult_gen_0_5 [ebaz4205_mult_gen_0_5_default]
+Compiling module xil_defaultlib.ebaz4205_reset_lengthener_0_0
+Compiling module xil_defaultlib.ebaz4205_xlconcat_0_4
+Compiling module xil_defaultlib.FILTER_FT_imp_X0EVVG
 Compiling architecture arch_imp of entity xil_defaultlib.axi_dynclk_S00_AXI [axi_dynclk_s00_axi_default]
 Compiling architecture bufio_v of entity unisim.BUFIO [bufio_default]
 Compiling architecture bufr_v of entity unisim.BUFR [\BUFR(bufr_divide="5")(1,1)(1,7)...]
@@ -475,10 +715,6 @@ Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\addr
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
 Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
-Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio2_width=...]
-Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
-Compiling architecture ebaz4205_axi_gpio_0_3_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_3 [ebaz4205_axi_gpio_0_3_default]
-Compiling architecture implementation of entity interrupt_control_v3_1_4.interrupt_control [\interrupt_control(c_num_ce=16,c...]
 Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=1...]
 Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
 Compiling architecture ebaz4205_axi_gpio_0_2_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_2 [ebaz4205_axi_gpio_0_2_default]
@@ -533,12 +769,10 @@ Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_reg_mo
 Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_fsync_gen [\axi_vdma_fsync_gen(c_include_mm...]
 Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_vid_cdc [\axi_vdma_vid_cdc(c_genlock_mstr...]
 Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_sof_gen [axi_vdma_sof_gen_default]
-Compiling module xpm.xpm_fifo_rst_default
-Compiling module xpm.xpm_fifo_reg_bit
+Compiling module xpm.xpm_fifo_rst_default_1
 Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
 Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=1...
 Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=2...
 Compiling module xpm.xpm_fifo_base(FIFO_WRITE_DEPTH=4...
 Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
 Compiling architecture xilinx of entity axi_vdma_v6_3_15.axi_vdma_sfifo [\axi_vdma_sfifo(c_family="zynq",...]
@@ -553,8 +787,7 @@ Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_lite_i
 Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_reset_state=1,c_flop...]
 Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_reg_if [\axi_vdma_reg_if(c_include_s2mm=...]
 Compiling architecture implementation of entity axi_vdma_v6_3_15.axi_vdma_intrpt [\axi_vdma_intrpt(c_enable_debug_...]
-Compiling module xpm.xpm_fifo_rst_default_1
-Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=8...
+Compiling module xpm.xpm_fifo_rst_default_2
 Compiling module xpm.xpm_counter_updn(COUNTER_WIDTH=7...
 Compiling module xpm.xpm_memory_base(MEMORY_TYPE=1,ME...
 Compiling module xpm.xpm_fifo_base(FIFO_MEMORY_TYPE=2...
@@ -562,12 +795,10 @@ Compiling module xpm.xpm_fifo_sync(FIFO_MEMORY_TYPE="...
 Compiling architecture implementation of entity lib_fifo_v1_0_16.sync_fifo_fg [\sync_fifo_fg(c_family="zynq",c_...]
 Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_sfifo_autord [\axi_datamover_sfifo_autord(c_dw...]
 Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_rd_sf [\axi_datamover_rd_sf(c_sf_fifo_d...]
-Compiling architecture implementation of entity axi_datamover_v5_1_29.axi_datamover_reset [axi_datamover_reset_default]
 Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=8...]
 Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_dep...]
 Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=8,c_depth=4...]
 Compiling architecture imp of entity axi_datamover_v5_1_29.axi_datamover_fifo [\axi_datamover_fifo(c_dwidth=8,c...]
-Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=3,...]
 Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=4,c_dwidth=6...]
 Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=68,c_de...]
 Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_f [\srl_fifo_f(c_dwidth=68,c_depth=...]
@@ -612,7 +843,6 @@ Compiling architecture oserdese2_v of entity unisim.OSERDESE2 [\OSERDESE2(data_r
 Compiling architecture behavioral of entity xil_defaultlib.OutputSERDES [outputserdes_default]
 Compiling architecture behavioral of entity xil_defaultlib.rgb2dvi [\rgb2dvi(kgenerateserialclk=fals...]
 Compiling architecture ebaz4205_rgb2dvi_0_3_arch of entity xil_defaultlib.ebaz4205_rgb2dvi_0_3 [ebaz4205_rgb2dvi_0_3_default]
-Compiling module xpm.xpm_cdc_single(SRC_INPUT_REG=0)
 Compiling module v_axi4s_vid_out_v4_0_15.v_axi4s_vid_out_v4_0_15_cdc_sing...
 Compiling module xpm.xpm_cdc_sync_rst(INIT=0,INIT_SYN...
 Compiling module xpm.xpm_fifo_rst(COMMON_CLOCK=0,CDC_...
@@ -649,26 +879,34 @@ Compiling module xlconcat_v2_1_4.xlconcat_v2_1_4_xlconcat(dout_wi...
 Compiling module xil_defaultlib.ebaz4205_xlconcat_0_3
 Compiling module xil_defaultlib.ebaz4205_xlconstant_0_3
 Compiling module xil_defaultlib.HDMI_imp_1WM3X9Z
-Compiling module xil_defaultlib.DivideBy2N
+Compiling module xil_defaultlib.DivideBy2N(WIDTH=8)
 Compiling module xil_defaultlib.ebaz4205_DivideBy10_0
-Compiling module xil_defaultlib.I2S_Transmitter
-Compiling module xil_defaultlib.ebaz4205_I2S_Transmitter_0_2
-Compiling module xil_defaultlib.ebaz4205_xlconcat_0_2
-Compiling module xil_defaultlib.ebaz4205_xlconstant_1_1
+Compiling module xil_defaultlib.ebaz4205_DivideBy2N_0_1
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=15.75...
+Compiling module xil_defaultlib.ebaz4205_clk_wiz_0_2_clk_wiz
+Compiling module xil_defaultlib.ebaz4205_clk_wiz_0_2
+Compiling architecture synth of entity dds_compiler_v6_0_22.dither_wrap [\dither_wrap(ci_phase_err_width=...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.accum [\accum(c_xdevicefamily="zynq",c_...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_core [\dds_compiler_v6_0_22_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_viv [\dds_compiler_v6_0_22_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22 [\dds_compiler_v6_0_22(c_xdevicef...]
+Compiling architecture ebaz4205_dds_compiler_0_5_arch of entity xil_defaultlib.ebaz4205_dds_compiler_0_5 [ebaz4205_dds_compiler_0_5_defaul...]
+Compiling architecture rtl of entity xil_defaultlib.i2s_transmitter_16 [i2s_transmitter_16_default]
+Compiling module xil_defaultlib.ebaz4205_i2s_transmitter_16_0_0
+Compiling module util_vector_logic_v2_0_2.util_vector_logic_v2_0_2_util_ve...
+Compiling module xil_defaultlib.ebaz4205_util_vector_logic_0_2
+Compiling module xil_defaultlib.ebaz4205_xlconstant_0_8
+Compiling module xil_defaultlib.ebaz4205_xlconstant_0_7
+Compiling module xil_defaultlib.ebaz4205_xlslice_0_9
+Compiling module xil_defaultlib.ebaz4205_xlslice_1_3
 Compiling module xil_defaultlib.I2S_imp_1GQSHGG
+Compiling module xil_defaultlib.DivideBy2N(WIDTH=2)
+Compiling module xil_defaultlib.ebaz4205_DivideBy4_25MHz_0
 Compiling module xil_defaultlib.ebaz4205_DivideBy2N_0_0
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=15.5,...
-Compiling module unisims_ver.BUFG
+Compiling module unisims_ver.PLLE2_ADV_default
 Compiling module xil_defaultlib.ebaz4205_clk_wiz_0_0_clk_wiz
 Compiling module xil_defaultlib.ebaz4205_clk_wiz_0_0
-Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
-Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
-Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
-Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
 Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
-Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
-Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
 Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
 Compiling architecture ebaz4205_proc_sys_reset_0_0_arch of entity xil_defaultlib.ebaz4205_proc_sys_reset_0_0 [ebaz4205_proc_sys_reset_0_0_defa...]
 Compiling architecture ebaz4205_proc_sys_reset_0_1_arch of entity xil_defaultlib.ebaz4205_proc_sys_reset_0_1 [ebaz4205_proc_sys_reset_0_1_defa...]
@@ -736,14 +974,54 @@ Compiling module xil_defaultlib.ebaz4205_xlconstant_0_2
 Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
 Compiling module xil_defaultlib.ebaz4205_xlslice_0_0
 Compiling module xil_defaultlib.PS_imp_1B1U9UK
-Compiling architecture syn of entity xil_defaultlib.dp_ram_1r_1w_2clk [\dp_ram_1r_1w_2clk(bitwidth_data...]
-Compiling architecture arch_imp of entity xil_defaultlib.axis_capture_logic [axis_capture_logic_default]
-Compiling architecture arch_imp of entity xil_defaultlib.axis_capture [axis_capture_default]
-Compiling architecture ebaz4205_axis_capture_0_4_arch of entity xil_defaultlib.ebaz4205_axis_capture_0_4 [ebaz4205_axis_capture_0_4_defaul...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio2_width=...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
+Compiling architecture ebaz4205_axi_gpio_0_3_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_3 [ebaz4205_axi_gpio_0_3_default]
+Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=1...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
+Compiling architecture ebaz4205_axi_gpio_0_4_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_4 [ebaz4205_axi_gpio_0_4_default]
 Compiling architecture logic of entity xil_defaultlib.debounce [\debounce(counter_size=8)\]
 Compiling architecture logic of entity xil_defaultlib.ps2_transceiver [ps2_transceiver_default]
 Compiling architecture logic of entity xil_defaultlib.ps2_mouse_w [ps2_mouse_w_default]
 Compiling architecture ebaz4205_ps2_mouse_0_0_arch of entity xil_defaultlib.ebaz4205_ps2_mouse_0_0 [ebaz4205_ps2_mouse_0_0_default]
+Compiling module util_vector_logic_v2_0_2.util_vector_logic_v2_0_2_util_ve...
+Compiling module xil_defaultlib.ebaz4205_util_vector_logic_0_1
+Compiling module xil_defaultlib.PS2_imp_8HCTJB
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=2...]
+Compiling architecture imp of entity axi_gpio_v2_0_29.axi_gpio [\axi_gpio(c_family="zynq",c_gpio...]
+Compiling architecture ebaz4205_axi_gpio_0_6_arch of entity xil_defaultlib.ebaz4205_axi_gpio_0_6 [ebaz4205_axi_gpio_0_6_default]
+Compiling module xil_defaultlib.ebaz4205_axis_mux_0_1
+Compiling architecture rtl of entity c_addsub_v12_0_14.c_addsub_v12_0_14_lut6_legacy [\c_addsub_v12_0_14_lut6_legacy(c...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_fabric_legacy [\c_addsub_v12_0_14_fabric_legacy...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_legacy [\c_addsub_v12_0_14_legacy(c_fami...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture ebaz4205_c_addsub_1_0_arch of entity xil_defaultlib.ebaz4205_c_addsub_1_0 [ebaz4205_c_addsub_1_0_default]
+Compiling module xil_defaultlib.ebaz4205_dds_axi_interface_0_5
+Compiling architecture synth of entity dds_compiler_v6_0_22.accum [\accum(c_xdevicefamily="zynq",c_...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_core [\dds_compiler_v6_0_22_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22_viv [\dds_compiler_v6_0_22_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_22.dds_compiler_v6_0_22 [\dds_compiler_v6_0_22(c_xdevicef...]
+Compiling architecture ebaz4205_dds_compiler_0_4_arch of entity xil_defaultlib.ebaz4205_dds_compiler_0_4 [ebaz4205_dds_compiler_0_4_defaul...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_optimize_go...]
+Compiling architecture ebaz4205_mult_gen_0_6_arch of entity xil_defaultlib.ebaz4205_mult_gen_0_6 [ebaz4205_mult_gen_0_6_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18_viv [\mult_gen_v12_0_18_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_18.mult_gen_v12_0_18 [\mult_gen_v12_0_18(c_xdevicefami...]
+Compiling architecture ebaz4205_mult_gen_1_2_arch of entity xil_defaultlib.ebaz4205_mult_gen_1_2 [ebaz4205_mult_gen_1_2_default]
+Compiling module xil_defaultlib.ebaz4205_xlconstant_0_5
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ebaz4205_xlslice_0_8
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ebaz4205_xlslice_1_2
+Compiling module xil_defaultlib.ebaz4205_xlslice_0_6
+Compiling module xil_defaultlib.ebaz4205_xlslice_0_7
+Compiling module xil_defaultlib.SSB_demodulator_imp_U8DUB1
+Compiling architecture ebaz4205_axis_capture_0_4_arch of entity xil_defaultlib.ebaz4205_axis_capture_0_4 [ebaz4205_axis_capture_0_4_defaul...]
+Compiling module xil_defaultlib.i00_couplers_imp_CH4AK8
+Compiling module xil_defaultlib.i01_couplers_imp_1IA8DQX
+Compiling module xil_defaultlib.i02_couplers_imp_BEV4ZF
 Compiling module xil_defaultlib.m00_couplers_imp_R7YUXT
 Compiling module xil_defaultlib.m01_couplers_imp_1379KG0
 Compiling module xil_defaultlib.m02_couplers_imp_SSY9B6
@@ -756,6 +1034,14 @@ Compiling module xil_defaultlib.m08_couplers_imp_WJKO4T
 Compiling module xil_defaultlib.m09_couplers_imp_16R81JG
 Compiling module xil_defaultlib.m10_couplers_imp_1EHOAK9
 Compiling module xil_defaultlib.m11_couplers_imp_P5OMU0
+Compiling module xil_defaultlib.m12_couplers_imp_1CVSD16
+Compiling module xil_defaultlib.m13_couplers_imp_QHX0D7
+Compiling module xil_defaultlib.m14_couplers_imp_1GT1SHR
+Compiling module xil_defaultlib.m15_couplers_imp_MH7VRY
+Compiling module xil_defaultlib.m16_couplers_imp_1G13WN0
+Compiling module xil_defaultlib.m17_couplers_imp_NJFZ19
+Compiling module xil_defaultlib.m18_couplers_imp_194R52T
+Compiling module xil_defaultlib.m19_couplers_imp_LMW238
 Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
 Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
 Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
@@ -797,24 +1083,49 @@ Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
-Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
-Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
-Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
 Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_addr_decode...
 Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_splitter(C_...
 Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_splitter
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
-Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
 Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
 Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_decerr_slav...
 Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_crossbar_sa...
 Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_axi_crossba...
+Compiling module xil_defaultlib.ebaz4205_tier2_xbar_0_0
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_addr_decode...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_crossbar_sa...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_axi_crossba...
+Compiling module xil_defaultlib.ebaz4205_tier2_xbar_1_0
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_addr_decode...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_crossbar_sa...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_axi_crossba...
+Compiling module xil_defaultlib.ebaz4205_tier2_xbar_2_0
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_addr_decode...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_27.axi_register_slice_v2_1_27_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_crossbar_sa...
+Compiling module axi_crossbar_v2_1_28.axi_crossbar_v2_1_28_axi_crossba...
 Compiling module xil_defaultlib.ebaz4205_xbar_0
 Compiling module xil_defaultlib.ebaz4205_axi_interconnect_0_0
-Compiling module util_vector_logic_v2_0_2.util_vector_logic_v2_0_2_util_ve...
-Compiling module xil_defaultlib.ebaz4205_util_vector_logic_0_1
 Compiling module xil_defaultlib.ebaz4205
 Compiling module xil_defaultlib.ebaz4205_wrapper
 Compiling module xil_defaultlib.glbl

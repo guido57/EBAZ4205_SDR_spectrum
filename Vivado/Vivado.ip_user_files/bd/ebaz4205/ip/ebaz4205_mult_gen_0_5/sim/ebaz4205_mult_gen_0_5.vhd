@@ -58,7 +58,6 @@ USE mult_gen_v12_0_18.mult_gen_v12_0_18;
 
 ENTITY ebaz4205_mult_gen_0_5 IS
   PORT (
-    CLK : IN STD_LOGIC;
     A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     P : OUT STD_LOGIC_VECTOR(15 DOWNTO 0)
@@ -106,8 +105,6 @@ ARCHITECTURE ebaz4205_mult_gen_0_5_arch OF ebaz4205_mult_gen_0_5 IS
   ATTRIBUTE X_INTERFACE_INFO OF A: SIGNAL IS "xilinx.com:signal:data:1.0 a_intf DATA";
   ATTRIBUTE X_INTERFACE_PARAMETER OF B: SIGNAL IS "XIL_INTERFACENAME b_intf, LAYERED_METADATA undef";
   ATTRIBUTE X_INTERFACE_INFO OF B: SIGNAL IS "xilinx.com:signal:data:1.0 b_intf DATA";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF CLK: SIGNAL IS "XIL_INTERFACENAME clk_intf, ASSOCIATED_BUSIF p_intf:b_intf:a_intf, ASSOCIATED_RESET sclr, ASSOCIATED_CLKEN ce, FREQ_HZ 128000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /PS/clk_wiz_128M_clk_out1, INSERT_VIP 0";
-  ATTRIBUTE X_INTERFACE_INFO OF CLK: SIGNAL IS "xilinx.com:signal:clock:1.0 clk_intf CLK";
   ATTRIBUTE X_INTERFACE_PARAMETER OF P: SIGNAL IS "XIL_INTERFACENAME p_intf, LAYERED_METADATA xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 16} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximu" & 
 "m {}} value TRUE}}}} DATA_WIDTH 16}";
   ATTRIBUTE X_INTERFACE_INFO OF P: SIGNAL IS "xilinx.com:signal:data:1.0 p_intf DATA";
@@ -120,7 +117,7 @@ BEGIN
       C_XDEVICEFAMILY => "zynq",
       C_HAS_CE => 0,
       C_HAS_SCLR => 0,
-      C_LATENCY => 3,
+      C_LATENCY => 0,
       C_A_WIDTH => 16,
       C_A_TYPE => 0,
       C_B_WIDTH => 16,
@@ -136,7 +133,7 @@ BEGIN
       C_ROUND_PT => 0
     )
     PORT MAP (
-      CLK => CLK,
+      CLK => '1',
       A => A,
       B => B,
       CE => '1',

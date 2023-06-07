@@ -60,7 +60,7 @@ module ebaz4205_DivideBy10_0 (
   clk_out
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET resetn, FREQ_HZ 1e+08, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN ebaz4205_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME clk, ASSOCIATED_RESET resetn, FREQ_HZ 384000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN /I2S/clk_wiz_384M_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 clk CLK" *)
 input wire clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME resetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -69,8 +69,8 @@ input wire resetn;
 output wire clk_out;
 
   DivideBy2N #(
-    .WIDTH(3),
-    .N(5)
+    .WIDTH(8),
+    .N(125)
   ) inst (
     .clk(clk),
     .resetn(resetn),

@@ -98,81 +98,87 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 add_files /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/imports/EBAZ4205_SDR_HDMI/matlab/mycoefile.coe
 add_files /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/matlab/mycoefile.coe
-read_verilog -library xil_defaultlib /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v
+read_verilog -library xil_defaultlib {
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/DivideBy2N.v
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v
+}
+read_vhdl -library xil_defaultlib {
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/dds_axi_interface_logic.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/dds_axi_inteface.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/axis_mux_v_1_0.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/sqrt32.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/axis2c_splitter.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/axis2c_combine.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/CIC_FIR_2C_issue/CIC_FIR_2C_issue.srcs/sources_1/new/reset_lengthener.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/i2s_transmitter_16.vhd
+  /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/new/AXI_Stream_Generator.vhd
+}
 add_files /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.srcs/sources_1/bd/ebaz4205/ebaz4205.bd
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_c_addsub_0_1/ebaz4205_c_addsub_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_0/ebaz4205_dds_compiler_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_2/ebaz4205_dds_compiler_0_2_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_2/ebaz4205_mult_gen_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_RF_test_1MHz_0/ebaz4205_RF_test_1MHz_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_0/ebaz4205_mult_gen_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_sin_0/ebaz4205_mult_sin_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_c_addsub_0_0/ebaz4205_c_addsub_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_1/ebaz4205_mult_gen_0_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_1_0/ebaz4205_mult_gen_1_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_cic_compiler_0_0/ebaz4205_cic_compiler_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/ebaz4205_fir_compiler_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/ebaz4205_axis_subset_converter_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_xbar_0/ebaz4205_xbar_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_4/ebaz4205_mult_gen_0_4_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_1_1/ebaz4205_mult_gen_1_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_3/ebaz4205_dds_compiler_0_3_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_cic_compiler_0_1/ebaz4205_cic_compiler_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/ebaz4205_fir_compiler_0_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_5/ebaz4205_mult_gen_0_5_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6_board.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_board.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/ebaz4205_proc_sys_reset_0_2_board.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/ebaz4205_proc_sys_reset_0_2.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_audio_formatter_0_0/ebaz4205_audio_formatter_0_0.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/ebaz4205_proc_sys_reset_0_3_board.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/ebaz4205_proc_sys_reset_0_3.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0/ebaz4205_i2s_receiver_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc]
-set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_ooc.xdc]
 set_property used_in_synthesis false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_0/ebaz4205_auto_pc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_1/ebaz4205_auto_pc_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_2/ebaz4205_auto_pc_2_ooc.xdc]
+set_property used_in_synthesis false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_us_0/ebaz4205_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_us_0/ebaz4205_auto_us_0_clocks.xdc]
+set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_us_0/ebaz4205_auto_us_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ebaz4205_ooc.xdc]
 
 OPTRACE "Adding files" END { }
@@ -191,7 +197,7 @@ read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -incremental /home/guido/GitHub/EBAZ4205_HDMI/Vivado/Vivado.srcs/utils_1/imports/synth_1/ebaz4205_wrapper.dcp
+read_checkpoint -auto_incremental -incremental /home/guido/GitHub/EBAZ4205_HDMI/Vivado/Vivado.srcs/utils_1/imports/synth_1/ebaz4205_wrapper.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

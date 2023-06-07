@@ -57,7 +57,7 @@
 #include "systemc.h"
 class ebaz4205_xlconstant_3_0 : public sc_module {
   public:
-xlconstant_v1_1_7<16,2048> mod;
+xlconstant_v1_1_7<16,512> mod;
   sc_out< sc_bv<16> > dout;
 ebaz4205_xlconstant_3_0 (sc_core::sc_module_name name);
   };

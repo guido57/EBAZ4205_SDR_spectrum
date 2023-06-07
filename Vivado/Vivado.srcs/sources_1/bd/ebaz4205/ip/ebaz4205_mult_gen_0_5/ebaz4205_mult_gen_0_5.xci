@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_mult_gen_0_5",
-    "cell_name": "FILTER_FT/mult_gen_0",
+    "cell_name": "FILTER_FT/mult_by_gain",
     "component_reference": "xilinx.com:ip:mult_gen:12.0",
     "ip_revision": "18",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_mult_gen_0_5",
@@ -24,9 +24,9 @@
         "OutputWidthLow": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "UseRounding": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
         "RoundPoint": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "PipeStages": [ { "value": "3", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
-        "ClockEnable": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
-        "SyncClear": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "PipeStages": [ { "value": "0", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
+        "ClockEnable": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
+        "SyncClear": [ { "value": "false", "resolve_type": "user", "format": "bool", "enabled": false, "usage": "all" } ],
         "SclrCePriority": [ { "value": "SCLR_Overrides_CE", "resolve_type": "user", "enabled": false, "usage": "all" } ],
         "ZeroDetect": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ]
       },
@@ -37,7 +37,7 @@
         "C_XDEVICEFAMILY": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
         "C_HAS_CE": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_HAS_SCLR": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_LATENCY": [ { "value": "3", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_LATENCY": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_A_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_A_TYPE": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_B_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -75,12 +75,11 @@
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "../../ipshared" } ],
         "SWVERSION": [ { "value": "2022.2" } ],
-        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
+        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },
     "boundary": {
       "ports": {
-        "CLK": [ { "direction": "in", "driver_value": "0x1" } ],
         "A": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
         "B": [ { "direction": "in", "size_left": "15", "size_right": "0", "driver_value": "0" } ],
         "P": [ { "direction": "out", "size_left": "15", "size_right": "0", "driver_value": "0" } ]
@@ -111,9 +110,6 @@
             "CLK_DOMAIN": [ { "value": "/PS/clk_wiz_128M_clk_out1", "value_src": "ip_propagated", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "ASSOCIATED_PORT": [ { "value": "", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
             "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "CLK": [ { "physical_name": "CLK" } ]
           }
         },
         "sclr_intf": {

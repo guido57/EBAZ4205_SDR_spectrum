@@ -1,84 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1682249720">
-  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1685558545">
   <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
   <File Type="POSTROUTE-PHYSOPT-RQS" Name="ebaz4205_wrapper_postroute_physopted.rqs"/>
   <File Type="ROUTE-RQS" Name="ebaz4205_wrapper_routed.rqs"/>
-  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="RDI-RDI" Name="ebaz4205_wrapper.vdi"/>
-  <File Type="BG-DRC" Name="ebaz4205_wrapper.drc"/>
-  <File Type="BG-BGN" Name="ebaz4205_wrapper.bgn"/>
-  <File Type="BITSTR-SYSDEF" Name="ebaz4205_wrapper.sysdef"/>
+  <File Type="RCFI_FILE" Name="ebaz4205_wrapper.rcfi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ebaz4205_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-RPX" Name="ebaz4205_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ebaz4205_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="ebaz4205_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ebaz4205_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ebaz4205_wrapper_postroute_physopt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="ebaz4205_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="ebaz4205_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PWROPT-DCP" Name="ebaz4205_wrapper_pwropt.dcp"/>
+  <File Type="PLACE-DCP" Name="ebaz4205_wrapper_placed.dcp"/>
+  <File Type="OPT-DCP" Name="ebaz4205_wrapper_opt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="ebaz4205_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="ebaz4205_wrapper_clock_utilization_routed.rpt"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="ebaz4205_wrapper.ltx"/>
-  <File Type="RBD_FILE" Name="ebaz4205_wrapper.rbd"/>
-  <File Type="NPI_FILE" Name="ebaz4205_wrapper.npi"/>
-  <File Type="RNPI_FILE" Name="ebaz4205_wrapper.rnpi"/>
-  <File Type="CFI_FILE" Name="ebaz4205_wrapper.cfi"/>
-  <File Type="RCFI_FILE" Name="ebaz4205_wrapper.rcfi"/>
-  <File Type="PDI-FILE" Name="ebaz4205_wrapper.pdi"/>
+  <File Type="BITSTR-SYSDEF" Name="ebaz4205_wrapper.sysdef"/>
   <File Type="BITSTR-MMI" Name="ebaz4205_wrapper.mmi"/>
   <File Type="BITSTR-BMM" Name="ebaz4205_wrapper_bd.bmm"/>
   <File Type="BITSTR-NKY" Name="ebaz4205_wrapper.nky"/>
   <File Type="BITSTR-RBT" Name="ebaz4205_wrapper.rbt"/>
-  <File Type="BITSTR-MSK" Name="ebaz4205_wrapper.msk"/>
-  <File Type="BG-BIN" Name="ebaz4205_wrapper.bin"/>
-  <File Type="BG-BIT" Name="ebaz4205_wrapper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="ebaz4205_wrapper_bus_skew_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="ebaz4205_wrapper_bus_skew_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="ebaz4205_wrapper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="ebaz4205_wrapper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="ebaz4205_wrapper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="ebaz4205_wrapper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="ebaz4205_wrapper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="ebaz4205_wrapper_postroute_physopt.dcp"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="ebaz4205_wrapper_bus_skew_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="ebaz4205_wrapper_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW" Name="ebaz4205_wrapper_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="ebaz4205_wrapper_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-SIMILARITY" Name="ebaz4205_wrapper_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-TIMING-RPX" Name="ebaz4205_wrapper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-TIMING-PB" Name="ebaz4205_wrapper_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="ebaz4205_wrapper_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="ebaz4205_wrapper_route_status.pb"/>
-  <File Type="ROUTE-STATUS" Name="ebaz4205_wrapper_route_status.rpt"/>
-  <File Type="ROUTE-PWR-RPX" Name="ebaz4205_wrapper_power_routed.rpx"/>
-  <File Type="ROUTE-PWR-SUM" Name="ebaz4205_wrapper_power_summary_routed.pb"/>
-  <File Type="ROUTE-PWR" Name="ebaz4205_wrapper_power_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="ebaz4205_wrapper_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="ebaz4205_wrapper_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="ebaz4205_wrapper_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-RPX" Name="ebaz4205_wrapper_drc_routed.rpx"/>
-  <File Type="ROUTE-DRC-PB" Name="ebaz4205_wrapper_drc_routed.pb"/>
-  <File Type="ROUTE-DRC" Name="ebaz4205_wrapper_drc_routed.rpt"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="ebaz4205_wrapper_routed_bb.dcp"/>
-  <File Type="ROUTE-DCP" Name="ebaz4205_wrapper_routed.dcp"/>
-  <File Type="ROUTE-ERROR-DCP" Name="ebaz4205_wrapper_routed_error.dcp"/>
-  <File Type="PHYSOPT-TIMING" Name="ebaz4205_wrapper_timing_summary_physopted.rpt"/>
-  <File Type="PHYSOPT-DRC" Name="ebaz4205_wrapper_drc_physopted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="ebaz4205_wrapper_physopt.dcp"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="ebaz4205_wrapper_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="ebaz4205_wrapper_postplace_pwropt.dcp"/>
-  <File Type="PLACE-TIMING" Name="ebaz4205_wrapper_timing_summary_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="ebaz4205_wrapper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="ebaz4205_wrapper_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-CTRL" Name="ebaz4205_wrapper_control_sets_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="ebaz4205_wrapper_utilization_placed.pb"/>
-  <File Type="PLACE-UTIL" Name="ebaz4205_wrapper_utilization_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="ebaz4205_wrapper_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-IO" Name="ebaz4205_wrapper_io_placed.rpt"/>
-  <File Type="PLACE-DCP" Name="ebaz4205_wrapper_placed.dcp"/>
-  <File Type="PWROPT-TIMING" Name="ebaz4205_wrapper_timing_summary_pwropted.rpt"/>
-  <File Type="PWROPT-DRC" Name="ebaz4205_wrapper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-DCP" Name="ebaz4205_wrapper_pwropt.dcp"/>
-  <File Type="OPT-TIMING" Name="ebaz4205_wrapper_timing_summary_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="ebaz4205_wrapper.hwdef"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="ebaz4205_wrapper_methodology_drc_opted.rpt"/>
-  <File Type="OPT-DRC" Name="ebaz4205_wrapper_drc_opted.rpt"/>
-  <File Type="OPT-DCP" Name="ebaz4205_wrapper_opt.dcp"/>
-  <File Type="INIT-TIMING" Name="ebaz4205_wrapper_timing_summary_init.rpt"/>
   <File Type="REPORTS-TCL" Name="ebaz4205_wrapper_reports.tcl"/>
+  <File Type="ROUTE-TIMING-RPX" Name="ebaz4205_wrapper_timing_summary_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="ebaz4205_wrapper.hwdef"/>
+  <File Type="RBD_FILE" Name="ebaz4205_wrapper.rbd"/>
+  <File Type="BITSTR-MSK" Name="ebaz4205_wrapper.msk"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="ebaz4205_wrapper_bus_skew_routed.pb"/>
   <File Type="PA-TCL" Name="ebaz4205_wrapper.tcl"/>
+  <File Type="ROUTE-TIMING-PB" Name="ebaz4205_wrapper_timing_summary_routed.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="ebaz4205_wrapper.vdi"/>
+  <File Type="OPT-DRC" Name="ebaz4205_wrapper_drc_opted.rpt"/>
+  <File Type="NPI_FILE" Name="ebaz4205_wrapper.npi"/>
+  <File Type="BG-BIN" Name="ebaz4205_wrapper.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="ebaz4205_wrapper_timing_summary_routed.rpt"/>
+  <File Type="CFI_FILE" Name="ebaz4205_wrapper.cfi"/>
+  <File Type="BG-DRC" Name="ebaz4205_wrapper.drc"/>
+  <File Type="ROUTE-ERROR-DCP" Name="ebaz4205_wrapper_routed_error.dcp"/>
+  <File Type="RNPI_FILE" Name="ebaz4205_wrapper.rnpi"/>
+  <File Type="BG-BGN" Name="ebaz4205_wrapper.bgn"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="ebaz4205_wrapper_routed_bb.dcp"/>
+  <File Type="PDI-FILE" Name="ebaz4205_wrapper.pdi"/>
+  <File Type="BG-BIT" Name="ebaz4205_wrapper.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="ebaz4205_wrapper_route_status.pb"/>
+  <File Type="PLACE-IO" Name="ebaz4205_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="ebaz4205_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="ebaz4205_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="ebaz4205_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="ebaz4205_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="ebaz4205_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="ebaz4205_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="ebaz4205_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="ebaz4205_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="ebaz4205_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="ebaz4205_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-DCP" Name="ebaz4205_wrapper_routed.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/DivideBy2N.v">
@@ -132,22 +114,19 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/I2S_Transmitter.v">
+    <File Path="$PPRDIR/../CIC_FIR_2C_issue/CIC_FIR_2C_issue.srcs/sources_1/new/reset_lengthener.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/capture-test/capture-test.srcs/sources_1/new/I2S_Transmitter.v"/>
-        <Attr Name="ImportTime" Val="1670690049"/>
         <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2s_transmitter_16.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/AXI_Stream_Generator.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../CIC_FIR_2C_issue/CIC_FIR_2C_issue.srcs/sources_1/new/reset_lengthener.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -164,6 +143,16 @@
     </File>
     <File Path="$PGENDIR/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/I2S_Transmitter.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/capture-test/capture-test.srcs/sources_1/new/I2S_Transmitter.v"/>
+        <Attr Name="ImportTime" Val="1670690049"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -218,6 +207,13 @@
         <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/axis-capture/axis-capture.srcs/sources_1/new/dp_ram_1r_1w_2clk.vhd"/>
         <Attr Name="ImportTime" Val="1664957969"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/i2s_transmitter_24.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -303,6 +299,14 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PPRDIR/../../EBAZ4205_HDMI/Vivado/Vivado.srcs/utils_1/imports/synth_1/ebaz4205_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
@@ -318,23 +322,6 @@
     <Step Id="route_design"/>
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_reset_lengthener_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_dds_compiler_0_3"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_axis2c_combine_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_axis2c_combine_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_mult_gen_1_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_mult_gen_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_c_addsub_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_axis_mux_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_fir_compiler_0_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_AXI_Stream_Generator_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_DivideBy2N_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_DivideBy4_25MHz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_I2S_Transmitter_0_2"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_processing_system7_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_DivideBy10_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_ps2_mouse_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_axi_dynclk_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ebaz4205_mult_gen_0_3"/>
 </GenRun>

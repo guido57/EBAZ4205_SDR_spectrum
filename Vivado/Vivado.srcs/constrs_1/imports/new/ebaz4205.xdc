@@ -18,6 +18,10 @@ set_property IOSTANDARD LVCMOS33 [get_ports ENET0_GMII_TX_CLK_0]
 set_property PACKAGE_PIN U14 [get_ports ENET0_GMII_RX_CLK_0]
 set_property PACKAGE_PIN U15 [get_ports ENET0_GMII_TX_CLK_0]
 
+#[Place 30-876] Port 'ENET0_GMII_TX_CLK_0'  is assigned to PACKAGE_PIN 'U15'  which can only be used as the N side of a differential clock input. 
+#Please use the following constraint(s) to pass this DRC check:
+set_property CLOCK_DEDICATED_ROUTE FALSE [get_nets {ENET0_GMII_TX_CLK_0_IBUF}]
+
 set_property IOSTANDARD LVCMOS33 [get_ports {enet0_gmii_rxd[3]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {enet0_gmii_rxd[2]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {enet0_gmii_rxd[1]}]

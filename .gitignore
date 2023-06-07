@@ -32,4 +32,5 @@
 *.app
 
 #Vivado
-Vivado.cache
+Vivado/*
+!Vivado.tcl

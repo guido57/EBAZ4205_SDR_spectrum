@@ -1,31 +1,32 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.0",
-   "Default View_TopLeft":"-342,-51",
+   "Default View_TopLeft":"-286,-14",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
 #  -string -flagsOSRD
 preplace port port-id_s00_axis_aclk -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
 preplace port port-id_s00_axis_aresetn -pg 1 -lvl 0 -x 0 -y 250 -defaultsOSRD
-preplace port port-id_SCLK -pg 1 -lvl 3 -x 580 -y 180 -defaultsOSRD
-preplace port port-id_LRCLK -pg 1 -lvl 3 -x 580 -y 200 -defaultsOSRD
-preplace port port-id_I2SDATA -pg 1 -lvl 3 -x 580 -y 220 -defaultsOSRD
+preplace port port-id_SCLK -pg 1 -lvl 3 -x 610 -y 180 -defaultsOSRD
+preplace port port-id_LRCLK -pg 1 -lvl 3 -x 610 -y 200 -defaultsOSRD
+preplace port port-id_I2SDATA -pg 1 -lvl 3 -x 610 -y 220 -defaultsOSRD
 preplace portBus In1 -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 1 -x 140 -y 60 -defaultsOSRD
-preplace inst DivideBy10 -pg 1 -lvl 1 -x 140 -y 320 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 1 -x 140 -y 170 -defaultsOSRD
-preplace inst I2S_Transmitter_0 -pg 1 -lvl 2 -x 410 -y 200 -defaultsOSRD
+preplace inst DivideBy10 -pg 1 -lvl 1 -x 140 -y 320 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 140 -y 430 -defaultsOSRD
+preplace inst I2S_Transmitter_0 -pg 1 -lvl 2 -x 430 -y 200 -defaultsOSRD
 preplace netloc AM_demodulator_U 1 0 1 30J 50n
-preplace netloc DivideBy2_clk_out 1 1 1 250 210n
+preplace netloc DivideBy2_clk_out 1 1 1 270 210n
 preplace netloc I2S_Transmitter_0_bclk 1 2 1 NJ 180
 preplace netloc I2S_Transmitter_0_lrclk 1 2 1 NJ 200
 preplace netloc I2S_Transmitter_0_sdata 1 2 1 NJ 220
 preplace netloc PS_ARESETN 1 0 2 20 250 NJ
 preplace netloc PS_FCLK_CLK0 1 0 2 30 230 NJ
-preplace netloc xlconcat_0_dout1 1 1 1 250J 60n
-preplace netloc xlconstant_1_dout 1 1 1 240J 170n
-levelinfo -pg 1 0 140 410 580
-pagesize -pg 1 -db -bbox -sgen -170 -10 690 390
+preplace netloc xlconstant_1_dout 1 1 1 250J 170n
+preplace netloc xlconstant_0_dout 1 1 1 260 170n
+levelinfo -pg 1 0 140 430 610
+pagesize -pg 1 -db -bbox -sgen -180 -10 730 490
 "
 }
-
+0

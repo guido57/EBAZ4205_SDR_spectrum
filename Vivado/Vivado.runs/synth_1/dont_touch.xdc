@@ -75,6 +75,9 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_dd
 # IP: bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_1_0 || ORIG_REF_NAME==ebaz4205_axi_gpio_1_0} -quiet] -quiet
 
+# IP: bd/ebaz4205/ip/ebaz4205_xlconstant_0_6/ebaz4205_xlconstant_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_0_6 || ORIG_REF_NAME==ebaz4205_xlconstant_0_6} -quiet] -quiet
+
 # IP: bd/ebaz4205/ip/ebaz4205_xlconstant_0_0/ebaz4205_xlconstant_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_0_0 || ORIG_REF_NAME==ebaz4205_xlconstant_0_0} -quiet] -quiet
 
@@ -141,23 +144,41 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_ax
 # IP: bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_0/ebaz4205_axis2c_splitter_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis2c_splitter_0_0 || ORIG_REF_NAME==ebaz4205_axis2c_splitter_0_0} -quiet] -quiet
 
-# IP: bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_1/ebaz4205_axis2c_splitter_0_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis2c_splitter_0_1 || ORIG_REF_NAME==ebaz4205_axis2c_splitter_0_1} -quiet] -quiet
-
 # IP: bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_0/ebaz4205_axis2c_combine_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis2c_combine_0_0 || ORIG_REF_NAME==ebaz4205_axis2c_combine_0_0} -quiet] -quiet
 
-# IP: bd/ebaz4205/ip/ebaz4205_xlconcat_0_2/ebaz4205_xlconcat_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconcat_0_2 || ORIG_REF_NAME==ebaz4205_xlconcat_0_2} -quiet] -quiet
-
-# IP: bd/ebaz4205/ip/ebaz4205_xlconstant_1_1/ebaz4205_xlconstant_1_1.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_1_1 || ORIG_REF_NAME==ebaz4205_xlconstant_1_1} -quiet] -quiet
+# IP: bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_1/ebaz4205_reset_lengthener_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_reset_lengthener_0_1 || ORIG_REF_NAME==ebaz4205_reset_lengthener_0_1} -quiet] -quiet
 
 # IP: bd/ebaz4205/ip/ebaz4205_DivideBy10_0/ebaz4205_DivideBy10_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_DivideBy10_0 || ORIG_REF_NAME==ebaz4205_DivideBy10_0} -quiet] -quiet
 
-# IP: bd/ebaz4205/ip/ebaz4205_I2S_Transmitter_0_2/ebaz4205_I2S_Transmitter_0_2.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_I2S_Transmitter_0_2 || ORIG_REF_NAME==ebaz4205_I2S_Transmitter_0_2} -quiet] -quiet
+# IP: bd/ebaz4205/ip/ebaz4205_xlconstant_0_7/ebaz4205_xlconstant_0_7.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_0_7 || ORIG_REF_NAME==ebaz4205_xlconstant_0_7} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlconstant_0_8/ebaz4205_xlconstant_0_8.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_0_8 || ORIG_REF_NAME==ebaz4205_xlconstant_0_8} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_2 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_2} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_DivideBy2N_0_1/ebaz4205_DivideBy2N_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_DivideBy2N_0_1 || ORIG_REF_NAME==ebaz4205_DivideBy2N_0_1} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_util_vector_logic_0_2/ebaz4205_util_vector_logic_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_util_vector_logic_0_2 || ORIG_REF_NAME==ebaz4205_util_vector_logic_0_2} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_dds_compiler_0_5/ebaz4205_dds_compiler_0_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_dds_compiler_0_5 || ORIG_REF_NAME==ebaz4205_dds_compiler_0_5} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_0_9/ebaz4205_xlslice_0_9.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_0_9 || ORIG_REF_NAME==ebaz4205_xlslice_0_9} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_1_3/ebaz4205_xlslice_1_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_1_3 || ORIG_REF_NAME==ebaz4205_xlslice_1_3} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_i2s_transmitter_16_0_0/ebaz4205_i2s_transmitter_16_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_i2s_transmitter_16_0_0 || ORIG_REF_NAME==ebaz4205_i2s_transmitter_16_0_0} -quiet] -quiet
 
 # IP: bd/ebaz4205/ip/ebaz4205_axi_dynclk_0_0/ebaz4205_axi_dynclk_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axi_dynclk_0_0 || ORIG_REF_NAME==ebaz4205_axi_dynclk_0_0} -quiet] -quiet
@@ -246,6 +267,12 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_ax
 # IP: bd/ebaz4205/ip/ebaz4205_axis2c_combine_0_1/ebaz4205_axis2c_combine_0_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis2c_combine_0_1 || ORIG_REF_NAME==ebaz4205_axis2c_combine_0_1} -quiet] -quiet
 
+# IP: bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/ebaz4205_AXI_Stream_Generator_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_AXI_Stream_Generator_0_0 || ORIG_REF_NAME==ebaz4205_AXI_Stream_Generator_0_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/ebaz4205_reset_lengthener_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_reset_lengthener_0_0 || ORIG_REF_NAME==ebaz4205_reset_lengthener_0_0} -quiet] -quiet
+
 # IP: bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_4 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_4} -quiet] -quiet
 
@@ -261,14 +288,59 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_ax
 # IP: bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/ebaz4205_axis_capture_0_4.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis_capture_0_4 || ORIG_REF_NAME==ebaz4205_axis_capture_0_4} -quiet] -quiet
 
-# IP: bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0/ebaz4205_AXI_Stream_Generator_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_AXI_Stream_Generator_0_0 || ORIG_REF_NAME==ebaz4205_AXI_Stream_Generator_0_0} -quiet] -quiet
+# IP: bd/ebaz4205/ip/ebaz4205_mult_gen_1_2/ebaz4205_mult_gen_1_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_mult_gen_1_2 || ORIG_REF_NAME==ebaz4205_mult_gen_1_2} -quiet] -quiet
 
-# IP: bd/ebaz4205/ip/ebaz4205_axis2c_splitter_0_3/ebaz4205_axis2c_splitter_0_3.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis2c_splitter_0_3 || ORIG_REF_NAME==ebaz4205_axis2c_splitter_0_3} -quiet] -quiet
+# IP: bd/ebaz4205/ip/ebaz4205_mult_gen_0_6/ebaz4205_mult_gen_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_mult_gen_0_6 || ORIG_REF_NAME==ebaz4205_mult_gen_0_6} -quiet] -quiet
 
-# IP: bd/ebaz4205/ip/ebaz4205_reset_lengthener_0_0/ebaz4205_reset_lengthener_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_reset_lengthener_0_0 || ORIG_REF_NAME==ebaz4205_reset_lengthener_0_0} -quiet] -quiet
+# IP: bd/ebaz4205/ip/ebaz4205_c_addsub_1_0/ebaz4205_c_addsub_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_c_addsub_1_0 || ORIG_REF_NAME==ebaz4205_c_addsub_1_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_dds_compiler_0_4/ebaz4205_dds_compiler_0_4.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_dds_compiler_0_4 || ORIG_REF_NAME==ebaz4205_dds_compiler_0_4} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_0_6/ebaz4205_xlslice_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_0_6 || ORIG_REF_NAME==ebaz4205_xlslice_0_6} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_0_7/ebaz4205_xlslice_0_7.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_0_7 || ORIG_REF_NAME==ebaz4205_xlslice_0_7} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_dds_axi_interface_0_5/ebaz4205_dds_axi_interface_0_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_dds_axi_interface_0_5 || ORIG_REF_NAME==ebaz4205_dds_axi_interface_0_5} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_axis_mux_0_1/ebaz4205_axis_mux_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axis_mux_0_1 || ORIG_REF_NAME==ebaz4205_axis_mux_0_1} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_6 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_6} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_1_2/ebaz4205_xlslice_1_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_1_2 || ORIG_REF_NAME==ebaz4205_xlslice_1_2} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlslice_0_8/ebaz4205_xlslice_0_8.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlslice_0_8 || ORIG_REF_NAME==ebaz4205_xlslice_0_8} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_xlconstant_0_5/ebaz4205_xlconstant_0_5.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_xlconstant_0_5 || ORIG_REF_NAME==ebaz4205_xlconstant_0_5} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_1 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_1} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/ebaz4205_proc_sys_reset_0_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_2 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_2} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_audio_formatter_0_0/ebaz4205_audio_formatter_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_audio_formatter_0_0 || ORIG_REF_NAME==ebaz4205_audio_formatter_0_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/ebaz4205_proc_sys_reset_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_3 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_3} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0/ebaz4205_i2s_receiver_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_i2s_receiver_0_0 || ORIG_REF_NAME==ebaz4205_i2s_receiver_0_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_axi_interconnect_0_3/ebaz4205_axi_interconnect_0_3.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_axi_interconnect_0_3 || ORIG_REF_NAME==ebaz4205_axi_interconnect_0_3} -quiet] -quiet
 
 # IP: bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_s00_regslice_0 || ORIG_REF_NAME==ebaz4205_s00_regslice_0} -quiet] -quiet
@@ -279,7 +351,194 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_s0
 # IP: bd/ebaz4205/ip/ebaz4205_auto_pc_0/ebaz4205_auto_pc_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_auto_pc_0 || ORIG_REF_NAME==ebaz4205_auto_pc_0} -quiet] -quiet
 
+# IP: bd/ebaz4205/ip/ebaz4205_tier2_xbar_0_0/ebaz4205_tier2_xbar_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_tier2_xbar_0_0 || ORIG_REF_NAME==ebaz4205_tier2_xbar_0_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_tier2_xbar_1_0/ebaz4205_tier2_xbar_1_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_tier2_xbar_1_0 || ORIG_REF_NAME==ebaz4205_tier2_xbar_1_0} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_tier2_xbar_2_0/ebaz4205_tier2_xbar_2_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_tier2_xbar_2_0 || ORIG_REF_NAME==ebaz4205_tier2_xbar_2_0} -quiet] -quiet
+
 # IP: bd/ebaz4205/ip/ebaz4205_auto_pc_1/ebaz4205_auto_pc_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_auto_pc_1 || ORIG_REF_NAME==ebaz4205_auto_pc_1} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_auto_pc_2/ebaz4205_auto_pc_2.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_auto_pc_2 || ORIG_REF_NAME==ebaz4205_auto_pc_2} -quiet] -quiet
+
+# IP: bd/ebaz4205/ip/ebaz4205_auto_us_0/ebaz4205_auto_us_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==ebaz4205_auto_us_0 || ORIG_REF_NAME==ebaz4205_auto_us_0} -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_0 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_0 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_0/ebaz4205_clk_wiz_0_0_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_0 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0/ebaz4205_proc_sys_reset_0_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_0 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_1 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_1/ebaz4205_proc_sys_reset_0_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_1 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0/ebaz4205_processing_system7_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_processing_system7_0_0 || ORIG_REF_NAME==ebaz4205_processing_system7_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0 || ORIG_REF_NAME==ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0/ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0 || ORIG_REF_NAME==ebaz4205_rst_ENET0_GMII_RX_CLK_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_rst_ps7_0_140M_0 || ORIG_REF_NAME==ebaz4205_rst_ps7_0_140M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_140M_0/ebaz4205_rst_ps7_0_140M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_rst_ps7_0_140M_0 || ORIG_REF_NAME==ebaz4205_rst_ps7_0_140M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_rst_ps7_0_64M_0 || ORIG_REF_NAME==ebaz4205_rst_ps7_0_64M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_rst_ps7_0_64M_0/ebaz4205_rst_ps7_0_64M_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_rst_ps7_0_64M_0 || ORIG_REF_NAME==ebaz4205_rst_ps7_0_64M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_1_0 || ORIG_REF_NAME==ebaz4205_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_1_0/ebaz4205_axi_gpio_1_0.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_1_0 || ORIG_REF_NAME==ebaz4205_axi_gpio_1_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_fir_compiler_0_0 || ORIG_REF_NAME==ebaz4205_fir_compiler_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_1 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1/ebaz4205_axi_gpio_0_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_1 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_2 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_2 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_2} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2/ebaz4205_clk_wiz_0_2_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_vdma_0_0 || ORIG_REF_NAME==ebaz4205_axi_vdma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_clocks.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_vdma_0_0 || ORIG_REF_NAME==ebaz4205_axi_vdma_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_vdma_0_0/ebaz4205_axi_vdma_0_0_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axis_subset_converter_0_0/ebaz4205_axis_subset_converter_0_0_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_tc_0_0/ebaz4205_v_tc_0_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_v_tc_0_0 || ORIG_REF_NAME==ebaz4205_v_tc_0_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_v_axi4s_vid_out_0_1/ebaz4205_v_axi4s_vid_out_0_1_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_v_axi4s_vid_out_0_1 || ORIG_REF_NAME==ebaz4205_v_axi4s_vid_out_0_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_2 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_2/ebaz4205_axi_gpio_0_2.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_2 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_fir_compiler_0_1/constraints/fir_compiler_v7_2.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_fir_compiler_0_1 || ORIG_REF_NAME==ebaz4205_fir_compiler_0_1} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_5 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_5} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_5/ebaz4205_axi_gpio_0_5.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_5 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_5} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_4 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_4} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_4/ebaz4205_axi_gpio_0_4.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_4 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_4} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_3 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/ebaz4205_axi_gpio_0_3.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_3 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_6 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_6} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/ebaz4205_axi_gpio_0_6.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_axi_gpio_0_6 || ORIG_REF_NAME==ebaz4205_axi_gpio_0_6} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_1 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_clk_wiz_0_1 || ORIG_REF_NAME==ebaz4205_clk_wiz_0_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_1/ebaz4205_clk_wiz_0_1_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/ebaz4205_proc_sys_reset_0_2_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_2 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_2/ebaz4205_proc_sys_reset_0_2.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_2 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_2} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_audio_formatter_0_0/ebaz4205_audio_formatter_0_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_audio_formatter_0_0 || ORIG_REF_NAME==ebaz4205_audio_formatter_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/ebaz4205_proc_sys_reset_0_3_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_3 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_3/ebaz4205_proc_sys_reset_0_3.xdc
+#dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_proc_sys_reset_0_3 || ORIG_REF_NAME==ebaz4205_proc_sys_reset_0_3} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0/ebaz4205_i2s_receiver_0_0_board.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_i2s_receiver_0_0 || ORIG_REF_NAME==ebaz4205_i2s_receiver_0_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_regslice_0/ebaz4205_s00_regslice_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_s00_regslice_0 || ORIG_REF_NAME==ebaz4205_s00_regslice_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_s00_data_fifo_0 || ORIG_REF_NAME==ebaz4205_s00_data_fifo_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_s00_data_fifo_0/ebaz4205_s00_data_fifo_0_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_0/ebaz4205_auto_pc_0_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_1/ebaz4205_auto_pc_1_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_pc_2/ebaz4205_auto_pc_2_ooc.xdc
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_us_0/ebaz4205_auto_us_0_clocks.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==ebaz4205_auto_us_0 || ORIG_REF_NAME==ebaz4205_auto_us_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_auto_us_0/ebaz4205_auto_us_0_ooc.xdc
 
 # XDC: /home/guido/GitHub/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ebaz4205_ooc.xdc

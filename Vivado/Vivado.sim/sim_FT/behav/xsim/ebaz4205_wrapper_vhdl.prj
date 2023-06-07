@@ -60,6 +60,11 @@ vhdl xil_defaultlib  \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_ps2_mouse_0_0/sim/ebaz4205_ps2_mouse_0_0.vhd" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3/sim/ebaz4205_axi_gpio_0_3.vhd" \
 "../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axis_capture_0_4/sim/ebaz4205_axis_capture_0_4.vhd" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_mult_gen_1_2/sim/ebaz4205_mult_gen_1_2.vhd" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_mult_gen_0_6/sim/ebaz4205_mult_gen_0_6.vhd" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_c_addsub_1_0/sim/ebaz4205_c_addsub_1_0.vhd" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_dds_compiler_0_4/sim/ebaz4205_dds_compiler_0_4.vhd" \
+"../../../../Vivado.ip_user_files/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6/sim/ebaz4205_axi_gpio_0_6.vhd" \
 
 # Do not sort compile order
 nosort

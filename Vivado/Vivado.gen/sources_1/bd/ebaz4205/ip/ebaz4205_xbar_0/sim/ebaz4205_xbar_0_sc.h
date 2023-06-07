@@ -84,32 +84,6 @@ public:
   xtlm::xtlm_aximm_initiator_socket* initiator_1_wr_socket;
   xtlm::xtlm_aximm_initiator_socket* initiator_2_rd_socket;
   xtlm::xtlm_aximm_initiator_socket* initiator_2_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_3_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_3_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_4_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_4_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_5_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_5_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_6_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_6_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_7_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_7_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_8_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_8_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_9_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_9_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_10_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_10_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_11_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_11_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_12_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_12_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_13_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_13_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_14_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_14_wr_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_15_rd_socket;
-  xtlm::xtlm_aximm_initiator_socket* initiator_15_wr_socket;
 
   // module socket-to-socket TLM interfaces
 
