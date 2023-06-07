@@ -1,0 +1,31 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/guido/EBAZ4205_SDR_HDMI_PS2/ebaz4205/build/tmp/work-shared/zynq-generic/kernel-source/include",
+                "/home/guido/EBAZ4205_SDR_HDMI_PS2/ebaz4205/build/tmp/work-shared/zynq-generic/kernel-source/arch/arm/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.makefile-tools"
+        },
+        {
+            "name": "c_cpp_config",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/guido/EBAZ4205_SDR_HDMI_PS2/ebaz4205/build/tmp/work-shared/zynq-generic/kernel-source/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-arm"
+        }
+    ],
+    "version": 4
+}

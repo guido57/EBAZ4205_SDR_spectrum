@@ -1,0 +1,9 @@
+[Unit]
+Description=chown-ebaz-uio
+  
+[Service]
+ExecStart=/usr/bin/chown-ebaz-uio
+StandardOutput=journal+console
+  
+[Install]
+WantedBy=multi-user.target

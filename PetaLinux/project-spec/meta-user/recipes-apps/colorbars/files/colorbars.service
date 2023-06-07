@@ -1,0 +1,10 @@
+[Unit]
+Description=colorbars
+  
+[Service]
+ExecStart=/usr/bin/colorbars -r 1280x720x50Hz
+StandardOutput=journal+console
+  
+[Install]
+WantedBy=multi-user.target
+

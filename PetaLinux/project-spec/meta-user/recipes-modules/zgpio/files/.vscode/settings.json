@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "errno.h": "c",
+        "fs.h": "c",
+        "kernel.h": "c",
+        "linkage.h": "c",
+        "compiler.h": "c",
+        "compiler_types.h": "c",
+        "interrupt.h": "c",
+        "hardirq.h": "c",
+        "irq.h": "c",
+        "slab.h": "c",
+        "module.h": "c",
+        "iomd.h": "c"
+    }
+}

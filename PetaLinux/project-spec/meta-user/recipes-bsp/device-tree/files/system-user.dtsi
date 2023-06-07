@@ -1,0 +1,107 @@
+/include/ "system-conf.dtsi"
+    / {
+        chosen {
+            bootargs = "earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait cma=256M uio_pdrv_genirq.of_id=generic-uio";
+        };
+    
+    
+    reserved-memory {
+	      #address-cells = <1>;
+	      #size-cells = <1>;
+	      ranges;
+	      // HDMI Output frame buffer	
+	      hdmi_fb_reserved_region@0x08000000 {
+		 compatible = "removed-dma-pool";
+		 no-map;
+		 reg = <0x08000000 0x01000000>;
+	      };
+   };
+  
+   hdmi_fb0: framebuffer0@0x08000000 {           // HDMI out
+	      compatible = "simple-framebuffer";
+	      // 512M (M modules)
+	      reg = <0x08000000 (1280 * 720 * 4)>;   
+	      width = <1280>;                         
+	      height = <720>;                         
+	      stride = <(1280 * 4)>;                 
+	      format = "a8r8g8b8";
+	      status = "okay";
+   };
+
+
+   /*
+		Color formats:
+
+		"r5g6b5" "r5g5b5a1" "x1r5g5b5" "a1r5g5b5" "r8g8b8" 
+		"x8r8g8b8" "a8r8g8b8" "a8b8g8r8" 
+		"x2r10g10b10" "a2r10g10b10"
+
+   */
+
+  
+    
+};
+    
+&ADC_TestGen_TestGen_axi_gpio_ADC_TEST {
+	compatible = "generic-uio";
+};
+
+&ADC_TestGen_TestGen_dds_axi_interface_0{
+	compatible = "generic-uio";
+};
+
+&DDC_FT_DDS_LO_FT_axi_interface{
+	compatible = "generic-uio";
+};
+
+&DDC_LO_DDS_LO_axi_interface{
+	compatible = "generic-uio";
+};
+
+&FILTER_FT_axi_interface_DEC_RATE_FT_IQ{
+	compatible = "generic-uio";
+};
+
+&FILTER_FT_axis_capture_FT{
+	compatible = "generic-uio";
+};
+
+&FILTER_axi_gpio_FILTER_GAIN{
+	compatible = "generic-uio";
+};
+
+&FILTER_axi_interface_DEC_RATE_IQ{
+	compatible = "generic-uio";
+};
+
+&HDMI_axi_gpio_hdmi {
+	compatible = "generic-uio";
+	
+};
+
+&PS2_axi_gpio_ps2_mouse {
+	compatible = "zgpiomouse";
+	
+};
+
+&PS2_axi_gpio_ps2_mouse_reset {
+	compatible = "generic-uio";
+	
+};
+
+&axis_capture_RF{
+	compatible = "generic-uio";
+};
+    
+&FILTER_FT_axi_gpio_FILTER_FT_GAIN{
+	compatible = "generic-uio";
+};
+
+&SSB_demodulator_axi_gpio_AM_SSB{
+	compatible = "generic-uio";
+};
+
+&SSB_demodulator_dds_axi_interface_BFO{
+	compatible = "generic-uio";
+};
+    
