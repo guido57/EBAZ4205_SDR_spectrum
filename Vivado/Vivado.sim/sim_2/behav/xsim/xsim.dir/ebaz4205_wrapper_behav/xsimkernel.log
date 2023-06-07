@@ -1,7 +1,0 @@
-Running: xsim.dir/ebaz4205_wrapper_behav/xsimk -simmode gui -wdb ebaz4205_wrapper_behav.wdb -simrunnum 0 -socket 55791
-Design successfully loaded
-Design Loading Memory Usage: 105520 KB (Peak: 105520 KB)
-Design Loading CPU Usage: 140 ms
-Simulation completed
-Simulation Memory Usage: 211400 KB (Peak: 244788 KB)
-Simulation CPU Usage: 357600 ms
