@@ -33,6 +33,6 @@
 
 #Vivado
 Vivado
-!Vivado/*.tcl
+!Vivado/Vivado.tcl
 
 
