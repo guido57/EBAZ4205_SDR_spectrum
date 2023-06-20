@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="https://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz '</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file://D:/R2021a/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz '
+<a href="matlab:open_system('AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz ');">open model 'AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz '</a><BR>
+Generated on 2022-12-23 12:34:11</h1>
+<H2>HDL check for 'AMdemod' complete with 7 errors, 1 warnings, and 0 messages.</H2><BR>
+<H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
+<TABLE>
+<TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:engine:missingImplementation" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');hilite_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32 47 83 113 117 97 114 101 32 87 97 118 101 10 71 101 110 101 114 97 116 111 114 47 82 101 112 108 105 99 97 79 102 83 111 117 114 99 101]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /Square Wave
+Generator/ReplicaOfSource</a>
+</TD>
+<TD>Error</TD>
+<TD>Block 'AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /Square Wave Generator/ReplicaOfSource' is not supported for HDL code generation. To continue with code generation, comment out this block.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcommon:nativefloatingpoint:DoubleShouldUseNFP" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');hilite_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32 47 65 100 100 51]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /Add3</a>
+</TD>
+<TD>Error</TD>
+<TD>Signals of type 'Double' will not generate synthesizable HDL. For synthesizable HDL code, <a href="matlab:configset.internal.open('AMdemod','FloatingPointTargetConfiguration')">set the "Library" option to "Native Floating Point"</a>. For non-synthesizable and simulation-only HDL code, <a href="matlab:configset.internal.open('AMdemod','TreatRealsInGeneratedCodeAs')">set the "Check for presence of reals in generated HDL code" diagnostic to "Warning" or "None"</a>.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="HDLShared:hdlshared:MultirateMultiTasking" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');open_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz </a>
+</TD>
+<TD>Error</TD>
+<TD>To guarantee data integrity in generated HDL code, set the "Multitask data transfer" and "Single task data transfer" options to "Error" on the Diagnostics > Sample Time pane of the Configuration Parameters dialog box. Additionally on the Solver pane, set the Solver type to "Fixed-step" and, in the Solver details > Tasking and sample time options group select "Treat each discrete rate as a separate task".</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:mixeddoubleUnhandled" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');hilite_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32 47 73 32 65 77 32 109 111 100]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /I AM mod</a>
+</TD>
+<TD>Error</TD>
+<TD>Mixed double, single, half, and non-real datatypes at ports of block is not allowed.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:produnsupported" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');hilite_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32 47 73 32 65 77 32 109 111 100]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /I AM mod</a>
+</TD>
+<TD>Error</TD>
+<TD>Product block with more than two inputs is not supported.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:mixeddoubleUnhandled" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');hilite_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32 47 81 32 65 77 32 109 111 100]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /Q AM mod</a>
+</TD>
+<TD>Error</TD>
+<TD>Mixed double, single, half, and non-real datatypes at ports of block is not allowed.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:produnsupported" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');hilite_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32 47 81 32 65 77 32 109 111 100]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz /Q AM mod</a>
+</TD>
+<TD>Error</TD>
+<TD>Product block with more than two inputs is not supported.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="HDLShared:hdlshared:MultirateSolver" href="matlab:hilite(get_param(char([65 77 100 101 109 111 100]),'object'),'none');open_system(char([65 77 100 101 109 111 100 47 65 77 32 109 111 100 117 108 97 116 111 114 46 32 67 97 114 114 105 101 114 32 49 50 75 72 122 32 77 111 100 32 50 48 48 72 122 32 83 82 61 52 56 75 72 122 32]))">AMdemod/AM modulator. Carrier 12KHz Mod 200Hz SR=48KHz </a>
+</TD>
+<TD>Warning</TD>
+<TD>HDL test bench generation for multirate models requires a fixed step, discrete solver in single tasking mode. In the Solver pane of the configuration parameters dialog box, ensure the solver type is set to "Fixed-step" and solver to "discrete". To configure the solver to single tasking mode, under Solver details, clear the options "Treat each discrete rate as a separate task" and "Automatically handle rate transition for data transfer".</TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="D:/R2021a/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="D:/R2021a/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="D:/R2021a/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="D:/R2021a/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2022 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+</body>
+</html>

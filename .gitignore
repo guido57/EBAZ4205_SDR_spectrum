@@ -35,5 +35,7 @@
 !Vivado/
 Vivado/*
 !Vivado/Vivado.srcs/
+!Vivado/IP*/
+!Vivado/matlab/
 !Vivado/Vivado.xpr
 
