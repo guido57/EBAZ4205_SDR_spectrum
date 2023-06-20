@@ -7,8 +7,7 @@
       "name": "ebaz4205",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "None",
-      "tool_version": "2022.2",
-      "validated": "true"
+      "tool_version": "2022.2"
     },
     "design_tree": {
       "PS": {
@@ -449,58 +448,14 @@
     "ports": {
       "ENET0_GMII_RX_CLK_0": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "ebaz4205_ENET0_GMII_RX_CLK_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "ENET0_GMII_RX_DV_0": {
         "direction": "I"
       },
       "ENET0_GMII_TX_CLK_0": {
         "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "ebaz4205_ENET0_GMII_TX_CLK_0",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "ENET0_GMII_TX_EN_0": {
         "direction": "O",
@@ -523,18 +478,6 @@
         "parameters": {
           "FREQ_HZ": {
             "value": "25000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
           }
         }
       },
@@ -542,61 +485,23 @@
         "type": "clk",
         "direction": "O",
         "parameters": {
-          "CLK_DOMAIN": {
-            "value": "ebaz4205_processing_system7_0_0_FCLK_CLK1",
-            "value_src": "default_prop"
-          },
           "FREQ_HZ": {
             "value": "64000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0",
-            "value_src": "default"
           }
         }
       },
       "OTR": {
         "type": "data",
-        "direction": "I",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
+        "direction": "I"
       },
       "ADC_in": {
         "type": "data",
         "direction": "I",
         "left": "11",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
+        "right": "0"
       },
       "SCLK": {
-        "direction": "O",
-        "parameters": {
-          "PortType": {
-            "value": "undef",
-            "value_src": "ip_prop"
-          },
-          "PortType.PROP_SRC": {
-            "value": "false",
-            "value_src": "ip_prop"
-          }
-        }
+        "direction": "O"
       },
       "LRCLK": {
         "direction": "O"
@@ -608,13 +513,7 @@
         "type": "data",
         "direction": "O",
         "left": "0",
-        "right": "0",
-        "parameters": {
-          "LAYERED_METADATA": {
-            "value": "undef",
-            "value_src": "default"
-          }
-        }
+        "right": "0"
       },
       "HDMI_OEN": {
         "direction": "O",
@@ -5255,7 +5154,7 @@
                 "value": "COE_File"
               },
               "Coefficient_File": {
-                "value": "../../../../../../../matlab/mycoefile.coe"
+                "value": "../../../../../../matlab/mycoefile.coe"
               },
               "Coefficient_Fractional_Bits": {
                 "value": "0"
@@ -11013,7 +10912,7 @@
                 "value": "COE_File"
               },
               "Coefficient_File": {
-                "value": "../../../../../../../matlab/mycoefile.coe"
+                "value": "../../../../../../matlab/mycoefile.coe"
               },
               "Coefficient_Fractional_Bits": {
                 "value": "0"
