@@ -1,2 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/guido/GitHub/EBAZ4205_SDR_spectrum/IP_axis2c/project_1/project_1.srcs/sources_1/new/axis-streamer.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'AXI_Stream_Generator'
