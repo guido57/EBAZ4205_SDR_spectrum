@@ -4,13 +4,14 @@
 
 This folder contains the Vivado project that lets you to program the Zynq7010 FPGA. 
 It is quite complex but I hope that the block diagram could help you to understand it.
+You need Vivado 2022.2 ... I've never tried with different versions!
 
 ![block diagram](../docs/SDR-block-diagram.png)
 
 ## Getting Started with the Vivado project
 
 * download and unzip (or git) this repository in a folder of your PC where Vivado 2022.2 is installed
-* run Vivado 2022 and open the file Vivado.xpr (the first opening will take some time to recreate all the folders
+* run Vivado 2022.2 and open the file Vivado.xpr (the first opening will take some time to recreate all the folders
 
   Optional, in case you need:
 
