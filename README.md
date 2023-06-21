@@ -27,7 +27,7 @@ In this project there's nothing esoteric, but it is quite complex because it req
 
 ## Getting Started
 
-* [HW is in my 30 MHz Spectrum and SDR in an FPGA Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
+* [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
 * SW is here :) 
 
 ## Software
