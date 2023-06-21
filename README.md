@@ -52,7 +52,9 @@ After programming it, the EBAZ4205 will:
   * change the local RF test generator frequency in the range 100 KHz - 32 MHz
   * tune a radio station 
 * down convert and filter (CIC + FIR) the received signal
-* demodulate (AM only at the moment) and send it to an external loudspeaker
+* demodulate (AM or LSB or USB) and send it to:
+*   an external loudspeaker
+*   the audio input of the PetaLinux running on PS
 * interface a PS/2 mouse
 * send HDMI to an external monitor
 
