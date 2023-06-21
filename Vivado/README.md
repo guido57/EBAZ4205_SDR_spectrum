@@ -11,9 +11,9 @@ You need Vivado 2022.2 ... I've never tried with different versions!
 ## Getting Started with the Vivado project
 
 * download and unzip (or git) this repository in a folder of your PC where Vivado 2022.2 is installed
-* run Vivado 2022.2 and open the file Vivado.xpr (the first opening will take some time to recreate all the folders
+* run Vivado 2022.2 and open the file Vivado.xpr (the first opening will take some time to recreate all the folders)
 
-  Optional, in case you need:
+  Optional, just in case Vivado doesn't set EBAZ4205_wrapper as "Top"
 
   * delete the EBAZ4205_wrapper file
   * (re) create the EBAZ4205_wrapper right clicking on EBAZ4205.bd
