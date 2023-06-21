@@ -53,8 +53,8 @@ After programming it, the EBAZ4205 will:
   * tune a radio station 
 * down convert and filter (CIC + FIR) the received signal
 * demodulate (AM or LSB or USB) and send it to:
-*   an external loudspeaker
-*   the audio input of the PetaLinux running on PS
+  * an external loudspeaker
+  * the audio input of the PetaLinux running on PS
 * interface a PS/2 mouse
 * send HDMI to an external monitor
 
