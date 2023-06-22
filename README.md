@@ -48,26 +48,6 @@ The PetaLinux project to build and put together:
 * the programs (colorbars, sdr-app, wsjtx, jt9 etc) 
 
 
-## Vivado
-
-This is the Xilinx Vivado 2022.2 project that let's you to program the Zynq7010 FPGA (PL side) contained in the EBAZ4205 board. 
-
-After programming it, the EBAZ4205 will:
-
-* supply a 64 MHz clock to the AD9226 board
-* receive the 12 bits samples from the AD9226
-* receive commands from the Linux sdr-app running on the PS side of the zynq-7000 to:
-  * capture a frame of samples (2048 samples at a time)
-  * switch between the ADC input and a local RF test generator  
-  * change the local RF test generator frequency in the range 100 KHz - 32 MHz
-  * tune a radio station 
-* down convert and filter (CIC + FIR) the received signal
-* demodulate (AM or LSB or USB) and send it to:
-  * an external loudspeaker
-  * the audio input of the PetaLinux running on PS
-* interface a PS/2 mouse
-* send HDMI to an external monitor
-
 ## Vitis (TODO)
 
 This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
