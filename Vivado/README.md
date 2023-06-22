@@ -2,8 +2,6 @@
  
 ## Overview
 
-This folder contains the Vivado project that lets you to program the Zynq7010 FPGA. 
-
 This is the Xilinx Vivado 2022.2 project that let's you to program the Zynq7010 FPGA (PL side) contained in the EBAZ4205 board. 
 After programming it, the EBAZ4205 will:
 
