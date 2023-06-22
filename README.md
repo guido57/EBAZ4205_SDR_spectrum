@@ -37,8 +37,8 @@ The following chapters describe the five main SW sub-projects (folders of this r
 
 * PetaLinux: the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
 * Vivado: the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
-* Vitis: the Xilinx Vitis project to build the TCP_server Linux app running on the Zynq7010 PS (Processing System)
-* sdr-app: the QT5 C++ software for PetaLinux to display the spectrum and tune the radio stations
+* Vitis: the Xilinx Vitis project to build the C++ colorbars application to setup the HDMI hardware, after PetaLinux boot
+* QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
 
 ## PetaLinux
 
@@ -72,9 +72,9 @@ After programming it, the EBAZ4205 will:
 
 This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
 
-## sdr-app (TODO)
+## QT5 (TODO)
 
-This is the QT5 C++ software receiving sampled data from EBAZ4205 and displaying spectrum and waterfall in its User Interface.
+This is the sdr-app C++ software receiving sampled data from EBAZ4205 and displaying spectrum and waterfall in its User Interface.
 It lets you to send commands to EBA4205 also to:
   * switch between the ADC input and a local RF test generator  
   * change the local RF test generator frequency in the range 100 KHz - 32 MHz
