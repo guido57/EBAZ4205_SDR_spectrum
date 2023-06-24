@@ -14,8 +14,12 @@ Of course you need to have PetaLinux 2022.2 installed on Ubuntu 20.04 LTS or 22.
 Git or download this folder to your PC
 then:
 
- ```
-cd  /home/guido/EBAZ4205_SDR_spextrum/PetaLinux/ 
+```
+cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/ 
+```
+```
 source /tools/PetaLinux/2022.2/bin/settings.sh 
+```
+```
 petalinux-build
  ```
