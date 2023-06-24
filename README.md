@@ -4,7 +4,7 @@
 
 This repository contains:
 * [PetaLinux project](PetaLinux)
-* Vivado project
+* [Vivado project](Vivado)
 * Vitis project
 * QT5 app
 
