@@ -3,7 +3,7 @@
 ## Description
 
 This repository contains:
-* PetaLinux project
+* [PetaLinux project](PetaLinux)
 * Vivado project
 * Vitis project
 * QT5 app
