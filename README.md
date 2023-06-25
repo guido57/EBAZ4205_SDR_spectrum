@@ -27,7 +27,6 @@ This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named
 
 QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
 
-
 ## Getting Started for FPGA or EBAZ4205 beginners
 
 Before going straight to this project, or its sub projects, I strongly reccomend to carefully prepare your HW / SW environment, following the instructions contained in:
@@ -45,17 +44,6 @@ In this project there's nothing esoteric, but it is quite complex because it req
 
 * [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
 * SW is here :) 
-
-## QT5 (TODO)
-
-This is the sdr-app C++ software receiving sampled data from EBAZ4205 and displaying spectrum and waterfall in its User Interface.
-It lets you to send commands to EBA4205 also to:
-  * switch between the ADC input and a local RF test generator  
-  * change the local RF test generator frequency in the range 100 KHz - 32 MHz
-  * tune radio stations 
-  * change the waterfall colors (TODO)
-  * Set IF bandwith and IF gain  
-  ![](https://github.com/guido57/EBAZ4205_SDR/blob/main/docs/SpectrumPy.png)
 
 
 ## License
