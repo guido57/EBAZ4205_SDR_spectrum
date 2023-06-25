@@ -9,18 +9,22 @@ This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum
 
 ### PetaLinux project 
 [PetaLinux project](PetaLinux)
+
 the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
 
 ### Vivado project 
 [Vivado project](Vivado)
+
 the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
 
 ### Vitis project
 [Vitis project](Vitis)
+
 This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
 
 ### QT5 project
 [QT5 project](qt5)
+
 QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
 
 
@@ -41,21 +45,6 @@ In this project there's nothing esoteric, but it is quite complex because it req
 
 * [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
 * SW is here :) 
-
-## Software
-
-The sub directories contains the SW sub-projects (folders of this repository)
-
-* Vitis: the Xilinx Vitis project to build the C++ colorbars application to setup the HDMI hardware, after PetaLinux boot
-* QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
-
-## PetaLinux
-
-The PetaLinux project to build and put together:
-
-
-## Vitis (TODO)
-
 
 ## QT5 (TODO)
 
