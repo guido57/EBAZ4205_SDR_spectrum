@@ -5,8 +5,8 @@
 This repository contains:
 * [PetaLinux project](PetaLinux)
 * [Vivado project](Vivado)
-* Vitis project
-* QT5 app
+* [Vitis project](Vitis)
+* [QT5 project[(qt5)
 
 to display the 0-32 MHz radio spectrum in a full view and tune HF radio stations.
 This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum which is a 0-32 MHz radio spectrum viewer only. 
@@ -15,7 +15,7 @@ This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum
 
 ## Getting Started for FPGA or EBAZ4205 beginners
 
-Before going straight to this project, I strongly reccomend to carefully prepare your HW / SW environment, following the instructions contained in:
+Before going straight to this project, or its sub projects, I strongly reccomend to carefully prepare your HW / SW environment, following the instructions contained in:
 * [HW is in my "Cheap (35$) and powerful FPGA Programming" Hackaday project](https://hackaday.io/project/187351-cheap-35-and-powerful-fpga-programming)
 * [SW is in my "EBAZ4205" repository](https://github.com/guido57/EBAZ4205)
 
@@ -33,7 +33,7 @@ In this project there's nothing esoteric, but it is quite complex because it req
 
 ## Software
 
-The following chapters describe the five main SW sub-projects (folders of this repository)
+The sub directories contains the SW sub-projects (folders of this repository)
 
 * PetaLinux: the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
 * Vivado: the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
@@ -43,9 +43,6 @@ The following chapters describe the five main SW sub-projects (folders of this r
 ## PetaLinux
 
 The PetaLinux project to build and put together:
-* the Linux kernel
-* the root file system (rootfs)
-* the programs (colorbars, sdr-app, wsjtx, jt9 etc) 
 
 
 ## Vitis (TODO)
