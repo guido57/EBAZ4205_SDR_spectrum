@@ -44,8 +44,7 @@ cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/
 source /tools/PetaLinux/2022.2/bin/settings.sh 
 ```
 
-Temporarily exclude "openssh-sftp-server" from building (because of a PetaLinux bug, the sysroot cannot be created with it!)
-3.
+3. Temporarily exclude "openssh-sftp-server" from building (because of a PetaLinux bug, the sysroot cannot be created with it!)
 ```
 petalinux-config -c rootfs 
 ```
@@ -53,7 +52,8 @@ petalinux-config -c rootfs
 5. Uncheck [ ] openssh-sftp-server 
 6. exit saving
 
-Build the sysroot
-7. ```
+7. Build the sysroot
+```
 petalinux-build -s
 ```
+At the end, you'll find a sysroot file in PetaLinux/images/linux/
