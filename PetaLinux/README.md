@@ -31,7 +31,7 @@ petalinux-build
 ```
 
 
-### build PetaLinux sysroot
+### build PetaLinux sysroot and get (cross)compilers
 
 If you want to build Linux applications for PetaLinux using your host PC (with Ubuntu) you need a sysroot. E.g. Qt Creator installed on Ubuntu can build applications for the PetaLinux version installed in the Zynq7010 of your EBAZ4205, but it needs a special compiler and linker which, running on Ubuntu, can build Cortex A9 32 bits executables for PetaLinux, using the proper shared libraries and their include files. 
 
@@ -56,4 +56,22 @@ petalinux-config -c rootfs
 ```
 petalinux-build -s
 ```
-At the end, you'll find a sysroot file in PetaLinux/images/linux/
+At the end, you'll find the SDK installer in ...PetaLinux/images/linux/sdk.sh
+
+8. Execute sdk.sh to explode the sysroot
+
+cd to the PetaLinux/images/linux
+```
+cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/images/linux
+```
+9. Run sdk.sh. The default destination directory is: /opt/PetaLinux/2022.2/
+```
+./sdk.sh
+```
+10. Revert what you did at step 3 re-including "openssh-sftp-server" in building
+```
+petalinux-config -c rootfs 
+```
+11. Navigate to "Filesystem Packages  → console  → network  → openssh"
+12. Check [X] openssh-sftp-server 
+13. exit saving
