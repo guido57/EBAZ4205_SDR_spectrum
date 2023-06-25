@@ -2,16 +2,27 @@
  
 ## Description
 
-This repository contains:
-* [PetaLinux project](PetaLinux)
-* [Vivado project](Vivado)
-* [Vitis project](Vitis)
-* [QT5 project[(qt5)
-
-to display the 0-32 MHz radio spectrum in a full view and tune HF radio stations.
+This repository contains all the projects to use and EBA4205 board to display the 0-32 MHz radio spectrum in a full view and tune HF radio stations.
 This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum which is a 0-32 MHz radio spectrum viewer only. 
 
 ![block diagram](docs/SDR-block-diagram.png)
+
+### PetaLinux project 
+[PetaLinux project](PetaLinux)
+the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
+
+### Vivado project 
+[Vivado project](Vivado)
+the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
+
+### Vitis project
+[Vitis project](Vitis)
+This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
+
+### QT5 project
+[QT5 project](qt5)
+QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
+
 
 ## Getting Started for FPGA or EBAZ4205 beginners
 
@@ -35,8 +46,6 @@ In this project there's nothing esoteric, but it is quite complex because it req
 
 The sub directories contains the SW sub-projects (folders of this repository)
 
-* PetaLinux: the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
-* Vivado: the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
 * Vitis: the Xilinx Vitis project to build the C++ colorbars application to setup the HDMI hardware, after PetaLinux boot
 * QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
 
@@ -47,7 +56,6 @@ The PetaLinux project to build and put together:
 
 ## Vitis (TODO)
 
-This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
 
 ## QT5 (TODO)
 
