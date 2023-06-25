@@ -1,0 +1,21 @@
+2023-03-23T21:23:27.78888600255-21:23:27 **** Incremental Build of configuration Debug for project EBAZ4205_SDR_HDMI_PS2 ****
+000-make all 
+000-Building file: ../src/display_demo.c
+000-Invoking: ARM v7 Linux gcc compiler
+000-arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/opt/petalinux/2022.2/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -c -fmessage-length=0 -MT"src/display_demo.o" -MMD -MP -MF"src/display_demo.d" -MT"src/display_demo.o" -o "src/display_demo.o" "../src/display_demo.c"
+000-Finished building: ../src/display_demo.c
+000- 
+000-Building target: EBAZ4205_SDR_HDMI_PS2.elf
+000-Invoking: ARM v7 Linux gcc linker
+000-arm-linux-gnueabihf-gcc  -o "EBAZ4205_SDR_HDMI_PS2.elf"  ./src/vtc_v8_4/src/xvtc.o ./src/vtc_v8_4/src/xvtc_g.o ./src/vtc_v8_4/src/xvtc_hw.o ./src/vtc_v8_4/src/xvtc_intr.o ./src/vtc_v8_4/src/xvtc_selftest.o ./src/vtc_v8_4/src/xvtc_sinit.o  ./src/timer_ps/timer_ps.o  ./src/scutimer_v2_3/src/xscutimer.o ./src/scutimer_v2_3/src/xscutimer_g.o ./src/scutimer_v2_3/src/xscutimer_hw.o ./src/scutimer_v2_3/src/xscutimer_selftest.o ./src/scutimer_v2_3/src/xscutimer_sinit.o  ./src/dynclk/dynclk.o  ./src/display_ctrl/display_ctrl.o  ./src/axivdma_v6_10/src/xaxivdma.o ./src/axivdma_v6_10/src/xaxivdma_channel.o ./src/axivdma_v6_10/src/xaxivdma_g.o ./src/axivdma_v6_10/src/xaxivdma_hw.o ./src/axivdma_v6_10/src/xaxivdma_intr.o ./src/axivdma_v6_10/src/xaxivdma_selftest.o ./src/axivdma_v6_10/src/xaxivdma_sinit.o  ./src/IP_Driver.o ./src/display_demo.o ./src/helloworld.o ./src/xil_assert.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   
+000-Finished building target: EBAZ4205_SDR_HDMI_PS2.elf
+000- 
+000-Invoking: ARM v7 Linux Print Size
+000-arm-linux-gnueabihf-size EBAZ4205_SDR_HDMI_PS2.elf  |tee "EBAZ4205_SDR_HDMI_PS2.elf.size"
+000-   text	   data	    bss	    dec	    hex	filename
+000-  70577	    736	   3016	  74329	  12259	EBAZ4205_SDR_HDMI_PS2.elf
+000-Finished building: EBAZ4205_SDR_HDMI_PS2.elf.size
+000- 
+00255-
+21:23:28 Build Finished (took 265ms)
+

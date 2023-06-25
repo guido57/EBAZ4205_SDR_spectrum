@@ -1,0 +1,6 @@
+/*ebaz4205_wrapper*/
+the_ROM_image:
+{
+  [bootloader]<ebaz4205_wrapper/boot/fsbl.elf>
+   <bitstream> 
+}
