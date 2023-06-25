@@ -1,0 +1,15 @@
+18:35:42 **** Incremental Build of configuration Debug for project Capture_RF_lib ****
+make all 
+Building file: ../src/Capture_RF.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/Capture_RF.o" -fPIC -MMD -MP -MF"src/Capture_RF.d" -MT"src/Capture_RF.o" -o "src/Capture_RF.o" "../src/Capture_RF.c"
+Finished building: ../src/Capture_RF.c
+ 
+Building target: libCapture_RF_lib.so
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc -shared -o "libCapture_RF_lib.so"  ./src/Capture_RF.o   
+Finished building target: libCapture_RF_lib.so
+ 
+
+18:35:42 Build Finished (took 221ms)
+

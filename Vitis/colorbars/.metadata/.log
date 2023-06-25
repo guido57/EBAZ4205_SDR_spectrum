@@ -1,0 +1,1622 @@
+!SESSION 2023-03-20 19:01:35.071 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis -os linux -ws gtk -arch x86_64
+
+This is a continuation of log file /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.bak_0.log
+Created Time: 2023-03-20 19:08:23.764
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-20 19:08:23.764
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getInfoStream(BuildConsolePartitioner.java:470)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$5(CompoundConsoleAdapter.java:118)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createInfoStream(CompoundConsoleAdapter.java:122)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getInfoStream(CompoundConsoleAdapter.java:97)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getInfoStream(SDXConfigurationBuildConsole.java:84)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:440)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:420)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:402)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:169)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 40 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-20 19:08:23.765
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getInfoStream(BuildConsolePartitioner.java:470)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$5(CompoundConsoleAdapter.java:118)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createInfoStream(CompoundConsoleAdapter.java:122)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getInfoStream(CompoundConsoleAdapter.java:97)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getInfoStream(SDXConfigurationBuildConsole.java:84)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:440)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:420)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:402)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:169)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:08:25.652
+!MESSAGE XSCT Command: [::hsi::utils::openhw /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:08:26.856
+!MESSAGE XSCT command with result: [::hsi::utils::openhw /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:08:26.857
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:08:26.860
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa], Result: [null, {"device": "7z010",
+"family": "zynq",
+"timestamp": "Thu Feb 23 22:13:22 2023",
+"vivado_version": "2022.2",
+"part": "xc7z010clg400-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:08:26.893
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:08:26.912
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa], Result: [null, {"ADC_TestGen_TestGen_RF_test_10MHz": {"hier_name": "ADC_TestGen_TestGen_RF_test_10MHz",
+"type": "dds_compiler",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_axi_gpio_ADC_TEST": {"hier_name": "ADC_TestGen_TestGen_axi_gpio_ADC_TEST",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_c_addsub_0": {"hier_name": "ADC_TestGen_TestGen_c_addsub_0",
+"type": "c_addsub",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_dds_axi_interface_0": {"hier_name": "ADC_TestGen_TestGen_dds_axi_interface_0",
+"type": "dds_axi_interface",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_dds_compiler_1KHz": {"hier_name": "ADC_TestGen_TestGen_dds_compiler_1KHz",
+"type": "dds_compiler",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_mult_gen_AM_modulator": {"hier_name": "ADC_TestGen_TestGen_mult_gen_AM_modulator",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_xlconstant_1_bis": {"hier_name": "ADC_TestGen_TestGen_xlconstant_1_bis",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_xlconstant_2048": {"hier_name": "ADC_TestGen_TestGen_xlconstant_2048",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_TestGen_xlslice_1": {"hier_name": "ADC_TestGen_TestGen_xlslice_1",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_axis_mux_0": {"hier_name": "ADC_TestGen_axis_mux_0",
+"type": "axis_mux",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_xlconcat_1": {"hier_name": "ADC_TestGen_xlconcat_1",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_xlconcat_2": {"hier_name": "ADC_TestGen_xlconcat_2",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_xlconstant_0": {"hier_name": "ADC_TestGen_xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_xlconstant_2": {"hier_name": "ADC_TestGen_xlconstant_2",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"ADC_TestGen_xlconstant_3": {"hier_name": "ADC_TestGen_xlconstant_3",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"AM_demodulator_I_square": {"hier_name": "AM_demodulator_I_square",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"AM_demodulator_Q_square": {"hier_name": "AM_demodulator_Q_square",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"AM_demodulator_c_addsub_0": {"hier_name": "AM_demodulator_c_addsub_0",
+"type": "c_addsub",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"AM_demodulator_sqrt32_0": {"hier_name": "AM_demodulator_sqrt32_0",
+"type": "sqrt32",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_ComplexMult_mult_cos": {"hier_name": "DDC_ComplexMult_mult_cos",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_ComplexMult_mult_sin": {"hier_name": "DDC_ComplexMult_mult_sin",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_ComplexMult_xlslice_cos": {"hier_name": "DDC_ComplexMult_xlslice_cos",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_ComplexMult_xlslice_sin": {"hier_name": "DDC_ComplexMult_xlslice_sin",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_LO_DDS_LO": {"hier_name": "DDC_LO_DDS_LO",
+"type": "dds_compiler",
+"version": "6.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_LO_DDS_LO_axi_interface": {"hier_name": "DDC_LO_DDS_LO_axi_interface",
+"type": "dds_axi_interface",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"DDC_LO_xlconstant_2": {"hier_name": "DDC_LO_xlconstant_2",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"DDC_xlslice_0": {"hier_name": "DDC_xlslice_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"DivideBy2_50MHz": {"hier_name": "DivideBy2_50MHz",
+"type": "DivideBy2N",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_CIC_I_1024": {"hier_name": "FILTER_CIC_I_1024",
+"type": "cic_compiler",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_CIC_Q_1024": {"hier_name": "FILTER_CIC_Q_1024",
+"type": "cic_compiler",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_FIR_I_2": {"hier_name": "FILTER_FIR_I_2",
+"type": "fir_compiler",
+"version": "7.2",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_FIR_Q_2": {"hier_name": "FILTER_FIR_Q_2",
+"type": "fir_compiler",
+"version": "7.2",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_axi_gpio_FILTER_GAIN": {"hier_name": "FILTER_axi_gpio_FILTER_GAIN",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_axi_interface_DEC_RATE_I": {"hier_name": "FILTER_axi_interface_DEC_RATE_I",
+"type": "dds_axi_interface",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_axi_interface_DEC_RATE_Q": {"hier_name": "FILTER_axi_interface_DEC_RATE_Q",
+"type": "dds_axi_interface",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_mult_by_GAIN_I": {"hier_name": "FILTER_mult_by_GAIN_I",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_mult_by_GAIN_Q": {"hier_name": "FILTER_mult_by_GAIN_Q",
+"type": "mult_gen",
+"version": "12.0",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_xlconstant_0": {"hier_name": "FILTER_xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"FILTER_xlconstant_2": {"hier_name": "FILTER_xlconstant_2",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_axi_dynclk_0": {"hier_name": "HDMI_axi_dynclk_0",
+"type": "axi_dynclk",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_axi_gpio_0": {"hier_name": "HDMI_axi_gpio_0",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_axi_gpio_hdmi": {"hier_name": "HDMI_axi_gpio_hdmi",
+"type": "axi_gpio",
+"version": "2.0",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_axi_interconnect_1": {"hier_name": "HDMI_axi_interconnect_1",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"HDMI_axi_vdma_0": {"hier_name": "HDMI_axi_vdma_0",
+"type": "axi_vdma",
+"version": "6.3",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_axis_subset_converter_0": {"hier_name": "HDMI_axis_subset_converter_0",
+"type": "axis_subset_converter",
+"version": "1.1",
+"ip_type": "BUS",
+},
+"HDMI_rgb2dvi_0": {"hier_name": "HDMI_rgb2dvi_0",
+"type": "rgb2dvi",
+"version": "1.3",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_v_axi4s_vid_out_0": {"hier_name": "HDMI_v_axi4s_vid_out_0",
+"type": "v_axi4s_vid_out",
+"version": "4.0",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_v_tc_0": {"hier_name": "HDMI_v_tc_0",
+"type": "v_tc",
+"version": "6.2",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_xlconcat_IRQ": {"hier_name": "HDMI_xlconcat_IRQ",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"HDMI_xlconstant_0": {"hier_name": "HDMI_xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"I2S_DivideBy10": {"hier_name": "I2S_DivideBy10",
+"type": "DivideBy2N",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"I2S_I2S_Transmitter_0": {"hier_name": "I2S_I2S_Transmitter_0",
+"type": "I2S_Transmitter",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"I2S_xlconcat_0": {"hier_name": "I2S_xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"I2S_xlconstant_1": {"hier_name": "I2S_xlconstant_1",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_DivideBy4_25MHz": {"hier_name": "PS_DivideBy4_25MHz",
+"type": "DivideBy2N",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_proc_sys_reset_0_100M": {"hier_name": "PS_proc_sys_reset_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_processing_system7_0": {"hier_name": "PS_processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"PS_rst_ENET0_GMII_RX_CLK_0_100M": {"hier_name": "PS_rst_ENET0_GMII_RX_CLK_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_rst_ps7_0_140M": {"hier_name": "PS_rst_ps7_0_140M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_rst_ps7_0_64M": {"hier_name": "PS_rst_ps7_0_64M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"PS_xlconcat_0": {"hier_name": "PS_xlconcat_0",
+"type": "xlconcat",
+"version": "2.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_xlconstant_0": {"hier_name": "PS_xlconstant_0",
+"type": "xlconstant",
+"version": "1.1",
+"ip_type": "PERIPHERAL",
+},
+"PS_xlslice_0": {"hier_name": "PS_xlslice_0",
+"type": "xlslice",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"axis_capture_RF": {"hier_name": "axis_capture_RF",
+"type": "axis_capture",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ps2_mouse_0": {"hier_name": "ps2_mouse_0",
+"type": "ps2_mouse",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_periph": {"hier_name": "ps7_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_nand_0": {"hier_name": "ps7_nand_0",
+"type": "ps7_nand",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_smcc_0": {"hier_name": "ps7_smcc_0",
+"type": "ps7_smcc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 1 0 2023-03-20 19:08:32.211
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '1'
+!SESSION 2023-03-20 19:41:24.038 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-20 19:41:24.391
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-20 19:41:24.404
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-03-20 19:41:26.534
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-20 19:41:28.562
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-20 19:41:28.563
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-20 19:41:28.563
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.895
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.895
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.897
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.897
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-10
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.898
+!MESSAGE XSCT Command: [setws /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis], Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.899
+!MESSAGE XSCT command with result: [setws /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis], Result: [null, ]. Thread: Thread-18
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.909
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.946
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.947
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-20 19:41:28.947
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/guido/Xilinx-tools/Vitis/2022.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-20 19:41:29.283
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.restoreFromLogs(ConfigurationBuildConsolePartitioner.java:276)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.restoreConsolePartitioners(ConfigurationBuildConsoleManager.java:96)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.init(ConfigurationBuildConsoleManager.java:77)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.createBuildConsole(ConfigurationBuildConsoleManager.java:72)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager$1.run(BuildConsoleManager.java:285)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.runUI(BuildConsoleManager.java:233)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.startup(BuildConsoleManager.java:275)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:166)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:143)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:128)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.addSDXBuildConsole(BackgroundBuildPlugin.java:77)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.lambda$0(BackgroundBuildPlugin.java:63)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 41 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-20 19:41:29.284
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.restoreFromLogs(ConfigurationBuildConsolePartitioner.java:276)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.restoreConsolePartitioners(ConfigurationBuildConsoleManager.java:96)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.init(ConfigurationBuildConsoleManager.java:77)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.createBuildConsole(ConfigurationBuildConsoleManager.java:72)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager$1.run(BuildConsoleManager.java:285)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.runUI(BuildConsoleManager.java:233)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.startup(BuildConsoleManager.java:275)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:166)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:143)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:128)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.addSDXBuildConsole(BackgroundBuildPlugin.java:77)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.lambda$0(BackgroundBuildPlugin.java:63)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+!SESSION 2023-03-23 21:18:31.916 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-23 21:18:32.270
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-23 21:18:32.284
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-03-23 21:19:39.237
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 21:19:41.306
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 21:19:41.307
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 21:19:41.307
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.609
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.609
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.611
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.612
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.612
+!MESSAGE XSCT Command: [setws /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.613
+!MESSAGE XSCT command with result: [setws /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.692
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.739
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.740
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:19:41.741
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/guido/Xilinx-tools/Vitis/2022.2/data]. Thread: Worker-1: Initializing s/w repositories
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-23 21:19:42.094
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.restoreFromLogs(ConfigurationBuildConsolePartitioner.java:276)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.restoreConsolePartitioners(ConfigurationBuildConsoleManager.java:96)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.init(ConfigurationBuildConsoleManager.java:77)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.createBuildConsole(ConfigurationBuildConsoleManager.java:72)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager$1.run(BuildConsoleManager.java:285)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.runUI(BuildConsoleManager.java:233)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.startup(BuildConsoleManager.java:275)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:166)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:143)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:128)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.addSDXBuildConsole(BackgroundBuildPlugin.java:77)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.lambda$0(BackgroundBuildPlugin.java:63)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 41 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-23 21:19:42.094
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.restoreFromLogs(ConfigurationBuildConsolePartitioner.java:276)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.restoreConsolePartitioners(ConfigurationBuildConsoleManager.java:96)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.init(ConfigurationBuildConsoleManager.java:77)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.createBuildConsole(ConfigurationBuildConsoleManager.java:72)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager$1.run(BuildConsoleManager.java:285)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.runUI(BuildConsoleManager.java:233)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.startup(BuildConsoleManager.java:275)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:166)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:143)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:128)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.addSDXBuildConsole(BackgroundBuildPlugin.java:77)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.lambda$0(BackgroundBuildPlugin.java:63)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+!SESSION 2023-03-23 21:22:03.391 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-23 21:22:03.746
+!MESSAGE Bundle reference:file:org.apache.log4j_1.2.15.v201012070815.jar not found.
+
+!ENTRY org.eclipse.osgi 4 0 2023-03-23 21:22:03.760
+!MESSAGE Bundle reference:file:org.slf4j.impl.log4j12_1.7.2.v20131105-2200.jar not found.
+
+!ENTRY org.eclipse.ui 4 4 2023-03-23 21:22:24.662
+!MESSAGE Plug-in 'org.eclipse.ui.editors' contributed an invalid Menu Extension (Path: 'navigate' is invalid): org.eclipse.ui.edit.text.gotoLastEditPosition
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 21:22:26.698
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 21:22:26.698
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2023-03-23 21:22:26.698
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.013
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.013
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.016
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.016
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-11
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.018
+!MESSAGE XSCT Command: [setws /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars], Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.019
+!MESSAGE XSCT command with result: [setws /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars], Result: [null, ]. Thread: Thread-19
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.124
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.178
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.186
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2023-03-23 21:22:27.187
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, /home/guido/Xilinx-tools/Vitis/2022.2/data]. Thread: Worker-4: Initializing s/w repositories
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-23 21:22:27.588
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.restoreFromLogs(ConfigurationBuildConsolePartitioner.java:276)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.restoreConsolePartitioners(ConfigurationBuildConsoleManager.java:96)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.init(ConfigurationBuildConsoleManager.java:77)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.createBuildConsole(ConfigurationBuildConsoleManager.java:72)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager$1.run(BuildConsoleManager.java:285)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.runUI(BuildConsoleManager.java:233)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.startup(BuildConsoleManager.java:275)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:166)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:143)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:128)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.addSDXBuildConsole(BackgroundBuildPlugin.java:77)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.lambda$0(BackgroundBuildPlugin.java:63)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 41 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-23 21:22:27.591
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.restoreFromLogs(ConfigurationBuildConsolePartitioner.java:276)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.restoreConsolePartitioners(ConfigurationBuildConsoleManager.java:96)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.init(ConfigurationBuildConsoleManager.java:77)
+	at com.xilinx.sdx.build.ui.console.ConfigurationBuildConsoleManager.createBuildConsole(ConfigurationBuildConsoleManager.java:72)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager$1.run(BuildConsoleManager.java:285)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.runUI(BuildConsoleManager.java:233)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.startup(BuildConsoleManager.java:275)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:166)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:143)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.getConsoleManager(BackgroundBuildPlugin.java:128)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.addSDXBuildConsole(BackgroundBuildPlugin.java:77)
+	at com.xilinx.sdx.build.ui.BackgroundBuildPlugin.lambda$0(BackgroundBuildPlugin.java:63)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4930)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4451)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:658)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:557)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.xilinx.ide.application.ui.Application.start(Application.java:80)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1447)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1420)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-23 21:22:41.888
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getOutputStream(BuildConsolePartitioner.java:464)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$1(CompoundConsoleAdapter.java:108)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createOutputStream(CompoundConsoleAdapter.java:112)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getOutputStream(CompoundConsoleAdapter.java:92)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getOutputStream(SDXConfigurationBuildConsole.java:78)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:142)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:163)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 38 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-23 21:22:41.889
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getOutputStream(BuildConsolePartitioner.java:464)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$1(CompoundConsoleAdapter.java:108)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createOutputStream(CompoundConsoleAdapter.java:112)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getOutputStream(CompoundConsoleAdapter.java:92)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getOutputStream(SDXConfigurationBuildConsole.java:78)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:142)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:163)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-23 21:22:41.890
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getInfoStream(BuildConsolePartitioner.java:470)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$5(CompoundConsoleAdapter.java:118)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createInfoStream(CompoundConsoleAdapter.java:122)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getInfoStream(CompoundConsoleAdapter.java:97)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getInfoStream(SDXConfigurationBuildConsole.java:84)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:440)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:420)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:402)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:169)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 40 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-23 21:22:41.890
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getInfoStream(BuildConsolePartitioner.java:470)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$5(CompoundConsoleAdapter.java:118)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createInfoStream(CompoundConsoleAdapter.java:122)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getInfoStream(CompoundConsoleAdapter.java:97)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getInfoStream(SDXConfigurationBuildConsole.java:84)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:440)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:420)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:402)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:169)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:513)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-23 21:23:27.789
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getOutputStream(BuildConsolePartitioner.java:464)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$1(CompoundConsoleAdapter.java:108)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createOutputStream(CompoundConsoleAdapter.java:112)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getOutputStream(CompoundConsoleAdapter.java:92)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getOutputStream(SDXConfigurationBuildConsole.java:78)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:142)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:163)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 38 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-23 21:23:27.789
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getOutputStream(BuildConsolePartitioner.java:464)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$1(CompoundConsoleAdapter.java:108)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createOutputStream(CompoundConsoleAdapter.java:112)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getOutputStream(CompoundConsoleAdapter.java:92)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getOutputStream(SDXConfigurationBuildConsole.java:78)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.prepareStreams(BuildRunnerHelper.java:142)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:163)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.ui 4 4 2023-03-23 21:23:27.791
+!MESSAGE Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:48)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:321)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getInfoStream(BuildConsolePartitioner.java:470)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$5(CompoundConsoleAdapter.java:118)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createInfoStream(CompoundConsoleAdapter.java:122)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getInfoStream(CompoundConsoleAdapter.java:97)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getInfoStream(SDXConfigurationBuildConsole.java:84)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:440)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:420)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:402)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:169)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	... 40 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 280 2023-03-23 21:23:27.792
+!MESSAGE Cannot create file, access denied: /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/.metadata/.plugins/org.eclipse.cdt.ui.
+!STACK 0
+java.nio.file.AccessDeniedException: /media/guido/Acer
+	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:90)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111)
+	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:116)
+	at java.base/sun.nio.fs.UnixFileSystemProvider.createDirectory(UnixFileSystemProvider.java:389)
+	at java.base/java.nio.file.Files.createDirectory(Files.java:690)
+	at java.base/java.nio.file.Files.createAndCheckIsDirectory(Files.java:797)
+	at java.base/java.nio.file.Files.createDirectories(Files.java:783)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:310)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.logOpen(BuildConsolePartitioner.java:189)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.setStreamOpened(BuildConsolePartitioner.java:135)
+	at org.eclipse.cdt.internal.ui.buildconsole.ConfigurationBuildConsolePartitioner.setStreamOpened(ConfigurationBuildConsolePartitioner.java:96)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildOutputStream.<init>(BuildOutputStream.java:40)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePartitioner.getInfoStream(BuildConsolePartitioner.java:470)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.lambda$5(CompoundConsoleAdapter.java:118)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1801)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:550)
+	at java.base/java.util.stream.AbstractPipeline.evaluateToArrayNode(AbstractPipeline.java:260)
+	at java.base/java.util.stream.ReferencePipeline.toArray(ReferencePipeline.java:517)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.createInfoStream(CompoundConsoleAdapter.java:122)
+	at com.xilinx.sdx.build.ui.console.CompoundConsoleAdapter.getInfoStream(CompoundConsoleAdapter.java:97)
+	at com.xilinx.sdx.build.ui.console.SDXConfigurationBuildConsole.getInfoStream(SDXConfigurationBuildConsole.java:84)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:440)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:420)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.greeting(BuildRunnerHelper.java:402)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeExternalBuild(XilinxGnuMakeBuildRunner.java:169)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:72)
+	at com.xilinx.sdk.managedbuilder.XilinxGnuMakeBuildRunner.invokeBuild(XilinxGnuMakeBuildRunner.java:87)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:753)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:510)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:459)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:832)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:220)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:316)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:319)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:371)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:392)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:515)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:412)
+	at org.eclipse.ui.actions.BuildAction$1.runInWorkspace(BuildAction.java:291)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.tcf 4 0 2023-03-23 21:49:20.973
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-03-23 22:25:01.844
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-03-24 14:50:44.933
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2023-03-24 15:03:40.990
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)

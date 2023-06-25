@@ -1,0 +1,703 @@
+ /*
+  *
+  * Since you'd rather hack around, okay, here's the dirty way to do it:
+	Change the devicetree of your kernel and alter the "memory" parameter,
+	so that your memory range is no longer part of the normal RAM.
+	Add the SIMPLEFB driver to your kernel through the menuconfig.
+	Add the memory address, range, width height and stride parameters
+	of your framebuffer to the configuration setting in the devicetree.
+	Install this on your system, and you should now have a working /dev/fb0
+	that can be mmapped like any framebuffer.
+  *
+  *
+  */
+
+
+#include "display_demo.h"
+#include "display_ctrl/display_ctrl.h"
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include "xil_types.h"
+#include "timer_ps/timer_ps.h"
+#include "IP_Driver.h"
+#include <argp.h>
+
+#define xil_printf printf
+
+/*
+ * XPAR redefines
+ */
+#define DYNCLK_BASEADDR XPAR_AXI_DYNCLK_0_BASEADDR
+#define VGA_VDMA_ID XPAR_AXIVDMA_0_DEVICE_ID
+#define DISP_VTC_ID XPAR_VTC_0_DEVICE_ID
+#define VID_VTC_IRPT_ID XPS_FPGA3_INT_ID
+#define VID_GPIO_IRPT_ID XPS_FPGA4_INT_ID
+#define SCU_TIMER_ID XPAR_SCUTIMER_DEVICE_ID
+#define UART_BASEADDR XPAR_PS7_UART_1_BASEADDR
+
+/* ------------------------------------------------------------ */
+/*				Global Variables								*/
+/* ------------------------------------------------------------ */
+
+/*
+ * Display Driver structs
+ */
+DisplayCtrl dispCtrl;
+XAxiVdma vdma;
+int showmenu = 0;
+
+// --------------------------------------------------------------
+//                 system-user.dtsi template
+// --------------------------------------------------------------
+
+/*
+
+
+/include/ "system-conf.dtsi"
+/ {
+        chosen {
+            bootargs = "earlycon console=ttyPS0,115200 clk_ignore_unused root=/dev/mmcblk0p2 rw rootwait cma=256M uio_pdrv_genirq.of_id=generic-uio";
+	};
+
+	reserved-memory {
+	      #address-cells = <1>;
+	      #size-cells = <1>;
+	      ranges;
+	      // HDMI Output frame buffer
+	      hdmi_fb_reserved_region@0x08000000 {
+		 compatible = "removed-dma-pool";
+		 no-map;
+		 reg = <0x08000000 0x01000000>;
+	      };
+	};
+
+	   hdmi_fb: framebuffer@0x08000000 {           // HDMI out
+	      compatible = "simple-framebuffer";
+	      // 512M (M modules)
+	      reg = <0x08000000 (1280 * 720 * 4)>;
+	      width = <1280>;
+	      height = <720>;
+	      stride = <(1280 * 4)>;
+	      format = "a8b8g8r8";
+	      status = "okay";
+	   };
+
+	   // Color formats: "r5g6b5" "r5g5b5a1" "x1r5g5b5" "a1r5g5b5" "r8g8b8"
+	   //                "x8r8g8b8" "a8r8g8b8" "a8b8g8r8"
+	   //                "x2r10g10b10" "a2r10g10b10"
+
+};
+
+&HDMI_axi_gpio_0 {
+	compatible = "generic-uio";
+	reg = <0x41230000 0x10000 0xFFFC0000 0x20000>;
+};
+
+ *
+ *
+ */
+// --------------------------------------------------------------
+
+/*
+ * Framebuffers for video data
+ */
+// Don't allocate here, but map into the reserved memory
+u8 *  frameBuf0;
+u8 *  frameBuf1;
+u8 *  frameBuf2;
+u8 *  pFramesPhysical[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
+u8 *  pFramesVirtual[DISPLAY_NUM_FRAMES]; //array of pointers to the frame buffers
+
+// These are the structs containing physical <-> virtual memory mapping ...
+// ... for the DMA framebuffer ...
+mm_IP fb_mm_IP;
+// ... and for all the Vivado IP's needing to be configured
+mm_IP scu_timer_mm_IP;
+mm_IP vdma_mm_IP;
+mm_IP vtc_mm_IP;
+mm_IP dynclk_mm_IP;
+
+/* ------------------------------------------------------------ */
+/*				Procedure Definitions							*/
+/* ------------------------------------------------------------ */
+
+/*	-------			Argument parsing		  ------------------*/
+const char *argp_program_version = "EBAZ4205_SDR_HDMI_PS2 1.0";
+const char *argp_program_bug_address = "<your@email.address>";
+static char doc[] = "Set the resolution and optionally display color bars for the EBAZ4205 HDMI output.";
+static char args_doc[] = "[FILENAME]...";
+static struct argp_option options[] = {
+    { "menu", 'm', 0, 0, "Show a menu to change settings."},
+	{ "resolution", 'r', 0, 0, "Set the resolution: 640x480 800x600 1280x1024 or 1280x720. Default=1280x720"},
+    { 0 }
+};
+
+
+static error_t parse_opt(int key, char *arg, struct argp_state *state) {
+    switch (key) {
+		case 'm':
+			showmenu = -1; break;
+		case 'r':
+			if(strcmp(state->argv[state->next],"640x480")==0)
+				dispCtrl.vMode = VMODE_640x480;
+			else if(strcmp(state->argv[state->next], "800x600")==0)
+				dispCtrl.vMode = VMODE_800x600;
+			else if(strcmp(state->argv[state->next],"1280x720x60Hz")==0)
+				dispCtrl.vMode = VMODE_1280x720x50Hz;
+			else if(strcmp(state->argv[state->next],"1920x1080x25Hz")==0)
+				dispCtrl.vMode = VMODE_1920x1080x25Hz;
+			else if(strcmp(state->argv[state->next],"1920x1080x60Hz")==0)
+				dispCtrl.vMode = VMODE_1920x1080x60Hz;
+			else
+				dispCtrl.vMode = VMODE_1280x720x50Hz;
+			break;
+		case ARGP_KEY_ARG: return 0;
+		default: return ARGP_ERR_UNKNOWN;
+    }
+    return 0;
+}
+
+static struct argp argpo = { options, parse_opt, args_doc, doc, 0, 0};
+
+
+/*	-------			main			  ------------------*/
+int main(int argc, char *argv[])
+{
+
+	// default resolution
+
+	dispCtrl.vMode = VMODE_1280x720x50Hz;
+
+	printf("colorbars started %s\r\n", dispCtrl.vMode.label);
+
+	argp_parse(&argpo, argc, argv, 0, 0, 0);
+
+	DemoInitialize();
+
+	// show the colorbars
+	// DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_1);
+	DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_1);
+		if(showmenu)
+		DemoRun();
+	return 0;
+}
+
+void DemoInitialize()
+{
+	int Status;
+	XAxiVdma_Config *vdmaConfig;
+	//int i;
+
+
+	// map the physical VDMA framebuffer memory area to a virtual address
+	fb_mm_IP.base_address = 0x08000000;
+	fb_mm_IP.size_in_k = 16000; // 16000 * 1024 Bytes
+	create_IP_driver(&fb_mm_IP);
+
+	pFramesPhysical[0] = (u8 *)  fb_mm_IP.base_address;
+	pFramesPhysical[1] = (u8 *) (fb_mm_IP.base_address  +     DEMO_MAX_FRAME);
+	pFramesPhysical[2] = (u8 *) (fb_mm_IP.base_address  + 2 * DEMO_MAX_FRAME);
+
+	pFramesVirtual[0] = (u8 *)  fb_mm_IP.ptr;
+	pFramesVirtual[1] = (u8 *) (fb_mm_IP.ptr  +     DEMO_MAX_FRAME);
+	pFramesVirtual[2] = (u8 *) (fb_mm_IP.ptr  + 2 * DEMO_MAX_FRAME);
+
+	/*
+	 * Initialize an array of pointers to the 3 frame buffers
+	 */
+	//for (i = 0; i < DISPLAY_NUM_FRAMES; i++)
+	//{
+	//	pFrames[i] = frameBuf[i];
+	//}
+
+
+	/*
+	 * Initialize a timer used for a simple delay
+	 */
+	TimerInitialize(&scu_timer_mm_IP, SCU_TIMER_ID);
+
+	/*
+	 * Initialize VDMA driver
+	 */
+
+
+	vdmaConfig = XAxiVdma_LookupConfig(VGA_VDMA_ID);
+	if (!vdmaConfig)
+	{
+		xil_printf("No video DMA found for ID %d\r\n", VGA_VDMA_ID);
+		return;
+	}
+	// create the IP_driver for vdma
+	vdma_mm_IP.base_address = vdmaConfig->BaseAddress;
+	vdma_mm_IP.size_in_k = 64;
+	create_IP_driver(&vdma_mm_IP);
+
+	Status = XAxiVdma_CfgInitialize(&vdma_mm_IP, &vdma, vdmaConfig, vdmaConfig->BaseAddress);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("VDMA Configuration Initialization failed %d\r\n", Status);
+		return;
+	}
+
+
+	// create the IP_driver for dynclk
+	dynclk_mm_IP.base_address = DYNCLK_BASEADDR;
+	dynclk_mm_IP.size_in_k = 64;
+	create_IP_driver(&dynclk_mm_IP);
+
+
+	/*
+	 * Initialize the Display controller and start it
+	 */
+	//Status = DisplayInitialize(&vtc_mm_IP, &dynclk_mm_IP, &dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFramesPhysical, DEMO_STRIDE);
+	Status = DisplayInitialize(&vtc_mm_IP, &dynclk_mm_IP, &dispCtrl, &vdma, DISP_VTC_ID, DYNCLK_BASEADDR, pFramesPhysical, dispCtrl.vMode.width*4);
+		if (Status != XST_SUCCESS)
+	{
+		xil_printf("Display Ctrl initialization failed during demo initialization%d\r\n", Status);
+		return;
+	}
+	Status = DisplayStart(&vtc_mm_IP,&vdma_mm_IP,&dynclk_mm_IP, &dispCtrl);
+	if (Status != XST_SUCCESS)
+	{
+		xil_printf("Couldn't start display during demo initialization%d\r\n", Status);
+		return;
+	}
+
+
+	//GG DemoPrintTest(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_1);
+	//DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_1);
+
+
+	return;
+}
+
+
+void DemoRun()
+{
+	int nextFrame = 0;
+	char userInput = 0;
+
+
+	/*
+	 * Initialize a timer used for a simple delay
+    */
+	// create the IP_driver for SCU Timer
+	// it will be set inside TimweInitialize
+	mm_IP scu_timer_mm_IP;
+	TimerInitialize(&scu_timer_mm_IP, SCU_TIMER_ID);
+
+
+	// Flush UART FIFO
+	/*
+	while (XUartPs_IsReceiveData(UART_BASEADDR))
+	{
+		XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+	}
+	*/
+	//system ("/bin/stty raw");
+	while (userInput != 'q')
+	{
+		DemoPrintMenu();
+
+		// Wait for data on UART
+		//while (!XUartPs_IsReceiveData(UART_BASEADDR))
+		//{}
+		userInput = getchar();
+		// Store the first character in the UART receive FIFO and echo it
+		//if (XUartPs_IsReceiveData(UART_BASEADDR))
+		//{
+		//	userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+		//	xil_printf("%c", userInput);
+		//}
+		printf("%c",userInput);
+
+		switch (userInput)
+		{
+		case '1':
+			DemoChangeRes();
+			break;
+		case '2':
+			nextFrame = dispCtrl.curFrame + 1;
+			if (nextFrame >= DISPLAY_NUM_FRAMES)
+			{
+				nextFrame = 0;
+			}
+			DisplayChangeFrame(&vdma_mm_IP, &dispCtrl, nextFrame);
+			break;
+		case '3':
+			// DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_0);
+			DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_0);
+			break;
+		case '4':
+			//DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, DEMO_STRIDE, DEMO_PATTERN_1);
+			DemoPrintTest(pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride, DEMO_PATTERN_1);
+			break;
+		case '5':
+			//GG DemoInvertFrame(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
+			DemoInvertFrame(pFramesVirtual[dispCtrl.curFrame], pFramesVirtual[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
+			break;
+		case '6':
+			nextFrame = dispCtrl.curFrame + 1;
+			if (nextFrame >= DISPLAY_NUM_FRAMES)
+			{
+				nextFrame = 0;
+			}
+			DemoInvertFrame(pFramesVirtual[dispCtrl.curFrame], pFramesVirtual[nextFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
+			DisplayChangeFrame(&vdma_mm_IP, &dispCtrl, nextFrame);
+			break;
+		case 'q':
+			break;
+		default :
+			xil_printf("\n\rInvalid Selection");
+			//TimerDelay(&scu_timer_mm_IP, 500000);
+		}
+	}
+	//system ("/bin/stty cooked");
+	return;
+}
+
+void DemoPrintMenu()
+{
+	xil_printf("\x1B[H"); //Set cursor to top left of terminal
+	xil_printf("\x1B[2J"); //Clear terminal
+	xil_printf("**************************************************\n\r");
+	xil_printf("*               EBAZ4205 Display Demo            *\n\r");
+	xil_printf("**************************************************\n\r");
+	xil_printf("*Display Resolution: %28s*\n\r", dispCtrl.vMode.label);
+	printf("*Display Pixel Clock Freq. (MHz): %15.3f*\n\r", dispCtrl.pxlFreq);
+	xil_printf("*Display Frame Index: %27d*\n\r", dispCtrl.curFrame);
+	xil_printf("**************************************************\n\r");
+	xil_printf("\n\r");
+	xil_printf("1 - Change Display Resolution\n\r");
+	xil_printf("2 - Change Display Framebuffer Index\n\r");
+	xil_printf("3 - Print Blended Test Pattern to Display Framebuffer\n\r");
+	xil_printf("4 - Print Color Bar Test Pattern to Display Framebuffer\n\r");
+	xil_printf("5 - Invert Current Frame colors\n\r");
+	xil_printf("6 - Invert Current Frame colors seamlessly\n\r");
+	xil_printf("q - Quit\n\r");
+	xil_printf("\n\r");
+	xil_printf("\n\r");
+	xil_printf("Enter a selection:");
+}
+
+void DemoChangeRes()
+{
+	int fResSet = 0;
+	int status;
+	char userInput = 0;
+
+	// Flush UART FIFO
+	//while (XUartPs_IsReceiveData(UART_BASEADDR))
+	//{
+	//	XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+	//}
+
+	while (!fResSet)
+	{
+		DemoCRMenu();
+
+		// Wait for data on UART
+		//while (!XUartPs_IsReceiveData(UART_BASEADDR))
+		//{}
+		userInput = getchar();
+
+		// Store the first character in the UART recieve FIFO and echo it
+		//userInput = XUartPs_ReadReg(UART_BASEADDR, XUARTPS_FIFO_OFFSET);
+		xil_printf("%c", userInput);
+		status = XST_SUCCESS;
+		switch (userInput)
+		{
+		case '1':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP, &dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP, &dispCtrl, &VMODE_640x480);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP, &dispCtrl);
+			fResSet = 1;
+			break;
+		case '2':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_800x600);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+		case '3':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1280x720x60Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+
+		case '4':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1280x720x50Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+
+		case '5':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1280x720x45Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+
+
+		case '6':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1280x720x30Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+
+		case '7':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1280x720x25Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+
+
+		case '8':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1280x1024);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+		case '9':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1920x1080x60Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+		case 'a':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1920x1080x30Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+		case 'b':
+			status = DisplayStop(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl);
+			DisplaySetMode(&vdma_mm_IP, &vtc_mm_IP,&dispCtrl, &VMODE_1920x1080x25Hz);
+			DisplayStart(&vtc_mm_IP,&vdma_mm_IP, &dynclk_mm_IP,&dispCtrl);
+			fResSet = 1;
+			break;
+
+		case 'q':
+			fResSet = 1;
+			break;
+		default :
+			xil_printf("\n\rInvalid Selection");
+			//TimerDelay(500000);
+		}
+		if (status == XST_DMA_ERROR)
+		{
+			xil_printf("\n\rWARNING: AXI VDMA Error detected and cleared\n\r");
+		}
+	}
+}
+
+void DemoCRMenu()
+{
+	xil_printf("\x1B[H"); //Set cursor to top left of terminal
+	xil_printf("\x1B[2J"); //Clear terminal
+	xil_printf("**************************************************\n\r");
+	xil_printf("*           EBAZ4205 Display Demo                *\n\r");
+	xil_printf("**************************************************\n\r");
+	xil_printf("*Current Resolution: %28s*\n\r", dispCtrl.vMode.label);
+	printf("*Pixel Clock Freq. (MHz): %23.3f*\n\r", dispCtrl.pxlFreq);
+	xil_printf("**************************************************\n\r");
+	xil_printf("\n\r");
+	xil_printf("1 - %s\n\r", VMODE_640x480.label);
+	xil_printf("2 - %s\n\r", VMODE_800x600.label);
+	xil_printf("3 - %s\n\r", VMODE_1280x720x60Hz.label);
+	xil_printf("4 - %s\n\r", VMODE_1280x720x50Hz.label);
+	xil_printf("5 - %s\n\r", VMODE_1280x720x45Hz.label);
+	xil_printf("5 - %s\n\r", VMODE_1280x720x30Hz.label);
+		xil_printf("6 - %s\n\r", VMODE_1280x720x25Hz.label);
+	xil_printf("7 - %s\n\r", VMODE_1280x1024.label);
+	xil_printf("8 - %s\n\r", VMODE_1920x1080x60Hz.label);
+	xil_printf("9 - %s\n\r", VMODE_1920x1080x30Hz.label);
+	xil_printf("a - %s\n\r", VMODE_1920x1080x25Hz.label);
+	xil_printf("q - Quit (don't change resolution)\n\r");
+	xil_printf("\n\r");
+	xil_printf("Select a new resolution:");
+}
+
+void DemoInvertFrame(u8 *srcFrame, u8 *destFrame, u32 width, u32 height, u32 stride)
+{
+	u32 xcoi, ycoi;
+	u32 lineStart = 0;
+	for(ycoi = 0; ycoi < height; ycoi++)
+	{
+		for(xcoi = 0; xcoi < (width * 4); xcoi+=4)
+		{
+			destFrame[xcoi + lineStart] = ~srcFrame[xcoi + lineStart];         //Red
+			destFrame[xcoi + lineStart + 1] = ~srcFrame[xcoi + lineStart + 1]; //Blue
+			destFrame[xcoi + lineStart + 2] = ~srcFrame[xcoi + lineStart + 2]; //Green
+		}
+		lineStart += stride;
+	}
+	//
+	// * Flush the framebuffer memory range to ensure changes are written to the
+	// * actual memory, and therefore accessible by the VDMA.
+	// *
+	//GG Xil_DCacheFlushRange((unsigned int) destFrame, DEMO_MAX_FRAME);
+}
+
+
+void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
+{
+	u32 xcoi, ycoi;
+	u32 iPixelAddr;
+	u8 wRed, wBlue, wGreen;
+	u32 wCurrentInt;
+	double fRed, fBlue, fGreen, fColor;
+	u32 xLeft, xMid, xRight, xInt;
+	u32 yMid, yInt;
+	double xInc, yInc;
+
+	switch (pattern)
+	{
+	case DEMO_PATTERN_0:
+
+		xInt = width / 4; //Four intervals, each with width/4 pixels
+		xLeft = xInt * 3;
+		xMid = xInt * 2 * 3;
+		xRight = xInt * 3 * 3;
+		xInc = 256.0 / ((double) xInt); //256 color intensities are cycled through per interval (overflow must be caught when color=256.0)
+
+		yInt = height / 2; //Two intervals, each with width/2 lines
+		yMid = yInt;
+		yInc = 256.0 / ((double) yInt); //256 color intensities are cycled through per interval (overflow must be caught when color=256.0)
+
+		fBlue = 0.0;
+		fRed = 256.0;
+		for(xcoi = 0; xcoi < (width*4); xcoi+=4)
+		{
+			//
+			// * Convert color intensities to integers < 256, and trim values >=256
+			//
+			wRed = (fRed >= 256.0) ? 255 : ((u8) fRed);
+			wBlue = (fBlue >= 256.0) ? 255 : ((u8) fBlue);
+			iPixelAddr = xcoi;
+			fGreen = 0.0;
+			for(ycoi = 0; ycoi < height; ycoi++)
+			{
+
+				wGreen = (fGreen >= 256.0) ? 255 : ((u8) fGreen);
+				frame[iPixelAddr] = wRed;
+				frame[iPixelAddr + 1] = wBlue;
+				frame[iPixelAddr + 2] = wGreen;
+				if (ycoi < yMid)
+				{
+					fGreen += yInc;
+				}
+				else
+				{
+					fGreen -= yInc;
+				}
+
+				//
+				// * This pattern is printed one vertical line at a time, so the address must be incremented
+				// * by the stride instead of just 1.
+				//
+				iPixelAddr += stride;
+			}
+
+			if (xcoi < xLeft)
+			{
+				fBlue = 0.0;
+				fRed -= xInc;
+			}
+			else if (xcoi < xMid)
+			{
+				fBlue += xInc;
+				fRed += xInc;
+			}
+			else if (xcoi < xRight)
+			{
+				fBlue -= xInc;
+				fRed -= xInc;
+			}
+			else
+			{
+				fBlue += xInc;
+				fRed = 0;
+			}
+		}
+		//
+		// * Flush the framebuffer memory range to ensure changes are written to the
+		// * actual memory, and therefore accessible by the VDMA.
+		//
+		//GG Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	case DEMO_PATTERN_1:
+
+		xInt = width / 7; //Seven intervals, each with width/7 pixels
+		xInc = 256.0 / ((double) xInt); //256 color intensities per interval. Notice that overflow is handled for this pattern.
+
+		fColor = 0.0;
+		wCurrentInt = 1;
+		for(xcoi = 0; xcoi < (width*4); xcoi+=4)
+		{
+
+			//
+			// * Just draw white in the last partial interval (when width is not divisible by 7)
+			//
+			if (wCurrentInt > 7)
+			{
+				wRed = 255;
+				wBlue = 255;
+				wGreen = 255;
+			}
+			else
+			{
+				if (wCurrentInt & 0b001)
+					wRed = (u8) fColor;
+				else
+					wRed = 0;
+
+				if (wCurrentInt & 0b010)
+					wBlue = (u8) fColor;
+				else
+					wBlue = 0;
+
+				if (wCurrentInt & 0b100)
+					wGreen = (u8) fColor;
+				else
+					wGreen = 0;
+			}
+
+			iPixelAddr = xcoi;
+
+			for(ycoi = 0; ycoi < height; ycoi++)
+			{
+				frame[iPixelAddr] = wRed;
+				frame[iPixelAddr + 1] = wBlue;
+				frame[iPixelAddr + 2] = wGreen;
+				//
+				// * This pattern is printed one vertical line at a time, so the address must be incremented
+				// * by the stride instead of just 1.
+				//
+				iPixelAddr += stride;
+			}
+
+			fColor += xInc;
+			if (fColor >= 256.0)
+			{
+				fColor = 0.0;
+				wCurrentInt++;
+			}
+		}
+		//
+		// * Flush the framebuffer memory range to ensure changes are written to the
+		// * actual memory, and therefore accessible by the VDMA.
+		//
+		//GG Xil_DCacheFlushRange((unsigned int) frame, DEMO_MAX_FRAME);
+		break;
+	default :
+		xil_printf("Error: invalid pattern passed to DemoPrintTest");
+	}
+}
+
+

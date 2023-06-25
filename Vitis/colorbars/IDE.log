@@ -1,0 +1,237 @@
+19:33:16 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:33:17 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:33:17 INFO  : Registering command handlers for Vitis TCF services
+19:33:17 INFO  : Platform repository initialization has completed.
+19:33:18 INFO  : XSCT server has started successfully.
+19:33:18 INFO  : Successfully done setting XSCT server connection channel  
+19:33:18 INFO  : Successfully done query RDI_DATADIR 
+19:33:18 INFO  : Successfully done setting workspace for the tool. 
+19:33:19 INFO  : plnx-install-location is set to ''
+19:38:42 WARN  : An unexpected exception occurred in the module 'platform project logging'
+19:38:42 WARN  : An unexpected exception occurred in the module 'platform project logging'
+19:38:42 WARN  : An unexpected exception occurred in the module 'platform project logging'
+19:38:42 WARN  : An unexpected exception occurred in the module 'platform project logging'
+19:38:42 INFO  : Platform 'ebaz4205_wrapper' is added to custom repositories.
+19:38:44 INFO  : Platform 'ebaz4205_wrapper' is added to custom repositories.
+19:39:17 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+19:39:17 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:24:13 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+11:24:14 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+11:24:16 INFO  : Platform repository initialization has completed.
+11:24:16 INFO  : Registering command handlers for Vitis TCF services
+11:24:16 INFO  : XSCT server has started successfully.
+11:24:16 INFO  : Successfully done setting XSCT server connection channel  
+11:24:16 INFO  : plnx-install-location is set to ''
+11:24:16 INFO  : Successfully done setting workspace for the tool. 
+11:24:16 INFO  : Successfully done query RDI_DATADIR 
+11:54:21 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+11:54:22 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+11:54:23 INFO  : XSCT server has started successfully.
+11:54:23 INFO  : Successfully done setting XSCT server connection channel  
+11:54:23 INFO  : plnx-install-location is set to ''
+11:54:23 INFO  : Successfully done setting workspace for the tool. 
+11:54:23 INFO  : Successfully done query RDI_DATADIR 
+11:54:23 INFO  : Platform repository initialization has completed.
+11:54:23 INFO  : Registering command handlers for Vitis TCF services
+10:41:38 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+10:41:39 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+10:41:40 INFO  : Platform repository initialization has completed.
+10:41:40 INFO  : Registering command handlers for Vitis TCF services
+10:41:41 INFO  : XSCT server has started successfully.
+10:41:41 INFO  : Successfully done setting XSCT server connection channel  
+10:41:41 INFO  : plnx-install-location is set to ''
+10:41:41 INFO  : Successfully done query RDI_DATADIR 
+10:41:41 INFO  : Successfully done setting workspace for the tool. 
+10:42:09 ERROR : Could not connect to host '192.168.1.87' specified in the target 'EBAZ2'
+10:47:42 INFO  : Hardware specification for platform project 'ebaz4205_wrapper' is updated.
+10:47:53 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+10:47:53 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+10:47:57 INFO  : The hardware specification used by project 'EBAZ4205_SDR_HDMI_PS2' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+10:47:57 INFO  : The file '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/_ide/bitstream/ebaz4205_wrapper.bit' stored in project is removed.
+10:47:57 INFO  : The updated bitstream files are copied from platform to folder '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/_ide/bitstream' in project 'EBAZ4205_SDR_HDMI_PS2'.
+10:48:02 INFO  : The updated ps init files are copied from platform to folder '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/_ide/psinit' in project 'EBAZ4205_SDR_HDMI_PS2'.
+10:48:32 INFO  : Result from executing command 'removePlatformRepo': 
+10:48:49 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+10:48:49 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+15:30:35 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+15:30:35 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+15:30:37 INFO  : Platform repository initialization has completed.
+15:30:37 INFO  : Registering command handlers for Vitis TCF services
+15:30:37 INFO  : XSCT server has started successfully.
+15:30:37 INFO  : Successfully done setting XSCT server connection channel  
+15:30:37 INFO  : plnx-install-location is set to ''
+15:30:37 INFO  : Successfully done setting workspace for the tool. 
+15:30:37 INFO  : Successfully done query RDI_DATADIR 
+21:29:07 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+21:29:07 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+21:29:08 INFO  : Platform repository initialization has completed.
+21:29:08 INFO  : Registering command handlers for Vitis TCF services
+21:29:09 INFO  : XSCT server has started successfully.
+21:29:09 INFO  : Successfully done setting XSCT server connection channel  
+21:29:09 INFO  : plnx-install-location is set to ''
+21:29:09 INFO  : Successfully done setting workspace for the tool. 
+21:29:09 INFO  : Successfully done query RDI_DATADIR 
+09:25:52 DEBUG : Logs will be stored at '/media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+09:25:52 INFO  : Launching XSCT server: xsct -n  -interactive /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+09:25:54 INFO  : Platform repository initialization has completed.
+09:25:54 INFO  : Registering command handlers for Vitis TCF services
+09:25:54 INFO  : XSCT server has started successfully.
+09:25:54 INFO  : plnx-install-location is set to ''
+09:25:55 INFO  : Successfully done setting XSCT server connection channel  
+09:25:55 INFO  : Successfully done query RDI_DATADIR 
+09:25:55 INFO  : Successfully done setting workspace for the tool. 
+21:53:01 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+21:53:01 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+21:53:02 INFO  : XSCT server has started successfully.
+21:53:02 INFO  : plnx-install-location is set to ''
+21:53:02 INFO  : Successfully done setting XSCT server connection channel  
+21:53:02 INFO  : Successfully done query RDI_DATADIR 
+21:53:02 INFO  : Successfully done setting workspace for the tool. 
+21:53:02 INFO  : Platform repository initialization has completed.
+21:53:03 INFO  : Registering command handlers for Vitis TCF services
+21:53:31 ERROR : Could not connect to host '192.168.1.250' specified in the target 'EBAZ3'
+19:17:48 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:17:48 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:17:50 INFO  : Platform repository initialization has completed.
+19:17:50 INFO  : Registering command handlers for Vitis TCF services
+19:17:50 INFO  : XSCT server has started successfully.
+19:17:50 INFO  : Successfully done setting XSCT server connection channel  
+19:17:50 INFO  : plnx-install-location is set to ''
+19:17:51 INFO  : Successfully done setting workspace for the tool. 
+19:17:51 INFO  : Successfully done query RDI_DATADIR 
+19:17:58 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+19:17:58 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:29:26 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:29:26 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:29:27 INFO  : XSCT server has started successfully.
+19:29:27 INFO  : Successfully done setting XSCT server connection channel  
+19:29:27 INFO  : plnx-install-location is set to ''
+19:29:27 INFO  : Successfully done setting workspace for the tool. 
+19:29:28 INFO  : Successfully done query RDI_DATADIR 
+19:29:28 INFO  : Platform repository initialization has completed.
+19:29:28 INFO  : Registering command handlers for Vitis TCF services
+20:07:54 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+20:07:55 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+20:07:56 INFO  : Platform repository initialization has completed.
+20:07:56 INFO  : Registering command handlers for Vitis TCF services
+20:07:57 INFO  : XSCT server has started successfully.
+20:07:57 INFO  : Successfully done setting XSCT server connection channel  
+20:07:57 INFO  : plnx-install-location is set to ''
+20:07:57 INFO  : Successfully done query RDI_DATADIR 
+20:07:57 INFO  : Successfully done setting workspace for the tool. 
+20:16:22 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+20:16:22 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+20:16:23 INFO  : Platform repository initialization has completed.
+20:16:23 INFO  : XSCT server has started successfully.
+20:16:23 INFO  : Successfully done setting XSCT server connection channel  
+20:16:23 INFO  : Registering command handlers for Vitis TCF services
+20:16:23 INFO  : Successfully done setting workspace for the tool. 
+20:16:23 INFO  : plnx-install-location is set to ''
+20:16:23 INFO  : Successfully done query RDI_DATADIR 
+20:16:55 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+20:16:55 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+11:42:09 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+11:42:09 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+11:42:10 INFO  : XSCT server has started successfully.
+11:42:10 INFO  : plnx-install-location is set to ''
+11:42:10 INFO  : Successfully done setting XSCT server connection channel  
+11:42:10 INFO  : Successfully done setting workspace for the tool. 
+11:42:10 INFO  : Successfully done query RDI_DATADIR 
+11:42:10 INFO  : Platform repository initialization has completed.
+11:42:11 INFO  : Registering command handlers for Vitis TCF services
+13:03:04 INFO  : Result from executing command 'removePlatformRepo': 
+13:03:11 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+13:03:11 INFO  : Result from executing command 'getPlatforms': xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+13:19:10 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+13:19:10 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+13:19:12 INFO  : Platform repository initialization has completed.
+13:19:12 INFO  : Registering command handlers for Vitis TCF services
+13:19:12 INFO  : XSCT server has started successfully.
+13:19:12 INFO  : plnx-install-location is set to ''
+13:19:12 INFO  : Successfully done setting XSCT server connection channel  
+13:19:13 INFO  : Successfully done setting workspace for the tool. 
+13:19:13 INFO  : Successfully done query RDI_DATADIR 
+13:20:18 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+13:20:18 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:08:22 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:08:22 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:08:24 INFO  : Platform repository initialization has completed.
+19:08:24 INFO  : Registering command handlers for Vitis TCF services
+19:08:24 INFO  : XSCT server has started successfully.
+19:08:25 INFO  : plnx-install-location is set to ''
+19:08:25 INFO  : Successfully done setting XSCT server connection channel  
+19:08:25 INFO  : Successfully done query RDI_DATADIR 
+19:08:25 INFO  : Successfully done setting workspace for the tool. 
+19:09:45 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+19:09:45 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:40:23 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:40:24 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:40:27 INFO  : XSCT server has started successfully.
+19:40:27 INFO  : plnx-install-location is set to ''
+19:40:28 INFO  : Registering command handlers for Vitis TCF services
+19:40:28 INFO  : Platform repository initialization has completed.
+19:40:33 INFO  : Successfully done setting XSCT server connection channel  
+19:40:33 INFO  : Successfully done query RDI_DATADIR 
+19:40:33 INFO  : Successfully done setting workspace for the tool. 
+19:41:14 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+19:41:14 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:43:58 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:43:58 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:44:00 INFO  : Platform repository initialization has completed.
+19:44:00 INFO  : Registering command handlers for Vitis TCF services
+19:44:00 INFO  : XSCT server has started successfully.
+19:44:00 INFO  : Successfully done setting XSCT server connection channel  
+19:44:01 INFO  : plnx-install-location is set to ''
+19:44:01 INFO  : Successfully done setting workspace for the tool. 
+19:44:01 INFO  : Successfully done query RDI_DATADIR 
+19:45:13 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:45:13 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:45:14 INFO  : XSCT server has started successfully.
+19:45:14 INFO  : plnx-install-location is set to ''
+19:45:14 INFO  : Successfully done setting XSCT server connection channel  
+19:45:14 INFO  : Successfully done query RDI_DATADIR 
+19:45:14 INFO  : Successfully done setting workspace for the tool. 
+19:45:15 INFO  : Platform repository initialization has completed.
+19:45:15 INFO  : Registering command handlers for Vitis TCF services
+19:45:25 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+19:45:25 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:01:38 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:01:38 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:01:39 INFO  : XSCT server has started successfully.
+19:01:40 INFO  : plnx-install-location is set to ''
+19:01:40 INFO  : Successfully done setting XSCT server connection channel  
+19:01:40 INFO  : Successfully done setting workspace for the tool. 
+19:01:40 INFO  : Successfully done query RDI_DATADIR 
+19:01:40 INFO  : Platform repository initialization has completed.
+19:01:40 INFO  : Registering command handlers for Vitis TCF services
+19:08:20 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+19:08:20 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+19:41:27 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+19:41:27 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+19:41:28 INFO  : XSCT server has started successfully.
+19:41:28 INFO  : Successfully done setting XSCT server connection channel  
+19:41:28 INFO  : plnx-install-location is set to ''
+19:41:28 INFO  : Successfully done setting workspace for the tool. 
+19:41:28 INFO  : Successfully done query RDI_DATADIR 
+19:41:29 INFO  : Platform repository initialization has completed.
+19:41:29 INFO  : Registering command handlers for Vitis TCF services
+21:19:40 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/IDE.log'.
+21:19:40 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/temp_xsdb_launch_script.tcl
+21:19:41 INFO  : XSCT server has started successfully.
+21:19:41 INFO  : plnx-install-location is set to ''
+21:19:41 INFO  : Successfully done setting XSCT server connection channel  
+21:19:41 INFO  : Successfully done setting workspace for the tool. 
+21:19:41 INFO  : Successfully done query RDI_DATADIR 
+21:19:41 INFO  : Platform repository initialization has completed.
+21:19:42 INFO  : Registering command handlers for Vitis TCF services
+21:22:25 DEBUG : Logs will be stored at '/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars/IDE.log'.
+21:22:26 INFO  : Launching XSCT server: xsct -n  -interactive /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars/temp_xsdb_launch_script.tcl
+21:22:27 INFO  : XSCT server has started successfully.
+21:22:27 INFO  : Successfully done setting XSCT server connection channel  
+21:22:27 INFO  : plnx-install-location is set to ''
+21:22:27 INFO  : Successfully done setting workspace for the tool. 
+21:22:27 INFO  : Successfully done query RDI_DATADIR 
+21:22:27 INFO  : Platform repository initialization has completed.
+21:22:27 INFO  : Registering command handlers for Vitis TCF services
+21:22:38 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+21:22:38 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm

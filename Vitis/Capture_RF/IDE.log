@@ -1,0 +1,54 @@
+20:21:24 DEBUG : Logs will be stored at '/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/IDE.log'.
+20:21:25 INFO  : Launching XSCT server: xsct -n  -interactive /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/temp_xsdb_launch_script.tcl
+20:21:25 INFO  : Registering command handlers for Vitis TCF services
+20:21:25 INFO  : Platform repository initialization has completed.
+20:21:26 INFO  : XSCT server has started successfully.
+20:21:26 INFO  : Successfully done setting XSCT server connection channel  
+20:21:26 INFO  : Successfully done setting workspace for the tool. 
+20:21:26 INFO  : Successfully done query RDI_DATADIR 
+20:21:27 INFO  : plnx-install-location is set to ''
+20:23:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:23:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:23:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:23:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:23:01 INFO  : Platform 'ebaz4205_wrapper' is added to custom repositories.
+20:23:03 INFO  : Platform 'ebaz4205_wrapper' is added to custom repositories.
+20:25:08 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+20:25:08 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+20:29:18 DEBUG : Logs will be stored at '/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/IDE.log'.
+20:29:19 INFO  : Launching XSCT server: xsct -n  -interactive /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/temp_xsdb_launch_script.tcl
+20:29:20 INFO  : Platform repository initialization has completed.
+20:29:20 INFO  : Registering command handlers for Vitis TCF services
+20:29:21 INFO  : XSCT server has started successfully.
+20:29:21 INFO  : plnx-install-location is set to ''
+20:29:21 INFO  : Successfully done setting XSCT server connection channel  
+20:29:21 INFO  : Successfully done query RDI_DATADIR 
+20:29:21 INFO  : Successfully done setting workspace for the tool. 
+20:29:42 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+20:29:42 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm
+12:09:10 INFO  : Environment used by launch configuration 'Debugger_Capture_RF-Default_2' is updated to '{}'.
+12:09:10 INFO  : Add the variable 'XILINX_VITIS_DEBUG_ENV_CUSTOM' in enivronment tab of the launch configuration dialog to prevent the tool from overriding the environment.
+12:11:37 INFO  : Environment used by launch configuration 'Debugger_Capture_RF-Default_2' is updated to '{}'.
+12:11:37 INFO  : Add the variable 'XILINX_VITIS_DEBUG_ENV_CUSTOM' in enivronment tab of the launch configuration dialog to prevent the tool from overriding the environment.
+12:12:29 INFO  : Environment used by launch configuration 'Debugger_Capture_RF-Default_2' is updated to '{}'.
+12:12:29 INFO  : Add the variable 'XILINX_VITIS_DEBUG_ENV_CUSTOM' in enivronment tab of the launch configuration dialog to prevent the tool from overriding the environment.
+12:46:02 DEBUG : Logs will be stored at '/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/IDE.log'.
+12:46:02 INFO  : Launching XSCT server: xsct -n  -interactive /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/temp_xsdb_launch_script.tcl
+12:46:03 INFO  : XSCT server has started successfully.
+12:46:03 INFO  : Successfully done setting XSCT server connection channel  
+12:46:03 INFO  : plnx-install-location is set to ''
+12:46:03 INFO  : Successfully done setting workspace for the tool. 
+12:46:03 INFO  : Successfully done query RDI_DATADIR 
+12:46:03 INFO  : Platform repository initialization has completed.
+12:46:04 INFO  : Registering command handlers for Vitis TCF services
+12:53:15 DEBUG : Logs will be stored at '/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/IDE.log'.
+12:53:16 INFO  : Launching XSCT server: xsct -n  -interactive /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/temp_xsdb_launch_script.tcl
+12:53:17 INFO  : XSCT server has started successfully.
+12:53:17 INFO  : Successfully done setting XSCT server connection channel  
+12:53:17 INFO  : plnx-install-location is set to ''
+12:53:17 INFO  : Successfully done setting workspace for the tool. 
+12:53:18 INFO  : Successfully done query RDI_DATADIR 
+12:53:18 INFO  : Platform repository initialization has completed.
+12:53:18 INFO  : Registering command handlers for Vitis TCF services
+12:56:07 INFO  : Result from executing command 'getProjects': ebaz4205_wrapper
+12:56:07 INFO  : Result from executing command 'getPlatforms': ebaz4205_wrapper|/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm;xilinx_zcu102_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_202220_1/xilinx_zcu102_base_202220_1.xpfm;xilinx_zcu102_base_dfx_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu102_base_dfx_202220_1/xilinx_zcu102_base_dfx_202220_1.xpfm;xilinx_zcu104_base_202220_1|/home/guido/Xilinx-tools/Vitis/2022.2/base_platforms/xilinx_zcu104_base_202220_1/xilinx_zcu104_base_202220_1.xpfm

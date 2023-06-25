@@ -1,0 +1,18 @@
+19:26:38 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/IDE.log'.
+19:26:39 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/temp_xsdb_launch_script.tcl
+19:26:39 INFO  : Registering command handlers for Vitis TCF services
+19:26:39 INFO  : Platform repository initialization has completed.
+19:26:40 INFO  : XSCT server has started successfully.
+19:26:40 INFO  : Successfully done setting XSCT server connection channel  
+19:26:40 INFO  : Successfully done query RDI_DATADIR 
+19:26:40 INFO  : Successfully done setting workspace for the tool. 
+19:26:41 INFO  : plnx-install-location is set to ''
+20:07:03 DEBUG : Logs will be stored at '/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/IDE.log'.
+20:07:04 INFO  : Launching XSCT server: xsct -n  -interactive /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/EBAZ4205_SDR_HDMI_PS2/temp_xsdb_launch_script.tcl
+20:07:04 INFO  : Registering command handlers for Vitis TCF services
+20:07:04 INFO  : Platform repository initialization has completed.
+20:07:05 INFO  : XSCT server has started successfully.
+20:07:05 INFO  : plnx-install-location is set to ''
+20:07:05 INFO  : Successfully done setting XSCT server connection channel  
+20:07:05 INFO  : Successfully done query RDI_DATADIR 
+20:07:05 INFO  : Successfully done setting workspace for the tool. 

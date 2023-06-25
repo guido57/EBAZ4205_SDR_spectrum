@@ -1,0 +1,21 @@
+16:42:53 **** Incremental Build of configuration Debug for project Capture_RF ****
+make all 
+Building file: ../src/helloworld.c
+Invoking: ARM v7 Linux gcc compiler
+arm-linux-gnueabihf-gcc -Wall -O0 -g3 -I/home/guido/EBAZ4205_SDR_HDMI_PS2/ebaz4205/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include -I/home/guido/EBAZ4205_SDR_HDMI_PS2/ebaz4205/images/linux/sdk/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/include/c++/11.2.0 -c -fmessage-length=0 -MT"src/helloworld.o" -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+Finished building: ../src/helloworld.c
+ 
+Building target: Capture_RF.elf
+Invoking: ARM v7 Linux gcc linker
+arm-linux-gnueabihf-gcc -L/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/Capture_RF_lib/Debug/ -o "Capture_RF.elf"  ./src/helloworld.o  ./.metadata/.plugins/org.eclipse.cdt.make.core/specs.o   -lCapture_RF_lib
+Finished building target: Capture_RF.elf
+ 
+Invoking: ARM v7 Linux Print Size
+arm-linux-gnueabihf-size Capture_RF.elf  |tee "Capture_RF.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   2253	    376	   8200	  10829	   2a4d	Capture_RF.elf
+Finished building: Capture_RF.elf.size
+ 
+
+16:42:53 Build Finished (took 215ms)
+

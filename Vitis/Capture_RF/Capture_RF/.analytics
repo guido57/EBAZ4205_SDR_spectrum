@@ -1,0 +1,3 @@
+timestamp=[2023-03-23 12:52:01], mode=WORKBENCH_START, duration=0:00:03.731, duration_ms=3731, data={}
+timestamp=[2023-03-23 12:52:02], mode=WORKBENCH_UI_INIT, duration=0:00:00.269, duration_ms=269, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-03-23 12:52:02], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.246, duration_ms=246, data={}

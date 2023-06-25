@@ -1,0 +1,506 @@
+TRACE::2023-03-22.20:22:59::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:22:59::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:22:59::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:22:59::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-22.20:22:59::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:22:59::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-22.20:22:59::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-03-22.20:23:01::SCWPlatform::Opened new HwDB with name ebaz4205_wrapper_0
+TRACE::2023-03-22.20:23:01::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2023-03-22.20:23:01::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper"
+		}]
+}
+TRACE::2023-03-22.20:23:01::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper"
+		}]
+}
+TRACE::2023-03-22.20:23:01::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-22.20:23:01::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-22.20:23:01::SCWPlatform::Trying to set the existing hwdb with name ebaz4205_wrapper_0
+TRACE::2023-03-22.20:23:01::SCWPlatform::Opened existing hwdb ebaz4205_wrapper_0
+TRACE::2023-03-22.20:23:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-22.20:23:01::SCWDomain::checking for install qemu data   : 
+TRACE::2023-03-22.20:23:01::SCWDomain:: Using the QEMU Data from install at  : /home/guido/Xilinx-tools/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2023-03-22.20:23:01::SCWDomain:: Using the QEMU args  from install at  : /home/guido/Xilinx-tools/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2023-03-22.20:23:01::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-22.20:23:01::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:23:01::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-22.20:23:01::SCWPlatform::Trying to set the existing hwdb with name ebaz4205_wrapper_0
+TRACE::2023-03-22.20:23:01::SCWPlatform::Opened existing hwdb ebaz4205_wrapper_0
+TRACE::2023-03-22.20:23:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-22.20:23:01::SCWDomain::Qemu Directory name is changed from "" to "qemu"
+TRACE::2023-03-22.20:23:01::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper",
+			"sysActiveDom":	"linux_ps7_cortexa9",
+			"sysDefaultDom":	"linux_ps7_cortexa9",
+			"domains":	[{
+					"domainName":	"linux_ps7_cortexa9",
+					"domainDispName":	"linux_ps7_cortexa9",
+					"domainDesc":	"linux_ps7_cortexa9",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"32-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2023-03-22.20:23:01::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper",
+			"sysActiveDom":	"linux_ps7_cortexa9",
+			"sysDefaultDom":	"linux_ps7_cortexa9",
+			"domains":	[{
+					"domainName":	"linux_ps7_cortexa9",
+					"domainDispName":	"linux_ps7_cortexa9",
+					"domainDesc":	"linux_ps7_cortexa9",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"32-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2023-03-22.20:23:01::SCWPlatform::Started generating the artifacts platform ebaz4205_wrapper
+TRACE::2023-03-22.20:23:01::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-22.20:23:01::SCWPlatform::Started generating the artifacts for system configuration ebaz4205_wrapper
+LOG::2023-03-22.20:23:01::SCWSystem::Started Processing the domain linux_ps7_cortexa9
+TRACE::2023-03-22.20:23:01::SCWDomain::Generating domain artifcats
+LOG::2023-03-22.20:23:01::SCWSystem::Completed Processing the domain linux_ps7_cortexa9
+LOG::2023-03-22.20:23:01::SCWSystem::Completed Processing the sysconfig ebaz4205_wrapper
+LOG::2023-03-22.20:23:01::SCWPlatform::Completed generating the artifacts for system configuration ebaz4205_wrapper
+TRACE::2023-03-22.20:23:01::SCWPlatform::Started preparing the platform 
+TRACE::2023-03-22.20:23:01::SCWSystem::Writing the bif file for system config ebaz4205_wrapper
+TRACE::2023-03-22.20:23:01::SCWSystem::dir created 
+TRACE::2023-03-22.20:23:01::SCWSystem::Writing the bif 
+TRACE::2023-03-22.20:23:01::SCWPlatform::Started writing the spfm file 
+TRACE::2023-03-22.20:23:01::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-03-22.20:23:01::SCWPlatform::Completed generating the platform
+TRACE::2023-03-22.20:23:01::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper",
+			"sysActiveDom":	"linux_ps7_cortexa9",
+			"sysDefaultDom":	"linux_ps7_cortexa9",
+			"domains":	[{
+					"domainName":	"linux_ps7_cortexa9",
+					"domainDispName":	"linux_ps7_cortexa9",
+					"domainDesc":	"linux_ps7_cortexa9",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"32-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-03-22.20:23:01::SCWPlatform::updated the xpfm file.
+LOG::2023-03-22.20:25:08::SCWPlatform::Started generating the artifacts platform ebaz4205_wrapper
+TRACE::2023-03-22.20:25:08::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-22.20:25:08::SCWPlatform::Started generating the artifacts for system configuration ebaz4205_wrapper
+LOG::2023-03-22.20:25:08::SCWSystem::Checking the domain linux_ps7_cortexa9
+LOG::2023-03-22.20:25:08::SCWSystem::Not a boot domain 
+LOG::2023-03-22.20:25:08::SCWSystem::Started Processing the domain linux_ps7_cortexa9
+TRACE::2023-03-22.20:25:08::SCWDomain::Generating domain artifcats
+LOG::2023-03-22.20:25:08::SCWSystem::Completed Processing the domain linux_ps7_cortexa9
+LOG::2023-03-22.20:25:08::SCWSystem::Completed Processing the sysconfig ebaz4205_wrapper
+LOG::2023-03-22.20:25:08::SCWPlatform::Completed generating the artifacts for system configuration ebaz4205_wrapper
+TRACE::2023-03-22.20:25:08::SCWPlatform::Started preparing the platform 
+TRACE::2023-03-22.20:25:08::SCWSystem::Writing the bif file for system config ebaz4205_wrapper
+TRACE::2023-03-22.20:25:08::SCWSystem::dir created 
+TRACE::2023-03-22.20:25:08::SCWSystem::Writing the bif 
+TRACE::2023-03-22.20:25:08::SCWPlatform::Started writing the spfm file 
+TRACE::2023-03-22.20:25:08::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-03-22.20:25:08::SCWPlatform::Completed generating the platform
+TRACE::2023-03-22.20:25:08::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper",
+			"sysActiveDom":	"linux_ps7_cortexa9",
+			"sysDefaultDom":	"linux_ps7_cortexa9",
+			"domains":	[{
+					"domainName":	"linux_ps7_cortexa9",
+					"domainDispName":	"linux_ps7_cortexa9",
+					"domainDesc":	"linux_ps7_cortexa9",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"32-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-03-22.20:25:08::SCWPlatform::updated the xpfm file.
+TRACE::2023-03-22.20:29:40::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:40::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:40::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:40::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-22.20:29:40::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:40::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-22.20:29:40::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-03-22.20:29:42::SCWPlatform::Opened new HwDB with name ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWReader::Active system found as  ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWReader::Handling sysconfig ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWDomain::checking for install qemu data   : 
+TRACE::2023-03-22.20:29:42::SCWDomain:: Using the QEMU Data from install at  : /home/guido/Xilinx-tools/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2023-03-22.20:29:42::SCWDomain:: Using the QEMU args  from install at  : /home/guido/Xilinx-tools/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2023-03-22.20:29:42::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:42::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:42::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:42::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-22.20:29:42::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-22.20:29:42::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-22.20:29:42::SCWPlatform::Trying to set the existing hwdb with name ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWPlatform::Opened existing hwdb ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-22.20:29:42::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-03-22.20:29:42::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-03-22.20:29:42::SCWReader::No isolation master present  
+LOG::2023-03-22.20:29:42::SCWPlatform::Started generating the artifacts platform ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-22.20:29:42::SCWPlatform::Started generating the artifacts for system configuration ebaz4205_wrapper
+LOG::2023-03-22.20:29:42::SCWSystem::Checking the domain linux_ps7_cortexa9
+LOG::2023-03-22.20:29:42::SCWSystem::Not a boot domain 
+LOG::2023-03-22.20:29:42::SCWSystem::Started Processing the domain linux_ps7_cortexa9
+TRACE::2023-03-22.20:29:42::SCWDomain::Generating domain artifcats
+LOG::2023-03-22.20:29:42::SCWSystem::Completed Processing the domain linux_ps7_cortexa9
+LOG::2023-03-22.20:29:42::SCWSystem::Completed Processing the sysconfig ebaz4205_wrapper
+LOG::2023-03-22.20:29:42::SCWPlatform::Completed generating the artifacts for system configuration ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWPlatform::Started preparing the platform 
+TRACE::2023-03-22.20:29:42::SCWSystem::Writing the bif file for system config ebaz4205_wrapper
+TRACE::2023-03-22.20:29:42::SCWSystem::dir created 
+TRACE::2023-03-22.20:29:42::SCWSystem::Writing the bif 
+TRACE::2023-03-22.20:29:42::SCWPlatform::Started writing the spfm file 
+TRACE::2023-03-22.20:29:42::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-03-22.20:29:42::SCWPlatform::Completed generating the platform
+TRACE::2023-03-22.20:29:42::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper",
+			"sysActiveDom":	"linux_ps7_cortexa9",
+			"sysDefaultDom":	"linux_ps7_cortexa9",
+			"domains":	[{
+					"domainName":	"linux_ps7_cortexa9",
+					"domainDispName":	"linux_ps7_cortexa9",
+					"domainDesc":	"linux_ps7_cortexa9",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"32-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-03-22.20:29:42::SCWPlatform::updated the xpfm file.
+TRACE::2023-03-23.12:56:06::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:06::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:06::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:06::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-23.12:56:06::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:06::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-23.12:56:06::SCWPlatform::Do not have an existing db opened. 
+TRACE::2023-03-23.12:56:07::SCWPlatform::Opened new HwDB with name ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWReader::Active system found as  ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWReader::Handling sysconfig ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWDomain::checking for install qemu data   : 
+TRACE::2023-03-23.12:56:07::SCWDomain:: Using the QEMU Data from install at  : /home/guido/Xilinx-tools/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/
+TRACE::2023-03-23.12:56:07::SCWDomain:: Using the QEMU args  from install at  : /home/guido/Xilinx-tools/Vitis/2022.2/data/emulation/platforms/zynq/sw/a9_linux/qemu/qemu_args.txt
+TRACE::2023-03-23.12:56:07::SCWPlatform::Trying to open the hw design at /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:07::SCWPlatform::DSA given /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:07::SCWPlatform::DSA absoulate path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:07::SCWPlatform::DSA directory /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw
+TRACE::2023-03-23.12:56:07::SCWPlatform:: Platform Path /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/hw/ebaz4205_wrapper.xsa
+TRACE::2023-03-23.12:56:07::SCWPlatform:: Unique name xilinx:::0.0
+TRACE::2023-03-23.12:56:07::SCWPlatform::Trying to set the existing hwdb with name ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWPlatform::Opened existing hwdb ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2023-03-23.12:56:07::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2023-03-23.12:56:07::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2023-03-23.12:56:07::SCWReader::No isolation master present  
+LOG::2023-03-23.12:56:07::SCWPlatform::Started generating the artifacts platform ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWPlatform::Sanity checking of platform is completed
+LOG::2023-03-23.12:56:07::SCWPlatform::Started generating the artifacts for system configuration ebaz4205_wrapper
+LOG::2023-03-23.12:56:07::SCWSystem::Checking the domain linux_ps7_cortexa9
+LOG::2023-03-23.12:56:07::SCWSystem::Not a boot domain 
+LOG::2023-03-23.12:56:07::SCWSystem::Started Processing the domain linux_ps7_cortexa9
+TRACE::2023-03-23.12:56:07::SCWDomain::Generating domain artifcats
+LOG::2023-03-23.12:56:07::SCWSystem::Completed Processing the domain linux_ps7_cortexa9
+LOG::2023-03-23.12:56:07::SCWSystem::Completed Processing the sysconfig ebaz4205_wrapper
+LOG::2023-03-23.12:56:07::SCWPlatform::Completed generating the artifacts for system configuration ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWPlatform::Started preparing the platform 
+TRACE::2023-03-23.12:56:07::SCWSystem::Writing the bif file for system config ebaz4205_wrapper
+TRACE::2023-03-23.12:56:07::SCWSystem::dir created 
+TRACE::2023-03-23.12:56:07::SCWSystem::Writing the bif 
+TRACE::2023-03-23.12:56:07::SCWPlatform::Started writing the spfm file 
+TRACE::2023-03-23.12:56:07::SCWPlatform::Started writing the xpfm file 
+TRACE::2023-03-23.12:56:07::SCWPlatform::Completed generating the platform
+TRACE::2023-03-23.12:56:07::SCWWriter::formatted JSON is {
+	"platformName":	"ebaz4205_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"ebaz4205_wrapper",
+	"platHandOff":	"/mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vivado/ebaz4205_wrapper.xsa",
+	"platIntHandOff":	"<platformDir>/hw/ebaz4205_wrapper.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"true",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"ebaz4205_wrapper",
+	"systems":	[{
+			"systemName":	"ebaz4205_wrapper",
+			"systemDesc":	"ebaz4205_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"ebaz4205_wrapper",
+			"sysActiveDom":	"linux_ps7_cortexa9",
+			"sysDefaultDom":	"linux_ps7_cortexa9",
+			"domains":	[{
+					"domainName":	"linux_ps7_cortexa9",
+					"domainDispName":	"linux_ps7_cortexa9",
+					"domainDesc":	"linux_ps7_cortexa9",
+					"processors":	"ps7_cortexa9",
+					"os":	"linux",
+					"sdxOs":	"linux",
+					"qemuArgs":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt",
+					"qemuData":	"<platformDir>/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"isLinuxConfigured":	"true",
+					"isBuildFlow":	"false",
+					"arch":	"32-bit",
+					"sysBootDir":	"",
+					"isMicroBlaze":	"false",
+					"bootmode":	"sd",
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2023-03-23.12:56:07::SCWPlatform::updated the xpfm file.

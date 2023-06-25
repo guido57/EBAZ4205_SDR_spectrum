@@ -1,0 +1,9 @@
+12:52:01 DEBUG : Logs will be stored at '/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/Capture_RF/IDE.log'.
+12:52:02 INFO  : Launching XSCT server: xsct -n  -interactive /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/Capture_RF/temp_xsdb_launch_script.tcl
+12:52:02 INFO  : Registering command handlers for Vitis TCF services
+12:52:02 INFO  : Platform repository initialization has completed.
+12:52:04 INFO  : XSCT server has started successfully.
+12:52:04 INFO  : Successfully done setting XSCT server connection channel  
+12:52:04 INFO  : plnx-install-location is set to ''
+12:52:04 INFO  : Successfully done setting workspace for the tool. 
+12:52:04 INFO  : Successfully done query RDI_DATADIR 

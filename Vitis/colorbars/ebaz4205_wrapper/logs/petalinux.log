@@ -1,0 +1,52 @@
+TRACE::2023-02-18.19:38:42::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-02-18.19:38:42::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-02-18.19:38:42::SCWLinux:: Copying the user libraries. 
+TRACE::2023-02-18.19:38:42::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-02-18.19:39:17::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-02-18.19:39:17::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-02-18.19:39:17::SCWLinux:: Copying the user libraries. 
+TRACE::2023-02-18.19:39:17::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-03.10:47:53::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-03.10:47:53::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-03.10:47:53::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-03.10:47:53::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-03.10:48:49::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-03.10:48:49::SCWLinux::Copying the qemu file from  /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /media/guido/Acer/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-03.10:48:49::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-03.10:48:49::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-13.19:17:58::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-13.19:17:58::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-13.19:17:58::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-13.19:17:58::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-13.20:16:55::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-13.20:16:55::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-13.20:16:55::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-13.20:16:55::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-15.13:03:11::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-15.13:03:11::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-15.13:03:11::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-15.13:03:11::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-15.13:20:18::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-15.13:20:18::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-15.13:20:18::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-15.13:20:18::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-16.19:09:45::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-16.19:09:45::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-16.19:09:45::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-16.19:09:45::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-16.19:41:14::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-16.19:41:14::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-16.19:41:14::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-16.19:41:14::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-16.19:45:25::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-16.19:45:25::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-16.19:45:25::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-16.19:45:25::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-20.19:08:20::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-20.19:08:20::SCWLinux::Copying the qemu file from  /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI_PS2/Vitis/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-20.19:08:20::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-20.19:08:20::SCWLinux::Skipping the Petalinux build as image is already given.
+TRACE::2023-03-23.21:22:38::SCWLinux::Copying the qemu file from  /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/qemu/
+TRACE::2023-03-23.21:22:38::SCWLinux::Copying the qemu file from  /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars/ebaz4205_wrapper/resources/ebaz4205_wrapper/linux_ps7_cortexa9/qemu_args.txt To /home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/colorbars/ebaz4205_wrapper/export/ebaz4205_wrapper/sw/ebaz4205_wrapper/linux_ps7_cortexa9/qemu/
+TRACE::2023-03-23.21:22:38::SCWLinux:: Copying the user libraries. 
+TRACE::2023-03-23.21:22:38::SCWLinux::Skipping the Petalinux build as image is already given.

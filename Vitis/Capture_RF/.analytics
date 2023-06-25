@@ -1,0 +1,100 @@
+timestamp=[2023-03-22 20:21:25], mode=WORKBENCH_START, duration=0:00:03.013, duration_ms=3013, data={}
+timestamp=[2023-03-22 20:21:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.255, duration_ms=255, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2023-03-22 20:21:25], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.155, duration_ms=155, data={}
+timestamp=[2023-03-22 20:23:02], mode=APP_CREATION, duration=0:00:03.288, duration_ms=3288, data={name=Capture_RF, project_type=sdk, os=linux, processor=, runtime=cpp, platform=ebaz4205_wrapper, application_type=application}
+timestamp=[2023-03-22 20:25:11], mode=PLATFORM_GENERATION, duration=0:00:04.170, duration_ms=4170, data={name=ebaz4205_wrapper}
+timestamp=[2023-03-22 20:25:12], mode=BUILD, duration=0:00:00.527, duration_ms=527, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:26:19], mode=BUILD, duration=0:00:00.121, duration_ms=121, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:29:20], mode=WORKBENCH_START, duration=0:00:04.718, duration_ms=4718, data={}
+timestamp=[2023-03-22 20:29:20], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.193, duration_ms=193, data={}
+timestamp=[2023-03-22 20:29:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.444, duration_ms=444, data={editors_count=3, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=Capture_RF,Capture_RF_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-03-22 20:29:45], mode=PLATFORM_GENERATION, duration=0:00:05.423, duration_ms=5423, data={name=ebaz4205_wrapper}
+timestamp=[2023-03-22 20:29:45], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:42:21], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:42:54], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:43:10], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:43:45], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:44:53], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:45:26], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:46:52], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:50:15], mode=BUILD, duration=0:00:00.167, duration_ms=167, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:50:45], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:51:11], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 20:51:23], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:02:31], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:02:44], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:03:36], mode=BUILD, duration=0:00:00.272, duration_ms=272, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:04:50], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:05:03], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:05:18], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:13:01], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:17:01], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:18:20], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:21:23], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:22:33], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:22:44], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:34:23], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:35:13], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:36:13], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:41:32], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:41:46], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:45:29], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:46:21], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:46:49], mode=BUILD, duration=0:00:00.271, duration_ms=271, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-22 21:52:05], mode=APP_CREATION, duration=0:00:00.108, duration_ms=108, data={name=Capture_RF_lib, project_type=sdk, os=linux, processor=cortex-a9, runtime=C/C++, platform=ebaz4205_wrapper, application_type=shared_lib}
+timestamp=[2023-03-22 21:53:45], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:30:36], mode=BUILD, duration=0:00:00.271, duration_ms=271, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:35:30], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:36:00], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:36:55], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:38:14], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:39:53], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:40:08], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:43:39], mode=BUILD, duration=0:00:00.121, duration_ms=121, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:44:49], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:46:59], mode=BUILD, duration=0:00:00.272, duration_ms=272, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:47:33], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:47:46], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:56:11], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:56:43], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:57:17], mode=BUILD, duration=0:00:00.173, duration_ms=173, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 08:57:55], mode=BUILD, duration=0:00:00.221, duration_ms=221, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 09:04:35], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 09:06:14], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 09:08:03], mode=BUILD, duration=0:00:00.176, duration_ms=176, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 09:11:52], mode=BUILD, duration=0:00:00.175, duration_ms=175, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 09:13:40], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:19:29], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:22:50], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:23:02], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:32:00], mode=BUILD, duration=0:00:00.273, duration_ms=273, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:35:02], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:35:07], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:46:03], mode=WORKBENCH_START, duration=0:00:03.863, duration_ms=3863, data={}
+timestamp=[2023-03-23 12:46:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.160, duration_ms=160, data={}
+timestamp=[2023-03-23 12:46:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.479, duration_ms=479, data={editors_count=2, platform_editors_count=0, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=Capture_RF,Capture_RF_lib,Capture_RF_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-03-23 12:53:18], mode=WORKBENCH_START, duration=0:00:05.198, duration_ms=5198, data={}
+timestamp=[2023-03-23 12:53:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.197, duration_ms=197, data={}
+timestamp=[2023-03-23 12:53:19], mode=WORKBENCH_UI_INIT, duration=0:00:00.562, duration_ms=562, data={editors_count=2, platform_editors_count=0, projects_count=5, platform_projects_count=1, active_platform_editor=false, projects=Capture_RF,Capture_RF_lib,Capture_RF_system,RemoteSystemsTempFiles,ebaz4205_wrapper}
+timestamp=[2023-03-23 12:56:10], mode=PLATFORM_GENERATION, duration=0:00:05.472, duration_ms=5472, data={name=ebaz4205_wrapper}
+timestamp=[2023-03-23 12:56:11], mode=BUILD, duration=0:00:00.472, duration_ms=472, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 12:56:21], mode=BUILD, duration=0:00:00.224, duration_ms=224, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 14:35:33], mode=BUILD, duration=0:00:00.167, duration_ms=167, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 14:36:18], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 14:37:44], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 14:44:32], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:32:12], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:32:51], mode=BUILD, duration=0:00:00.223, duration_ms=223, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:33:20], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:33:42], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:35:29], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:36:32], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:37:16], mode=BUILD, duration=0:00:00.275, duration_ms=275, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:40:14], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:40:23], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:40:29], mode=BUILD, duration=0:00:00.228, duration_ms=228, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:40:37], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:41:57], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 16:42:53], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=Capture_RF, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 17:25:45], mode=BUILD, duration=0:00:00.220, duration_ms=220, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}
+timestamp=[2023-03-23 18:35:42], mode=BUILD, duration=0:00:00.225, duration_ms=225, data={name=Capture_RF_lib, configuration=Debug, clean_build=false}

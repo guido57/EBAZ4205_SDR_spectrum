@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="Capture_RF_lib" location="/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/Capture_RF_lib" platform="/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/Vitis/Capture_RF/ebaz4205_wrapper/export/ebaz4205_wrapper/ebaz4205_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="Capture_RF_system" sysConfig="ebaz4205_wrapper" runtime="C/C++" cpu="linux_ps7_cortexa9" cpuInstance="cortex-a9" os="linux" isSharedLib="true">
+  <configuration name="Debug" id="xilinx.gnu.armv7.linux.sharedlib.debug.1238334772">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.linux.sharedlib.release.1074315792" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
