@@ -10,7 +10,7 @@ to run the main "EBAZ4205 SDR and Spectrum" project
 
 ## Getting Started with this PetaLinux project
 
-### build PetaLinux
+### build PetaLinux Image
 
 Of course you need to have PetaLinux 2022.2 installed on Ubuntu 20.04 LTS or 22.04 LTS (don't do it on 23.04)
 Git or download this folder to your PC
@@ -26,6 +26,32 @@ source /tools/PetaLinux/2022.2/bin/settings.sh
 ```
 
 Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
+```
+petalinux-build
+```
+
+
+### build PetaLinux sysroot
+
+If you want to build Linux applications for PetaLinux using your host PC (with Ubuntu) you need a sysroot. E.g. Qt Creator installed on Ubuntu can build applications for the PetaLinux version installed in the Zynq7010 of your EBAZ4205, but it needs a special compiler and linker which, running on Ubuntu, can build Cortex A9 32 bits executables, using the proper shared libraries and their include files. 
+
+cd to the PetaLinux folder
+```
+cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/ 
+```
+source PetaLinux there, so that the petalinux commands can be launched
+```
+source /tools/PetaLinux/2022.2/bin/settings.sh 
+```
+Temporarily exclude "openssh-sftp-server" from building (because of a PetaLinux bug, the sysroot cannot be created with it!)
+```
+petalinux-config -c rootfs 
+```
+Navigate to "Filesystem Packages  → console  → network  → openssh"
+Uncheck [ ] openssh-sftp-server 
+exit saving
+
+Build the sysroot
 ```
 petalinux-build
 ```
