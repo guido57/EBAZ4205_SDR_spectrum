@@ -17,8 +17,9 @@ To cross compile with qt creator you necessarily need to ssh login without passw
 2. On PetaLinux, create the directory .ssh under /home/ebaz
 3. On PetaLinux, copy the public key created at 1. "id_rsa.pub" to /home/ebaz/.ssh renaming it to "authorized_keys"
 4. On Ubuntu, try to ssh to PetaLinux: if everything is OK, you should login without password
+console```
 ssh ebaz@192.168.1.250
 ebaz4205:~$ 
-
+```
 
  
