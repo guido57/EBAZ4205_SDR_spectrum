@@ -25,10 +25,17 @@ cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/
 ```
 source /tools/PetaLinux/2022.2/bin/settings.sh 
 ```
-
 4. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
 ```
 petalinux-build
+```
+5. Create the files compising the image to flash on the SD card in ...PetaLinux/images/linux
+```
+petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./project-spec/hw-description/ebaz4205_wrapper.bit --u-boot
+```
+6. Create the wic file (SD card image) in ...PetaLinux/images/linux
+```
+petalinux-package --wic
 ```
 
 
