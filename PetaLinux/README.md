@@ -45,6 +45,12 @@ petalinux-package --wic
 ```
 8. Flash the file on an SD card (>= 8 GB) using Balena-Etcher
 
+### test PetaLinux
+
+1. Insert the SD card in the EBAZ4205 slot
+2. Connect any kind of tty terminal set at 115200,8,n,1 to the serial port of EBAZ4205
+3. Power on
+You should the PetaLinux boot sequence
 
 ### build PetaLinux sysroot and get (cross)compilers
 
