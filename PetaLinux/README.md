@@ -26,19 +26,24 @@ cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/
 ```
 source /tools/Xilinx/PetaLinux/2022.2/bin/settings.sh 
 ```
-4. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
+4. Specify the directory where you exported the XSA file (hardware description) by Vivado
+```
+petalinux-config --get-hw-description=/home/guido/EBAZ4205_SDR_spectrum/Vivado
+```
+
+5. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
 ```
 petalinux-build
 ```
-5. Create the files composing the image to flash on the SD card in ...PetaLinux/images/linux
+6. Create the files composing the image to flash on the SD card in ...PetaLinux/images/linux
 ```
 petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./project-spec/hw-description/ebaz4205_wrapper.bit --u-boot
 ```
-6. Create the wic file (SD card image) in ...PetaLinux/images/linux/petalinux-sdimage.wic
+7. Create the wic file (SD card image) in ...PetaLinux/images/linux/petalinux-sdimage.wic
 ```
 petalinux-package --wic
 ```
-7. Flash the file on an SD card (>= 8 GB) using Balena-Etcher
+8. Flash the file on an SD card (>= 8 GB) using Balena-Etcher
 
 
 ### build PetaLinux sysroot and get (cross)compilers
