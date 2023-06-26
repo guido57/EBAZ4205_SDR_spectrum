@@ -8,14 +8,18 @@ This repository contains the sw project to display the 0-32 MHz radio spectrum i
 
 This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum which is a 0-32 MHz radio spectrum viewer only. 
 
-For details and instructions see the sub projects:
+## Getting Started
 
-### [PetaLinux project](PetaLinux)
+* [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
+* SW is here :) 
 
-the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
+For details and instructions see the following sub projects. The building of each project should be done in the same sequence.
 
 ### [Vivado project](Vivado)
 the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
+
+### [PetaLinux project](PetaLinux)
+the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
 
 ### [Vitis project](Vitis)
 This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
@@ -35,11 +39,6 @@ In this project there's nothing esoteric, but it is quite complex because it req
 * flashing Linux on the Zynq7010 FPGA with Xilinx Petalinux
 * building a C++ program running on Linux
 * building a Python program on Windows
-
-## Getting Started
-
-* [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
-* SW is here :) 
 
 ## License
 
