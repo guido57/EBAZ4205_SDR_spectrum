@@ -31,11 +31,11 @@ source /tools/Xilinx/PetaLinux/2022.2/bin/settings.sh
 petalinux-config --get-hw-description=/home/guido/Github/EBAZ4205_SDR_spectrum/Vivado
 ```
 
-5. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
+5. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM vs 5 minutes in case of rebuilding after a Vivado hardware modification)
 ```
 petalinux-build
 ```
-6. Create the files composing the image to flash on the SD card in ...PetaLinux/images/linux
+6. Create the files composing the image (BOOT.bin system.dtb uImage ...) to be flashed on the SD card. You'll find all these files in PetaLinux/images/linux
 ```
 petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./project-spec/hw-description/ebaz4205_wrapper.bit --u-boot
 ```
