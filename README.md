@@ -14,19 +14,13 @@ For details and instructions see the sub projects:
 
 the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
 
-### Vivado project 
-[Vivado project](Vivado)
-
+### [Vivado project](Vivado)
 the Xilinx Vivado project to program the Zynq7010 PL (Programmable Logic)
 
-### Vitis project
-[Vitis project](Vitis)
-
+### [Vitis project](Vitis)
 This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
 
-### QT5 project
-[QT5 project](qt5)
-
+### [QT5 project](qt5)
 The sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
 
 ## Getting Started for FPGA or EBAZ4205 beginners
