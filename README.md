@@ -2,10 +2,13 @@
  
 ## Description
 
-This repository contains all the projects to use and EBA4205 board to display the 0-32 MHz radio spectrum in a full view and tune HF radio stations.
-This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum which is a 0-32 MHz radio spectrum viewer only. 
+This repository contains the sw project to display the 0-32 MHz radio spectrum in a full view and tune HF radio stations using an EBAZ4205 board.
 
 ![block diagram](docs/SDR-block-diagram.png)
+
+This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum which is a 0-32 MHz radio spectrum viewer only. 
+
+For details and instructions see the sub projects:
 
 ### PetaLinux project 
 [PetaLinux project](PetaLinux)
@@ -25,7 +28,7 @@ This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named
 ### QT5 project
 [QT5 project](qt5)
 
-QT5: the sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
+The sdr-app C++ software for PetaLinux to display the spectrum and tune the radio stations
 
 ## Getting Started for FPGA or EBAZ4205 beginners
 
@@ -44,7 +47,6 @@ In this project there's nothing esoteric, but it is quite complex because it req
 
 * [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
 * SW is here :) 
-
 
 ## License
 
