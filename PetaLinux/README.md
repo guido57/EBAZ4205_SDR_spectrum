@@ -21,7 +21,7 @@ then:
 ```
 cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/ 
 ```
-3. soource PetaLinux there, so that the petalinux command can be launched
+3. source PetaLinux there, so that the petalinux command can be launched
 ```
 source /tools/PetaLinux/2022.2/bin/settings.sh 
 ```
