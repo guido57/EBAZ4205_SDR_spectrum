@@ -13,19 +13,20 @@ to run the main "EBAZ4205 SDR and Spectrum" project
 ### build PetaLinux Image
 
 Of course you need to have PetaLinux 2022.2 installed on Ubuntu 20.04 LTS or 22.04 LTS (don't do it on 23.04)
-Git or download this folder to your PC
+
+1. Git or download this folder to your PC
 then:
 
-cd to the PetaLinux folder
+2. cd to the PetaLinux folder
 ```
 cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/ 
 ```
-soource PetaLinux there, so that the petalinux command can be launched
+3. soource PetaLinux there, so that the petalinux command can be launched
 ```
 source /tools/PetaLinux/2022.2/bin/settings.sh 
 ```
 
-Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
+4. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
 ```
 petalinux-build
 ```
