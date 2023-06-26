@@ -20,7 +20,7 @@ Of course you need to have:
 
 2. cd to the PetaLinux folder
 ```
-cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/ 
+cd  /home/guido/Github/EBAZ4205_SDR_spectrum/PetaLinux/ 
 ```
 3. source PetaLinux there, so that the petalinux command can be launched
 ```
@@ -28,7 +28,7 @@ source /tools/Xilinx/PetaLinux/2022.2/bin/settings.sh
 ```
 4. Specify the directory where you exported the XSA file (hardware description) by Vivado
 ```
-petalinux-config --get-hw-description=/home/guido/EBAZ4205_SDR_spectrum/Vivado
+petalinux-config --get-hw-description=/home/guido/Github/EBAZ4205_SDR_spectrum/Vivado
 ```
 
 5. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
