@@ -33,10 +33,11 @@ petalinux-build
 ```
 petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./project-spec/hw-description/ebaz4205_wrapper.bit --u-boot
 ```
-6. Create the wic file (SD card image) in ...PetaLinux/images/linux
+6. Create the wic file (SD card image) in ...PetaLinux/images/linux/petalinux-sdimage.wic
 ```
 petalinux-package --wic
 ```
+7. Flash the file on an SD card (>= 8 GB) using Balena-Etcher
 
 
 ### build PetaLinux sysroot and get (cross)compilers
