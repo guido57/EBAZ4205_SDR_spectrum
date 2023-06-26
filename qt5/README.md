@@ -9,9 +9,8 @@ It lets you to send commands to EBA4205 also to:
   * Set IF bandwith and IF gain  
   ![](https://github.com/guido57/EBAZ4205_SDR/blob/main/docs/SpectrumPy.png)
 
-
-# create an ssh key
-To cross compile with qt creator you necessarily need to ssh login without password, copying the public key of your Ubuntu PC (where Qt Creator runs) to the PetaLinux environment on EBAZ4205
+# enable SSH login without password
+To cross compile with qt creator you necessarily need to ssh login to PetalLinux without password, copying the public key of your Ubuntu PC (where Qt Creator runs) to the PetaLinux environment on EBAZ4205
 
 1. On Ubuntu, generate an SSH public keye. [See the insructions here](https://tecnstuff.net/how-to-set-up-ssh-keys-on-ubuntu-22-04/) 
 2. On PetaLinux, create the directory .ssh under /home/ebaz
