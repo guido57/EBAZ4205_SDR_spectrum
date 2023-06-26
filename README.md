@@ -10,8 +10,7 @@ This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum
 
 For details and instructions see the sub projects:
 
-### PetaLinux project 
-[PetaLinux project](PetaLinux)
+### [PetaLinux project](PetaLinux)
 
 the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLinux) and programs.
 
