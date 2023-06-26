@@ -30,7 +30,7 @@ source /tools/PetaLinux/2022.2/bin/settings.sh
 ```
 petalinux-build
 ```
-5. Create the files compising the image to flash on the SD card in ...PetaLinux/images/linux
+5. Create the files composing the image to flash on the SD card in ...PetaLinux/images/linux
 ```
 petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./project-spec/hw-description/ebaz4205_wrapper.bit --u-boot
 ```
