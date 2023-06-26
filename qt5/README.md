@@ -43,5 +43,6 @@ source /opt/petalinux/2022.2/environment-setup-cortexa9t2hf-neon-xilinx-linux-gn
 6. click on add
 7. select the qmake program
    ![](../docs/select_a_qmake_executable.png) 
-9. change "System" with "EBAZ" for better recognition
-10. 
+9. change "System" with "EBAZ" for better recognition. The final Qt versions screen should appear in this way
+   ![](../docs/Qt_Versions.png) 
+   
