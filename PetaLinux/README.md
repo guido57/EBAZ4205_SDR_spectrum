@@ -10,12 +10,13 @@ to run the main "EBAZ4205 SDR and Spectrum" project
 
 ## Getting Started with this PetaLinux project
 
-### build PetaLinux Image
+### build the PetaLinux Image of the SD card
 
-Of course you need to have PetaLinux 2022.2 installed on Ubuntu 20.04 LTS or 22.04 LTS (don't do it on 23.04)
+Of course you need to have:
+* PetaLinux 2022.2 installed on Ubuntu 20.04 LTS or 
+* PetaLinux 2023.1 on Ubuntu 22.04 LTS
 
-1. Git or download this folder to your PC
-then:
+1. Git or download/unzip this folder to your PC in a directory of your choice
 
 2. cd to the PetaLinux folder
 ```
