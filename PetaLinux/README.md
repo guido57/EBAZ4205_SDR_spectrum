@@ -24,7 +24,7 @@ cd  /home/guido/EBAZ4205_SDR_spectrum/PetaLinux/
 ```
 3. source PetaLinux there, so that the petalinux command can be launched
 ```
-source /tools/PetaLinux/2022.2/bin/settings.sh 
+source /tools/Xilinx/PetaLinux/2022.2/bin/settings.sh 
 ```
 4. Build the project. The very first time it will take a lot of time (more than one hour on my Intel i9 12900H 32GB RAM)
 ```
