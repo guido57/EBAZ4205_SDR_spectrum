@@ -20,5 +20,15 @@ To cross compile with qt creator you necessarily need to ssh login to PetalLinux
 ssh ebaz@192.168.1.250
 ebaz4205:~$ 
 ```
+# create a qt creator "kit" for PetaLinux
+If you want to compile, build, remotely debug and remotely run Qt5 C++ programs for PetaLinux from your powerful Ubuntu PC, you need to set your "qt creator properly", creating a so called "kit". Unfortunately a qt creator kit cannot be copied/cloned/imported so you need to set it by hand.
 
+1. cd to your work "qt creator" directory
+```
+cd /home/guido/Github/EBAZ4205_SDR_spectrum/qt5
+```
  
+2. source the previously created cross compiler environment (so called toolchain). [See the PetaLinux directory](../PetaLinux)
+```
+source /opt/petalinux/2022.2/environment-setup-cortexa9t2hf-neon-xilinx-linux-gnueabi 
+```
