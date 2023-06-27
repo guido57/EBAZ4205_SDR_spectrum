@@ -40,5 +40,5 @@ Vivado/*
 !Vivado/Vivado.xpr
 
 #Qt5 build
-build-*
+build-*/
 
