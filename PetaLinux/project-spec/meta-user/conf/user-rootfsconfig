@@ -11,7 +11,7 @@ CONFIG_python3-matplotlib
 CONFIG_python3-pillow
 CONFIG_python3-pyqt5
 CONFIG_fftw
-CONFIG_chown-ebaz-uio
+CONFIG_chown-ebaz-uio-sdr-app
 CONFIG_fftwg
 CONFIG_libvncserver
 CONFIG_libgfortran

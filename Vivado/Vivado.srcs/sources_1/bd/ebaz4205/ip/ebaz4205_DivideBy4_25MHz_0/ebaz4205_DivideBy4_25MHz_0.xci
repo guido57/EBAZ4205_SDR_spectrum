@@ -4,7 +4,7 @@
     "xci_name": "ebaz4205_DivideBy4_25MHz_0",
     "cell_name": "PS/DivideBy2_50MHz",
     "component_reference": "xilinx.com:module_ref:DivideBy2N:1.0",
-    "ip_revision": "1",
+    "ip_revision": "-1",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy4_25MHz_0",
     "parameters": {
       "component_parameters": {

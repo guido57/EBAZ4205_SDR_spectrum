@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "set ebaz as owner of all the /dev/uio*"
+chown ebaz /dev/uio*
+echo "launch sdr-app"
+sdr-app
+
+
+

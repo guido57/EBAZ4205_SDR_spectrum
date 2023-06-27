@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_axi_gpio_0_3",
-    "cell_name": "PS2/axi_gpio_ps2_mouse",
+    "cell_name": "axi_gpio_ps2_mouse",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "29",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_3",
@@ -10,11 +10,11 @@
       "component_parameters": {
         "C_TRI_DEFAULT": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_GPIO_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "C_GPIO2_WIDTH": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
+        "C_GPIO2_WIDTH": [ { "value": "32", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_IS_DUAL": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_ALL_INPUTS": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "C_DOUT_DEFAULT_2": [ { "value": "0x00000001", "value_src": "user", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
+        "C_DOUT_DEFAULT_2": [ { "value": "0x00000000", "value_src": "user", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_DOUT_DEFAULT": [ { "value": "0x00000000", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
         "C_ALL_INPUTS_2": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
         "C_INTERRUPT_PRESENT": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -23,28 +23,28 @@
         "GPIO_BOARD_INTERFACE": [ { "value": "Custom", "resolve_type": "user", "usage": "all" } ],
         "GPIO2_BOARD_INTERFACE": [ { "value": "Custom", "resolve_type": "user", "usage": "all" } ],
         "C_ALL_OUTPUTS": [ { "value": "0", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ],
-        "C_ALL_OUTPUTS_2": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ]
+        "C_ALL_OUTPUTS_2": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "enabled": false, "usage": "all" } ]
       },
       "model_parameters": {
         "C_FAMILY": [ { "value": "zynq", "resolve_type": "generated", "usage": "all" } ],
         "C_S_AXI_ADDR_WIDTH": [ { "value": "9", "format": "long", "usage": "all" } ],
         "C_S_AXI_DATA_WIDTH": [ { "value": "32", "format": "long", "usage": "all" } ],
         "C_GPIO_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_GPIO2_WIDTH": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_GPIO2_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ALL_INPUTS": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ALL_INPUTS_2": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_ALL_OUTPUTS": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_ALL_OUTPUTS_2": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "C_ALL_OUTPUTS_2": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_INTERRUPT_PRESENT": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_DOUT_DEFAULT": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_TRI_DEFAULT": [ { "value": "0xFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_IS_DUAL": [ { "value": "0", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_DOUT_DEFAULT_2": [ { "value": "0x00000001", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_DOUT_DEFAULT_2": [ { "value": "0x00000000", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],
-        "BASE_BOARD_PART": [ { "value": "miner.ebang.com.cn:ebaz4205:part0:1.0" } ],
+        "BASE_BOARD_PART": [ { "value": "" } ],
         "BOARD_CONNECTIONS": [ { "value": "" } ],
         "DEVICE": [ { "value": "xc7z010" } ],
         "PACKAGE": [ { "value": "clg400" } ],
@@ -258,7 +258,7 @@
                 },
                 "GPIO2_DATA": {
                   "address_offset": "0x8",
-                  "size": 1,
+                  "size": 32,
                   "display_name": "Channel_2_GPIO_DATA",
                   "description": "Channel-2 AXI GPIO Data register",
                   "is_volatile": true,
@@ -267,7 +267,7 @@
                   "fields": {
                     "Channel_2_GPIO_DATA": {
                       "bit_offset": 0,
-                      "bit_width": 1,
+                      "bit_width": 32,
                       "display_name": "Channel_2_GPIO_DATA",
                       "description": "AXI GPIO Data Register.\nFor each I/O bit programmed as input\n  R - Reads value on the input pin.\n  W - No effect.\nFor each I/O bit programmed as output\n  R - Reads value on GPIO_O pins\n  W - Writes value to the corresponding AXI GPIO \n      data register bit and output pin\n",
                       "is_volatile": true,
@@ -277,7 +277,7 @@
                 },
                 "GPIO2_TRI": {
                   "address_offset": "0xC",
-                  "size": 1,
+                  "size": 32,
                   "display_name": "Channel_2_GPIO_TRI",
                   "description": "Channel-2 AXI GPIO 3-State Control register",
                   "is_volatile": true,
@@ -286,7 +286,7 @@
                   "fields": {
                     "Channel_2_GPIO_TRI": {
                       "bit_offset": 0,
-                      "bit_width": 1,
+                      "bit_width": 32,
                       "display_name": "Channel_2_GPIO_DATA",
                       "description": "AXI GPIO 3-State Control Register\nEach I/O pin of the AXI GPIO is individually programmable as an input or output   For each of the bits     0 - I/O pin configured as output     1 - I/O pin configured as input\n",
                       "is_volatile": true,

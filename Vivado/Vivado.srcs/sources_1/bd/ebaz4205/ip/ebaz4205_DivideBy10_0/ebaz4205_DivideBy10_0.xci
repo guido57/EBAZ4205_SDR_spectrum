@@ -4,7 +4,7 @@
     "xci_name": "ebaz4205_DivideBy10_0",
     "cell_name": "I2S/DivideBy250_1_536M",
     "component_reference": "xilinx.com:module_ref:DivideBy2N:1.0",
-    "ip_revision": "1",
+    "ip_revision": "-1",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_DivideBy10_0",
     "parameters": {
       "component_parameters": {

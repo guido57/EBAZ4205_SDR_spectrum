@@ -33,20 +33,9 @@ HEADERS += \
     uio.h \
     window_functions.h
 
-message("OUT_PWD=" )
-message($$OUT_PWD)
-
-contains(OUT_PWD,"/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/qt5/build-sdr-app-Desktop_Qt_5_15_2_GCC_64bit-Debug"){
-    message("Host is 64bit")
-    LIBS += \
-            -lfftw3
-}
-
-contains(OUT_PWD,"/home/guido/GitHub/EBAZ4205_SDR_HDMI_PS2/qt5/build-sdr-app-EBAZ-Debug"){
-    message("Host is ARM")
     LIBS += \
             /opt/petalinux/2022.2/sysroots/cortexa9t2hf-neon-xilinx-linux-gnueabi/usr/lib/libfftw3.so
-}
+
 
 FORMS += \
     mainwindow.ui
