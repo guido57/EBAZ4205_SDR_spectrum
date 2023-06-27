@@ -57,7 +57,10 @@ Note the GNU debugger: arm-xilinx-linux-gdb
 Now edit the edit boxes and combo boxes as in the following picture:
    ![](../docs/kits-ebaz.png)
 
-13. Now you'll be able to use this new created kit "EBAZ" in any "qt creator" project, of course including the ones of this repository.
+13. For the line "device" click on manage and fill the form as this one:
+   ![](../docs/qt5-devices.png)
+    
+14. Now you'll be able to use this new created kit "EBAZ" in any "qt creator" project, of course including the ones of this repository.
 
 # test the qt creator kit "EBAZ"
 
