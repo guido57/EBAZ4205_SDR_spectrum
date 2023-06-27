@@ -36,11 +36,14 @@ source /opt/petalinux/2022.2/environment-setup-cortexa9t2hf-neon-xilinx-linux-gn
 /home/guido/Qt/Tools/QtCreator/bin/qtcreator
 ```
 4. go to Edit/Preferences/kits/compilers. If you correctly sourced the environment at 2. you should see something like this:
-![](../docs/compilers.png)   
+![](../docs/compilers.png)
 
-5. go to Edit/Preferences/kits/Qt Versions and click "add" to add a new Qt Version named "Qt 5.15.2 (EBAZ)
-6. click on add
-7. select the qmake program
+5. go to Edit/Preferences/kits/debuggers. If you correctly sourced the environment at 2. you should see something like this:
+![](../docs/kits-debuggers.png)
+
+6. go to Edit/Preferences/kits/Qt Versions and click "add" to add a new Qt Version named "Qt 5.15.2 (EBAZ)
+7. click on add
+8. select the qmake program
    ![](../docs/select_a_qmake_executable.png) 
 9. change "System" with "EBAZ" for better recognition. The final Qt versions screen should appear in this way
    ![](../docs/Qt_Versions.png) 
