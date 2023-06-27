@@ -54,4 +54,9 @@ Note the GNU debugger: arm-xilinx-linux-gdb
    
 12. go to Edit/Preferences/kits/Kits and click "add" to add a new "kit" (EBAZ)
 Now edit the edit boxes and combo boxes as in the following picture:
-   ![](../docs/kits-ebaz.png) 
+   ![](../docs/kits-ebaz.png)
+
+13. Now you'll be able to use this new created kit "EBAZ" in any "qt creator" project, of cource including the ones of this repository.
+
+# test the qt creator kit "EBAZ"
+
