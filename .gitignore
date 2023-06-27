@@ -39,3 +39,6 @@ Vivado/*
 !Vivado/matlab/
 !Vivado/Vivado.xpr
 
+#Qt5 build
+build-*
+
