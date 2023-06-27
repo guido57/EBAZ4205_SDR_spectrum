@@ -18,6 +18,6 @@ It lets you to send commands to EBA4205 also to:
   * green for the tuned frequency
   * black for the lower and higher bandwidth boundaries
 * uio.cpp contains all the classes to interface the hardware components by /dev/uiox. For instance:
-  * the switch to set the ADC input or the test generator is handled by the class ADCTestSwitch
-  * the local oscillator is handle by the class DDS
+  * the switch to set the ADC input or the test generator is handled by the class ADCTestSwitch which maps /dev/uio0
+  * the local oscillator is handle by the class DDS which maps /dev/uio3
   * ...
