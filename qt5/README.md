@@ -8,7 +8,9 @@ It lets you to send commands to EBA4205 also to:
   * Set IF bandwith and IF gain  
   ![](../docs/spectrum-0-32M-radio13670K.png)
 
-# enable SSH login without password
+# Qt5 Setup
+
+## Enable SSH login without password
 To cross compile with qt creator you necessarily need to ssh login to PetalLinux without password, copying the public key of your Ubuntu PC (where Qt Creator runs) to the PetaLinux environment on EBAZ4205
 
 1. On Ubuntu, generate an SSH public key. [See the insructions here](https://tecnstuff.net/how-to-set-up-ssh-keys-on-ubuntu-22-04/) 
@@ -19,7 +21,7 @@ To cross compile with qt creator you necessarily need to ssh login to PetalLinux
 ssh ebaz@192.168.1.250
 ebaz4205:~$ 
 ```
-# create a qt creator "kit" for PetaLinux
+## Create a qt creator "kit" for PetaLinux
 If you want to compile, build, remotely debug and remotely run Qt5 C++ programs for PetaLinux from your powerful Ubuntu PC, you need to set your "qt creator properly", creating a so called "kit". Unfortunately a qt creator kit cannot be copied/cloned/imported so you need to set it by hand.
 
 1. cd to your work "qt creator" directory
@@ -62,5 +64,7 @@ Now edit the edit boxes and combo boxes as in the following picture:
     
 14. Now you'll be able to use this new created kit "EBAZ" in any "qt creator" project, of course including the ones of this repository.
 
-# test the qt creator kit "EBAZ"
+## Test the qt creator kit "EBAZ"
+To test if everything is OK, you can use the [sdr-app project](sdr-app).
+
 
