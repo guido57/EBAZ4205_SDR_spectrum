@@ -6,6 +6,6 @@ It lets you to send commands to EBA4205 also to:
   * change the local RF test generator frequency in the range 100 KHz - 32 MHz
   * tune radio stations 
   * Set IF bandwith and IF gain  
-  ![](../docs/spectrum-0-32M-radio13670K.png)
+  ![](../../docs/spectrum-0-32M-radio13670K.png)
 
 
