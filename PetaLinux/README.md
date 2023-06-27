@@ -54,7 +54,7 @@ You should the PetaLinux boot sequence
 
 ### build PetaLinux sysroot and get (cross)compilers
 
-If you want to build Linux applications for PetaLinux using your host PC (with Ubuntu) you need a sysroot. E.g. Qt Creator installed on Ubuntu can build applications for the PetaLinux version installed in the Zynq7010 of your EBAZ4205, but it needs a special compiler and linker which, running on Ubuntu, can build Cortex A9 32 bits executables for PetaLinux, using the proper shared libraries and their include files. 
+If you want to build Linux applications for PetaLinux using your host PC (with Ubuntu) you need a sysroot. In fact Qt Creator installed on Ubuntu can build applications for the PetaLinux version installed in the Zynq7010 of your EBAZ4205 but, to do this, it needs a special compiler and linker which, running on Ubuntu, can build Cortex A9 32 bits executables for PetaLinux, using the proper shared libraries and their include files. 
 
 1. cd to the PetaLinux folder
 ```
