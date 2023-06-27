@@ -7,7 +7,7 @@ It lets you to send commands to EBA4205 also to:
   * tune radio stations 
   * change the waterfall colors (TODO)
   * Set IF bandwith and IF gain  
-  ![](https://github.com/guido57/EBAZ4205_SDR/blob/main/docs/SpectrumPy.png)
+  ![](../docs/spectrum-0-32M-radio13670K.png)
 
 # enable SSH login without password
 To cross compile with qt creator you necessarily need to ssh login to PetalLinux without password, copying the public key of your Ubuntu PC (where Qt Creator runs) to the PetaLinux environment on EBAZ4205
