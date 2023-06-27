@@ -43,7 +43,7 @@ petalinux-package --boot --force --fsbl ./images/linux/zynq_fsbl.elf --fpga ./pr
 ```
 petalinux-package --wic
 ```
-8. Flash the file on an SD card (>= 8 GB) using Balena-Etcher
+8. Flash the file on an SD card (>= 8 GB) using [Balena-Etcher](https://etcher.balena.io/)
 
 ### test PetaLinux
 
