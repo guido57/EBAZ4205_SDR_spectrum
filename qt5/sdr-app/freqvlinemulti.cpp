@@ -1,10 +1,10 @@
 #include <QChart>
 #include "freqvlinemulti.h"
 
-FreqVLineMulti::FreqVLineMulti(QChart * qchart, fvl_type_enum fvl_type_):
+FreqVLineMulti::FreqVLineMulti(QChart * qchart, demod_type_enum demod_type_):
     QObject()
 {
-    fvl_type = fvl_type_;
+    demod_type = demod_type_;
     m_chart = qchart;
     fvl_left = new FreqVLine(qchart, false, Qt::black);
     fvl_right = new FreqVLine(qchart, false, Qt::black);
@@ -13,10 +13,10 @@ FreqVLineMulti::FreqVLineMulti(QChart * qchart, fvl_type_enum fvl_type_):
 
 FreqVLineMulti::~FreqVLineMulti() {};
 
-void FreqVLineMulti::updateFrequency_hz(float frequency, float bw_, fvl_type_enum fvl_type_){
+void FreqVLineMulti::updateFrequency_hz(float frequency, float bw_, demod_type_enum demod_type_){
 
-    if( (int)fvl_type_ != -1){
-        fvl_type = fvl_type_;
+    if( (int)demod_type_ != -1){
+        demod_type = demod_type_;
     }
 
     bw = bw_;
@@ -25,13 +25,13 @@ void FreqVLineMulti::updateFrequency_hz(float frequency, float bw_, fvl_type_enu
     QPointF freq_center_xy(actual_freq_hz,0);
     QPointF freq_left_xy(actual_freq_hz-bw,0);
     QPointF freq_right_xy(actual_freq_hz+bw,0);
-    fvl_center->updatePosition(m_chart->mapToPosition(freq_center_xy));
+    QPointF mtp = m_chart->mapToPosition(freq_center_xy);
+    fvl_center->updatePosition(mtp);
     actualPosition = fvl_center->actualPosition;
     fvl_left->updatePosition(m_chart->mapToPosition(freq_left_xy));
     fvl_right->updatePosition(m_chart->mapToPosition(freq_right_xy));
 
-    setAMLSBUSB(fvl_type);
-
+    setAMLSBUSB(demod_type);
 }
 
 
@@ -39,25 +39,25 @@ void FreqVLineMulti::setBW_khz(int bw_khz)
 {
     bw = bw_khz * 1000;
     updatePosition(actualPosition); // show updated bandwidth boundaries (black lines)
-    setAMLSBUSB(fvl_type); // update actual freq_dds_hz accordinf to fvl_type and bandwidth
+    setAMLSBUSB(demod_type); // update actual freq_dds_hz accordinf to fvl_type and bandwidth
 }
-void FreqVLineMulti::setAMLSBUSB(fvl_type_enum fvl_type_ )
+void FreqVLineMulti::setAMLSBUSB(demod_type_enum demod_type_ )
 {
-    fvl_type = fvl_type_;
-    switch(fvl_type){
-    case fvl_type_am:
+    demod_type = demod_type_;
+    switch(demod_type){
+    case demod_type_am:
             fvl_center->Show();
             fvl_left->Show();
             fvl_right->Show();
             actual_freq_dds_hz = actual_freq_hz;
             break;
-    case fvl_type_lsb:
+    case demod_type_lsb:
             fvl_center->Show();
             fvl_left->Show();
             fvl_right->Hide();
             actual_freq_dds_hz = actual_freq_hz - bw;
             break;
-    case fvl_type_usb:
+    case demod_type_usb:
             fvl_center->Show();
             fvl_left->Hide();
             fvl_right->Show();
@@ -69,7 +69,7 @@ void FreqVLineMulti::setAMLSBUSB(fvl_type_enum fvl_type_ )
 void FreqVLineMulti::updatePosition(QPointF position)
 {
     float frequency_hz = m_chart->mapToValue(position).x(); // store the actual frequency
-    updateFrequency_hz(frequency_hz, bw, fvl_type);
+    updateFrequency_hz(frequency_hz, bw, demod_type);
     // emit a SIGNAL to the dds when the vline is requested to move
     emit tunedFrequencyChanged(actual_freq_dds_hz);
 }

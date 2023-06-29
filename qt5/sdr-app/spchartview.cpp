@@ -78,7 +78,7 @@ void SpChartView::change_fft_window(QString fft_window_name){
 
 void SpChartView::executeFFTW_setSeries(){
 
-    printf("executeFFTW_setSeries called at %lu\r\n",clock());
+    //printf("executeFFTW_setSeries called at %lu\r\n",clock());
     //if(mouse_pressed || !capturing_RF)
     //    return;
 
@@ -286,7 +286,7 @@ void SpChartView::CaptureTimeSamples()
     // Capture 16384 samples x2 by the Capture Dual FT IP
     int ret = mw->dev_ft_capture->CaptureRead16384x2();
     double elapsed = (QDateTime::currentMSecsSinceEpoch() - start);
-    qInfo() << start << "time to capture 16384 IQ samples = " << elapsed << " milliseconds";
+    //qInfo() << start << "time to capture 16384 IQ samples = " << elapsed << " milliseconds";
     if(ret != 0)
          printf("Capture error: %d\r\n", ret);
 
@@ -318,7 +318,7 @@ void SpChartView::executeFFTWcomplex()
     // Capture 16384 samples x2 by the Capture Dual FT IP
     int ret = mw->dev_ft_capture->CaptureRead16384x2();
     double elapsed = (QDateTime::currentMSecsSinceEpoch() - start)/1000.0;
-    qInfo() << start << "time to capture 16384 IQ samples = " << elapsed << " seconds ";
+    //qInfo() << start << "time to capture 16384 IQ samples = " << elapsed << " seconds ";
     if(ret != 0){
         printf("Capture error: %d\r\n", ret);
         return;
@@ -332,8 +332,8 @@ void SpChartView::executeFFTWcomplex()
     qint16 signed12q;
     // prepare an array of FREQ_BINS * 2 samples
 
-    printf("-----------------------\r\n");
-    printf("milliseconds since epoch=%llu\r\n",QDateTime::currentMSecsSinceEpoch());
+    //printf("-----------------------\r\n");
+    //printf("milliseconds since epoch=%llu\r\n",QDateTime::currentMSecsSinceEpoch());
 
     // using NUM_TIME_SAMPLES time samples at a time
     for(int i=0; i < NUM_TIME_SAMPLES; i++){
@@ -433,6 +433,13 @@ void SpChartView::setHZoom(int new_hzoom, float centerfreq_hz ){
     }
 
     hzoom = new_hzoom;
+
+    m_freqvline->updateFrequency_hz(m_freqvline->GetActualFreq_hz(),mw->ui->comboBoxIFBandwidth->currentText().toFloat()*1000);
+
+    mw->mysettings->hzoom = hzoom;
+    mw->mysettings->fmin_view_hz = fmin_view_hz;
+    mw->mysettings->fmax_view_hz = fmax_view_hz;
+    mw->mysettings->save();
 }
 
 void SpChartView::setTimeSeries(){
@@ -550,6 +557,14 @@ void SpChartView::setSeries(){
                         .arg(elapsed3)
                         .arg(elapsed4)
                     );
+
+
+    if(count == 1 /*!m_freqvline->updated*/){
+
+        m_freqvline->updateFrequency_hz(mw->mysettings->tuned_freq_hz, mw->mysettings->if_bw_khz*1000, mw->mysettings->demod_type );
+        m_freqvline->updated = true;
+    }
+    count ++;
 }
 
 /*
@@ -567,6 +582,14 @@ void SpChartView::setHShift(QPointF press_pos, QPointF release_pos){
     fmin_view_hz = fmin_view_hz + freq_press - freq_release;
     if(fmin_view_hz < fmin_hz)
         fmin_view_hz = fmin_hz;
+
+    m_freqvline->updateFrequency_hz(m_freqvline->GetActualFreq_hz(),mw->ui->comboBoxIFBandwidth->currentText().toFloat()*1000);
+
+    mw->mysettings->hzoom = hzoom;
+    mw->mysettings->fmin_view_hz = fmin_view_hz;
+    mw->mysettings->fmax_view_hz = fmax_view_hz;
+    mw->mysettings->save();
+
 }
 
 /*
@@ -613,7 +636,7 @@ void SpChartView::handleMouseMove(){
                 setHShift(last_move_pos, qpf);
                 last_move_pos = qpf;
                 setSeries();
-                m_freqvline->updateFrequency_hz(m_freqvline->GetActualFreq_hz(),mw->ui->comboBoxIFBandwidth->currentText().toFloat()*1000);
+                // m_freqvline->updateFrequency_hz(m_freqvline->GetActualFreq_hz(),mw->ui->comboBoxIFBandwidth->currentText().toFloat()*1000);
             }
         }else{
             // move is inside the plot area -> do nothing

@@ -3,28 +3,32 @@
 
 #include <QObject>
 #include "freqvline.h"
+#include "mysettings.h"
 
+/*
 enum fvl_type_enum {
     fvl_type_am,
     fvl_type_lsb,
     fvl_type_usb
 };
+*/
 
 class FreqVLineMulti : public QObject
 {
     Q_OBJECT
 public:
-    FreqVLineMulti(QChart * qchart, fvl_type_enum fvl_type = fvl_type_am);
+    FreqVLineMulti(QChart * qchart, demod_type_enum demod_type = demod_type_am);
     ~FreqVLineMulti();
-    fvl_type_enum fvl_type;
+    demod_type_enum demod_type;
     FreqVLine * fvl_left;
     FreqVLine * fvl_center;
     FreqVLine * fvl_right;
     QChart * m_chart;
+    bool updated = false;
 
     void updatePosition(QPointF position);
-    void updateFrequency_hz(float frequency, float bw, fvl_type_enum fvl_type = (fvl_type_enum) -1);
-    void setAMLSBUSB(fvl_type_enum fvl_type_);
+    void updateFrequency_hz(float frequency, float bw, demod_type_enum demod_type = (demod_type_enum) -1);
+    void setAMLSBUSB(demod_type_enum demod_type_);
     void setBW_khz(int bw_khz);
 
     void incDecPosition(QPoint angledelta);

@@ -1,13 +1,15 @@
 #include <QSettings>
+#include <QDebug>
 #include "mysettings.h"
 
 
-mysettings_class::mysettings_class() : QSettings(QSettings::IniFormat, QSettings::UserScope,"IW5ALZ","sdr-app"){
+mysettings_class::mysettings_class() : QSettings(QSettings::IniFormat,QSettings::UserScope, "IW5ALZ","sdr-app"){
 
     load();
 };
 
 void mysettings_class::load(){
+    qDebug() << "Loading settings from " << fileName();
     this->beginGroup("mainwindow");
     area_series = this->value("area_series", false).toBool();
     capture_rf = this->value("capture_rf", true).toBool();
@@ -24,11 +26,15 @@ void mysettings_class::load(){
     lo_ft_hz = this->value("lo_ft_hz", 7000000).toInt();
     span_view_khz = this->value("span_view_khz", 2000).toInt();
     fft_zoom_if_gain = this->value("fft_zoom_if_gain", 1).toInt();
+    fmin_view_hz = this->value("fmin_view_hz", 0).toInt();
+    fmax_view_hz = this->value("fmax_view_hz", 32000000).toInt();
+    hzoom = this->value("hzoom", 1).toInt();
     this->endGroup();
 };
 
 void mysettings_class::save(){
 
+    qDebug() << "Saving settings to " << fileName();
     this->beginGroup("mainwindow");
     this->setValue("area_series", area_series);
     this->setValue("capture_rf", capture_rf);
@@ -45,6 +51,9 @@ void mysettings_class::save(){
     this->setValue("lo_ft_hz", lo_ft_hz);
     this->setValue("span_view_khz", span_view_khz);
     this->setValue("fft_zoom_if_gain", fft_zoom_if_gain);
+    this->setValue("fmin_view_hz", fmin_view_hz);
+    this->setValue("fmax_view_hz", fmax_view_hz);
+    this->setValue("hzoom", hzoom);
     this->endGroup();
 };
 

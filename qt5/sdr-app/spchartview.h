@@ -22,6 +22,7 @@ class SpChartView : public QChartView
 {
     Q_OBJECT
 public:
+    int count = 0;
     explicit SpChartView(QWidget *parent = nullptr);
     void setSeries();
     void setData1024();
@@ -30,6 +31,9 @@ public:
     void setVShift(QPointF press_pos, QPointF release_pos);
     void handleMouseMove();
 
+    float fmin_view_hz;
+    float fmax_view_hz;
+    int hzoom = 1;
     Crosshairs * m_crosshairs;
     FreqVLineMulti * m_freqvline;
     QLineSeries *upper_series;  // Series in Hz   (upper)
@@ -51,13 +55,10 @@ protected:
     void mouseReleaseEvent(QMouseEvent * event) override;
     void wheelEvent(QWheelEvent * event) override;
 
-    float fmin_hz = 0;
-    float fmax_hz = 32000000;
     int min_point = 0;
     int max_point = HPIXELS_1_8;
-    int hzoom = 1;
-    float fmin_view_hz;
-    float fmax_view_hz;
+    float fmin_hz = 0;
+    float fmax_hz = 32000000;
 
     float ymin = -200;
     float ymax = 400;

@@ -45,6 +45,10 @@ public:
     int lo_ft_hz;
     int span_view_khz;
     int fft_zoom_if_gain;
+    int fmin_view_hz;
+    int fmax_view_hz;
+    int hzoom;
+
 };
 
 #endif // MYSETTINGS_H

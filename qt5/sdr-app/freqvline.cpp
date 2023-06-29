@@ -61,6 +61,8 @@ void FreqVLine::updatePosition(QPointF position)
         m_xLine->show();
         if(label_visible)
             m_xText->show();
+        else
+            m_xText->hide();
     }
 }
 

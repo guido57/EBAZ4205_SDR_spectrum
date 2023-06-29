@@ -31,6 +31,13 @@ MainWindow::MainWindow(QWidget *parent)
     dev_if_filter_gain->SetFilterGainString(ui->comboBoxIFGain->currentText());
     connect(ui->comboBoxIFGain, &QComboBox::currentTextChanged, this, &MainWindow::SetFilterGain);
 
+    // Init fmin_view_hz fmax_view_hz and hzoom
+    ui->spChartView->fmin_view_hz = mysettings->fmin_view_hz;
+    ui->spChartView->fmax_view_hz = mysettings->fmax_view_hz;
+    ui->spChartView->hzoom = mysettings->hzoom;
+
+    //ui->spChartView->m_freqvline->updateFrequency_hz(mysettings->tuned_freq_hz, mysettings->if_bw_khz, (fvl_type_enum) mysettings->demod_type);
+
     // Init FFT Window ComboBox
     ui->comboBoxWindow->setCurrentText(mysettings->fft_window);
     ui->spChartView->change_fft_window(ui->comboBoxWindow->currentText());
@@ -46,16 +53,17 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->radioButtonUSB, &QRadioButton::clicked, this, &MainWindow::SetAMSSB);
     dev_am_ssb_switch = new AMSSBSwitch(DEV_AM_SSB);
     switch(mysettings->demod_type){
-    case demod_type_am:
-        ui->radioButtonAM->setChecked(true);
-        break;
-    case demod_type_lsb:
-        ui->radioButtonLSB->setChecked(true);
-        break;
-    case demod_type_usb:
-        ui->radioButtonUSB->setChecked(true);
-        break;
+        case demod_type_am:
+            ui->radioButtonAM->setChecked(true);
+            break;
+        case demod_type_lsb:
+            ui->radioButtonLSB->setChecked(true);
+            break;
+        case demod_type_usb:
+            ui->radioButtonUSB->setChecked(true);
+            break;
     }
+    SetAMSSB();
 
     // ADC - Test Generator switch
     dev_adc_test_switch = new ADCTestSwitch(DEV_ADC_TEST_SWITCH);
@@ -72,7 +80,8 @@ MainWindow::MainWindow(QWidget *parent)
     // DDS Local Oscillator for tuning
     dev_dds_lo = new DDS(DEV_DDS_LO,26,64000000);
     ui->spinBoxTunedFrequency->setValue(mysettings->tuned_freq_hz);
-    ui->spChartView->m_freqvline->updateFrequency_hz(mysettings->tuned_freq_hz,mysettings->if_bw_khz*1000,fvl_type_am);
+    //ui->spChartView->setSeries(); // first mapping of coordinates
+    //ui->spChartView->m_freqvline->updateFrequency_hz(mysettings->tuned_freq_hz,mysettings->if_bw_khz*1000,fvl_type_am);
     connect(ui->spChartView->m_freqvline, &FreqVLineMulti::tunedFrequencyChanged, this, &MainWindow::SetDDSLOFreq);
 
     // DDS Test Generator
@@ -180,13 +189,16 @@ void MainWindow::SetAMSSB(){
     bool usb = ui->radioButtonUSB->isChecked();
     if(am){
         dev_am_ssb_switch->SetAM();
-        ui->spChartView->m_freqvline->setAMLSBUSB(fvl_type_am);
+        ui->spChartView->m_freqvline->setAMLSBUSB(demod_type_am);
+        mysettings->demod_type =  demod_type_am;
     }else if(lsb){
         dev_am_ssb_switch->SetLSB();
-        ui->spChartView->m_freqvline->setAMLSBUSB(fvl_type_lsb);
+        ui->spChartView->m_freqvline->setAMLSBUSB(demod_type_lsb);
+        mysettings->demod_type =  demod_type_lsb;
     }else if(usb){
         dev_am_ssb_switch->SetUSB();
-        ui->spChartView->m_freqvline->setAMLSBUSB(fvl_type_usb);
+        ui->spChartView->m_freqvline->setAMLSBUSB(demod_type_usb);
+        mysettings->demod_type =  demod_type_usb;
     }
 }
 
@@ -262,7 +274,12 @@ void MainWindow::SetADCTestGen(bool checked){
 int MainWindow::SetDDSLOFreq(int freq_hz){
     int actual_frequency = dev_dds_lo->SetFreq(freq_hz);
     if(actual_frequency > 0){
-        mysettings->tuned_freq_hz = actual_frequency;
+        if(mysettings->demod_type == demod_type_am)
+            mysettings->tuned_freq_hz = actual_frequency;
+        else if(mysettings->demod_type == demod_type_usb)
+            mysettings->tuned_freq_hz = actual_frequency - mysettings->bfo_freq_hz;
+        else
+            mysettings->tuned_freq_hz = actual_frequency + mysettings->bfo_freq_hz;
         mysettings->save();
         ui->spinBoxTunedFrequency->setValue(actual_frequency);
     }
