@@ -29,6 +29,7 @@ void mysettings_class::load(){
     fmin_view_hz = this->value("fmin_view_hz", 0).toInt();
     fmax_view_hz = this->value("fmax_view_hz", 32000000).toInt();
     hzoom = this->value("hzoom", 1).toInt();
+    spectrum_height = this->value("spectrum_height", 360).toInt();
     this->endGroup();
 };
 
@@ -54,6 +55,8 @@ void mysettings_class::save(){
     this->setValue("fmin_view_hz", fmin_view_hz);
     this->setValue("fmax_view_hz", fmax_view_hz);
     this->setValue("hzoom", hzoom);
+    this->setValue("spectrum_height", spectrum_height);
+
     this->endGroup();
 };
 

@@ -6,7 +6,6 @@
 #include <QDateTimeAxis>
 #include <QFileDialog>
 #include "uio.h"
-#include "mysettings.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -143,9 +142,12 @@ MainWindow::MainWindow(QWidget *parent)
     dev_if_filter_ft_gain->SetFilterGainString(ui->comboBoxIFFTGain->currentText());
     connect(ui->comboBoxIFFTGain, &QComboBox::currentTextChanged, this, &MainWindow::SetFTFilterGain);
 
-    // Capture dual FT for FFT Zoom
-    dev_ft_capture = new DataCaptureFT(DEV_FT_CAPTURE);
-
+    // spectrum view height in pixels
+    QList<int> qls;
+    qls.append(mysettings->spectrum_height);
+    qls.append(720 - mysettings->spectrum_height);
+    ui->splitter->setSizes(qls);
+    connect(ui->splitter,&QSplitter::splitterMoved,this, &MainWindow::SplitterMoved);
     // start capturing
     ui->cbCaptureRF->setChecked(mysettings->capture_rf);
 
@@ -163,6 +165,14 @@ MainWindow::~MainWindow()
     mysettings->save();
     delete ui;
 }
+
+
+void MainWindow::SplitterMoved(int pos, int index){
+
+    mysettings->spectrum_height = pos;
+    mysettings->save();
+};
+
 
 void MainWindow::ZoomFTUpDnButtons(bool clicked){
     int val = ui->spinBoxFTFreq->value();

@@ -304,7 +304,7 @@ int DataCaptureRF::CaptureRead16384(){
 }
 
 //********************************************************************
-// Class to capture 16384 words (32 bit) x2 (IQ) bye the Dual Capture for FFT Zoom
+// Class to capture 16384 words (32 bit) x2 (IQ) by the Dual Capture for FFT Zoom
 //********************************************************************
 DataCaptureFT::DataCaptureFT(QString devuio) : UIO(devuio){
 }

@@ -42,6 +42,7 @@ public:
     void executeFFTW_mockup_data();
     void executeFFTWcomplex_mockup_data();
     void executeFFTW();
+    void startExecuteFFTWcomplex();
     void executeFFTWcomplex();
     void executeFFTW_setSeries();
 
@@ -98,6 +99,10 @@ private:
     void setTimeSeries();
     QLineSeries *series_i;
     QLineSeries *series_q;
+
+    DataCaptureFTthread * dataCaptureFTthread;
+
+    qint64 start_thread;
 
 };
 

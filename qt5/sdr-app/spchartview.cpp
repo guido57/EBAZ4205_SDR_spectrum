@@ -59,6 +59,10 @@ SpChartView::SpChartView(QWidget *parent) : QChartView(parent)
 
     mouse_pressed = false;
     mw = (MainWindow *) parent->parent()->parent();
+
+    dataCaptureFTthread = new DataCaptureFTthread(DEV_FT_CAPTURE);
+    connect(dataCaptureFTthread, &DataCaptureFTthread::finished, this, &SpChartView::executeFFTWcomplex);
+
 }
 
 void init_fft_win(char const * window_name, double * w, unsigned n);
@@ -144,13 +148,14 @@ void SpChartView::executeFFTW_setSeries(){
             }
 
             // ... execute the FFT of the selected spectrum ...
-            executeFFTWcomplex();
+            //executeFFTWcomplex();
             // ... and show it
-            setSeries();
+            //setSeries();
+            startExecuteFFTWcomplex();
         }
     }else if(mw->ui->radiobutton_show_time->isChecked()){
-        CaptureTimeSamples();
-        setTimeSeries();
+        //GG CaptureTimeSamples();
+        //GG setTimeSeries();
     }else{
 
     }
@@ -277,6 +282,7 @@ void SpChartView::executeFFTWcomplex_mockup_data()
                                               mFftOutComplex[i][1]*mFftOutComplex[i][1]);
 }
 
+/*
 void SpChartView::CaptureTimeSamples()
 {
     if(!capturing_RF)
@@ -308,21 +314,24 @@ void SpChartView::CaptureTimeSamples()
          datat_q[i] = signed12q;
     }
 }
+*/
+
+void SpChartView::startExecuteFFTWcomplex()
+{
+    //connect(dataCaptureFTthread, &DataCaptureFTthread::resultReady, this, &SpChartView::executeFFTWcomplex);
+    //connect(workerThread, &WorkerThread::finished, workerThread, &QObject::deleteLater);
+    dataCaptureFTthread->start();
+    start_thread = QDateTime::currentMSecsSinceEpoch();
+}
 
 void SpChartView::executeFFTWcomplex()
 {
     if(!capturing_RF)
         return;
 
-    qint64 start = QDateTime::currentMSecsSinceEpoch();
-    // Capture 16384 samples x2 by the Capture Dual FT IP
-    int ret = mw->dev_ft_capture->CaptureRead16384x2();
-    double elapsed = (QDateTime::currentMSecsSinceEpoch() - start)/1000.0;
-    //qInfo() << start << "time to capture 16384 IQ samples = " << elapsed << " seconds ";
-    if(ret != 0){
-        printf("Capture error: %d\r\n", ret);
-        return;
-    }
+    double elapsed = (QDateTime::currentMSecsSinceEpoch() - start_thread)/1000.0;
+    qInfo() << start_thread << "time to capture 16384 IQ samples = " << elapsed << " seconds ";
+
     //the captured word (32 bits) x 2 (IQ)  is composed:
     // 31 ................ 20 19 18 17  16 15 ... 0
     // MSB 12 bits signed LSB  0  0  0 OTR  0 ... 0
@@ -337,9 +346,9 @@ void SpChartView::executeFFTWcomplex()
 
     // using NUM_TIME_SAMPLES time samples at a time
     for(int i=0; i < NUM_TIME_SAMPLES; i++){
-        signed12i = ((qint16) mw->dev_ft_capture->data_array_16384_i[i]);
+        signed12i = ((qint16) dataCaptureFTthread->dataCaptureFT->data_array_16384_i[i]);
         // the minus(-) allows to have frequencies above the Local Oscillator allocated between 0 and 8191
-        signed12q = -((qint16) mw->dev_ft_capture->data_array_16384_q[i]);
+        signed12q = -((qint16) dataCaptureFTthread->dataCaptureFT->data_array_16384_q[i]);
 
         //if( (i >=0 && i<100) || (i >=16283) ){
         //    printf("I[%d]=%x Q[%d]=%x\r\n",i,signed12i,i,signed12q);
@@ -382,6 +391,8 @@ void SpChartView::executeFFTWcomplex()
     //              (1-averaging) * 10 * log( mFftOutComplex[i][0]*mFftOutComplex[i][0]+
     //                                         mFftOutComplex[i][1]*mFftOutComplex[i][1]);
     //}
+
+    setSeries();
 }
 
 /*

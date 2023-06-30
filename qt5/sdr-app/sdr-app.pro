@@ -11,6 +11,7 @@ QMAKE_CXXFLAGS += -O0 -g -ggdb
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    datacaptureftthread.cpp \
     freqvlinemulti.cpp \
     init_fft_win.cpp \
     mysettings.cpp \
@@ -23,6 +24,7 @@ SOURCES += \
     crosshairs.cpp
 
 HEADERS += \
+    datacaptureftthread.h \
     freqvlinemulti.h \
     mainwindow.h \
     mysettings.h \

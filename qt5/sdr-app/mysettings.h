@@ -48,6 +48,7 @@ public:
     int fmin_view_hz;
     int fmax_view_hz;
     int hzoom;
+    int spectrum_height;
 
 };
 

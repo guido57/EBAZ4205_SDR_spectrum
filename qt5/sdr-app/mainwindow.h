@@ -10,6 +10,7 @@
 #include <QDateTimeAxis>
 #include "uio.h"
 #include "mysettings.h"
+#include "datacaptureftthread.h"
 
 QT_CHARTS_USE_NAMESPACE
 
@@ -38,7 +39,6 @@ public:
     FilterGain * dev_if_filter_gain;
     FilterGain * dev_if_filter_ft_gain;
     DataCaptureRF * dev_rf_capture;
-    DataCaptureFT * dev_ft_capture;
     DecimationRate * dev_dec_rate_iq;
     DecimationRate * dev_dec_rate_ft_iq;
     int SetDDSLOFreq(int freq_hz);
@@ -57,6 +57,7 @@ public:
     void SetAMSSB();
     void SetBandwidth(QString bw_khz_str);
     void ZoomFTUpDnButtons(bool clicked);
+    void SplitterMoved(int pos, int index);
 
 
 public slots:
