@@ -30,7 +30,7 @@ This is the myjtdx C++ software to decode FT8 (and maybe other digital modes) us
 * main.cpp is the classical main for qt5 applications
 * mainwindow.cpp is the mainwindow of the user interface of jtdx, pretty similar to the UI of wsjt-x 
 
-The main difference between myjtdx and the original jtdx is that myjtdx uses a remote FT8 decoder, because the Zynq7010 Cortex A9 dual core CPU would take too much time to decode FT8 medium (-d 1) and deep decoding (-d 3). 
+The main difference between myjtdx and the original jtdx is that myjtdx uses a remote FT8 decoder, because the Zynq7010 Cortex A9 dual core CPU could be OK to decode FT8 at light deep (-d 1), but it would take too much time to decode FT8 medium (-d 2) and above all deep decoding (-d 3). 
 
 Therefore I use a local (in the same network of EBAZ4205) PC running Windows 11, where the [wsjt-x 2.5.4 is installed](https://sourceforge.net/projects/wsjt/files/wsjtx-2.5.4/).  
 
