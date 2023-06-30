@@ -15,7 +15,7 @@ like to  contribute to  the project  in other  ways, please  make your
 interests known  to the  development team.
 
 
-Project Web site:
+Project Web site: 
 http://www.jtdx.tech
 
 Project mailing  list:
