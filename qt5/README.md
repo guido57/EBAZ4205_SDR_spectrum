@@ -3,7 +3,7 @@
 This is directory containing all the programs built wit qt creator:
 
 * [sdr-app](sdr-app): C++ software receiving sampled data from EBAZ4205 and displaying spectrum and waterfall TODO) in its User Interface.
-* myjtdx: C C++ Fortran User Interface to receive and decode FT8 and the other digital modes.
+* [myjtdx](myjtdx): C C++ Fortran User Interface to receive and decode FT8 and the other digital modes.
 
 # Qt5 Setup
 
