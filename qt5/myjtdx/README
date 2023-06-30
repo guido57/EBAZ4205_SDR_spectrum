@@ -1,3 +1,4 @@
+# Copyright
 
 Copyright (C) 2001-2020 by Joe Taylor, K1JT.
 Copyright (C) 2016-2020 by Igor Chernikov UA3DJY and Arvo Järve ES1JA.
@@ -15,9 +16,16 @@ interests known  to the  development team.
 
 
 Project Web site:
-
 http://www.jtdx.tech
 
 Project mailing  list:
-
 https://jtdx.groups.io/g/main
+
+# Overview
+
+This is the myjtdx C++ software to decode FT8 (and maybe other digital modes) using the EBAZ4205_SDR_spectrum project.
+
+# Software architecture
+
+* main.cpp is the classical main for qt5 applications
+* mainwindow.cpp is the mainwindow of the user interface of jtdx, pretty similar to the UI of wsjt-x 
