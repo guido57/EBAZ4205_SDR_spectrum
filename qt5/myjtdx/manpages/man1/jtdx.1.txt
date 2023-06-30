@@ -1,0 +1,118 @@
+:doctype: manpage
+:man source: AsciiDoc
+:man version: {VERSION}
+:man manual: JTDX Manual
+= jtdx(1)
+
+== NAME
+
+jtdx - Weak signal communications program.
+
+== SYNOPSIS
+
+*jtdx* ['OPTIONS']
+
+== DESCRIPTION
+
+*jtdx* is a weak signal communications program supporting several operating
+modes: WSPR2, JT65, JT9, T10, FT8, FT4.
+
+JTDX home page:: https://jtdx.tech/en/
+
+JTDX User's Guide:: https://jtdx.tech/en/videos-guides
+
+== OPTIONS
+
+*--style*[=STYLE]::
+
+Forcing QT5 style to STYLE.
+STYLE can be Fusion (default) or Windows.
+
+
+*-r, --rig-name*[=RIGNAME]::
+
+Enable multiple instances of the jtdx(1) application to run
+concurrently.  Each RIGNAME must be unique. One instance may use no
+RIGNAME. If this option is not supplied then only one instance of
+jtdx(1) may be run at any time.
+
+
+*-v, --version*:: Display the application version.
+
+*-h,--help*:: Display usage information.
+
+*--test-mode*::
+
+When this option is provided all writable files will be placed in a
+special test location (~/.qttest).  This option is only for
+application testing and is not designed for normal operations.  **Use
+with caution**.
+
+== FILES
+
+Most of the following files are in a directory path containing the
+directory name *JTDX[ - RIGNAME]* which indicates the value of the
+command line option *--rig-name=RIGNAME* to indicate multiple instances of
+*jtdx* running concurrently. All writable files listed below are
+therefore unique to each concurrent instance of *jtdx*. If the
+*--rig-name* command line option is not supplied or the *RIGNAME* argument
+is not supplied then the directory paths below will have the directory
+*JTDX*.
+
+~/.config/JTDX[ - RIGNAME].ini::
+
+This file stores the application
+configuration settings.
+
+~/.local/share/JTDX[ - RIGNAME]/yyyymm_ALL.txt::
+
+*ALL.txt* contains a record of transmitted and received messages and
+other activity such as frequency or band changes.
+
+~/.local/share/JTDX[ - RIGNAME]/save/::
+
+Is the default location for saved .WAV files recorded by the
+application.  The .WAV file save location may be changed in the
+applications settings dialog.
+
+~/.local/share/JTDX[ - RIGNAME]/save/samples/::
+
+Sample .WAV files suppied with the application are found in this
+directory, they may be played back in the application and are referred
+to in the user guide tutorial sections.
+
+~/.local/share/JTDX[ - RIGNAME]/cty.dat::
+
+This file is not required as a version of it is embedded in the
+application, but if you wish an updated version can be placed here.
+If present that version will be used in preference to the embedded
+version.
+
+~/.local/share/JTDX[ - RIGNAME]/wsjtx.log::
+
+This is a plain text CSV record of logged QSOs.
+
+~/.local/share/JTDX[ - RIGNAME]/wsjtx_log.adi::
+
+This is a record of QSOs logged in the ADIF format which is suitable
+for import into many Ham Radio logging programs.
+
+== AUTHOR
+
+Joe Taylor, K1JT, Arvo Järve, ES1JA for JTDX Changes
+
+== COPYING
+
+*jtdx* is derivative of *wsjtx* Copyrighted (C) 2001 - 2015 by Joseph H. Taylor, Jr., K1JT,
+with contributions from additional authors.  JTDX is Open Source
+software, licensed under the GNU General Public License (GPLv3).
+
+*jtdx* includes the ``**Hamlib - Ham Radio Control Libraries**''
+software which is licensed under the GNU Lesser General Public License
+(LGPL).  Home page https://sourceforge.net/apps/mediawiki/hamlib,
+sources from https://sourceforge.net/p/hamlib/code/ci/master/tree/.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
