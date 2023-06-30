@@ -32,4 +32,9 @@ This is the myjtdx C++ software to decode FT8 (and maybe other digital modes) us
 
 The main difference between myjtdx and the original jtdx is that myjtdx uses a remote FT8 decoder, because the Zynq7010 Cortex A9 dual core CPU would take too much time to decode FT8 medium (-d 1) and deep decoding (-d 3). 
 
-Therefore I use a local (in the same networkof EBAZ4205) PC running Windows 11, where the [wsjt-x 2.5.4 is installed](https://sourceforge.net/projects/wsjt/files/wsjtx-2.5.4/).  
+Therefore I use a local (in the same network of EBAZ4205) PC running Windows 11, where the [wsjt-x 2.5.4 is installed](https://sourceforge.net/projects/wsjt/files/wsjtx-2.5.4/).  
+
+![](../../docs/myjtdx-architecture.png).  
+
+
+
