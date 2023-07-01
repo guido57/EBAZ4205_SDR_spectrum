@@ -36,5 +36,14 @@ Therefore I use a local (in the same network of EBAZ4205) PC running Windows 11,
 
 ![](../../docs/myjtdx-architecture.png).  
 
+# SSH setup
+
+To let the myjtdx program to use ssh to connect to the Windows 11 ssh server you need to:
+* generate the SSH keys (private and public) on  PetaLinux
+* copy the SSH public key of PetaLInux to the SSH Windows 11 server
+
+## Generate the SSK keys (private and public) on PetaLinux
+
+PetaLinux has Dropbear 
 
 
