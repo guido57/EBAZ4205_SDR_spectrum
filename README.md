@@ -3,8 +3,8 @@
 ## Description
 
 This repository contains the sw project to:
-* display the 0-32 MHz radio spectrum in a full view
-* tune HF radio stations
+* display the 0-32 MHz radio spectrum in a full/zoom view
+* tune HF radio stations AM/LSB/USB
 * decode FT8 digital mode
   
 using an EBAZ4205 board.
