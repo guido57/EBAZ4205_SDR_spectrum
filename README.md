@@ -15,7 +15,7 @@ This project is the continuation of https://github.com/guido57/EBAZ4205_Spectrum
 
 ## Getting Started
 
-* [HW is in my "30 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
+* [HW is in my "32 MHz Spectrum and SDR in an FPGA" Hackaday project](https://hackaday.io/project/186329-30mhz-spectrum-and-sdr-in-a-fpga)
 * SW is here :) 
 
 For details and instructions see the following sub projects. The building of each project should be done in the same sequence.
