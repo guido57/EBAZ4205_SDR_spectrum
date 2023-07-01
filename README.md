@@ -5,7 +5,8 @@
 This repository contains the sw project to:
 * display the 0-32 MHz radio spectrum in a full view
 * tune HF radio stations
-* decode FT8 digital mode 
+* decode FT8 digital mode
+  
 using an EBAZ4205 board.
 
 ![block diagram](docs/SDR-block-diagram.png)
