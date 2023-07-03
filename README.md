@@ -44,7 +44,6 @@ In this project there's nothing esoteric, but it is quite complex because it req
 * FPGA Zynq7010 design and programming with Xilinx Vivado 
 * flashing Linux on the Zynq7010 FPGA with Xilinx Petalinux
 * building a C++ program running on Linux
-* building a Python program on Windows
 
 ## License
 
