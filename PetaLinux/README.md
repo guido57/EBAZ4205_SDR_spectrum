@@ -49,8 +49,9 @@ petalinux-package --wic
 
 1. Insert the SD card in the EBAZ4205 slot
 2. Connect any kind of tty terminal set at 115200,8,n,1 to the serial port of EBAZ4205
-3. Power on
-You should the PetaLinux boot sequence
+3. Power on 
+
+After a feww seconds, you should the PetaLinux boot sequence.
 
 ### build PetaLinux sysroot and get (cross)compilers
 
