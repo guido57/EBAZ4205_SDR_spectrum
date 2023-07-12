@@ -85,4 +85,13 @@ Please note that with dropbear you must explicitly specify the local private key
 -i /home/ebaz/.ssh/id_rsa
 ```
 
+If everything is ok, you should enter the Windows PC without writing any password as:
+
+```
+Microsoft Windows [Versione 10.0.22621.1848]
+(c) Microsoft Corporation. All rights reserved.
+
+guido@DESKTOP-SQGSJV7 C:\Users\guido>
+```
+
 
