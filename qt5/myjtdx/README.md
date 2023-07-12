@@ -41,6 +41,7 @@ Therefore I use a local (in the same network of EBAZ4205) PC running Windows 11,
 To let the myjtdx program to use ssh to connect to the Windows 11 ssh server you need to:
 * generate the SSH keys (private and public) on  PetaLinux
 * copy the SSH public key of PetaLinux to the SSH Windows 11 server
+* test if everything is OK
 
 ## Generate the SSK keys (private and public) on PetaLinux
 
@@ -67,13 +68,21 @@ Restart the SSH server on Windows:
 2. Stop OpenSSH SSH Server
 3. Start OpenSSH SSH Server
 
-To check if everything is OK, from the linux shell of EBAZ try:
+## test if everything is OK
+
+From the PetaLinux shell of EBAZ try:
 
 ```
 ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83
 ```
-Change:
-* 192.168.1.83 with the IP address of your Windows 11 PC
+Of course change:
+* 192.168.1.83 with the real IP address of your Windows 11 PC
 * guido with the Windows 11 user name
+
+Please note that with dropbear you must explicitly specify the local private key using the option -i
+
+```
+-i /home/ebaz/.ssh/id_rsa
+```
 
 
