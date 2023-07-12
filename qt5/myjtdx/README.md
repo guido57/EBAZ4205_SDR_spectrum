@@ -44,6 +44,24 @@ To let the myjtdx program to use ssh to connect to the Windows 11 ssh server you
 
 ## Generate the SSK keys (private and public) on PetaLinux
 
-PetaLinux has Dropbear 
+PetaLinux has Dropbear instead of OpenSSH.
+To generate the private/public keys:
+
+dropbearkey -y -f id_rsa | grep "^ssh-rsa " >> id_pub
+
+Now the public key is inside the file id_pub (while the private key, that you don't need, is in id_rsa)
+The public key should be similar to the following:
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCEkBDVvu6twWZX0O+824r4q/xVgx+AbFbBA4ceVRGr44/Y8r4mymoc3Dr1gKf0KmQwWU+K07sh25MliFSps8k4KNNmAYXGQlkmGsV40ZRfJ2dsjS6sBENEdJXoPzRhgSs5c+2+bPa48RZ2DwEQe9Kt5jG4SMzSMofYGt5E/stAk5pSgApA2XbBboNK1f1VMQ/v4hILi2bZzkw3bwnE9orpqFXDRRjVrJWvqgiOvVA7YEwbOwGRikdeGMIUnNAs7YGZ+sMbuZnJf5tDCr5NDqRsGhsFUJd85pqtdRG01MSh3GPspFQh8jBBVNBJkx36HMSXKoPXvDYktjc59BtBaJrP ebaz@ebaz4205
+
+
+## copy the SSH public key of PetaLInux to the SSH Windows 11 server
+
+Copy the content of id_pub 
+To generate the private/public keys:
+
+dropbearkey -y -f id_rsa | grep "^ssh-rsa " >> id_pub
+
+Now the public key is inside the file id_pub (while the private key, that you don't need, is in id_rsa)
 
 
