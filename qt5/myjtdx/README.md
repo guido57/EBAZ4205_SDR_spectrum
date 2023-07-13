@@ -109,3 +109,111 @@ sshd -d
 
 You should see something like this:
 
+```
+C:\Windows\System32>sshd -d
+debug1: sshd version OpenSSH_for_Windows_8.6, LibreSSL 3.4.3
+debug1: get_passwd: lookup_sid() failed: 1332.
+debug1: private host key #0: ssh-rsa SHA256:KBTw8CkhD81eI+7KQdjNsZTwgrssLV3QFeAqrF5LPY4
+debug1: private host key #1: ecdsa-sha2-nistp256 SHA256:36Rexpew+/FUZCWAK+28reyh06+Bb+TuKJXAxrFZzVM
+debug1: private host key #2: ssh-ed25519 SHA256:ysJPdM636UJEZg1rVuFCfn5x3FudJIJPGvoLlBGgS00
+debug1: rexec_argv[0]='sshd'
+debug1: rexec_argv[1]='-d'
+debug1: Bind to port 22 on ::.
+Server listening on :: port 22.
+debug1: Bind to port 22 on 0.0.0.0.
+Server listening on 0.0.0.0 port 22.
+```
+
+and when anybody connects:
+
+```
+Connection from 192.168.1.250 port 38884 on 192.168.1.83 port 22
+debug1: Local version string SSH-2.0-OpenSSH_for_Windows_8.6
+debug1: Remote protocol version 2.0, remote software version dropbear_2020.81
+debug1: compat_banner: no match: dropbear_2020.81
+debug1: sshd version OpenSSH_for_Windows_8.6, LibreSSL 3.4.3
+debug1: get_passwd: lookup_sid() failed: 1332.
+debug1: list_hostkey_types: rsa-sha2-512,rsa-sha2-256,ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519 [preauth]
+debug1: SSH2_MSG_KEXINIT sent [preauth]
+debug1: SSH2_MSG_KEXINIT received [preauth]
+debug1: kex: algorithm: curve25519-sha256 [preauth]
+debug1: kex: host key algorithm: ssh-ed25519 [preauth]
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com [preauth]
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com [preauth]
+debug1: expecting SSH2_MSG_KEX_ECDH_INIT [preauth]
+debug1: SSH2_MSG_KEX_ECDH_INIT received [preauth]
+debug1: rekey out after 134217728 blocks [preauth]
+debug1: SSH2_MSG_NEWKEYS sent [preauth]
+debug1: Sending SSH2_MSG_EXT_INFO [preauth]
+debug1: expecting SSH2_MSG_NEWKEYS [preauth]
+debug1: SSH2_MSG_NEWKEYS received [preauth]
+debug1: rekey in after 134217728 blocks [preauth]
+debug1: KEX done [preauth]
+debug1: userauth-request for user guido service ssh-connection method none [preauth]
+debug1: attempt 0 failures 0 [preauth]
+debug1: user guido matched group list administrators at line 94
+debug1: userauth-request for user guido service ssh-connection method publickey [preauth]
+debug1: attempt 1 failures 0 [preauth]
+debug1: userauth_pubkey: test pkalg rsa-sha2-256 pkblob RSA SHA256:xIpTvdHxro8WmYV5xyA+7PNVz16YSCBvc9hhM5glgMk [preauth]
+debug1: trying public key file __PROGRAMDATA__/ssh/administrators_authorized_keys
+debug1: __PROGRAMDATA__/ssh/administrators_authorized_keys:4: matching key found: RSA SHA256:xIpTvdHxro8WmYV5xyA+7PNVz16YSCBvc9hhM5glgMk
+debug1: __PROGRAMDATA__/ssh/administrators_authorized_keys:4: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+Accepted key RSA SHA256:xIpTvdHxro8WmYV5xyA+7PNVz16YSCBvc9hhM5glgMk found at __PROGRAMDATA__/ssh/administrators_authorized_keys:4
+Postponed publickey for guido from 192.168.1.250 port 38884 ssh2 [preauth]
+debug1: userauth-request for user guido service ssh-connection method publickey [preauth]
+debug1: attempt 2 failures 0 [preauth]
+debug1: trying public key file __PROGRAMDATA__/ssh/administrators_authorized_keys
+debug1: __PROGRAMDATA__/ssh/administrators_authorized_keys:4: matching key found: RSA SHA256:xIpTvdHxro8WmYV5xyA+7PNVz16YSCBvc9hhM5glgMk
+debug1: __PROGRAMDATA__/ssh/administrators_authorized_keys:4: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+Accepted key RSA SHA256:xIpTvdHxro8WmYV5xyA+7PNVz16YSCBvc9hhM5glgMk found at __PROGRAMDATA__/ssh/administrators_authorized_keys:4
+debug1: auth_activate_options: setting new authentication options
+Accepted publickey for guido from 192.168.1.250 port 38884 ssh2: RSA SHA256:xIpTvdHxro8WmYV5xyA+7PNVz16YSCBvc9hhM5glgMk
+debug1: monitor_child_preauth: user guido authenticated by privileged process
+debug1: auth_activate_options: setting new authentication options [preauth]
+debug1: Enabling compression at level 6. [preauth]
+debug1: monitor_read_log: child log fd closed
+debug1: Not running as SYSTEM: skipping loading user profile
+User child is on pid 11928
+debug1: sshd version OpenSSH_for_Windows_8.6, LibreSSL 3.4.3
+debug1: get_passwd: lookup_sid() failed: 1332.
+debug1: user guido matched group list administrators at line 94
+debug1: rekey in after 134217728 blocks
+debug1: rekey out after 134217728 blocks
+debug1: ssh_packet_set_postauth: called
+debug1: Enabling compression at level 6.
+debug1: active: key options: agent-forwarding port-forwarding pty user-rc x11-forwarding
+debug1: Entering interactive session for SSH2.
+debug1: server_init_dispatch
+debug1: server_input_channel_open: ctype session rchan 0 win 24576 max 32759
+Endebug1: input_session_request
+vironment:
+  USER=guido
+  LOGNAME=guido
+  HOME=C:\Users\guido
+  PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+  MAIL=/var/spool/mail/guido
+  SHELL=c:\windows\system32\cmd.exe
+  TERM=xterm-256color
+  SSH_CLIENT=192.168.1.250 38884 22
+  SSH_CONNECTION=192.168.1.250 38884 192.168.1.83 22
+  SSH_TTY=windows-pty
+debug1: channel 0: new [server-session]
+debug1: session_new: session 0
+debug1: session_open: channel 0
+debug1: session_open: session 0: link with channel 0
+debug1: server_input_channel_open: confirm session
+debug1: Got 82/9 for keepalive
+debug1: server_input_channel_req: channel 0 request pty-req reply 0
+debug1: session_by_channel: session 0 channel 0
+debug1: session_input_channel_req: session 0 req pty-req
+debug1: Allocating pty.
+debug1: session_pty_req: session 0 alloc windows-pty
+debug1: Ignoring unsupported tty mode opcode 1 (0x1)
+...
+debug1: Ignoring unsupported tty mode opcode 92 (0x5c)
+debug1: server_input_channel_req: channel 0 request shell reply 0
+debug1: session_by_channel: session 0 channel 0
+debug1: session_input_channel_req: session 0 req shell
+Starting session: shell on windows-pty for guido from 192.168.1.250 port 38884 id 0
+```
+
