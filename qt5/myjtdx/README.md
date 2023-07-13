@@ -38,9 +38,9 @@ Therefore I use a local (in the same network of EBAZ4205) PC running Windows 11,
 
 # SSH setup
 
-To let the myjtdx program to use ssh to connect to the Windows 11 ssh server you need to:
+To let the myjtdx program to use ssh to connect to the Windows 10/11 ssh server you need to:
 * generate the SSH keys (private and public) on  PetaLinux
-* copy the SSH public key of PetaLinux to the SSH Windows 11 server
+* copy the SSH public key of PetaLinux to the SSH Windows 10/11 server
 * test if everything is OK
 
 ## Generate the SSK keys (private and public) on PetaLinux
@@ -59,7 +59,7 @@ The public key should be similar to the following:
 ssh-rsa AAAAB3NzaC1yc2EERFTHTQABAAABAQCEkBDVvu6twWZX0O+824r4q/xVgx+AbFbBA4ceVRGr44/Y8r4mymoc3Dr1gKf0KmQwWU+K07sh25MliFSps8k4KNNmAYXGQlkmGsV40ZRfJ2dsjS6sBENEdJXoPzRhgSs5c+2+bPa48RZ2DGFSDGGDFGDFGDKGHDFGDFJGdgfhgfgofYGt5E/stAk5pSgApA2XbBboNK1f1VMQ/v4hILi2bZzkw3bwnE9orpqFXDRRjVrJWvqgiOvVA7YEwbOwGRikdeGMIUnNAs7YGZ+sMbuZnJf5tDCr5NDqRsGhsFUJd85pqtdRG01MSh3GPspFQh8jBBVNBJkx36HMSXKoPXvDYktjc59BtBaJrP ebaz@ebaz4205
 ```
 
-## copy the SSH public key of PetaLinux to the SSH Windows 11 server
+## copy the SSH public key of PetaLinux to the SSH Windows 10/11 server
 
 Copy the content of id_pub to the file C:\ProgramData\ssh\administrators_authorized_keys
 
@@ -85,7 +85,7 @@ Please note that with dropbear you must explicitly specify the local private key
 -i /home/ebaz/.ssh/id_rsa
 ```
 
-If everything is ok, you should enter the Windows PC without writing any password as:
+If everything is ok, you should log in the Windows PC without writing any password as here:
 
 ```
 Microsoft Windows [Versione 10.0.22621.1848]
@@ -93,5 +93,19 @@ Microsoft Windows [Versione 10.0.22621.1848]
 
 guido@DESKTOP-SQGSJV7 C:\Users\guido>
 ```
+## ... in case something goes wrong
 
+### Stop the SSH server on Windows:
+
+* executing service.msc
+* Stop OpenSSH SSH Server
+
+### Launch the SSH server from a Windows shell, activating the debug option
+
+```
+sshd -d
+```
+### try to SSH login again 
+
+You should see something like this:
 
