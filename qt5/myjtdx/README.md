@@ -49,7 +49,7 @@ PetaLinux has Dropbear instead of OpenSSH.
 To generate the private/public keys:
 
 ```
-dropbearkey -y -f id_rsa | grep "^ssh-rsa " >> id_pub
+dropbearkey -f id_rsa | grep "^ssh-rsa " >> id_pub
 ```
 
 Now the public key is inside the file id_pub (while the private key, that you don't need, is in id_rsa)
