@@ -25,6 +25,9 @@ https://jtdx.groups.io/g/main
 
 This is the myjtdx C++ software to decode FT8 (and maybe other digital modes) using the EBAZ4205_SDR_spectrum project.
 
+![](../../docs/myjtdx.png).  
+
+
 # Software architecture
 
 * main.cpp is the classical main for qt5 applications
