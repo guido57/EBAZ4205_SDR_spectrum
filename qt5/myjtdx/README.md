@@ -49,13 +49,14 @@ To let the myjtdx program to use ssh to connect to the Windows 10/11 ssh server 
 ## Generate the SSK keys (private and public) on PetaLinux
 
 PetaLinux has Dropbear instead of OpenSSH.
-To generate the private/public keys:
+To generate the private/public keys in PetaLinux:
 
 ```
+cd /home/ebaz/.ssh
 dropbearkey -f id_rsa | grep "^ssh-rsa " >> id_pub
 ```
 
-Now the public key is inside the file id_pub, while the private key is in id_rsa)
+Now the public key is inside the file id_pub, while the private key is in id_rsa.
 The public key should be similar to the following:
 
 ```
