@@ -193,7 +193,8 @@ void SpChartView::executeFFTW()
         return;
 
     // Capture 16384 samples by the Capture_RF IP
-    mw->dev_rf_capture->CaptureRead16384();
+    //mw->dev_rf_capture->CaptureRead16384();
+    DataCaptureRF_CaptureRead16384(&mw->dev_rf_capture);
 
     //the captured word (32 bits is composed:
     // 31 ................ 20 19 18 17  16 15 ... 0
@@ -205,7 +206,8 @@ void SpChartView::executeFFTW()
 
     // using NUM_TIME_SAMPLES time samples at a time
     for(int i=0; i < NUM_TIME_SAMPLES; i++){
-        signed12 = ((qint32) mw->dev_rf_capture->data_array_16384[i])>>20;
+        //signed12 = ((qint32) mw->dev_rf_capture->data_array_16384[i])>>20;
+        signed12 = ((qint32) mw->dev_rf_capture.data_array_16384[i])>>20;
 
         //if( (i >=0 && i<10) || (i >=16380) ){
         //    printf("data[%d]=%x\r\n",i,signed12);
@@ -330,7 +332,7 @@ void SpChartView::executeFFTWcomplex()
         return;
 
     double elapsed = (QDateTime::currentMSecsSinceEpoch() - start_thread)/1000.0;
-    qInfo() << start_thread << "time to capture 16384 IQ samples = " << elapsed << " seconds ";
+    //qInfo() << start_thread << "time to capture 16384 IQ samples = " << elapsed << " seconds ";
 
     //the captured word (32 bits) x 2 (IQ)  is composed:
     // 31 ................ 20 19 18 17  16 15 ... 0
@@ -346,9 +348,9 @@ void SpChartView::executeFFTWcomplex()
 
     // using NUM_TIME_SAMPLES time samples at a time
     for(int i=0; i < NUM_TIME_SAMPLES; i++){
-        signed12i = ((qint16) dataCaptureFTthread->dataCaptureFT->data_array_16384_i[i]);
+        signed12i = ((qint16) dataCaptureFTthread->dataCaptureFT.data_array_16384_i[i]);
         // the minus(-) allows to have frequencies above the Local Oscillator allocated between 0 and 8191
-        signed12q = -((qint16) dataCaptureFTthread->dataCaptureFT->data_array_16384_q[i]);
+        signed12q = -((qint16) dataCaptureFTthread->dataCaptureFT.data_array_16384_q[i]);
 
         //if( (i >=0 && i<100) || (i >=16283) ){
         //    printf("I[%d]=%x Q[%d]=%x\r\n",i,signed12i,i,signed12q);
@@ -440,7 +442,8 @@ void SpChartView::setHZoom(int new_hzoom, float centerfreq_hz ){
         fmin_view_hz = 1000 * int(fmin_view_hz/1000 + 0.5);
         fmax_view_hz = fmin_view_hz + span_hz;
         fmax_view_hz = 1000 * int(fmax_view_hz/1000 + 0.5);
-        mw->dev_dds_lo_ft->SetFreq(fmax_view_hz);
+        // mw->dev_dds_lo_ft->SetFreq(fmax_view_hz);
+        DDS_SetFreq(&mw->dev_dds_lo_ft, fmax_view_hz);
     }
 
     hzoom = new_hzoom;

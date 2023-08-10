@@ -2,14 +2,14 @@
 #define DATACAPTUREFTTHREAD_H
 
 #include <qthread.h>
-#include <uio.h>
+#include <uio_c.h>
 
 class DataCaptureFTthread : public QThread
 {
     Q_OBJECT
 
 public:
-    DataCaptureFT * dataCaptureFT;
+    struct DataCaptureFT dataCaptureFT;
     DataCaptureFTthread(QString devuio_);
     void run() override;
 

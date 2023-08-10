@@ -32,7 +32,7 @@ HEADERS += \
     freqvline.h \
     crosshairs.h \
     fftw3.h \
-    uio.h \
+    uio_c.h \
     window_functions.h
 
     LIBS += \

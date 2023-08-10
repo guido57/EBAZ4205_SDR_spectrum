@@ -5,7 +5,6 @@
 #include <QValueAxis>
 #include <QDateTimeAxis>
 #include <QFileDialog>
-#include "uio.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -19,15 +18,18 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->cbAreaSeries, &QCheckBox::clicked, this, &MainWindow::SetAreaSeries);
 
     // Capture RF
-    dev_rf_capture = new DataCaptureRF(DEV_RF_CAPTURE);
+    strcpy(dev_rf_capture.uio.devuio,  DEV_RF_CAPTURE);
+    DataCaptureRF_Init(&dev_rf_capture);
     ui->cbCaptureRF->setChecked(mysettings->capture_rf);
+
     SetCaptureRF(mysettings->capture_rf);
     connect(ui->cbCaptureRF, &QCheckBox::clicked, this, &MainWindow::SetCaptureRF);
 
     // IF Filter Gain
     ui->comboBoxIFGain->setCurrentText(QString::number(mysettings->if_gain));
-    dev_if_filter_gain = new FilterGain(DEV_IF_GAIN);
-    dev_if_filter_gain->SetFilterGainString(ui->comboBoxIFGain->currentText());
+    strcpy(dev_if_filter_gain.uio.devuio,DEV_IF_GAIN);
+    FilterGain_init(&dev_if_filter_gain);
+    FilterGain_SetString(&dev_if_filter_gain,(char *) ui->comboBoxIFGain->currentText().toStdString().c_str());
     connect(ui->comboBoxIFGain, &QComboBox::currentTextChanged, this, &MainWindow::SetFilterGain);
 
     // Init fmin_view_hz fmax_view_hz and hzoom
@@ -50,7 +52,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->radioButtonAM, &QRadioButton::clicked, this, &MainWindow::SetAMSSB);
     connect(ui->radioButtonLSB, &QRadioButton::clicked, this, &MainWindow::SetAMSSB);
     connect(ui->radioButtonUSB, &QRadioButton::clicked, this, &MainWindow::SetAMSSB);
-    dev_am_ssb_switch = new AMSSBSwitch(DEV_AM_SSB);
+    strcpy(dev_am_ssb_switch.devuio,DEV_AM_SSB);
+    AMSSBSwitch_Init(&dev_am_ssb_switch);
     switch(mysettings->demod_type){
         case demod_type_am:
             ui->radioButtonAM->setChecked(true);
@@ -65,39 +68,51 @@ MainWindow::MainWindow(QWidget *parent)
     SetAMSSB();
 
     // ADC - Test Generator switch
-    dev_adc_test_switch = new ADCTestSwitch(DEV_ADC_TEST_SWITCH);
+    strcpy(dev_adc_test_switch.devuio,DEV_ADC_TEST_SWITCH);
+    ADCTestSwitch_Init(&dev_adc_test_switch);
     if(mysettings->sdr_input == sdr_input_test_gen){
-        dev_adc_test_switch->SetTestGen();
+        ADCTestSwitch_SetTestGen(&dev_adc_test_switch);
         ui->radioButtonGenerator->setChecked(true);
     }else{
-        dev_adc_test_switch->SetADC();
+        ADCTestSwitch_SetADC(&dev_adc_test_switch);
         ui->radioButtonADC->setChecked(true);
     }
     connect(ui->radioButtonADC, &QRadioButton::clicked, this, &MainWindow::SetADCTestGen);
     connect(ui->radioButtonGenerator, &QRadioButton::clicked, this, &MainWindow::SetADCTestGen);
 
     // DDS Local Oscillator for tuning
-    dev_dds_lo = new DDS(DEV_DDS_LO,26,64000000);
+    strcpy(dev_dds_lo.uio.devuio,DEV_DDS_LO);
+    dev_dds_lo.b_phase_width = 26;
+    dev_dds_lo.master_clock_hz = 64000000;
+    DDS_Init(&dev_dds_lo);
     ui->spinBoxTunedFrequency->setValue(mysettings->tuned_freq_hz);
     //ui->spChartView->setSeries(); // first mapping of coordinates
     //ui->spChartView->m_freqvline->updateFrequency_hz(mysettings->tuned_freq_hz,mysettings->if_bw_khz*1000,fvl_type_am);
     connect(ui->spChartView->m_freqvline, &FreqVLineMulti::tunedFrequencyChanged, this, &MainWindow::SetDDSLOFreq);
 
     // DDS Test Generator
-    dev_dds_test_gen = new DDS(DEV_DDS_TEST_GEN,26,64000000);
-    dev_dds_test_gen->SetFreq(mysettings->test_gen_hz);
+    strcpy(dev_dds_test_gen.uio.devuio,DEV_DDS_LO);
+    dev_dds_test_gen.b_phase_width = 26;
+    dev_dds_test_gen.master_clock_hz = 64000000;
+    DDS_Init(&dev_dds_test_gen);
+    DDS_SetFreq(&dev_dds_test_gen,mysettings->test_gen_hz);
     ui->spinBoxTestFrequency->setValue(mysettings->test_gen_hz);
     connect(ui->spinBoxTestFrequency, &QSpinBox::textChanged, this, &MainWindow::SetDDSTestGenFreq);
 
     // DDS BFO
-    dev_dds_bfo = new DDS(DEV_DDS_BFO,26,64000000);
-    dev_dds_bfo->SetFreq(mysettings->bfo_freq_hz);
+    strcpy(dev_dds_bfo.uio.devuio,DEV_DDS_BFO);
+    dev_dds_bfo.b_phase_width = 26;
+    dev_dds_bfo.master_clock_hz = 64000000;
+    DDS_Init(&dev_dds_bfo);
+    DDS_SetFreq(&dev_dds_bfo, mysettings->bfo_freq_hz);
     connect(ui->spinBoxBFO_Hz, &QSpinBox::textChanged, this, &MainWindow::SetDDSBFOFreq);
     ui->spinBoxBFO_Hz->setValue(mysettings->bfo_freq_hz);
 
     // IF Bandwidth
-    dev_dec_rate_iq = new DecimationRate(DEV_DEC_RATE_IQ);
-    dev_dec_rate_iq->SetBandwidth(QString::number(mysettings->if_bw_khz));
+    strcpy(dev_dec_rate_iq.uio.devuio,DEV_DEC_RATE_IQ);
+    DecimationRate_Init(&dev_dec_rate_iq);
+    std::string bw_str = std::to_string(mysettings->if_bw_khz);
+    DecimationRate_SetBandwidth(&dev_dec_rate_iq,(char *) bw_str.c_str()  );
     ui->comboBoxIFBandwidth->setCurrentText(QString::number(mysettings->if_bw_khz));
     connect(ui->comboBoxIFBandwidth, &QComboBox::currentTextChanged, this, &MainWindow::SetBandwidth);
     // Uncomment the following 3 lines if using EBAZ4205_SDR_HDM_PS2 which has
@@ -116,8 +131,11 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->radiobutton_show_time, &QRadioButton::clicked, this, &MainWindow::SetShowTime);
 
     // DDS Local Oscillator for Zoom FFT
-    dev_dds_lo_ft = new DDS(DEV_DDS_LO_FT,26,64000000);
-    dev_dds_lo_ft->SetFreq(mysettings->lo_ft_hz);
+    strcpy(dev_dds_lo_ft.uio.devuio,DEV_DDS_LO_FT);
+    dev_dds_lo_ft.b_phase_width = 26;
+    dev_dds_lo_ft.master_clock_hz = 64000000;
+    DDS_Init(&dev_dds_lo_ft);
+    DDS_SetFreq(&dev_dds_lo_ft, mysettings->lo_ft_hz);
     connect(ui->spinBoxFTFreq, &QSpinBox::textChanged, this, &MainWindow::SetDDSLOFTFreq);
 
     // DDS Local Oscillator for Zoom FFT Up Down Buttons
@@ -131,15 +149,18 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->pb1dn, &QPushButton::clicked, this, &MainWindow::ZoomFTUpDnButtons);
 
     // FFT Zoom Bandwidth
-    dev_dec_rate_ft_iq = new DecimationRate(DEV_DEC_RATE_FT_IQ);
-    dev_dec_rate_ft_iq->SetBandwidth(QString::number(mysettings->span_view_khz));
+    strcpy(dev_dec_rate_ft_iq.uio.devuio, DEV_DEC_RATE_FT_IQ);
+    DecimationRate_Init(&dev_dec_rate_ft_iq);
+    std::string span_view_khz_str = std::to_string(mysettings->span_view_khz);
+    DecimationRate_SetBandwidth(&dev_dec_rate_ft_iq,(char *) span_view_khz_str.c_str());
     ui->cbBWFFT->setCurrentText(QString::number(mysettings->span_view_khz));
     connect(ui->cbBWFFT, &QComboBox::currentTextChanged, this, &MainWindow::SetZoomBandwidth);
 
     // IF Zoom FFT Filter Gain
     ui->comboBoxIFFTGain->setCurrentText(QString::number(mysettings->fft_zoom_if_gain));
-    dev_if_filter_ft_gain = new FilterGain(DEV_IF_FT_GAIN);
-    dev_if_filter_ft_gain->SetFilterGainString(ui->comboBoxIFFTGain->currentText());
+    strcpy(dev_if_filter_ft_gain.uio.devuio, DEV_IF_FT_GAIN);
+    FilterGain_init(&dev_if_filter_ft_gain);
+    FilterGain_SetString(&dev_if_filter_ft_gain,(char *) ui->comboBoxIFFTGain->currentText().toStdString().c_str());
     connect(ui->comboBoxIFFTGain, &QComboBox::currentTextChanged, this, &MainWindow::SetFTFilterGain);
 
     // spectrum view height in pixels
@@ -188,7 +209,7 @@ void MainWindow::ZoomFTUpDnButtons(bool clicked){
 }
 
 void MainWindow::SetBandwidth(QString bw_khz_str){
-    dev_dec_rate_iq->SetBandwidth(bw_khz_str);
+    DecimationRate_SetBandwidth(&dev_dec_rate_iq , (char *) bw_khz_str.toStdString().c_str());
     mysettings->if_bw_khz = bw_khz_str.toInt();
     ui->spChartView->m_freqvline->setBW_khz(mysettings->if_bw_khz);
 }
@@ -198,15 +219,15 @@ void MainWindow::SetAMSSB(){
     bool lsb = ui->radioButtonLSB->isChecked();
     bool usb = ui->radioButtonUSB->isChecked();
     if(am){
-        dev_am_ssb_switch->SetAM();
+        AMSSBSwitch_SetAM(&dev_am_ssb_switch);
         ui->spChartView->m_freqvline->setAMLSBUSB(demod_type_am);
         mysettings->demod_type =  demod_type_am;
     }else if(lsb){
-        dev_am_ssb_switch->SetLSB();
+        AMSSBSwitch_SetLSB(&dev_am_ssb_switch);
         ui->spChartView->m_freqvline->setAMLSBUSB(demod_type_lsb);
         mysettings->demod_type =  demod_type_lsb;
     }else if(usb){
-        dev_am_ssb_switch->SetUSB();
+        AMSSBSwitch_SetUSB(&dev_am_ssb_switch);
         ui->spChartView->m_freqvline->setAMLSBUSB(demod_type_usb);
         mysettings->demod_type =  demod_type_usb;
     }
@@ -244,13 +265,15 @@ void MainWindow::SetAreaSeries(bool checked){
 }
 
 void MainWindow::SetFilterGain(QString newvalue_str){
-    dev_if_filter_gain->SetFilterGainString(newvalue_str);
+    //dev_if_filter_gain->SetFilterGainString((char *) newvalue_str.toStdString().c_str());
+    FilterGain_SetString(&dev_if_filter_gain, (char *) newvalue_str.toStdString().c_str());
     mysettings->if_gain = newvalue_str.toInt();
     mysettings->save();
 }
 
 void MainWindow::SetFTFilterGain(QString newvalue_str){
-    dev_if_filter_ft_gain->SetFilterGainString(newvalue_str);
+    //dev_if_filter_ft_gain->SetFilterGainString((char *) newvalue_str.toStdString().c_str());
+    FilterGain_SetString(&dev_if_filter_ft_gain, (char *) newvalue_str.toStdString().c_str());
     mysettings->fft_zoom_if_gain = newvalue_str.toInt();
     mysettings->save();
 }
@@ -262,7 +285,8 @@ void MainWindow::SetAveraging(QString newvalue_str){
 
 void MainWindow::SetZoomBandwidth(QString bw){
     // set new bandwidth
-    dev_dec_rate_ft_iq->SetBandwidth(bw);
+    //dev_dec_rate_ft_iq->SetBandwidth((char *) bw.toStdString().c_str());
+    DecimationRate_SetBandwidth(&dev_dec_rate_ft_iq,(char *) bw.toStdString().c_str());
     mysettings->span_view_khz = bw.toInt();
     mysettings->save();
 }
@@ -271,10 +295,12 @@ void MainWindow::SetZoomBandwidth(QString bw){
 void MainWindow::SetADCTestGen(bool checked){
 
     if(ui->radioButtonADC->isChecked()){
-        dev_adc_test_switch->SetADC();
+        //dev_adc_test_switch->SetADC();
+        ADCTestSwitch_SetADC(&dev_adc_test_switch);
         mysettings->sdr_input = sdr_input_adc;
     }else{
-        dev_adc_test_switch->SetTestGen();
+        //dev_adc_test_switch->SetTestGen();
+        ADCTestSwitch_SetTestGen(&dev_adc_test_switch);
         mysettings->sdr_input = sdr_input_test_gen;
     }
     mysettings->save();
@@ -282,7 +308,8 @@ void MainWindow::SetADCTestGen(bool checked){
 }
 
 int MainWindow::SetDDSLOFreq(int freq_hz){
-    int actual_frequency = dev_dds_lo->SetFreq(freq_hz);
+    // int actual_frequency = dev_dds_lo->SetFreq(freq_hz);
+    int actual_frequency = DDS_SetFreq(&dev_dds_lo, freq_hz);
     if(actual_frequency > 0){
         if(mysettings->demod_type == demod_type_am)
             mysettings->tuned_freq_hz = actual_frequency;
@@ -299,19 +326,22 @@ int MainWindow::SetDDSLOFreq(int freq_hz){
 void MainWindow::SetDDSTestGenFreq(QString freq_hz_str){
     mysettings->test_gen_hz = freq_hz_str.toInt();
     mysettings->save();
-    dev_dds_test_gen->SetFreq(mysettings->test_gen_hz);
+    // dev_dds_test_gen->SetFreq(mysettings->test_gen_hz);
+    DDS_SetFreq(&dev_dds_test_gen, mysettings->test_gen_hz);
 }
 
 void MainWindow::SetDDSLOFTFreq(QString freq_hz_str){
 
     mysettings->lo_ft_hz = freq_hz_str.toInt();
     mysettings->save();
-    dev_dds_lo_ft->SetFreq(mysettings->lo_ft_hz);
+    //dev_dds_lo_ft->SetFreq(mysettings->lo_ft_hz);
+    DDS_SetFreq(&dev_dds_lo_ft,mysettings->lo_ft_hz);
 }
 
 void MainWindow::SetDDSBFOFreq(QString freq_hz_str){
 
     mysettings->bfo_freq_hz = freq_hz_str.toInt();
     mysettings->save();
-    dev_dds_bfo->SetFreq(mysettings->bfo_freq_hz);
+    // dev_dds_bfo->SetFreq(mysettings->bfo_freq_hz);
+    DDS_SetFreq(&dev_dds_bfo, mysettings->bfo_freq_hz);
 }

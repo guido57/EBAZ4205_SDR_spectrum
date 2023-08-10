@@ -8,7 +8,7 @@
 #include <QChartView>
 #include <QtCharts>
 #include <QDateTimeAxis>
-#include "uio.h"
+#include "uio_c.h"
 #include "mysettings.h"
 #include "datacaptureftthread.h"
 
@@ -30,17 +30,21 @@ public:
 
     mysettings_class *mysettings;
 
-    ADCTestSwitch * dev_adc_test_switch;
-    AMSSBSwitch * dev_am_ssb_switch;
-    DDS * dev_dds_lo;
-    DDS * dev_dds_lo_ft;
-    DDS * dev_dds_test_gen;
-    DDS * dev_dds_bfo;
-    FilterGain * dev_if_filter_gain;
-    FilterGain * dev_if_filter_ft_gain;
-    DataCaptureRF * dev_rf_capture;
-    DecimationRate * dev_dec_rate_iq;
-    DecimationRate * dev_dec_rate_ft_iq;
+    // -----------------------------
+    // UIO devices structs
+    UIO dev_adc_test_switch;
+    UIO dev_am_ssb_switch;
+    DDS dev_dds_lo;
+    DDS dev_dds_lo_ft;
+    DDS dev_dds_test_gen;
+    DDS dev_dds_bfo;
+    FilterGain dev_if_filter_gain;
+    FilterGain dev_if_filter_ft_gain;
+    DataCaptureRF dev_rf_capture;
+    DecimationRate dev_dec_rate_iq;
+    DecimationRate dev_dec_rate_ft_iq;
+    // -----------------------------
+
     int SetDDSLOFreq(int freq_hz);
     void SetDDSTestGenFreq(QString freq_hz_str);
     void SetDDSLOFTFreq(QString freq_hz_str);
