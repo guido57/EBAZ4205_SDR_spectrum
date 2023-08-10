@@ -2,6 +2,9 @@
 
 echo "set ebaz as owner of all the /dev/uio*"
 chown ebaz /dev/uio*
+
+sudo chown -R ebaz /home/ebaz
+
 echo "launch sdr-app"
 sdr-app
 
