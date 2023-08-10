@@ -360,7 +360,7 @@ HamlibTransceiver::HamlibTransceiver (unsigned model_number, TransceiverFactory:
           break;
 
         default:
-          throw error {tr ("Unsupported CAT type")};
+          //GG throw error {tr ("Unsupported CAT type")};
           break;
         }
     }

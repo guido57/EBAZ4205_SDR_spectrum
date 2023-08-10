@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>700</width>
-    <height>600</height>
+    <height>629</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -35,7 +35,7 @@
       <string>Select tab to change configuration parameters.</string>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>5</number>
      </property>
      <widget class="QWidget" name="general_tab">
       <attribute name="title">
@@ -2792,33 +2792,57 @@ and DX Grid fields when a 73 or free text message is sent.</string>
             <property name="spacing">
              <number>2</number>
             </property>
+            <item row="0" column="2">
+             <widget class="QCheckBox" name="dxsummit_check_box">
+              <property name="text">
+               <string>DXSummit Spotting </string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="4">
+             <widget class="QLineEdit" name="remoteuser_edit"/>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="eqslpasswd_label">
+              <property name="text">
+               <string>P&amp;assword:</string>
+              </property>
+              <property name="buddy">
+               <cstring>eqslpasswd_edit</cstring>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QLabel" name="label_36">
+              <property name="text">
+               <string>remote IP</string>
+              </property>
+             </widget>
+            </item>
             <item row="0" column="0">
              <widget class="QCheckBox" name="eqsl_check_box">
               <property name="toolTip">
                <string>The program can send logged QSO info to the http://www.eqsl.cc web site.</string>
               </property>
               <property name="text">
-               <string>Enable &amp;eQSL sending</string>
+               <string>&amp;eQSL sending</string>
               </property>
              </widget>
             </item>
-            <item row="0" column="3">
-             <spacer name="horizontalSpacer_11">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
+            <item row="2" column="3">
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>remote User</string>
               </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
+             </widget>
             </item>
-            <item row="2" column="1">
-             <widget class="QLineEdit" name="eqsluser_edit">
+            <item row="3" column="2">
+             <widget class="QLineEdit" name="eqslpasswd_edit">
               <property name="toolTip">
-               <string>EQSL Username.</string>
+               <string>EQSL Password.</string>
+              </property>
+              <property name="echoMode">
+               <enum>QLineEdit::Password</enum>
               </property>
              </widget>
             </item>
@@ -2832,25 +2856,8 @@ and DX Grid fields when a 73 or free text message is sent.</string>
               </property>
              </widget>
             </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="eqslpasswd_label">
-              <property name="text">
-               <string>P&amp;assword:</string>
-              </property>
-              <property name="buddy">
-               <cstring>eqslpasswd_edit</cstring>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="1">
-             <widget class="QLineEdit" name="eqslpasswd_edit">
-              <property name="toolTip">
-               <string>EQSL Password.</string>
-              </property>
-              <property name="echoMode">
-               <enum>QLineEdit::Password</enum>
-              </property>
-             </widget>
+            <item row="3" column="4">
+             <widget class="QLineEdit" name="remoteip_edit"/>
             </item>
             <item row="0" column="4">
              <widget class="QCheckBox" name="psk_reporter_check_box">
@@ -2865,17 +2872,31 @@ for assessing propagation and system performance.</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="1">
-             <widget class="QLineEdit" name="eqslnick_edit">
-              <property name="toolTip">
-               <string>EQSL OTH Nickname.</string>
+            <item row="5" column="3">
+             <widget class="QLabel" name="label_37">
+              <property name="text">
+               <string>remote WAV dir</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="4">
-             <widget class="QCheckBox" name="dxsummit_check_box">
+            <item row="2" column="2">
+             <widget class="QLineEdit" name="eqsluser_edit">
+              <property name="toolTip">
+               <string>EQSL Username.</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QLabel" name="label_38">
               <property name="text">
-               <string>Enable DXSummit Spotting </string>
+               <string>remote JT9</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QLineEdit" name="eqslnick_edit">
+              <property name="toolTip">
+               <string>EQSL OTH Nickname.</string>
               </property>
              </widget>
             </item>
@@ -2888,6 +2909,12 @@ for assessing propagation and system performance.</string>
                <cstring>eqslnick_edit</cstring>
               </property>
              </widget>
+            </item>
+            <item row="4" column="4">
+             <widget class="QLineEdit" name="remotejt9_edit"/>
+            </item>
+            <item row="5" column="4">
+             <widget class="QLineEdit" name="remotewavdir_edit"/>
             </item>
            </layout>
           </widget>
@@ -7383,12 +7410,12 @@ soundcard changes</string>
   </connection>
  </connections>
  <buttongroups>
+  <buttongroup name="TX_audio_source_button_group"/>
+  <buttongroup name="CAT_handshake_button_group"/>
+  <buttongroup name="split_mode_button_group"/>
   <buttongroup name="PTT_method_button_group"/>
   <buttongroup name="TX_mode_button_group"/>
-  <buttongroup name="split_mode_button_group"/>
-  <buttongroup name="CAT_handshake_button_group"/>
   <buttongroup name="CAT_stop_bits_button_group"/>
-  <buttongroup name="TX_audio_source_button_group"/>
   <buttongroup name="CAT_data_bits_button_group"/>
  </buttongroups>
 </ui>

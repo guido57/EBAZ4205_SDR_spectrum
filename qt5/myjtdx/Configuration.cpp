@@ -510,6 +510,11 @@ private:
   Q_SLOT void on_eqslpasswd_edit_textEdited(const QString &arg1);
   Q_SLOT void on_eqslnick_edit_textEdited(const QString &arg1);
 
+  Q_SLOT void on_remote_user_edit_textEdited(const QString &arg1);
+  Q_SLOT void on_remote_ip_edit_textEdited(const QString &arg1);
+  Q_SLOT void on_remote_jt9_edit_textEdited(const QString &arg1);
+  Q_SLOT void on_remote_wavdir_edit_textEdited(const QString &arg1);
+
   Q_SLOT void on_pbCQmsg_clicked();
   Q_SLOT void on_pbMyCall_clicked();
   Q_SLOT void on_pbTxMsg_clicked();
@@ -743,6 +748,10 @@ private:
   QString eqsl_username_;
   QString eqsl_passwd_;  
   QString eqsl_nickname_;
+  QString remote_user_;
+  QString remote_ip_;
+  QString remote_jt9_;
+  QString remote_wavdir_;
   bool usesched_;
   QString sched_hh_1_;
   QString sched_mm_1_;
@@ -1001,6 +1010,12 @@ bool Configuration::send_to_eqsl () const {return m_->send_to_eqsl_;}
 QString Configuration::eqsl_username () const {return m_->eqsl_username_;}
 QString Configuration::eqsl_passwd () const {return m_->eqsl_passwd_;}
 QString Configuration::eqsl_nickname () const {return m_->eqsl_nickname_;}
+
+QString Configuration::remote_user () const {return m_->remote_user_;}
+QString Configuration::remote_ip () const {return m_->remote_ip_;}
+QString Configuration::remote_jt9 () const {return m_->remote_jt9_;}
+QString Configuration::remote_wavdir () const {return m_->remote_wavdir_;}
+
 bool Configuration::usesched () const {return m_->usesched_;}
 QString Configuration::sched_hh_1 () const {return m_->sched_hh_1_;}
 QString Configuration::sched_mm_1 () const {return m_->sched_mm_1_;}
@@ -2002,6 +2017,12 @@ Radio::convert_dark("#fafbfe",useDarkStyle_),Radio::convert_dark("#dcdef1",useDa
     ui_->eqsl_check_box->setEnabled (true);
     ui_->eqsl_check_box->setChecked (send_to_eqsl_);
   }
+
+  ui_->remoteuser_edit->setText (remote_user_);
+  ui_->remoteip_edit->setText (remote_ip_);
+  ui_->remotejt9_edit->setText (remote_jt9_);
+  ui_->remotewavdir_edit->setText (remote_wavdir_);
+
   next_frequencies_.frequency_list (frequencies_.frequency_list ());
   ui_->UseSched_check_box->setChecked (usesched_);
   ui_->hhComboBox_1->setCurrentText (sched_hh_1_);
@@ -2401,6 +2422,12 @@ void Configuration::impl::read_settings ()
   if(eqsl_username_.isEmpty () || eqsl_passwd_.isEmpty () || eqsl_nickname_.isEmpty ()) {
     ui_->eqsl_check_box->setChecked (false); ui_->eqsl_check_box->setEnabled (false); send_to_eqsl_=false; 
   }
+
+  remote_user_ = settings_->value ("RemoteUser", "").toString ();
+  remote_ip_ = settings_->value ("RemoteIP", "").toString ();
+  remote_jt9_ = settings_->value ("RemoteJT9", "").toString ();
+  remote_wavdir_ = settings_->value ("RemoteWavDir", "").toString ();
+
   usesched_ = settings_->value ("UseSchedBands", false).toBool ();
   sched_hh_1_ = settings_->value ("Sched_hh_1", "").toString ();
   sched_mm_1_ = settings_->value ("Sched_mm_1", "").toString ();
@@ -2738,6 +2765,12 @@ void Configuration::impl::write_settings ()
   settings_->setValue ("EQSLUser", eqsl_username_);
   settings_->setValue ("EQSLPasswd", eqsl_passwd_);
   settings_->setValue ("EQSLNick", eqsl_nickname_);
+
+  settings_->setValue ("RemoteUser", remote_user_);
+  settings_->setValue ("RemoteIP", remote_ip_);
+  settings_->setValue ("RemoteJT9", remote_jt9_);
+  settings_->setValue ("RemoteWavDir", remote_wavdir_);
+
   settings_->setValue ("UseSchedBands", usesched_);
   settings_->setValue ("Sched_hh_1", sched_hh_1_);
   settings_->setValue ("Sched_mm_1", sched_mm_1_);
@@ -3303,6 +3336,12 @@ void Configuration::impl::accept ()
   eqsl_username_ = ui_->eqsluser_edit->text ();
   eqsl_passwd_ = ui_->eqslpasswd_edit->text ();
   eqsl_nickname_ = ui_->eqslnick_edit->text ();
+
+  remote_user_ = ui_->remoteuser_edit->text();
+  remote_ip_ = ui_->remoteip_edit->text();
+  remote_jt9_ = ui_->remotejt9_edit->text();
+  remote_wavdir_ = ui_->remotewavdir_edit->text();
+
   usesched_ = ui_->UseSched_check_box->isChecked ();
   sched_hh_1_ = ui_->hhComboBox_1->currentText ();
   sched_mm_1_ = ui_->mmComboBox_1->currentText ();
@@ -3572,6 +3611,25 @@ void Configuration::impl::on_eqslnick_edit_textEdited(const QString &nick)
   ui_->eqsl_check_box->setEnabled (!ui_->eqsluser_edit->text ().isEmpty () && !ui_->eqslpasswd_edit->text ().isEmpty () && !nick.isEmpty ());  
   ui_->eqsl_check_box->setChecked ((!ui_->eqsluser_edit->text ().isEmpty () && !ui_->eqslpasswd_edit->text ().isEmpty () && !nick.isEmpty ()) && send_to_eqsl_);  
 }
+
+void Configuration::impl::on_remote_user_edit_textEdited(const QString &user)
+{
+
+}
+
+void Configuration::impl::on_remote_ip_edit_textEdited(const QString &user)
+{
+
+}
+void Configuration::impl::on_remote_jt9_edit_textEdited(const QString &user)
+{
+
+}
+void Configuration::impl::on_remote_wavdir_edit_textEdited(const QString &user)
+{
+
+}
+
 
 void Configuration::impl::on_font_push_button_clicked ()
 {

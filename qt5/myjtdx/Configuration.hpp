@@ -144,6 +144,12 @@ public:
   QString eqsl_username () const;
   QString eqsl_passwd () const;
   QString eqsl_nickname () const;
+
+  QString remote_user () const;
+  QString remote_ip () const;
+  QString remote_jt9 () const;
+  QString remote_wavdir () const;
+
   bool usesched() const;
   QString sched_hh_1 () const;
   QString sched_mm_1 () const;

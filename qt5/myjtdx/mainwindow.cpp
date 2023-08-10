@@ -74,7 +74,8 @@ extern "C" {
 
   void genft4_(char* msg, int* ichk, int* ntxhash, char* msgsent, char ft4msgbits[], int itone[], fortran_charlen_t, fortran_charlen_t);
 
-  void gen_ft8wave_(int itone[], int* nsym, int* nsps, float* bt, float* fsample, float* f0, float xjunk[], float wave[], int* icmplx, int* nwave);
+  //GG void gen_ft8wave_(int itone[], int* nsym, int* nsps, float* bt, float* fsample, float* f0, float xjunk[], float wave[], int* icmplx, int* nwave);
+  void gen_ft8wave_(int itone[], int* nsym, int* nsps, float* bt, float* fsample, float* f0, float xjunk[], float wave[], int* icmplx, int* nwave, float * dphi);
 
   void gen_ft4wave_(int itone[], int* nsym, int* nsps, float* fsample, float* f0, float xjunk[], float wave[], int* icmplx, int* nwave);
 
@@ -2113,13 +2114,19 @@ void MainWindow::call_jt9 (QString  fname) {
   if(m_ndepth==1) depth_string=" -d 1 ";
   if(m_ndepth==2) depth_string=" -d 2 ";
   if(m_ndepth==3) depth_string=" -d 3 ";
+  QString remote_user = m_config.remote_user();
+  QString remote_ip = m_config.remote_ip();
+  QString remote_jt9 = m_config.remote_jt9();
+  QString remote_wavdir = m_config.remote_wavdir();
 
   // build a string like this: scp -i /home/ebaz/.ssh/id_rsa 230605_152745.wav guido@192.168.1.146:/home/guido/
   cmnd_jt9 << "-c";
-  cmnd_jt9 << "scp -i /home/ebaz/.ssh/id_rsa " + fname + " guido@192.168.1.83:/users/guido/JTDX/"
+  //cmnd_jt9 << "scp -i /home/ebaz/.ssh/id_rsa " + fname + " guido@192.168.1.83:/users/guido/JTDX/"
+  cmnd_jt9 << "scp -i /home/ebaz/.ssh/id_rsa " + fname + " " + remote_user + "@" + remote_ip + ":" + remote_wavdir
                   +  " ; "
                   // then add a string like this: ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83 '/wsjt/WSJTX/bin/jt9 -8 -d 3 /users/guido/JTDX/210703_133430.wav'
-                  + "ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83 '/wsjt/WSJTX/bin/jt9 -8 " + depth_string + " /users/guido/JTDX/" + wavfilenameonly +"'" ;
+                  //+ "ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83 '/wsjt/WSJTX/bin/jt9 -8 " + depth_string + " /users/guido/JTDX/" + wavfilenameonly +"'" ;
+                  + "ssh -i /home/ebaz/.ssh/id_rsa " + remote_user + "@" + remote_ip + " '" + remote_jt9 +" -8 " + depth_string + " " + remote_wavdir + wavfilenameonly +"'" ;
 
   if(ui) ui->DecodeButton->setChecked (true);
   for(int i=0; i< cmnd_jt9.size();i++)
@@ -4150,7 +4157,7 @@ void MainWindow::readFromStdout()                             //readFromStdout
         pskSetLocal ();
         if(gridOK(grid) && !gridRR73(grid) && !decodedtext.isHint() && !decodedtext.isWrong())
           {
-            // qDebug() << "To PSKreporter:" << deCall << grid << frequency << msgmode << snr;
+            // qDebug() << "To reporter:" << deCall << grid << frequency << msgmode << snr;
             psk_Reporter->addRemoteStation(deCall,grid,QString::number(frequency),msgmode,
                                            QString::number(snr),
                                            QString::number(m_jtdxtime->currentDateTime2().toTime_t()));
@@ -4448,7 +4455,7 @@ void MainWindow::proc_jt9_ReadFromStdout()                             //readFro
       QString rpt_type;
       bool stdMsg = decodedtext.report(m_baseCall,
                                        Radio::base_callsign(m_hisCall), m_rptRcvd,rpt_type);
-      // extract details and send to PSKreporter
+      // extract details and send to reporter
       if(m_okToPost and m_config.spot_to_psk_reporter () and stdMsg and !m_diskData) {
           QString msgmode="FT8";
           if (m_mode=="FT4") msgmode="FT4";
@@ -4798,11 +4805,20 @@ void MainWindow::guiUpdate()
     if(m_tune) { itone[0]=0; }
     else {
       int len1=22;
+
       if(m_modeTx=="FT8") {
         int i3=0; int n3=0; char ft8msgbits[77]; int ntxhash=1;
         genft8_(message,&i3,&n3,&ntxhash,msgsent,const_cast<char *> (ft8msgbits),const_cast<int *> (itone),37,37);
         int nsym=79; int nsps=4*1920; float fsample=48000.0; float bt=2.0; float f0=ui->TxFreqSpinBox->value() - m_XIT; int icmplx=0; int nwave=nsym*nsps;
-        gen_ft8wave_(const_cast<int *>(itone),&nsym,&nsps,&bt,&fsample,&f0,foxcom_.wave,foxcom_.wave,&icmplx,&nwave);
+        float dphi[(nsym+2)*nsps-1];
+        dphi[0] = 0;
+        dphi[1] = 0;
+        gen_ft8wave_(const_cast<int *>(itone),&nsym,&nsps,&bt,&fsample,&f0,foxcom_.wave,foxcom_.wave,&icmplx,&nwave, dphi);
+        float sub_2pi_f = 8.0 * atan(1.0) * f0 / fsample;
+        printf("           dphi[%d]=%f\r\n",0, dphi[1920*2]-sub_2pi_f);
+        for(int i=1; i<(nsym+1); i++ )
+          printf("itone[%d]=%d  dphi[%d]=%f\r\n",i-1,itone[i-1],i,dphi[i*1920*4+1920*2]-sub_2pi_f);
+        printf("           dphi[%d]=%f\r\n", nsym+1, dphi[(nsym+1)*1920*4 + 1920*2]-sub_2pi_f);
       }
       else if(m_modeTx=="FT4") {
         int ichk=0; char ft4msgbits[77]; int ntxhash=1;
@@ -7976,8 +7992,10 @@ void MainWindow::pskSetLocal ()
   QString antenna_description;
   if (!matches.isEmpty ()) antenna_description = stations->index (matches.first ().row (), StationList::description_column).data ().toString ();
   // qDebug() << "To PSKreporter: local station details";
-  //GG psk_Reporter->setLocalStation(m_config.my_callsign (), m_config.my_grid (), antenna_description, QString {"JTDX v" + version() + (m_tci ? " tci " : " ") + revision()}.simplified ());
-  psk_Reporter->setLocalStation(m_config.my_callsign (), m_config.my_grid (), QString("EFLW (22 meters) 80-40-20-15-10 meters"), QString ("Homemade SDR + modified JTDX(See qrz.com for details)"));
+  // psk_Reporter->setLocalStation(m_config.my_callsign (), m_config.my_grid (), QString("EFLW (22 meters) 80-40-20-15-10 meters"), QString ("Homemade SDR + modified JTDX(See qrz.com for details)"));
+  // psk_Reporter->setLocalStation(m_config.my_callsign (), m_config.my_grid (), antenna_description, QString {"JTDX v" + version() + (m_tci ? " tci " : " ") + revision()}.simplified ());
+  psk_Reporter->setLocalStation(m_config.my_callsign (), m_config.my_grid (), antenna_description, QString ("MYJTDX for details see https://www.qrz.com/db/iw5alz"));
+  // psk_Reporter->setLocalStation(m_config.my_callsign (), m_config.my_grid (), antenna_description, QString ("Homemade SDR + modified JTDX(See qrz.com for details)"));
 }
 
 void MainWindow::transmitDisplay (bool transmitting)
