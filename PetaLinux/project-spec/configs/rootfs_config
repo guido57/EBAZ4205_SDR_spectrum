@@ -3896,6 +3896,7 @@ CONFIG_Init-manager-systemd=y
 #
 CONFIG_chown-ebaz-uio-sdr-app=y
 CONFIG_colorbars=y
+CONFIG_myjtdx=y
 
 #
 # modules 

@@ -16,3 +16,4 @@ CONFIG_fftwg
 CONFIG_libvncserver
 CONFIG_libgfortran
 
+CONFIG_myjtdx
