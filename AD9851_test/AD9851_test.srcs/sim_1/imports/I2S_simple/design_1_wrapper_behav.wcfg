@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,065.166666 us"></ZoomStartTime>
+      <ZoomEndTime time="1,109.216667 us"></ZoomEndTime>
+      <Cursor1Time time="1,101.875000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="135"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="8" />
+   <wave_markers>
+      <marker label="" time="1101875000" />
+      <marker label="" time="1051375000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/valid_in">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/design_1_wrapper/design_1_i/mycounter_0/U0/counter">
+      <obj_property name="ElementShortName">counter</obj_property>
+      <obj_property name="ObjectShortName">counter</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/design_1_wrapper/design_1_i/AD9851_0/U0/shift_counter">
+      <obj_property name="ElementShortName">shift_counter</obj_property>
+      <obj_property name="ObjectShortName">shift_counter</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/mycounter_0/U0/pulse">
+      <obj_property name="ElementShortName">pulse</obj_property>
+      <obj_property name="ObjectShortName">pulse</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/serial_data_out">
+      <obj_property name="ElementShortName">serial_data_out</obj_property>
+      <obj_property name="ObjectShortName">serial_data_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/serial_clock_out">
+      <obj_property name="ElementShortName">serial_clock_out</obj_property>
+      <obj_property name="ObjectShortName">serial_clock_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/fq_ud_out">
+      <obj_property name="ElementShortName">fq_ud_out</obj_property>
+      <obj_property name="ObjectShortName">fq_ud_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_AM_0/pwm">
+      <obj_property name="ElementShortName">pwm</obj_property>
+      <obj_property name="ObjectShortName">pwm</obj_property>
+   </wvobject>
+</wave_config>
