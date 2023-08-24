@@ -3,7 +3,9 @@
 echo "set ebaz as owner of all the /dev/uio*"
 chown ebaz /dev/uio*
 
+echo "change to ebaz owner of all the /dev/uio* and of the keyboard driver file /dev/uinput"
 sudo chown -R ebaz /home/ebaz
+sudo chown  ebaz /dev/uinput
 
 echo "launch sdr-app"
 sdr-app
