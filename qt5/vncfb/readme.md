@@ -20,4 +20,4 @@ The mouse driver file (e.g. /dev/uinput) and the keyboard driver file (e.g. /dev
 sudo chown ebaz /dev/uinput
 sudo chown ebaz /dev/input/event0
 ```
-
+see also (https://github.com/EBAZ4205_SDR_spectrum/PetaLinux/project-spec/meta-user/recipes-apps/chown-ebaz-uio-sdr-app/files/chown-ebaz-uio-sdr-app)
