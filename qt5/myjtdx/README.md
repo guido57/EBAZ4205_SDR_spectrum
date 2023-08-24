@@ -59,7 +59,7 @@ mkdir .ssh
 
 ```
 cd /home/ebaz/.ssh
-dropbearkey -f id_rsa | grep "^ssh-rsa " >> id_pub
+dropbearkey -t rsa -f id_rsa | grep "^ssh-rsa " >> id_pub
 ```
 
 3) Now the public key is inside the file id_pub, while the private key is in id_rsa.
