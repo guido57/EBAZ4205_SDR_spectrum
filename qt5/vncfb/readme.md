@@ -16,6 +16,8 @@ The purpose of this VNC server is to manage sdr-app or myjtdx from remote. In pa
 # Tips
 The mouse driver file (e.g. /dev/uinput) and the keyboard driver file (e.g. /dev/input/event0) must be read and written by the user ebaz. For this reason you should change their owner (usually root) to ebaz
 
+```
 sudo chown ebaz /dev/uinput
 sudo chown ebaz /dev/input/event0
+```
 
