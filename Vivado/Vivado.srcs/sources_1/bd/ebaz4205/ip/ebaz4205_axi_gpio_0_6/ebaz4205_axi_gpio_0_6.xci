@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_axi_gpio_0_6",
-    "cell_name": "axi_gpio_AM_SSB",
+    "cell_name": "SSB_demodulator/axi_gpio_AM_SSB",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "29",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_6",

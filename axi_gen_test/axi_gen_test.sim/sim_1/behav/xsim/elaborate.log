@@ -1,0 +1,30 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L sim_rst_gen_v1_0_2 -L xlconstant_v1_1_7 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavior of entity xil_defaultlib.AXI_Stream_Generator [\AXI_Stream_Generator(data_0="00...]
+Compiling module xil_defaultlib.design_1_AXI_Stream_Generator_0_...
+Compiling module xil_defaultlib.DivideBy2N(WIDTH=2,N=1)
+Compiling module xil_defaultlib.design_1_DivideBy2N_0_0
+Compiling architecture beh of entity xil_defaultlib.myclkgen [myclkgen_default]
+Compiling module xil_defaultlib.design_1_myclkgen_0_0
+Compiling module sim_rst_gen_v1_0_2.sim_rst_gen_v1_0_2_sim_rst_gen(R...
+Compiling module xil_defaultlib.design_1_sim_rst_gen_0_0
+Compiling module xlconstant_v1_1_7.xlconstant_v1_1_7_xlconstant(CON...
+Compiling module xil_defaultlib.design_1_xlconstant_0_0
+Compiling module xil_defaultlib.design_1
+Compiling module xil_defaultlib.design_1_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot design_1_wrapper_behav

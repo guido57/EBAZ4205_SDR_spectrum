@@ -106,6 +106,10 @@ void Modulator::start (unsigned symbolsLength, double framesPerSymbol,
   initialize (QIODevice::ReadOnly, channel);
   Q_EMIT stateChanged ((m_state = (synchronize && m_silentFrames) ?
                         Synchronizing : Active));
+  if(m_state == Active)
+    printf("Modulator state changed from Idle to Active at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+  else if(m_state==Synchronizing)
+    printf("Modulator state changed from Idle to Synchronizing at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
   m_stream = stream;
   if (m_stream) m_stream->restart (this);
 }
@@ -134,7 +138,11 @@ void Modulator::close ()
     if(m_quickClose) { m_stream->reset (); }
     else { m_stream->stop (); }
   }
-  if(m_state != Idle) Q_EMIT stateChanged ((m_state = Idle));
+  if(m_state != Idle) {
+    Q_EMIT stateChanged ((m_state = Idle));
+    printf("Modulator state changed to Idle at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
+  }
   AudioDevice::close ();
 }
 
@@ -168,6 +176,8 @@ qint64 Modulator::readData (char * data, qint64 maxSize)
         }
 
         Q_EMIT stateChanged ((m_state = Active));
+        printf("Modulator state changed from Synchronizing to Active at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
         m_cwLevel = false;
         m_ramp = 0;		// prepare for CW wave shaping
       }
@@ -214,6 +224,7 @@ qint64 Modulator::readData (char * data, qint64 maxSize)
               fclose (pFile);
 #endif
               Q_EMIT stateChanged ((m_state = Idle));
+              printf("Modulator state changed from Active to Idle at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
               return framesGenerated * bytesPerFrame ();
             }
 
@@ -238,7 +249,9 @@ qint64 Modulator::readData (char * data, qint64 maxSize)
         }
 
         sample=0;
+        //printf("Modulator readData started at %s\n", m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
         for (unsigned i = 0; i < numFrames && m_ic <= i1; ++i) {
+
           if(m_TRperiod > 16.0 || m_tuning) {
             isym=0;
             if(!m_tuning) isym=m_ic / (4.0 * m_nsps);         //Actual fsample=48000
@@ -298,6 +311,8 @@ qint64 Modulator::readData (char * data, qint64 maxSize)
             fclose (pFile);
 #endif
             Q_EMIT stateChanged ((m_state = Idle));
+            printf("Modulator state changed from Active to Idle at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
             return framesGenerated * bytesPerFrame ();
           }
           m_phi = 0.0;

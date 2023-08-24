@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="6.100000001 ms"></ZoomEndTime>
+      <Cursor1Time time="1.373210000 ms"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="231"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/axis2c_combine_0/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/axis2c_combine_0/channel1_data">
+      <obj_property name="ElementShortName">channel1_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">channel1_data[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/axis2c_combine_0/channel2_data">
+      <obj_property name="ElementShortName">channel2_data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">channel2_data[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group156">
+      <obj_property name="label">CIC_input</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_config_tdata">
+         <obj_property name="ElementShortName">s_axis_config_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_config_tdata[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_config_tvalid">
+         <obj_property name="ElementShortName">s_axis_config_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_config_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_config_tready">
+         <obj_property name="ElementShortName">s_axis_config_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_config_tready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_data_tdata">
+         <obj_property name="ElementShortName">s_axis_data_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tdata[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_data_tvalid">
+         <obj_property name="ElementShortName">s_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_data_tready">
+         <obj_property name="ElementShortName">s_axis_data_tready</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tready</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/s_axis_data_tlast">
+         <obj_property name="ElementShortName">s_axis_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">s_axis_data_tlast</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group260">
+      <obj_property name="label">CIC_out</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/m_axis_data_tdata">
+         <obj_property name="ElementShortName">m_axis_data_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tdata[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/m_axis_data_tuser">
+         <obj_property name="ElementShortName">m_axis_data_tuser[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tuser[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/m_axis_data_tvalid">
+         <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/m_axis_data_tlast">
+         <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/event_tlast_unexpected">
+         <obj_property name="ElementShortName">event_tlast_unexpected</obj_property>
+         <obj_property name="ObjectShortName">event_tlast_unexpected</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/cic_compiler_0/event_tlast_missing">
+         <obj_property name="ElementShortName">event_tlast_missing</obj_property>
+         <obj_property name="ObjectShortName">event_tlast_missing</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group285">
+      <obj_property name="label">CIC_out_splitted</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/axis2c_splitter_CIC/m_axis_tdata0">
+         <obj_property name="ElementShortName">m_axis_tdata0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata0[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/axis2c_splitter_CIC/m_axis_tdata1">
+         <obj_property name="ElementShortName">m_axis_tdata1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata1[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group325">
+      <obj_property name="label">FIR_out</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/fir_compiler_0/m_axis_data_tvalid">
+         <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/fir_compiler_0/m_axis_data_tlast">
+         <obj_property name="ElementShortName">m_axis_data_tlast</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tlast</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/fir_compiler_0/m_axis_data_tdata">
+         <obj_property name="ElementShortName">m_axis_data_tdata[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_data_tdata[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/fir_compiler_0/event_s_data_tlast_missing">
+         <obj_property name="ElementShortName">event_s_data_tlast_missing</obj_property>
+         <obj_property name="ObjectShortName">event_s_data_tlast_missing</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/fir_compiler_0/event_s_data_tlast_unexpected">
+         <obj_property name="ElementShortName">event_s_data_tlast_unexpected</obj_property>
+         <obj_property name="ObjectShortName">event_s_data_tlast_unexpected</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/fir_compiler_0/event_s_data_chanid_incorrect">
+         <obj_property name="ElementShortName">event_s_data_chanid_incorrect</obj_property>
+         <obj_property name="ObjectShortName">event_s_data_chanid_incorrect</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group416">
+      <obj_property name="label">FIR_out_splitted</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/axis2c_splitter_FIR/m_axis_tdata0">
+      <obj_property name="ElementShortName">m_axis_tdata0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata0[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/axis2c_splitter_FIR/m_axis_tdata1">
+      <obj_property name="ElementShortName">m_axis_tdata1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_tdata1[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group497">
+      <obj_property name="label">ValidControl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/ValidControl_0/inst/m_valid">
+         <obj_property name="ElementShortName">m_valid</obj_property>
+         <obj_property name="ObjectShortName">m_valid</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

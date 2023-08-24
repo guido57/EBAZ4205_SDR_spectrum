@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_clk_wiz_0_2",
-    "cell_name": "clk_wiz_384M",
+    "cell_name": "I2S/clk_wiz_384M",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
     "ip_revision": "11",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_clk_wiz_0_2",

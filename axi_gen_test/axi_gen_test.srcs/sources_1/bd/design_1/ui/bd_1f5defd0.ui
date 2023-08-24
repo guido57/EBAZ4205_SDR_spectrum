@@ -1,0 +1,23 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.918167",
+   "Default View_TopLeft":"-2,-26",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace inst myclkgen_100M -pg 1 -lvl 1 -x 110 -y 60 -defaultsOSRD
+preplace inst DivideBy2N_50M_out -pg 1 -lvl 2 -x 350 -y 150 -defaultsOSRD
+preplace inst sim_rst_gen_0 -pg 1 -lvl 1 -x 110 -y 160 -defaultsOSRD
+preplace inst AXI_Stream_Generator_0 -pg 1 -lvl 2 -x 350 -y 300 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 2 -x 350 -y 440 -defaultsOSRD
+preplace netloc myclkgen_0_clk 1 1 1 220 60n
+preplace netloc sim_rst_gen_0_rst 1 1 1 NJ 160
+preplace netloc xlconstant_0_dout 1 2 1 480 340n
+levelinfo -pg 1 0 110 350 630 890 1110 1220
+pagesize -pg 1 -db -bbox -sgen 0 0 1220 500
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"1"
+}

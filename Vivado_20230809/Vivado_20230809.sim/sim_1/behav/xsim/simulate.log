@@ -1,0 +1,64 @@
+Time resolution is 1 ps
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.M_AXI_GP0.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.M_AXI_GP1.master
+[0] : *ZYNQ_VIP_INFO : M_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_GP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_GP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_HP0.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP0 : Port is ENABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_HP1.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP1 : Port is ENABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_HP2.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP2 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_HP3.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_HP3 : Port is DISABLED.
+                   0 BEFORE checking line ...... x
+                   0 AFTER checking line ...... x
+XilinxAXIVIP: Found at Path: ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_VIP_INFO : S_AXI_ACP : Port is DISABLED.
+                   0 else checking line ......x
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. ebaz4205_wrapper.ebaz4205_i.Audio_DMA.audio_formatter_0.inst.\S2MM_INCLUDED.s2mm_top_1 .s2mm_logic_1.buffering_1.\FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /ebaz4205_wrapper/ebaz4205_i/Audio_DMA/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_574  Scope: ebaz4205_wrapper.ebaz4205_i.Audio_DMA.audio_formatter_0.inst.\S2MM_INCLUDED.s2mm_top_1 .s2mm_logic_1.buffering_1.\FIRST_LEVEL_BUFFERS[0].xpm_fifo_sync_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. ebaz4205_wrapper.ebaz4205_i.Audio_DMA.audio_formatter_0.inst.\S2MM_INCLUDED.s2mm_top_1 .s2mm_logic_1.buffering_1.\FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /ebaz4205_wrapper/ebaz4205_i/Audio_DMA/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_574  Scope: ebaz4205_wrapper.ebaz4205_i.Audio_DMA.audio_formatter_0.inst.\S2MM_INCLUDED.s2mm_top_1 .s2mm_logic_1.buffering_1.\FIRST_LEVEL_BUFFERS[1].xpm_fifo_sync_inst .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. ebaz4205_wrapper.ebaz4205_i.Audio_DMA.audio_formatter_0.inst.\S2MM_INCLUDED.s2mm_top_1 .s2mm_logic_1.buffering_1.\INTERLEAVED.second_level_xpm_fifo_buffer .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /ebaz4205_wrapper/ebaz4205_i/Audio_DMA/audio_formatter_0/inst/S2MM_INCLUDED.s2mm_top_1/s2mm_logic_1/buffering_1/INTERLEAVED.second_level_xpm_fifo_buffer/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_689  Scope: ebaz4205_wrapper.ebaz4205_i.Audio_DMA.audio_formatter_0.inst.\S2MM_INCLUDED.s2mm_top_1 .s2mm_logic_1.buffering_1.\INTERLEAVED.second_level_xpm_fifo_buffer .xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. ebaz4205_wrapper.ebaz4205_i.HDMI.axi_vdma_0.U0.gen_sprt_for_mm2s.MM2S_LINEBUFFER_I.gen_linebuf_no_sof.gen_linebuffer.gen_sync_fifo.I_LINEBUFFER_FIFO.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/axi_vdma_0/U0/gen_sprt_for_mm2s/MM2S_LINEBUFFER_I/gen_linebuf_no_sof/gen_linebuffer/gen_sync_fifo/I_LINEBUFFER_FIFO/xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_1632  Scope: ebaz4205_wrapper.ebaz4205_i.HDMI.axi_vdma_0.U0.gen_sprt_for_mm2s.MM2S_LINEBUFFER_I.gen_linebuf_no_sof.gen_linebuffer.gen_sync_fifo.I_LINEBUFFER_FIFO.xpm_fifo_sync_inst.xpm_fifo_base_inst.\gen_sdpram.xpm_memory_base_inst .config_drc  File: /tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+Info: [XPM_MEMORY 20-1] MEMORY_PRIMITIVE (0) instructs Vivado Synthesis to choose the memory primitive type. Depending on their values, other XPM_MEMORY parameters may preclude the choice of certain memory primitive types. Review XPM_MEMORY documentation and parameter values to understand any limitations, or set MEMORY_PRIMITIVE to a different value. ebaz4205_wrapper.ebaz4205_i.HDMI.v_axi4s_vid_out_0.inst.COUPLER_INST.\generate_async_fifo.FIFO_INST .XPM_FIFO_ASYNC_INST.\gnuram_async_fifo.xpm_fifo_base_inst .\gen_sdpram.xpm_memory_base_inst .config_drc
+Time: 1 ps  Iteration: 0  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/v_axi4s_vid_out_0/inst/COUPLER_INST/generate_async_fifo.FIFO_INST/XPM_FIFO_ASYNC_INST/gnuram_async_fifo.xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/Initial299_2416  Scope: ebaz4205_wrapper.ebaz4205_i.HDMI.v_axi4s_vid_out_0.inst.COUPLER_INST.\generate_async_fifo.FIFO_INST .XPM_FIFO_ASYNC_INST.\gnuram_async_fifo.xpm_fifo_base_inst .\gen_sdpram.xpm_memory_base_inst .config_drc  File: /tools/Xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv Line: 493
+WARNING: 3 ns ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_HP0.slave.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+                   3 else checking line ......1
+WARNING: 5 ns ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.M_AXI_GP0.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+WARNING: 645 ns ebaz4205_wrapper.ebaz4205_i.PS.processing_system7_0.inst.S_AXI_HP1.slave.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 1105100 ps  Iteration: 7  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/rgb2dvi_0/U0/\DataEncoders(0)\/DataEncoder/line__154  File: /home/guido/Github/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d3fb/src/TMDS_Encoder.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 1105100 ps  Iteration: 7  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/rgb2dvi_0/U0/\DataEncoders(1)\/DataEncoder/line__154  File: /home/guido/Github/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d3fb/src/TMDS_Encoder.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 1105100 ps  Iteration: 7  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/rgb2dvi_0/U0/\DataEncoders(2)\/DataEncoder/line__154  File: /home/guido/Github/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d3fb/src/TMDS_Encoder.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 1115 ns  Iteration: 22  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/rgb2dvi_0/U0/\DataEncoders(0)\/DataEncoder/line__154  File: /home/guido/Github/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d3fb/src/TMDS_Encoder.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 1115 ns  Iteration: 22  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/rgb2dvi_0/U0/\DataEncoders(1)\/DataEncoder/line__154  File: /home/guido/Github/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d3fb/src/TMDS_Encoder.vhd
+Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+Time: 1115 ns  Iteration: 22  Process: /ebaz4205_wrapper/ebaz4205_i/HDMI/rgb2dvi_0/U0/\DataEncoders(2)\/DataEncoder/line__154  File: /home/guido/Github/EBAZ4205_SDR_spectrum/Vivado/Vivado.gen/sources_1/bd/ebaz4205/ipshared/d3fb/src/TMDS_Encoder.vhd
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+INFO: xsimkernel Simulation Memory Usage: 211444 KB (Peak: 244808 KB), Simulation CPU Usage: 54540 ms

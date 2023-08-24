@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/guido/Github/EBAZ4205_SDR_spectrum/CIC_FIR_2C_sym_KO/CIC_FIR_2C_sym_KO.ip_user_files/bd/design_1/ip/design_1_cic_compiler_0_0/sim/design_1_cic_compiler_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_cic_compiler_0_0'

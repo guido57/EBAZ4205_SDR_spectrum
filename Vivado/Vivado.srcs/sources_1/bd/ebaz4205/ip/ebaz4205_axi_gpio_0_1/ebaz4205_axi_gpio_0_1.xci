@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_axi_gpio_0_1",
-    "cell_name": "axi_gpio_FILTER_GAIN",
+    "cell_name": "FILTER/axi_gpio_FILTER_GAIN",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "29",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_1",

@@ -886,7 +886,7 @@ MainWindow::MainWindow(bool multiple, QSettings * settings, QSharedMemory *shdme
           JTDXMessageBox::critical_message (this, "", tr("Error Writing WAV File"), result);
         }
       else{                      // success
-          qDebug() << m_fnameWE << " saved succesfully!";
+          qInfo() << m_fnameWE << " saved succesfully at " << m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str();
           call_jt9(m_fnameWE + ".wav");
         }
     });
@@ -1996,7 +1996,7 @@ void MainWindow::dataSink(qint64 frames)
       if ((m_saveWav==2 || m_saveWav==1 || m_mode.mid (0,4) == "WSPR"
            || m_mode.mid (0,3) == "FT8") && !m_fnameWE.isEmpty ()){
 
-
+        qInfo() << "Started saving " << m_fnameWE << " in a separate thread at " << m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str();
            m_saveWAVWatcher.setFuture (QtConcurrent::run (
                 std::bind (&MainWindow::save_wave_file, this, m_fnameWE, &dec_data.d2[0], samples, m_config.my_callsign(),
                                m_config.my_grid(), m_mode, m_freqNominal, m_hisCall, m_hisGrid,m_jtdxtime)
@@ -2060,7 +2060,7 @@ QString MainWindow::save_wave_file (QString const& name, short const * data, int
   // members that may be changed in the GUI thread or any other thread
   // without suitable synchronization.
   //
-  printf("saving %s to disk ...\r\n", name.toStdString().c_str());
+  printf("Started saving %s to disk at %s\r\n", name.toStdString().c_str(), m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
   QAudioFormat format;
   format.setCodec ("audio/pcm");
   format.setSampleRate (12000);
@@ -2136,9 +2136,9 @@ void MainWindow::call_jt9 (QString  fname) {
 
   bool  proc_jt9_started = proc_jt9.waitForStarted(1000);
   if(proc_jt9_started)
-    qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": proc_jt9 started";
+    qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": proc_jt9 started";
   else
-    qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": proc_jt9 didn't start after 1 second";
+    qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": proc_jt9 didn't start after 1 second";
 
       //GG TEMPORARY!!! m_decoderBusy = true;
 
@@ -4591,6 +4591,32 @@ void MainWindow::decodeBusy(bool b)                             //decodeBusy()
   statusUpdate ();
 }
 
+
+static void SaveFloatArray(const QString &fileName, const float *floatArray, int arraySize)
+{
+  // Apertura del file
+  QFile outputFile(fileName);
+  if (!outputFile.open(QIODevice::WriteOnly | QIODevice::Text))
+  {
+      qDebug() << "Impossibile aprire il file" << fileName;
+      return;
+  }
+
+  // Creazione di uno stream di testo per il file
+  QTextStream outStream(&outputFile);
+
+  // Scrittura degli elementi dell'array nel file
+  for (int i = 0; i < arraySize; ++i)
+  {
+      outStream << floatArray[i] << "\n";
+  }
+
+  // Chiusura del file
+  outputFile.close();
+
+  qInfo() << "Array di float salvato su" << fileName;
+}
+
 //------------------------------------------------------------- //guiUpdate()
 void MainWindow::guiUpdate()
 {
@@ -4814,11 +4840,18 @@ void MainWindow::guiUpdate()
         dphi[0] = 0;
         dphi[1] = 0;
         gen_ft8wave_(const_cast<int *>(itone),&nsym,&nsps,&bt,&fsample,&f0,foxcom_.wave,foxcom_.wave,&icmplx,&nwave, dphi);
+        printf(" dphi and wave generated at %s\r\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
         float sub_2pi_f = 8.0 * atan(1.0) * f0 / fsample;
         printf("           dphi[%d]=%f\r\n",0, dphi[1920*2]-sub_2pi_f);
         for(int i=1; i<(nsym+1); i++ )
           printf("itone[%d]=%d  dphi[%d]=%f\r\n",i-1,itone[i-1],i,dphi[i*1920*4+1920*2]-sub_2pi_f);
         printf("           dphi[%d]=%f\r\n", nsym+1, dphi[(nsym+1)*1920*4 + 1920*2]-sub_2pi_f);
+
+        int FT8_msg_tx_size = sizeof(dphi)/sizeof(float);
+        printf("Saving /home/ebaz/FT8_msg_tx.txt size=%d bytes started at %s\n",FT8_msg_tx_size, m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+        SaveFloatArray(QString("/home/ebaz/FT8_msg_tx.txt"), dphi, FT8_msg_tx_size);
+        printf("Saving /home/ebaz/FT8_msg_tx.txt ended at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
       }
       else if(m_modeTx=="FT4") {
         int ichk=0; char ft4msgbits[77]; int ntxhash=1;
@@ -7777,6 +7810,8 @@ void MainWindow::transmit (double snr)
     if (m_tci) Q_EMIT m_config.transceiver_modulator_start(NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,true,snr,m_TRperiod);
     else Q_EMIT sendMessage (NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,m_soundOutput,
                         m_config.audio_output_channel(),true,snr,m_TRperiod);
+    printf("transmit with mModeTX=FT8 emitted at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
   }
   else if (m_modeTx == "FT4") {
     toneSpacing=-2.0;                     //Transmit a pre-computed, filtered waveform.

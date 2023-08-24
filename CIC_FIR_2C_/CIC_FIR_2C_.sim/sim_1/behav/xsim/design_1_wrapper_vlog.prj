@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_myclkgen_0_0/sim/design_1_myclkgen_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_axis2c_combine_0_0/sim/design_1_axis2c_combine_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_sim_rst_gen_0_0/sim/design_1_sim_rst_gen_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_AXI_Stream_Generator_0_0/sim/design_1_AXI_Stream_Generator_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_axis2c_splitter_0_0/sim/design_1_axis2c_splitter_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_xlslice_0_0/sim/design_1_xlslice_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_axis2c_splitter_CIC_0/sim/design_1_axis2c_splitter_CIC_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_ValidControl_0_0/sim/design_1_ValidControl_0_0.v" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/sim/design_1.v" \
+"../../../../CIC_FIR_2C_.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

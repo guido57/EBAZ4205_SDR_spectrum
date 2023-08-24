@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_i2s_receiver_0_0",
-    "cell_name": "i2s_receiver_0",
+    "cell_name": "Audio_DMA/i2s_receiver_0",
     "component_reference": "xilinx.com:ip:i2s_receiver:1.0",
     "ip_revision": "5",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_i2s_receiver_0_0",

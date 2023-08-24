@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_proc_sys_reset_0_0",
-    "cell_name": "proc_sys_reset_0_100M",
+    "cell_name": "PS/proc_sys_reset_0_100M",
     "component_reference": "xilinx.com:ip:proc_sys_reset:5.0",
     "ip_revision": "13",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_proc_sys_reset_0_0",

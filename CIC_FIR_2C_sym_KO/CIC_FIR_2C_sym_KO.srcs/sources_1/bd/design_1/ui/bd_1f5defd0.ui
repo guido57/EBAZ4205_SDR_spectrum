@@ -1,0 +1,40 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.02185",
+   "Default View_TopLeft":"391,286",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 3 -x 540 -y 80 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 4 -x 810 -y 210 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -x 810 -y 310 -defaultsOSRD
+preplace inst myclkgen_100M -pg 1 -lvl 1 -x 20 -y 60 -defaultsOSRD
+preplace inst DivideBy2N_50M_out -pg 1 -lvl 2 -x 250 -y 80 -defaultsOSRD
+preplace inst sim_rst_gen_0 -pg 1 -lvl 6 -x 1640 -y 680 -defaultsOSRD
+preplace inst axis2c_combine_0 -pg 1 -lvl 6 -x 1640 -y 300 -defaultsOSRD
+preplace inst mult_gen_0 -pg 1 -lvl 5 -x 1190 -y 570 -defaultsOSRD
+preplace inst AXI_Stream_Generator_0 -pg 1 -lvl 2 -x 250 -y 670 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 20 -y 300 -defaultsOSRD
+preplace inst cic_compiler_0 -pg 1 -lvl 5 -x 1190 -y 250 -defaultsOSRD
+preplace netloc DivideBy2N_50M_out_clk_out 1 2 1 NJ 80
+preplace netloc axis2c_combine_0_tdata 1 4 3 960 40 NJ 40 1860
+preplace netloc axis2c_combine_0_tlast 1 4 3 970 50 NJ 50 1850
+preplace netloc axis2c_combine_0_tvalid 1 4 3 950 60 NJ 60 1840
+preplace netloc cic_compiler_0_s_axis_data_tready 1 4 3 980 70 NJ 70 1830
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 3 1 690 90n
+preplace netloc mult_gen_0_P 1 5 1 1410J 330n
+preplace netloc myclkgen_0_clk 1 1 5 110 150 NJ 150 NJ 150 940J 90 1410
+preplace netloc sim_rst_gen_0_rst 1 1 6 120 160 NJ 160 700J 80 NJ 80 1420 200 1820
+preplace netloc xlconstant_0_dout 1 1 2 NJ 300 380
+preplace netloc xlslice_0_Dout 1 4 2 920J 100 1400J
+preplace netloc xlslice_1_Dout 1 4 1 920J 310n
+preplace netloc AXI_Stream_Generator_0_axis_tdata 1 2 3 390 10 NJ 10 930J
+preplace netloc AXI_Stream_Generator_0_axis_tvalid 1 2 3 N 690 NJ 690 970J
+levelinfo -pg 1 -70 20 250 540 810 1190 1640 1880
+pagesize -pg 1 -db -bbox -sgen -70 -20 1880 770
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"1"
+}

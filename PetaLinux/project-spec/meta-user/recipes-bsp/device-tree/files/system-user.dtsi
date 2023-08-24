@@ -104,4 +104,8 @@
 &SSB_demodulator_dds_axi_interface_BFO{
 	compatible = "generic-uio";
 };
-    
+ 
+&AD9851_axi_gpio_AD9851{
+	compatible = "generic-uio";
+};
+		    

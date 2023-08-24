@@ -1,0 +1,7 @@
+design_1_myclkgen_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_myclkgen_0_0/sim/design_1_myclkgen_0_0.v,
+design_1_DivideBy2N_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_DivideBy2N_0_0/sim/design_1_DivideBy2N_0_0.v,
+design_1_sim_rst_gen_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_sim_rst_gen_0_0/sim/design_1_sim_rst_gen_0_0.v,
+design_1_AXI_Stream_Generator_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_AXI_Stream_Generator_0_0/sim/design_1_AXI_Stream_Generator_0_0.v,
+design_1.v,verilog,xil_defaultlib,../../../bd/design_1/sim/design_1.v,
+design_1_xlconstant_0_0.v,verilog,xil_defaultlib,../../../bd/design_1/ip/design_1_xlconstant_0_0/sim/design_1_xlconstant_0_0.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

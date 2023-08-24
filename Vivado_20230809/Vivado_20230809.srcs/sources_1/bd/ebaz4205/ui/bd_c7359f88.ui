@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-183,-287",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port S_AXI -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port port-id_s_axi_aclk -pg 1 -lvl 0 -x 0 -y 130 -defaultsOSRD
+preplace port port-id_s_axi_aresetn -pg 1 -lvl 0 -x 0 -y 150 -defaultsOSRD
+preplace portBus m_axis_data_tdata -pg 1 -lvl 3 -x 790 -y 80 -defaultsOSRD
+preplace portBus gpio2_io_o -pg 1 -lvl 3 -x 790 -y 160 -defaultsOSRD
+preplace inst axi_gpio_dds -pg 1 -lvl 1 -x 170 -y 130 -defaultsOSRD
+preplace inst DDS_LO -pg 1 -lvl 2 -x 550 -y 70 -defaultsOSRD
+preplace netloc LocalOscillator_m_axis_data_tdata 1 2 1 NJ 80
+preplace netloc axi_gpio_dds_gpio2_io_o 1 1 2 NJ 160 NJ
+preplace netloc axi_gpio_dds_gpio_io_o 1 1 1 320 70n
+preplace netloc s_axi_aclk_1 1 0 2 20 40 310J
+preplace netloc s_axi_aresetn_1 1 0 1 NJ 150
+preplace netloc Conn1 1 0 1 NJ 110
+levelinfo -pg 1 0 170 550 790
+pagesize -pg 1 -db -bbox -sgen -140 -10 1000 220
+"
+}
+0

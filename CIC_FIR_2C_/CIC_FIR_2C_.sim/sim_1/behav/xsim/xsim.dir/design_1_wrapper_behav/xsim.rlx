@@ -1,0 +1,12 @@
+
+{ 
+    crc :  11827485829985151138  , 
+    ccp_crc :  0  , 
+    cmdline : " --incr --debug typical --relax --mt 8 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_18 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_22 -L cic_compiler_v4_0_16 -L sim_rst_gen_v1_0_2 -L fir_compiler_v7_2_18 -L xlslice_v1_0_2 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot design_1_wrapper_behav xil_defaultlib.design_1_wrapper xil_defaultlib.glbl" , 
+    buildDate : "Oct 14 2022" , 
+    buildTime : "05:07:14" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/design_1_wrapper_behav/xsimk\"   \"xsim.dir/design_1_wrapper_behav/obj/xsim_0.lnx64.o\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_1.lnx64.o\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_2.lnx64.o\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_3.lnx64.o\" \"xsim.dir/design_1_wrapper_behav/obj/xsim_4.lnx64.o\" -L\"/tools/Xilinx/Vivado/2022.2/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

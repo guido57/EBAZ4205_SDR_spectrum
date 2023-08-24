@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_processing_system7_0_0",
-    "cell_name": "processing_system7_0",
+    "cell_name": "PS/processing_system7_0",
     "component_reference": "xilinx.com:ip:processing_system7:5.5",
     "ip_revision": "6",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_processing_system7_0_0",

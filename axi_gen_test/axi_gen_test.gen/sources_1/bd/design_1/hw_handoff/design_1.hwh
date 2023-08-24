@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Aug 13 10:19:11 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS/>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/AXI_Stream_Generator_0" HWVERSION="1.0" INSTANCE="AXI_Stream_Generator_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AXI_Stream_Generator" VLNV="xilinx.com:module_ref:AXI_Stream_Generator:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DATA_BITS" VALUE="16"/>
+        <PARAMETER NAME="DATA_0" VALUE="0x00000002"/>
+        <PARAMETER NAME="DATA_1" VALUE="0x00000004"/>
+        <PARAMETER NAME="DATA_2" VALUE="0x00000008"/>
+        <PARAMETER NAME="DATA_3" VALUE="0x00000000"/>
+        <PARAMETER NAME="TIMEOUT_0" VALUE="10000"/>
+        <PARAMETER NAME="TIMEOUT_1" VALUE="10000"/>
+        <PARAMETER NAME="TIMEOUT_2" VALUE="10000"/>
+        <PARAMETER NAME="TIMEOUT_3" VALUE="10000"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_AXI_Stream_Generator_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="myclkgen_100M_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="myclkgen_100M" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="axis_tdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="axis_tvalid" SIGIS="undef"/>
+        <PORT DIR="I" NAME="axis_tready" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="axis_tlast" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="axis" TYPE="INITIATOR" VLNV="xilinx.com:interface:axis:1.0">
+          <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="2"/>
+          <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="TUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
+          <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="PHASE" VALUE="0.0"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="design_1_myclkgen_0_0_clk"/>
+          <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="axis_tdata"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="axis_tlast"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="axis_tready"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/DivideBy2N_50M_out" HWVERSION="1.0" INSTANCE="DivideBy2N_50M_out" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DivideBy2N" VLNV="xilinx.com:module_ref:DivideBy2N:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="WIDTH" VALUE="2"/>
+        <PARAMETER NAME="N" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_DivideBy2N_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="myclkgen_100M_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="myclkgen_100M" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="resetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="sim_rst_gen_0_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="sim_rst_gen_0" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/myclkgen_100M" HWVERSION="1.0" INSTANCE="myclkgen_100M" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="myclkgen" VLNV="xilinx.com:module_ref:myclkgen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="clk_period_nanoseconds" VALUE="10"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_myclkgen_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="clk" SIGIS="clk" SIGNAME="myclkgen_100M_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DivideBy2N_50M_out" PORT="clk"/>
+            <CONNECTION INSTANCE="AXI_Stream_Generator_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="2" FULLNAME="/sim_rst_gen_0" HWVERSION="1.0" INSTANCE="sim_rst_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sim_rst_gen" VLNV="xilinx.com:ip:sim_rst_gen:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="RST_PERIOD" VALUE="160"/>
+        <PARAMETER NAME="TOTAL_PERIOD" VALUE="0"/>
+        <PARAMETER NAME="RST_POLARITY" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sim_rst_gen_0_0"/>
+        <PARAMETER NAME="PULSE_PERIOD" VALUE="0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="sim_rst_gen_0_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DivideBy2N_50M_out" PORT="resetn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="7" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x1"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="0" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AXI_Stream_Generator_0" PORT="axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

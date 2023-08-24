@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ebaz4205_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_vdma_pkg" />
+            <top_module name="axi_vip_pkg" />
+            <top_module name="dvi_constants" />
+            <top_module name="ebaz4205_wrapper" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="std" />
+            <top_module name="vcomponents" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="89.026810 us"></ZoomStartTime>
+      <ZoomEndTime time="104.566811 us"></ZoomEndTime>
+      <Cursor1Time time="96.646810 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="197"></NameColumnWidth>
+      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="3" />
+   <wave_markers>
+      <marker label="" time="505015000" />
+      <marker label="" time="249275000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/ebaz4205_wrapper/ADC_clk_64M">
+      <obj_property name="ElementShortName">ADC_clk_64M</obj_property>
+      <obj_property name="ObjectShortName">ADC_clk_64M</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group120">
+      <obj_property name="label">I2S</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/DivideBy32_48K/clk_out">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">clk_out</obj_property>
+         <obj_property name="ObjectShortName">clk_out</obj_property>
+         <obj_property name="label">clk_out_48K</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/DivideBy250_1_536M/clk_out">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">clk_out</obj_property>
+         <obj_property name="ObjectShortName">clk_out</obj_property>
+         <obj_property name="label">clk_out_1_536M</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/i2s_transmitter_16_0/inst/bit_index">
+         <obj_property name="ElementShortName">bit_index</obj_property>
+         <obj_property name="ObjectShortName">bit_index</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/i2s_transmitter_16_0/left_channel">
+         <obj_property name="ElementShortName">left_channel[15:0]</obj_property>
+         <obj_property name="ObjectShortName">left_channel[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/i2s_transmitter_16_0/right_channel">
+         <obj_property name="ElementShortName">right_channel[15:0]</obj_property>
+         <obj_property name="ObjectShortName">right_channel[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/i2s_transmitter_16_0/inst/data_left">
+         <obj_property name="ElementShortName">data_left[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_left[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/i2s_transmitter_16_0/inst/data_right">
+         <obj_property name="ElementShortName">data_right[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_right[15:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/ebaz4205_wrapper/ebaz4205_i/I2S/i2s_transmitter_16_0/sd">
+         <obj_property name="ElementShortName">sd</obj_property>
+         <obj_property name="ObjectShortName">sd</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group151">
+      <obj_property name="label">Filter Out</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_0/m_axis_tdata0">
+         <obj_property name="ElementShortName">m_axis_tdata0[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata0[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/ebaz4205_wrapper/ebaz4205_i/FILTER/axis2c_splitter_0/m_axis_tdata1">
+         <obj_property name="ElementShortName">m_axis_tdata1[15:0]</obj_property>
+         <obj_property name="ObjectShortName">m_axis_tdata1[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+         <obj_property name="CellHeight">100</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

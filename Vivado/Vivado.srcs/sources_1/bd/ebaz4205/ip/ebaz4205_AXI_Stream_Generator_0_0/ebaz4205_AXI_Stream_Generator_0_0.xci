@@ -4,7 +4,7 @@
     "xci_name": "ebaz4205_AXI_Stream_Generator_0_0",
     "cell_name": "FILTER_FT/AXI_Stream_Generator_0",
     "component_reference": "xilinx.com:module_ref:AXI_Stream_Generator:1.0",
-    "ip_revision": "-1",
+    "ip_revision": "1",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_AXI_Stream_Generator_0_0",
     "parameters": {
       "component_parameters": {

@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../CIC_FIR_2C_.srcs/sources_1/new/myclockgen.vhd" \
+"../../../../CIC_FIR_2C_.srcs/sources_1/new/axis2c_combine.vhd" \
+"../../../../CIC_FIR_2C_.srcs/sources_1/new/axis-streamer.vhd" \
+"../../../../CIC_FIR_2C_.srcs/sources_1/new/axis2C_splitter.vhd" \
+"../../../../CIC_FIR_2C_.srcs/sources_1/new/ValidControl.vhd" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_dds_compiler_0_0/sim/design_1_dds_compiler_0_0.vhd" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_cic_compiler_0_0/sim/design_1_cic_compiler_0_0.vhd" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_dds_compiler_0_1/sim/design_1_dds_compiler_0_1.vhd" \
+"../../../../CIC_FIR_2C_.ip_user_files/bd/design_1/ip/design_1_fir_compiler_0_0/sim/design_1_fir_compiler_0_0.vhd" \
+
+# Do not sort compile order
+nosort
