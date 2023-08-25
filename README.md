@@ -32,6 +32,7 @@ This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named
 ### [QT5 projects](qt5)
 * The "sdr-app" C++ software for PetaLinux to display the spectrum and tune theradio stations
 * the "myjtdx" C++ software for PetaLinux to decode FT8 on the various HF bands
+* the "vncfb" C program for a vnc server reading from the framebuffer (no X or other windows manager)
 
 ## Getting Started for FPGA or EBAZ4205 beginners
 
