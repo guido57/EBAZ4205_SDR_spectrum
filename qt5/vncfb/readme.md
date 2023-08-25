@@ -8,7 +8,9 @@ This is the vncfb C software to create a VNC server:
 The purpose of this VNC server is to manage sdr-app or myjtdx from remote. In particular myjtdx requires a few typed parameters which cannot be entered locally because the Vivado project doesn't have a physical keyboard. 
 
 # Software architecture
-* framebuffer-vncserver.c is the classical main C application
+* framebuffer-vncserver.c is the classical main C application. It allows to specify:
+  * the mouse, keyboard and touch (not used) drivers
+  * the screen rotation (not used)
 * mouse.c receives mouse commands from VNC client, translate and send them to the device driver
 * keyboard.c receives keyboard commands from VNC client, translate and send them to the device driver
 * it uses libvncserver.so.1 which must be present in /usr/lib
