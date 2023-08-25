@@ -30,8 +30,8 @@ the Xilinx PetaLinux project to flash the SD card of EBAZ4205 with Linux (PetaLi
 This is the Xilinx Vitis 2022.2 project that let's you to build a C++ app, named colorbars, running on the Zynq7010 PS to configure the HDMI IPs (Video Timing Controller, Video DMA). This app has also a menu to choose the video format e.g. 1280x720 @ 50Hz and display colorbars for testing purposes.
 
 ### [QT5 projects](qt5)
-* The "sdr-app" C++ software for PetaLinux to display the spectrum and tune theradio stations
-* the "myjtdx" C++ software for PetaLinux to decode FT8 on the various HF bands
+* The "sdr-app" C++ software for PetaLinux to display spectrum and tune radio stations
+* the "myjtdx" C++ software for PetaLinux to decode FT8 on HF bands
 * the "vncfb" C program for a vnc server reading from the framebuffer (no X or other windows manager)
 
 ## Getting Started for FPGA or EBAZ4205 beginners
