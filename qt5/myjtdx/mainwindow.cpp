@@ -2128,6 +2128,7 @@ void MainWindow::call_jt9 (QString  fname) {
                   //+ "ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83 '/wsjt/WSJTX/bin/jt9 -8 " + depth_string + " /users/guido/JTDX/" + wavfilenameonly +"'" ;
                   + "ssh -i /home/ebaz/.ssh/id_rsa " + remote_user + "@" + remote_ip + " '" + remote_jt9 +" -8 " + depth_string + " " + remote_wavdir + wavfilenameonly +"'" ;
 
+
   if(ui) ui->DecodeButton->setChecked (true);
   for(int i=0; i< cmnd_jt9.size();i++)
       printf("%s ",cmnd_jt9.at(i).toStdString().c_str());
@@ -5255,8 +5256,10 @@ void MainWindow::startTx2()
 //    printf("%s(%0.1f) Timing modulator",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str(),m_jtdxtime->GetOffset());
     bool modulator_active;
     bool tci_active = m_tci;
-    if (tci_active) modulator_active=m_tci_mod_active;
-    else modulator_active=m_modulator->isActive ();
+    if (tci_active)
+        modulator_active=m_tci_mod_active;
+    else
+        modulator_active=m_modulator->isActive ();
     if (!modulator_active) { // TODO - not thread safe
       double fSpread=0.0;
       double snr=99.0;
@@ -7807,8 +7810,10 @@ void MainWindow::transmit (double snr)
   if (m_modeTx == "FT8") {
 //    toneSpacing=12000.0/1920.0;
     toneSpacing=-3.0; //GFSK wave
-    if (m_tci) Q_EMIT m_config.transceiver_modulator_start(NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,true,snr,m_TRperiod);
-    else Q_EMIT sendMessage (NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,m_soundOutput,
+    if (m_tci)
+          Q_EMIT m_config.transceiver_modulator_start(NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,true,snr,m_TRperiod);
+    else
+          Q_EMIT sendMessage (NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,m_soundOutput,
                         m_config.audio_output_channel(),true,snr,m_TRperiod);
     printf("transmit with mModeTX=FT8 emitted at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
 

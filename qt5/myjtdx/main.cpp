@@ -254,10 +254,10 @@ int main(int argc, char *argv[])
 
       //GG auto settings_file = config_path.absoluteFilePath (a.applicationName () + ".ini");
       QSettings settings(QSettings::IniFormat, QSettings::UserScope, "IW5ALZ", "wsjtx" );
-      //if (!settings.isWritable ())
-      //  {
-      //    throw std::runtime_error {QString {"Cannot access \"%1\" for writing"}.arg (settings_file).toStdString ()};
-      //  }
+      if (!settings.isWritable ())
+        {
+            qInfo() << QString("Cannot access ") <<  settings.fileName() << " for writing settings.";
+        }
 
 #if WSJT_QDEBUG_TO_FILE
       // // open a trace file
