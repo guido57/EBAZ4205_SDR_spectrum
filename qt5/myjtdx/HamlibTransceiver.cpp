@@ -1377,6 +1377,9 @@ void HamlibTransceiver::do_ptt (bool on)
       if (RIG_PTT_NONE != rig_->state.pttport.type.ptt)
         {
           TRACE_CAT ("HamlibTransceiver", "rig_set_ptt PTT = true");
+          printf("HamlibTransceiver::do_ptt(1) at %s\r\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
+
           error_check (rig_set_ptt (rig_.data (), RIG_VFO_CURR
                                     , RIG_PTT_RIG_MICDATA == rig_get_caps_int (model_, RIG_CAPS_PTT_TYPE) && back_ptt_port_
                                     ? RIG_PTT_ON_DATA : RIG_PTT_ON), tr ("setting PTT on"));
@@ -1387,6 +1390,8 @@ void HamlibTransceiver::do_ptt (bool on)
       if (RIG_PTT_NONE != rig_->state.pttport.type.ptt)
         {
           TRACE_CAT ("HamlibTransceiver", "rig_set_ptt PTT = false");
+          printf("HamlibTransceiver::do_ptt(0) at %s\r\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+
           error_check (rig_set_ptt (rig_.data (), RIG_VFO_CURR, RIG_PTT_OFF), tr ("setting PTT off"));
         }
     }

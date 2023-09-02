@@ -4619,6 +4619,7 @@ static void SaveFloatArray(const QString &fileName, const float *floatArray, int
 }
 
 //------------------------------------------------------------- //guiUpdate()
+// this function is called by a timer every 100 msecs
 void MainWindow::guiUpdate()
 {
   static int iptt0=0;
