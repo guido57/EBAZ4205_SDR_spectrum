@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_AD9851_0_0",
-    "cell_name": "AD9851_0",
+    "cell_name": "AD9851/AD9851_0",
     "component_reference": "xilinx.com:module_ref:AD9851:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_AD9851_0_0",

@@ -199,12 +199,8 @@
       },
       "axis_capture_RF": "",
       "AD9851": {
-        "xlconstant_7034000MHz": "",
-        "xlconstant_AD9851": "",
         "xlconcat_0": "",
         "DivideBy50_2MHz": "",
-        "xlconstant_0": "",
-        "mycounter_0": "",
         "AD9851_AM_0": "",
         "AD9851_0": "",
         "axi_gpio_AD9851": "",
@@ -13712,7 +13708,7 @@
           }
         },
         "ports": {
-          "clk": {
+          "clk_100M": {
             "type": "clk",
             "direction": "I"
           },
@@ -13734,34 +13730,6 @@
           }
         },
         "components": {
-          "xlconstant_7034000MHz": {
-            "vlnv": "xilinx.com:ip:xlconstant:1.1",
-            "xci_name": "ebaz4205_xlconstant_0_9",
-            "xci_path": "ip/ebaz4205_xlconstant_0_9/ebaz4205_xlconstant_0_9.xci",
-            "inst_hier_path": "AD9851/xlconstant_7034000MHz",
-            "parameters": {
-              "CONST_VAL": {
-                "value": "167837778"
-              },
-              "CONST_WIDTH": {
-                "value": "32"
-              }
-            }
-          },
-          "xlconstant_AD9851": {
-            "vlnv": "xilinx.com:ip:xlconstant:1.1",
-            "xci_name": "ebaz4205_xlconstant_0_10",
-            "xci_path": "ip/ebaz4205_xlconstant_0_10/ebaz4205_xlconstant_0_10.xci",
-            "inst_hier_path": "AD9851/xlconstant_AD9851",
-            "parameters": {
-              "CONST_VAL": {
-                "value": "0b00000001"
-              },
-              "CONST_WIDTH": {
-                "value": "8"
-              }
-            }
-          },
           "xlconcat_0": {
             "vlnv": "xilinx.com:ip:xlconcat:2.1",
             "xci_name": "ebaz4205_xlconcat_0_5",
@@ -13828,45 +13796,6 @@
               }
             }
           },
-          "xlconstant_0": {
-            "vlnv": "xilinx.com:ip:xlconstant:1.1",
-            "xci_name": "ebaz4205_xlconstant_0_11",
-            "xci_path": "ip/ebaz4205_xlconstant_0_11/ebaz4205_xlconstant_0_11.xci",
-            "inst_hier_path": "AD9851/xlconstant_0",
-            "parameters": {
-              "CONST_VAL": {
-                "value": "60"
-              },
-              "CONST_WIDTH": {
-                "value": "8"
-              }
-            }
-          },
-          "mycounter_0": {
-            "vlnv": "xilinx.com:module_ref:mycounter:1.0",
-            "xci_name": "ebaz4205_mycounter_0_0",
-            "xci_path": "ip/ebaz4205_mycounter_0_0/ebaz4205_mycounter_0_0.xci",
-            "inst_hier_path": "AD9851/mycounter_0",
-            "parameters": {
-              "threshold": {
-                "value": "100"
-              }
-            },
-            "reference_info": {
-              "ref_type": "hdl",
-              "ref_name": "mycounter",
-              "boundary_crc": "0x0"
-            },
-            "ports": {
-              "clock_in": {
-                "type": "clk",
-                "direction": "I"
-              },
-              "pulse": {
-                "direction": "O"
-              }
-            }
-          },
           "AD9851_AM_0": {
             "vlnv": "xilinx.com:module_ref:AD9851_AM:1.0",
             "xci_name": "ebaz4205_AD9851_AM_0_0",
@@ -13874,10 +13803,10 @@
             "inst_hier_path": "AD9851/AD9851_AM_0",
             "parameters": {
               "PWM_frequency_KHz": {
-                "value": "200"
+                "value": "2000"
               },
               "clock_in_KHz": {
-                "value": "2000"
+                "value": "100000"
               }
             },
             "reference_info": {
@@ -13982,7 +13911,7 @@
                 "value": "0x0A010052"
               },
               "C_DOUT_DEFAULT_2": {
-                "value": "0x00003C80"
+                "value": "0x00003C84"
               },
               "C_GPIO2_WIDTH": {
                 "value": "32"
@@ -14074,13 +14003,12 @@
           "DivideBy50_2MHz_clk_out": {
             "ports": [
               "DivideBy50_2MHz/clk_out",
-              "mycounter_0/clock_in",
               "AD9851_0/clock_in"
             ]
           },
           "Net": {
             "ports": [
-              "clk",
+              "clk_100M",
               "DivideBy50_2MHz/clk",
               "AD9851_AM_0/clock_in",
               "axi_gpio_AD9851/s_axi_aclk"
@@ -14572,7 +14500,7 @@
           "ps7_axi_periph/M19_ACLK",
           "ps7_axi_periph/M18_ACLK",
           "axis_capture_RF/ctrl_s_axi_aclk",
-          "AD9851/clk",
+          "AD9851/clk_100M",
           "ps7_axi_periph/M20_ACLK"
         ]
       },

@@ -2,19 +2,19 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_AD9851_AM_0_0",
-    "cell_name": "AD9851_AM_0",
+    "cell_name": "AD9851/AD9851_AM_0",
     "component_reference": "xilinx.com:module_ref:AD9851_AM:1.0",
     "ip_revision": "1",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_AD9851_AM_0_0",
     "parameters": {
       "component_parameters": {
-        "PWM_frequency_KHz": [ { "value": "200", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "clock_in_KHz": [ { "value": "2000", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "PWM_frequency_KHz": [ { "value": "2000", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "clock_in_KHz": [ { "value": "100000", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "Component_Name": [ { "value": "ebaz4205_AD9851_AM_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "PWM_frequency_KHz": [ { "value": "200", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "clock_in_KHz": [ { "value": "2000", "resolve_type": "generated", "format": "long", "usage": "all" } ]
+        "PWM_frequency_KHz": [ { "value": "2000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "clock_in_KHz": [ { "value": "100000", "resolve_type": "generated", "format": "long", "usage": "all" } ]
       },
       "project_parameters": {
         "ARCHITECTURE": [ { "value": "zynq" } ],

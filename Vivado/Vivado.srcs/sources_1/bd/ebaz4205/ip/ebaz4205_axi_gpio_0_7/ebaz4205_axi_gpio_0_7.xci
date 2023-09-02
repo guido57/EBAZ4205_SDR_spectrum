@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_axi_gpio_0_7",
-    "cell_name": "axi_gpio_AD9851",
+    "cell_name": "AD9851/axi_gpio_AD9851",
     "component_reference": "xilinx.com:ip:axi_gpio:2.0",
     "ip_revision": "29",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_axi_gpio_0_7",
@@ -14,7 +14,7 @@
         "C_IS_DUAL": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_ALL_INPUTS": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "user", "format": "bitString", "enabled": false, "usage": "all" } ],
-        "C_DOUT_DEFAULT_2": [ { "value": "0x00003C80", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "C_DOUT_DEFAULT_2": [ { "value": "0x00003C84", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "C_DOUT_DEFAULT": [ { "value": "0x0A010052", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "C_ALL_INPUTS_2": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "C_INTERRUPT_PRESENT": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -39,7 +39,7 @@
         "C_DOUT_DEFAULT": [ { "value": "0x0A010052", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_TRI_DEFAULT": [ { "value": "0xFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_IS_DUAL": [ { "value": "1", "resolve_type": "generated", "format": "long", "usage": "all" } ],
-        "C_DOUT_DEFAULT_2": [ { "value": "0x00003C80", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "C_DOUT_DEFAULT_2": [ { "value": "0x00003C84", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "C_TRI_DEFAULT_2": [ { "value": "0xFFFFFFFF", "resolve_type": "generated", "format": "bitString", "usage": "all" } ]
       },
       "project_parameters": {

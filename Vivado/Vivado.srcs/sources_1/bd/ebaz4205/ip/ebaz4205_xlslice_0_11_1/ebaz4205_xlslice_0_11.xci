@@ -2,7 +2,7 @@
   "schema": "xilinx.com:schema:json_instance:1.0",
   "ip_inst": {
     "xci_name": "ebaz4205_xlslice_0_11",
-    "cell_name": "xlslice_AD9851_phase",
+    "cell_name": "AD9851/xlslice_AD9851_phase",
     "component_reference": "xilinx.com:ip:xlslice:1.0",
     "ip_revision": "2",
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_xlslice_0_11_1",
