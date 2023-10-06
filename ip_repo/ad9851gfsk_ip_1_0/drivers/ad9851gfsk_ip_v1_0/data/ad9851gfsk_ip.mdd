@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER ad9851gfsk_ip
+	OPTION supported_peripherals = (ad9851gfsk_ip);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = ad9851gfsk_ip;
+END DRIVER
