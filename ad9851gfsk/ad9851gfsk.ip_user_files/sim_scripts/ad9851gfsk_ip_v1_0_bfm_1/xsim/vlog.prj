@@ -1,0 +1,7 @@
+sv xil_defaultlib --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" --include "../../../../ad9851gfsk.gen/sources_1/bd/ad9851gfsk_ip_v1_0_bfm_1/ipshared/ec67/hdl" \
+"../../../bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_master_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_master_0_0_pkg.sv" \
+"../../../bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_master_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_master_0_0.sv" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

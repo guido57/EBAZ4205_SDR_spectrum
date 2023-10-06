@@ -1,0 +1,4 @@
+Running: xsim.dir/ad9851gfsk_ip_v1_0_tb_behav/xsimk -simmode gui -wdb ad9851gfsk_ip_v1_0_tb_behav.wdb -simrunnum 0 -socket 52697
+Design successfully loaded
+Design Loading Memory Usage: 33308 KB (Peak: 33316 KB)
+Design Loading CPU Usage: 20 ms

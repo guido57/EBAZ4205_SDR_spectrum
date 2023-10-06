@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0.vhd" \
+"../../../bd/ad9851gfsk_ip_v1_0_bfm_1/sim/ad9851gfsk_ip_v1_0_bfm_1.vhd" \
+
+nosort

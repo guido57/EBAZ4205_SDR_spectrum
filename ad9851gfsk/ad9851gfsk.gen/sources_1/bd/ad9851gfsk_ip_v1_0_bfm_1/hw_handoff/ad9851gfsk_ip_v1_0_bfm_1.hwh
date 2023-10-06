@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Sep 20 11:08:35 2023" VIVADOVERSION="2022.2">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z010" NAME="ad9851gfsk_ip_v1_0_bfm_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ACLK" SIGIS="clk" SIGNAME="External_Ports_ACLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="master_0" PORT="aclk"/>
+        <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_ACLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ARESETN" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_ARESETN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="master_0" PORT="aresetn"/>
+        <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_ARESETN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="read_data_out_0" SIGIS="undef" SIGNAME="ad9851gfsk_0_read_data_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad9851gfsk_0" PORT="read_data_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="39" NAME="data_out_0" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_data_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad9851gfsk_0" PORT="data_out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="pwm_am_out_0" SIGIS="undef" SIGNAME="ad9851gfsk_0_pwm_am_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ad9851gfsk_0" PORT="pwm_am_out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/ad9851gfsk_0" HWVERSION="1.0" INSTANCE="ad9851gfsk_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ad9851gfsk" VLNV="xilinx.com:module_ref:ad9851gfsk:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="demo_mode" VALUE="0"/>
+        <PARAMETER NAME="pwm_frequency_KHz" VALUE="2000"/>
+        <PARAMETER NAME="pwm_clock_in_KHz" VALUE="100000"/>
+        <PARAMETER NAME="CLOCK_DIVIDER" VALUE="200"/>
+        <PARAMETER NAME="C_S_AXI_DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_S_AXI_ADDR_WIDTH" VALUE="7"/>
+        <PARAMETER NAME="Component_Name" VALUE="ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="read_data_out" SIGIS="undef" SIGNAME="ad9851gfsk_0_read_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="read_data_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="39" NAME="data_out" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_data_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="data_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="pwm_am_out" SIGIS="undef" SIGNAME="ad9851gfsk_0_pwm_am_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="pwm_am_out_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="S_AXI_ACLK" SIGIS="clk" SIGNAME="External_Ports_ACLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ACLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARESETN" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_ARESETN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ARESETN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="S_AXI_AWADDR" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_awaddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S_AXI_AWPROT" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_awprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_AWVALID" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_awvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXI_AWREADY" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_awready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="S_AXI_WDATA" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_wdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S_AXI_WSTRB" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_wstrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_WVALID" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_wvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXI_WREADY" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_wready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S_AXI_BRESP" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_bresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXI_BVALID" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_bvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_BREADY" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_bready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="6" NAME="S_AXI_ARADDR" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_araddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="S_AXI_ARPROT" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_arprot"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_ARVALID" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_arvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXI_ARREADY" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_arready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="S_AXI_RDATA" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_rdata"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="S_AXI_RRESP" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_rresp"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="S_AXI_RVALID" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_rvalid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S_AXI_RREADY" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="master_0" PORT="m_axi_rready"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="master_0_M_AXI" DATAWIDTH="32" NAME="S_AXI" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="7"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="ad9851gfsk_ip_v1_0_bfm_1_ACLK"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="S_AXI_AWADDR"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="S_AXI_AWPROT"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="S_AXI_AWVALID"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="S_AXI_AWREADY"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="S_AXI_WDATA"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="S_AXI_WSTRB"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="S_AXI_WVALID"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="S_AXI_WREADY"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="S_AXI_BRESP"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="S_AXI_BVALID"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="S_AXI_BREADY"/>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="S_AXI_ARADDR"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="S_AXI_ARPROT"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="S_AXI_ARVALID"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="S_AXI_ARREADY"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="S_AXI_RDATA"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="S_AXI_RRESP"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="S_AXI_RVALID"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="S_AXI_RREADY"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE COREREVISION="13" FULLNAME="/master_0" HWVERSION="1.1" INSTANCE="master_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="axi_vip" VLNV="xilinx.com:ip:axi_vip:1.1">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=axi_vip;v=v1_1;d=pg267-axi-vip.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_AXI_PROTOCOL" VALUE="2"/>
+        <PARAMETER NAME="C_AXI_INTERFACE_MODE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_AXI_WDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_AXI_RDATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="C_AXI_WID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_RID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_AWUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ARUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_WUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_RUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_BUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_SUPPORTS_NARROW" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_HAS_BURST" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_HAS_LOCK" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_HAS_CACHE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_HAS_REGION" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_HAS_PROT" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_HAS_QOS" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_HAS_WSTRB" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_HAS_BRESP" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_HAS_RRESP" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_HAS_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="Component_Name" VALUE="ad9851gfsk_ip_v1_0_bfm_1_master_0_0"/>
+        <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+        <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+        <PARAMETER NAME="INTERFACE_MODE" VALUE="MASTER"/>
+        <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+        <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+        <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+        <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+        <PARAMETER NAME="HAS_USER_BITS_PER_BYTE" VALUE="0"/>
+        <PARAMETER NAME="SUPPORTS_NARROW" VALUE="0"/>
+        <PARAMETER NAME="HAS_SIZE" VALUE="0"/>
+        <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+        <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+        <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+        <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+        <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+        <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+        <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+        <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+        <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+        <PARAMETER NAME="HAS_ACLKEN" VALUE="0"/>
+        <PARAMETER NAME="HAS_ARESETN" VALUE="1"/>
+        <PARAMETER NAME="VIP_PKG_NAME" VALUE="0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="aclk" SIGIS="clk" SIGNAME="External_Ports_ACLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ACLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_ARESETN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ARESETN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_awaddr" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_AWADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_awprot" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_AWPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_awvalid" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_AWVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_awready" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_AWREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_AWREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_WDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="m_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WSTRB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_WSTRB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_wvalid" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_WVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_wready" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_WREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_WREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_bresp" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_BRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_BRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_bvalid" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_BVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_BVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_bready" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_BREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_BREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="m_axi_araddr" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARADDR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_ARADDR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axi_arprot" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARPROT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_ARPROT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_arvalid" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_ARVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_arready" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_ARREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_ARREADY"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="m_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RDATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_RDATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="m_axi_rresp" RIGHT="0" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RRESP">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_RRESP"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="m_axi_rvalid" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RVALID">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_RVALID"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="m_axi_rready" SIGIS="undef" SIGNAME="ad9851gfsk_0_S_AXI_RREADY">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ad9851gfsk_0" PORT="S_AXI_RREADY"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="master_0_M_AXI" DATAWIDTH="32" NAME="M_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="PROTOCOL" VALUE="AXI4LITE"/>
+          <PARAMETER NAME="FREQ_HZ" VALUE="100000000"/>
+          <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ADDR_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="AWUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="ARUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="WUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="RUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="BUSER_WIDTH" VALUE="0"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PARAMETER NAME="HAS_BURST" VALUE="0"/>
+          <PARAMETER NAME="HAS_LOCK" VALUE="0"/>
+          <PARAMETER NAME="HAS_PROT" VALUE="1"/>
+          <PARAMETER NAME="HAS_CACHE" VALUE="0"/>
+          <PARAMETER NAME="HAS_QOS" VALUE="0"/>
+          <PARAMETER NAME="HAS_REGION" VALUE="0"/>
+          <PARAMETER NAME="HAS_WSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
+          <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
+          <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
+          <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="1"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="1"/>
+          <PARAMETER NAME="PHASE" VALUE="0.000"/>
+          <PARAMETER NAME="CLK_DOMAIN" VALUE="ad9851gfsk_ip_v1_0_bfm_1_ACLK"/>
+          <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
+          <PARAMETER NAME="NUM_WRITE_THREADS" VALUE="1"/>
+          <PARAMETER NAME="RUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="WUSER_BITS_PER_BYTE" VALUE="0"/>
+          <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ARADDR" PHYSICAL="m_axi_araddr"/>
+            <PORTMAP LOGICAL="ARPROT" PHYSICAL="m_axi_arprot"/>
+            <PORTMAP LOGICAL="ARREADY" PHYSICAL="m_axi_arready"/>
+            <PORTMAP LOGICAL="ARVALID" PHYSICAL="m_axi_arvalid"/>
+            <PORTMAP LOGICAL="AWADDR" PHYSICAL="m_axi_awaddr"/>
+            <PORTMAP LOGICAL="AWPROT" PHYSICAL="m_axi_awprot"/>
+            <PORTMAP LOGICAL="AWREADY" PHYSICAL="m_axi_awready"/>
+            <PORTMAP LOGICAL="AWVALID" PHYSICAL="m_axi_awvalid"/>
+            <PORTMAP LOGICAL="BREADY" PHYSICAL="m_axi_bready"/>
+            <PORTMAP LOGICAL="BRESP" PHYSICAL="m_axi_bresp"/>
+            <PORTMAP LOGICAL="BVALID" PHYSICAL="m_axi_bvalid"/>
+            <PORTMAP LOGICAL="RDATA" PHYSICAL="m_axi_rdata"/>
+            <PORTMAP LOGICAL="RREADY" PHYSICAL="m_axi_rready"/>
+            <PORTMAP LOGICAL="RRESP" PHYSICAL="m_axi_rresp"/>
+            <PORTMAP LOGICAL="RVALID" PHYSICAL="m_axi_rvalid"/>
+            <PORTMAP LOGICAL="WDATA" PHYSICAL="m_axi_wdata"/>
+            <PORTMAP LOGICAL="WREADY" PHYSICAL="m_axi_wready"/>
+            <PORTMAP LOGICAL="WSTRB" PHYSICAL="m_axi_wstrb"/>
+            <PORTMAP LOGICAL="WVALID" PHYSICAL="m_axi_wvalid"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+      <MEMORYMAP/>
+      <PERIPHERALS>
+        <PERIPHERAL INSTANCE="ad9851gfsk_0"/>
+      </PERIPHERALS>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

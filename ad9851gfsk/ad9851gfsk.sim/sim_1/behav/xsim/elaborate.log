@@ -1,0 +1,31 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2022.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_13 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ad9851gfsk_ip_v1_0_tb_behav xil_defaultlib.ad9851gfsk_ip_v1_0_tb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-9180] module 'axi_vip_axi4pc' is instantiated multiple times from VHDL or from both Verilog and VHDL; elaboration result may be incorrect [/wrk/ci/prod/2022.2/sw/continuous/3508/packages/customer/vivado/data/xilinx_vip/hdl/axi_vip_axi4pc.sv:559]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling architecture arch_imp of entity xil_defaultlib.ad9851gfsk [ad9851gfsk_default]
+Compiling architecture ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0_arch of entity xil_defaultlib.ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0 [ad9851gfsk_ip_v1_0_bfm_1_ad9851g...]
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_13.axi_vip_v1_1_13_top(C_AXI_PROTOC...
+Compiling module xil_defaultlib.ad9851gfsk_ip_v1_0_bfm_1_master_...
+Compiling architecture structure of entity xil_defaultlib.ad9851gfsk_ip_v1_0_bfm_1 [ad9851gfsk_ip_v1_0_bfm_1_default]
+Compiling architecture structure of entity xil_defaultlib.ad9851gfsk_ip_v1_0_bfm_1_wrapper [ad9851gfsk_ip_v1_0_bfm_1_wrapper...]
+Compiling module xil_defaultlib.ad9851gfsk_ip_v1_0_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ad9851gfsk_ip_v1_0_tb_behav

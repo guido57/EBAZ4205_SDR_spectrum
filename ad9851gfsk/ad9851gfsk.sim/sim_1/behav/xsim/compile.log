@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk/ad9851gfsk.ip_user_files/bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_master_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_master_0_0_pkg.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk/ad9851gfsk.ip_user_files/bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_master_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_master_0_0.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad9851gfsk_ip_v1_0_bfm_1_master_0_0
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk/ad9851gfsk.srcs/sim_1/imports/bfm_design/ad9851gfsk_ip_v1_0_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ad9851gfsk_ip_v1_0_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk/ad9851gfsk.ip_user_files/bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ad9851gfsk_ip_v1_0_bfm_1_ad9851gfsk_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk/ad9851gfsk.ip_user_files/bd/ad9851gfsk_ip_v1_0_bfm_1/sim/ad9851gfsk_ip_v1_0_bfm_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ad9851gfsk_ip_v1_0_bfm_1'

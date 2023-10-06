@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="design_1_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="design_1_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="807.961167 us"></ZoomEndTime>
+      <Cursor1Time time="252.310680 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="252"></NameColumnWidth>
+      <ValueColumnWidth column_width="122"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wave_markers>
+      <marker label="" time="19928875000" />
+      <marker label="" time="19928375000" />
+   </wave_markers>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/read_data_out">
+      <obj_property name="ElementShortName">read_data_out</obj_property>
+      <obj_property name="ObjectShortName">read_data_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/data_out">
+      <obj_property name="ElementShortName">data_out[39:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[39:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/U0/sample_counter">
+      <obj_property name="ElementShortName">sample_counter</obj_property>
+      <obj_property name="ObjectShortName">sample_counter</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/U0/sym_counter">
+      <obj_property name="ElementShortName">sym_counter</obj_property>
+      <obj_property name="ObjectShortName">sym_counter</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/phi_out">
+      <obj_property name="ElementShortName">phi_out[39:0]</obj_property>
+      <obj_property name="ObjectShortName">phi_out[39:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/clock_in">
+      <obj_property name="ElementShortName">clock_in</obj_property>
+      <obj_property name="ObjectShortName">clock_in</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/design_1_wrapper/design_1_i/AD9851_0/data_in">
+      <obj_property name="ElementShortName">data_in[39:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[39:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/serial_clock_out">
+      <obj_property name="ElementShortName">serial_clock_out</obj_property>
+      <obj_property name="ObjectShortName">serial_clock_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/serial_data_out">
+      <obj_property name="ElementShortName">serial_data_out</obj_property>
+      <obj_property name="ObjectShortName">serial_data_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/AD9851_0/fq_ud_out">
+      <obj_property name="ElementShortName">fq_ud_out</obj_property>
+      <obj_property name="ObjectShortName">fq_ud_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/design_1_wrapper/design_1_i/ad9851gfsk_0/pwm_am_out">
+      <obj_property name="ElementShortName">pwm_am_out</obj_property>
+      <obj_property name="ObjectShortName">pwm_am_out</obj_property>
+   </wvobject>
+</wave_config>

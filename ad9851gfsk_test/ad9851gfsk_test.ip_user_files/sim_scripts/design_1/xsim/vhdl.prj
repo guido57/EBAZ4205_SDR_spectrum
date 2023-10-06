@@ -1,0 +1,8 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_AD9851_0_0/sim/design_1_AD9851_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_DivideBy2N_0_0/sim/design_1_DivideBy2N_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_ad9851gfsk_0_0/sim/design_1_ad9851gfsk_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+nosort

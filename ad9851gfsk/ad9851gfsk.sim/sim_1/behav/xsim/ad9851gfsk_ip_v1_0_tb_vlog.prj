@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../ad9851gfsk.gen/sources_1/bd/ad9851gfsk_ip_v1_0_bfm_1/ipshared/ec67/hdl" --include "../../../../ad9851gfsk.srcs/sim_1/imports/ad9851gfsk_ip_v1_0_bfm_1" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../ad9851gfsk.ip_user_files/bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_master_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_master_0_0_pkg.sv" \
+"../../../../ad9851gfsk.ip_user_files/bd/ad9851gfsk_ip_v1_0_bfm_1/ip/ad9851gfsk_ip_v1_0_bfm_1_master_0_0/sim/ad9851gfsk_ip_v1_0_bfm_1_master_0_0.sv" \
+"../../../../ad9851gfsk.srcs/sim_1/imports/bfm_design/ad9851gfsk_ip_v1_0_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

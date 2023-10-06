@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Oct  6 15:32:09 2023
+# Process ID: 2637220
+# Current directory: /home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk_test/ad9851gfsk_test.runs/design_1_ad9851gfsk_0_0_synth_1
+# Command line: vivado -log design_1_ad9851gfsk_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_ad9851gfsk_0_0.tcl
+# Log file: /home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk_test/ad9851gfsk_test.runs/design_1_ad9851gfsk_0_0_synth_1/design_1_ad9851gfsk_0_0.vds
+# Journal file: /home/guido/Github/EBAZ4205_SDR_spectrum/ad9851gfsk_test/ad9851gfsk_test.runs/design_1_ad9851gfsk_0_0_synth_1/vivado.jou
+# Running On: guido-Neptune-series-i9, OS: Linux, CPU Frequency: 910.236 MHz, CPU Physical cores: 14, Host memory: 33406 MB
+#-----------------------------------------------------------
+source design_1_ad9851gfsk_0_0.tcl -notrace

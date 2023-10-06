@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ad9851gfsk_test.srcs/sources_1/new/AD9851.vhd" \
+"../../../../ad9851gfsk_test.srcs/sources_1/new/ad9851gfsk.vhd" \
+"../../../../ad9851gfsk_test.ip_user_files/bd/design_1/ip/design_1_proc_sys_reset_0_0/sim/design_1_proc_sys_reset_0_0.vhd" \
+"../../../../ad9851gfsk_test.ip_user_files/bd/design_1/ip/design_1_AD9851_0_0/sim/design_1_AD9851_0_0.vhd" \
+"../../../../ad9851gfsk_test.ip_user_files/bd/design_1/ip/design_1_DivideBy2N_0_0/sim/design_1_DivideBy2N_0_0.vhd" \
+"../../../../ad9851gfsk_test.ip_user_files/bd/design_1/ip/design_1_ad9851gfsk_0_0/sim/design_1_ad9851gfsk_0_0.vhd" \
+"../../../../ad9851gfsk_test.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../ad9851gfsk_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort
