@@ -174,6 +174,12 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/ad9851gfsk.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/bd/ebaz4205/ebaz4205.bd">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/Vivado_projects/ebaz4205/ebaz4205.srcs/sources_1/bd/ebaz4205/ebaz4205.bd"/>
@@ -185,42 +191,6 @@
       </File>
       <File Path="$PGENDIR/sources_1/bd/ebaz4205/hdl/ebaz4205_wrapper.v">
         <FileInfo>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/mycounter.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/imports/EBAZ4205_SDR_HDMI/Zynq/rgb2dvi/src/SyncAsync.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/rgb2dvi/src/SyncAsync.vhd"/>
-          <Attr Name="ImportTime" Val="1673005331"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/I2S_Transmitter.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/capture-test/capture-test.srcs/sources_1/new/I2S_Transmitter.v"/>
-          <Attr Name="ImportTime" Val="1670690049"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sources_1/new/counter26.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/Vivado_projects/EBAZ4205_clock_gen_eth/EBAZ4205_clock_gen_eth.srcs/sources_1/new/counter26.v"/>
-          <Attr Name="ImportTime" Val="1663353575"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -263,6 +233,15 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/imports/EBAZ4205_SDR_HDMI/Zynq/rgb2dvi/src/SyncAsync.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/rgb2dvi/src/SyncAsync.vhd"/>
+          <Attr Name="ImportTime" Val="1673005331"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PPRDIR/IP_rgb2dvi/IP_rgb2dvi.srcs/sources_1/imports/rgb2dvi/src/SyncAsyncReset.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -274,6 +253,33 @@
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/IP_rgb2dvi/IP_rgb2dvi.srcs/sources_1/imports/rgb2dvi/src/rgb2dvi.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/I2S_Transmitter.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/capture-test/capture-test.srcs/sources_1/new/I2S_Transmitter.v"/>
+          <Attr Name="ImportTime" Val="1670690049"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/counter26.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/Vivado_projects/EBAZ4205_clock_gen_eth/EBAZ4205_clock_gen_eth.srcs/sources_1/new/counter26.v"/>
+          <Attr Name="ImportTime" Val="1663353575"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
@@ -320,6 +326,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/mycounter.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/new/ps2_mouse.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -334,13 +347,6 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../../../../mnt/EEFAF48CFAF45277/EBAZ4205_SDR_HDMI/Zynq/capture-test/capture-test.srcs/sources_1/new/ps2_transceiver.vhd"/>
           <Attr Name="ImportTime" Val="1674397396"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PPRDIR/IP_rgb2dvi/IP_rgb2dvi.srcs/sources_1/imports/rgb2dvi/src/rgb2dvi.vhd">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
@@ -426,8 +432,11 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="ebaz4205_wrapper"/>
+        <Option Name="TopModule" Val="sqrt32"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopArchitecture" Val="circuits"/>
+        <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/sqrt32.vhd"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>
         <Option Name="SelectedSimModel" Val="rtl"/>
