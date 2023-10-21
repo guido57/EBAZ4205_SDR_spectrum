@@ -11,7 +11,7 @@ This is directory containing all the programs built wit qt creator:
 ## Enable SSH login without password
 To cross compile with qt creator you necessarily need to ssh login to PetalLinux without password, copying the public key of your Ubuntu PC (where Qt Creator runs) to the PetaLinux environment on EBAZ4205
 
-1. On Ubuntu, generate an SSH public key. [See the insructions here](https://tecnstuff.net/how-to-set-up-ssh-keys-on-ubuntu-22-04/) 
+1. On Ubuntu, generate an SSH public key. [See the instructions here](https://tecnstuff.net/how-to-set-up-ssh-keys-on-ubuntu-22-04/) 
 2. On PetaLinux, create the directory .ssh under /home/ebaz
 3. On PetaLinux, copy the public key created at 1. "id_rsa.pub" to /home/ebaz/.ssh renaming it to "authorized_keys"
 4. On Ubuntu, try to ssh to PetaLinux: if everything is OK, you should login without password
