@@ -54,7 +54,6 @@ char * AMSSBSwitch_GetString(struct UIO * uio);
 // ---------------------- AD9851 --------------------------------------------
 //            b31 b30 b29 b28 b27 b26 b25 b24 b23 b22 b21 b20 b19 b18 b17   b16 b15 b14 b13 b12 b11 b10 b9 b8 b7 b6 b5 b4 b3 b2    b1  b0
 // Offset 0:  <----------------- phase inc = fout_Hz * 2^32 / 180000000 ---------------------------------------------------------------->
-// Offset 8:    X   X   X   X   X   X   X   X   X   X   X   X   X   X   X VALID <-- PWM DUTY CYCLE ---------> < phase -----> power  0  6X
 //                                                                                                                           down
 
 struct AD9851

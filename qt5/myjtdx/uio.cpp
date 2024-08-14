@@ -111,7 +111,7 @@ int AD9851gfsk_Init(struct UIO * uio) {
 void AD9851gfsk_SetFreqHz(struct UIO * uio, uint32_t freq){
 
     uint32_t phi = 0.5 + freq * pow(2,32) / 180e6;
-    uio_writeData32(uio, phi, 0);
+    uio_writeData32(uio, phi, 0);  // Write phase shift at Reg 0
 }
 
 // write an FT8 message (79 symbols) to AD9851gfsk
@@ -174,8 +174,9 @@ void AMSSBSwitch_SetLSB(struct UIO * uio){
     uio_writeData32(uio, 0x00000001, 0);
 }
 //********************************************************************
-// Manage the AD9851 DDS Sinusoidal generator
+// Manage the AD9851 DDS Sinusoidal generator. Version 1. NOT USED ANYMORE
 //********************************************************************
+// NOT USED ANYMORE!
 int AD9851_Init(struct AD9851 * ad9851, float master_clock_hz_){
     ad9851->master_clock_hz = master_clock_hz_;
     int ret_uio    = uio_init( &(ad9851->uio));
@@ -193,6 +194,7 @@ int AD9851_Init(struct AD9851 * ad9851, float master_clock_hz_){
     return ret_uio | (ret_6x << 1) | (ret_always_0 << 2);
 }
 
+// NOT USED ANYMORE!
 int AD9851_SendValid(struct AD9851 * ad9851){
     // set bit 16 (valid) to 1 and then back to 0 at offset 8
     uint32_t write_instruction = 0x00010000 | uio_readData32(&(ad9851->uio),2);// set bit 16 to 1
@@ -205,7 +207,7 @@ int AD9851_SendValid(struct AD9851 * ad9851){
         printf("error setting bit 16 (valid) to 0 on AD9851\r\n");
 }
 
-
+// NOT USED ANYMORE
 float AD9851_SetFreq(struct AD9851 * ad9851, float freq_hz){
     //calculate phase increment from specified frequency
     uint32_t pinc = ( (freq_hz * pow(2, 32)) / ad9851->master_clock_hz );
@@ -223,6 +225,7 @@ float AD9851_SetFreq(struct AD9851 * ad9851, float freq_hz){
     return ad9851->current_freq_hz;
 }
 
+// NOT USED ANYMORE
 float AD9851_GetFreq(struct AD9851 * ad9851){
     // get phase increment from AD9851
     uint32_t phase_inc = uio_readData32(&(ad9851->uio),0);
@@ -233,7 +236,7 @@ float AD9851_GetFreq(struct AD9851 * ad9851){
     return ad9851->current_freq_hz;
 }
 
-
+// NOT USED ANYMORE
 int AD9851_Set6X(struct AD9851 * ad9851){
 
     // set bit 0 to 1 at offset 8 bytes (2x32 bits words) which corresponds to bit 32 (6X) on 40 bits ad9851 programming word
@@ -247,6 +250,7 @@ int AD9851_Set6X(struct AD9851 * ad9851){
     return ret;
 }
 
+// NOT USED ANYMORE
 int AD9851_SetOn(struct AD9851 * ad9851){
 
     // set:
@@ -265,6 +269,7 @@ int AD9851_SetOn(struct AD9851 * ad9851){
     return ret;
 }
 
+// NOT USED ANYMORE
 int AD9851_SetOff(struct AD9851 * ad9851){
 
     // set:
@@ -283,6 +288,7 @@ int AD9851_SetOff(struct AD9851 * ad9851){
     return ret;
 }
 
+// NOT USED ANYMORE
 // return 1=Power On         0=Power Off
 int AD9851_GetOnOff(struct AD9851 * ad9851){
 
@@ -294,7 +300,7 @@ int AD9851_GetOnOff(struct AD9851 * ad9851){
     return bitPowerOff ^ 0x00000001;
 }
 
-
+// NOT USED ANYMORE
 int AD9851_SetPhase_0_31(struct AD9851 * ad9851, u_int32_t phase_0_31){
 
     // send phase shift to AD9851
@@ -320,6 +326,7 @@ int AD9851_SetPhase_0_31(struct AD9851 * ad9851, u_int32_t phase_0_31){
     return ad9851->phase_shift_0_31;
 }
 
+// NOT USED ANYMORE
 int AD9851_SetAmplitude_0_255(struct AD9851 * ad9851, u_int8_t amplitude_0_255){
 
     // set amplitude of AD9851. The AD9851_AM will output a PWM signal with duty cycle 0(0%)-255(100%)
@@ -334,6 +341,7 @@ int AD9851_SetAmplitude_0_255(struct AD9851 * ad9851, u_int8_t amplitude_0_255){
     return ret;
 }
 
+// NOT USED ANYMORE
 int AD9851_GetAmplitude_0_255(struct AD9851 * ad9851, u_int8_t * amplitude_0_255){
 
     // get amplitude of AD9851. The AD9851_AM will output a PWM signal with duty cycle 0(0%)-255(100%)
@@ -343,6 +351,7 @@ int AD9851_GetAmplitude_0_255(struct AD9851 * ad9851, u_int8_t * amplitude_0_255
 
     return 0;
 }
+
 //********************************************************************
 // Manage a Direct Digital Synthesizer (Local Oscillator or Test Generator)
 //********************************************************************
