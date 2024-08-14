@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 entity ad9851gfsk is
 	generic (
 		
-		constant demo_mode : std_logic := '1';
+		constant demo_mode : std_logic := '0';
 		
 		-- Users to add parameters here
         constant pwm_frequency_KHz : integer :=   2000;            --   2 MHz
@@ -28,6 +28,7 @@ entity ad9851gfsk is
         phi_out  : out std_logic_vector(39 downto 0);
         valid     : out std_logic;
         pwm_am_out : out std_logic; 
+        tx : out std_logic;
 		-- User ports ends
 		-- Do not modify the ports beyond this line
 
@@ -133,7 +134,7 @@ architecture arch_imp of ad9851gfsk is
 --	signal slv_reg10	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	signal slv_reg_rden	: std_logic;
 	signal slv_reg_wren	: std_logic;
-	-- signal reg_data_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
+	signal reg_data_out	:std_logic_vector(C_S_AXI_DATA_WIDTH-1 downto 0);
 	signal byte_index	: integer;
 	signal aw_en	: std_logic;
 
@@ -160,6 +161,8 @@ architecture arch_imp of ad9851gfsk is
 	signal sample_counter   : integer range 0 to 79  := 0;
 	
 	signal data_out_t       : std_logic_vector(31 downto 0);
+    
+    signal ad9851_ctrl       : std_logic_vector(7 downto 0) := b"00000001"; -- phase4 phase3 phase2 phase1 phase0 off 0 180M   
         
 	-- signals for PWM amplitude modulation of AD9851
 	signal pwm_dc           : std_logic_vector(7 downto 0) := x"FF";
@@ -174,8 +177,8 @@ architecture arch_imp of ad9851gfsk is
 	
 	-- Assign 10 values approximating the raised cosine (half ramp)
     type rampup_type is array (0 TO 9) OF integer range 0 to 128;
-    constant rampup     : rampup_type := (0,3,5,8,13,18,26,38,51,102);
-	
+    -- constant rampup     : rampup_type := (0,2,6,14,24,37,53,70,88,108); 40 msecs ramp up
+	constant rampup     : rampup_type := (0,0,0,0,0,2,14,37,70,108); -- 20 msecs ramp up	
 	 
 begin
 	-- I/O Connections assignments
@@ -518,23 +521,25 @@ begin
 	-- Implement memory mapped register select and read logic generation
 	-- Slave register read enable is asserted when valid address is available
 	-- and the slave is ready to accept the read address.
---	slv_reg_rden <= axi_arready and S_AXI_ARVALID and (not axi_rvalid) ;
+	slv_reg_rden <= axi_arready and S_AXI_ARVALID and (not axi_rvalid) ;
 
---	process (slv_reg0, slv_reg1, slv_reg2, slv_reg3, slv_reg4, slv_reg5, slv_reg6, slv_reg7,slv_reg8, axi_araddr, S_AXI_ARESETN, slv_reg_rden)
---	variable loc_addr :std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
---	begin
+	-- process (slv_reg0, slv_reg1, slv_reg2, slv_reg3, slv_reg4, slv_reg5, slv_reg6, slv_reg7,slv_reg8, axi_araddr, S_AXI_ARESETN, slv_reg_rden)
+	process (phi0, axi_araddr, S_AXI_ARESETN, slv_reg_rden)
+	variable loc_addr :std_logic_vector(OPT_MEM_ADDR_BITS downto 0);
+	begin
 	    -- Address decoding for reading registers
---	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
---	    case loc_addr is
---	      when b"00000" =>
---	        reg_data_out <= slv_reg0;
---	      when b"00001" =>
---	        reg_data_out <= slv_reg1;
+	    loc_addr := axi_araddr(ADDR_LSB + OPT_MEM_ADDR_BITS downto ADDR_LSB);
+	    case loc_addr is
+	      when b"00000" =>
+	        reg_data_out <= phi0;
+	      when b"00001" =>
+	        reg_data_out <= std_logic_vector(shift_left(unsigned(symbols(8))*to_unsigned(1,29),28) + shift_left(unsigned(symbols(7))*to_unsigned(1,29),24) + shift_left(unsigned(symbols(6))*to_unsigned(1,29),20) + shift_left(unsigned(symbols(5))*to_unsigned(1,29),16) + shift_left(unsigned(symbols(4))*to_unsigned(1,29),12) + shift_left(unsigned(symbols(3))*to_unsigned(1,29),8) + shift_left(unsigned(symbols(2))*to_unsigned(1,29),4) + unsigned(symbols(1))*to_unsigned(1,29)); 
+            --reg_data_out <= std_logic_vector( shift_left(unsigned(symbols(7))*to_unsigned(1,32),28) ) ; 
                
 --	      when b"00010" =>
 --	        reg_data_out <= slv_reg2;
 --	        
---	      when b"00011" =>
+--	      when b"00011" =>4
 --	        reg_data_out <= slv_reg3;
 	        
 --	      when b"00100" =>
@@ -549,28 +554,28 @@ begin
 --	        reg_data_out <= slv_reg7;
 --	      when b"01000" =>
 --	        reg_data_out <= slv_reg8;
---	      when others =>
+	      when others =>
 --	        reg_data_out  <= (others => '0');
---	    end case;
---	end process; 
+	    end case;
+	end process; 
 
 	-- Output register or memory read data
---	process( S_AXI_ACLK ) is
---	begin
---	  if (rising_edge (S_AXI_ACLK)) then
---	    if ( S_AXI_ARESETN = '0' ) then
---	      axi_rdata  <= (others => '0');
---	    else
---	      if (slv_reg_rden = '1') then
+	process( S_AXI_ACLK ) is
+	begin
+	  if (rising_edge (S_AXI_ACLK)) then
+	    if ( S_AXI_ARESETN = '0' ) then
+	      axi_rdata  <= (others => '0');
+	    else
+	      if (slv_reg_rden = '1') then
 	        -- When there is a valid read address (S_AXI_ARVALID) with 
 	        -- acceptance of read address by the slave (axi_arready), 
 	        -- output the read dada 
 	        -- Read address mux
---	          axi_rdata <= reg_data_out;     -- register read data
---	      end if;   
---	    end if;
---	  end if;
---	end process;
+	          axi_rdata <= reg_data_out;     -- register read data
+	      end if;   
+	    end if;
+	  end if;
+	end process;
 
 
 	-- Add user logic here
@@ -607,9 +612,9 @@ begin
 
 	process( read_data_out_t ) is
 	begin
-	  --phi_out <=  std_logic_vector ( to_unsigned(  149 * to_integer(unsigned(data_out_t)) / 1024, 40 ));
 	  -- 149 is 6.25Hz * 2^32 /180MHz
-	  phi_out <=  std_logic_vector ( b"00000001" & to_unsigned(  to_integer(unsigned(phi0)) +  149 * to_integer(unsigned(data_out_t)) / 1024, 32 ));
+	  -- phi_out <=  std_logic_vector ( b"00000001" & to_unsigned(  to_integer(unsigned(phi0)) +  149 * to_integer(unsigned(data_out_t)) / 1024, 32 ));
+	  phi_out <=  std_logic_vector ( unsigned(ad9851_ctrl) & to_unsigned(  to_integer(unsigned(phi0)) +  149 * to_integer(unsigned(data_out_t)) / 1024, 32 ));
 	  -- data_out <= data_out_t;
 	  if (rising_edge (read_data_out_t)) then
 	    if ( S_AXI_ARESETN = '0' ) then
@@ -617,6 +622,7 @@ begin
 	       sample_counter <= 0;
 	       pwm_dc <= x"FF";
 	       last_msg <= msg_counter;               -- this msg is completely sent to AD9851
+	       tx <= '0';
 	    elsif  sample_counter < 79 then           -- 80 samples per symbol
 	       sample_counter <= sample_counter + 1;
 	       
@@ -624,6 +630,8 @@ begin
 	       -- build the values of data out_t and pwm_dc for sym_counter (0,80) and sample_counter(0,79)
 	       if(sym_counter = 0) then
 	           if(sample_counter < 10) then
+          	       tx <= '1';                  -- tx output on
+	               ad9851_ctrl <= b"00000001"; -- AD9851 power on 
 	               pwm_dc <= std_logic_vector( to_UNSIGNED((255-rampup(sample_counter))*pwm_divider/255,8));  -- first half ramp from 0 to 102
 	               data_out_t <= std_logic_vector( UNSIGNED(symbols(0)) * TO_UNSIGNED(1024 , 29));
 	           elsif(sample_counter < 20) then
@@ -672,6 +680,9 @@ begin
 	       if sym_counter = 80 then
 	           sym_counter <= 0;
                last_msg <= msg_counter; -- this msg is completely sent to AD9851
+	           ad9851_ctrl <= b"00000101"; -- AD9851 power off
+	           tx <= '0';                  -- tx output off   
+    
 	       else
                sym_counter <= sym_counter + 1;	      
 	       end if;       

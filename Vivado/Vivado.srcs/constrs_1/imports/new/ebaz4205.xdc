@@ -1,4 +1,4 @@
-##
+ ##
 ## @file        ebaz4205.xdc
 ## @brief       Xilinx Design Constraints for EBAZ4205
 ## @author      Keitetsu
@@ -92,8 +92,8 @@ set_property -dict { PACKAGE_PIN G19   IOSTANDARD LVCMOS33 } [get_ports {AD9851_
 set_property -dict { PACKAGE_PIN H20   IOSTANDARD LVCMOS33 } [get_ports {AD9851_clock_out}];   # DATA2_8 
 set_property -dict { PACKAGE_PIN J19   IOSTANDARD LVCMOS33 } [get_ports {AD9851_fq_ud_out}];   # DATA2_9   
 set_property -dict { PACKAGE_PIN K18   IOSTANDARD LVCMOS33 } [get_ports {AD9851_pwm_out}];     # DATA2_11  
+set_property -dict { PACKAGE_PIN K19   IOSTANDARD LVCMOS33 } [get_ports { AD9851_tx}];         # DATA2_13 
 
-#set_property -dict { PACKAGE_PIN K19   IOSTANDARD LVCMOS33 } [get_ports { DATA2_13 }]; 
 #set_property -dict { PACKAGE_PIN J20   IOSTANDARD LVCMOS33 } [get_ports { DATA2_14 }]; 
 #set_property -dict { PACKAGE_PIN L16   IOSTANDARD LVCMOS33 } [get_ports { DATA2_15 }]; 
 #set_property -dict { PACKAGE_PIN L19   IOSTANDARD LVCMOS33 } [get_ports { DATA2_16 }]; 

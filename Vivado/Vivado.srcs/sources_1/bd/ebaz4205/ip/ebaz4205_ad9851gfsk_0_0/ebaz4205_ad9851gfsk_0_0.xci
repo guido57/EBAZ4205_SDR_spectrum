@@ -8,7 +8,7 @@
     "gen_directory": "../../../../../../Vivado.gen/sources_1/bd/ebaz4205/ip/ebaz4205_ad9851gfsk_0_0",
     "parameters": {
       "component_parameters": {
-        "demo_mode": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
+        "demo_mode": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "bitString", "usage": "all" } ],
         "pwm_frequency_KHz": [ { "value": "2000", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "pwm_clock_in_KHz": [ { "value": "100000", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "CLOCK_DIVIDER": [ { "value": "200000", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -17,7 +17,7 @@
         "Component_Name": [ { "value": "ebaz4205_ad9851gfsk_0_0", "resolve_type": "user", "usage": "all" } ]
       },
       "model_parameters": {
-        "demo_mode": [ { "value": "1", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
+        "demo_mode": [ { "value": "0", "resolve_type": "generated", "format": "bitString", "usage": "all" } ],
         "pwm_frequency_KHz": [ { "value": "2000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "pwm_clock_in_KHz": [ { "value": "100000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "CLOCK_DIVIDER": [ { "value": "200000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -56,6 +56,7 @@
         "phi_out": [ { "direction": "out", "size_left": "39", "size_right": "0" } ],
         "valid": [ { "direction": "out" } ],
         "pwm_am_out": [ { "direction": "out" } ],
+        "tx": [ { "direction": "out" } ],
         "S_AXI_ACLK": [ { "direction": "in" } ],
         "S_AXI_ARESETN": [ { "direction": "in" } ],
         "S_AXI_AWADDR": [ { "direction": "in", "size_left": "6", "size_right": "0", "driver_value": "0" } ],
@@ -87,7 +88,7 @@
           "parameters": {
             "DATA_WIDTH": [ { "value": "32", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PROTOCOL": [ { "value": "AXI4LITE", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "1e+08", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ID_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "ADDR_WIDTH": [ { "value": "7", "value_src": "auto", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "AWUSER_WIDTH": [ { "value": "0", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -158,7 +159,7 @@
           "parameters": {
             "ASSOCIATED_BUSIF": [ { "value": "S_AXI", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
             "ASSOCIATED_RESET": [ { "value": "S_AXI_ARESETN", "value_src": "constant", "value_permission": "bd_and_user", "usage": "all" } ],
-            "FREQ_HZ": [ { "value": "100000000", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
+            "FREQ_HZ": [ { "value": "1e+08", "value_src": "user_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
             "PHASE": [ { "value": "0.0", "value_permission": "bd_and_user", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
             "CLK_DOMAIN": [ { "value": "ebaz4205_processing_system7_0_0_FCLK_CLK0", "value_src": "default_prop", "value_permission": "bd_and_user", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
