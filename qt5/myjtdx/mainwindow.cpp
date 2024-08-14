@@ -63,6 +63,8 @@
 
 #include "wsjtx_config.h"
 
+#include "uio_c.h"
+
 extern "C" {
   //----------------------------------------------------- C and Fortran routines
   void symspec_(struct dec_data *, int* k, int* ntrperiod, int* nsps,
@@ -116,6 +118,9 @@ qint32  g_iptt {0};
 wchar_t buffer[256];
 int   old_row {-1};
 QVector<QColor> g_ColorTbl;
+
+struct UIO ad9851_gfsk;
+
 
 namespace
 {
@@ -450,6 +455,10 @@ MainWindow::MainWindow(bool multiple, QSettings * settings, QSharedMemory *shdme
   psk_Reporter {new PSK_Reporter {m_messageClient, this}},
   m_manual {network_manager}
 {
+  // init the AD9851 GFSK modulator
+  strcpy(ad9851_gfsk.devuio, DEV_AD9851_GFSK);
+  AD9851gfsk_Init(&ad9851_gfsk);
+
   ui->setupUi(this);
 
   m_wideGraph.reset( new WideGraph(settings, m_jtdxtime, this));
@@ -844,12 +853,12 @@ MainWindow::MainWindow(bool multiple, QSettings * settings, QSharedMemory *shdme
   // Connect for the FT8 decoder process (proc_jt9)
   connect(&proc_jt9, &QProcess::readyReadStandardOutput,this, &MainWindow::proc_jt9_ReadFromStdout);
   connect(&proc_jt9, &QProcess::errorOccurred, [this] (QProcess::ProcessError error) {
-      qDebug() << "proc_jt9 terminated with error=" << error;
+      qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << ": proc_jt9 terminated with error=" << error;
       subProcessError (&proc_jt9, error);
   });
   connect(&proc_jt9, static_cast<void (QProcess::*) (int, QProcess::ExitStatus)> (&QProcess::finished),
           [this] (int exitCode, QProcess::ExitStatus status) {
-              qDebug() << "proc_jt9 terminated with exitCode=" << exitCode << " and status= " << status;
+              qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << ": proc_jt9 terminated with exitCode=" << exitCode << " and status= " << status;
               if (subProcessFailed (&proc_jt9, exitCode, status))
               {
                   m_valid = false;          // ensures exit if still
@@ -886,7 +895,7 @@ MainWindow::MainWindow(bool multiple, QSettings * settings, QSharedMemory *shdme
           JTDXMessageBox::critical_message (this, "", tr("Error Writing WAV File"), result);
         }
       else{                      // success
-          qInfo() << m_fnameWE << " saved succesfully at " << m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str();
+          //qInfo() << m_fnameWE << " saved succesfully at " << m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str();
           call_jt9(m_fnameWE + ".wav");
         }
     });
@@ -1996,7 +2005,8 @@ void MainWindow::dataSink(qint64 frames)
       if ((m_saveWav==2 || m_saveWav==1 || m_mode.mid (0,4) == "WSPR"
            || m_mode.mid (0,3) == "FT8") && !m_fnameWE.isEmpty ()){
 
-        qInfo() << "Started saving " << m_fnameWE << " in a separate thread at " << m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str();
+        qInfo() << "---------------------------------------------------------------";
+        qInfo() << m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str() << ": started saving " << m_fnameWE << " in a separate thread." ;
            m_saveWAVWatcher.setFuture (QtConcurrent::run (
                 std::bind (&MainWindow::save_wave_file, this, m_fnameWE, &dec_data.d2[0], samples, m_config.my_callsign(),
                                m_config.my_grid(), m_mode, m_freqNominal, m_hisCall, m_hisGrid,m_jtdxtime)
@@ -2060,7 +2070,7 @@ QString MainWindow::save_wave_file (QString const& name, short const * data, int
   // members that may be changed in the GUI thread or any other thread
   // without suitable synchronization.
   //
-  printf("Started saving %s to disk at %s\r\n", name.toStdString().c_str(), m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+  // printf("Started saving %s to disk at %s\r\n", name.toStdString().c_str(), m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
   QAudioFormat format;
   format.setCodec ("audio/pcm");
   format.setSampleRate (12000);
@@ -2094,7 +2104,7 @@ QString MainWindow::save_wave_file (QString const& name, short const * data, int
   }
   //wav.close();
 
-  qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": " << name.toStdString().c_str() << " saved to disk!";
+  qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << ": " << name.toStdString().c_str() << " saved to disk!";
   //QString cn = name+".wav";
   //call_jt9(cn);
   return QString {};
@@ -2119,6 +2129,8 @@ void MainWindow::call_jt9 (QString  fname) {
   QString remote_jt9 = m_config.remote_jt9();
   QString remote_wavdir = m_config.remote_wavdir();
 
+  /*
+  // SCP SSH METHOD
   // build a string like this: scp -i /home/ebaz/.ssh/id_rsa 230605_152745.wav guido@192.168.1.146:/home/guido/
   cmnd_jt9 << "-c";
   //cmnd_jt9 << "scp -i /home/ebaz/.ssh/id_rsa " + fname + " guido@192.168.1.83:/users/guido/JTDX/"
@@ -2127,19 +2139,24 @@ void MainWindow::call_jt9 (QString  fname) {
                   // then add a string like this: ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83 '/wsjt/WSJTX/bin/jt9 -8 -d 3 /users/guido/JTDX/210703_133430.wav'
                   //+ "ssh -i /home/ebaz/.ssh/id_rsa guido@192.168.1.83 '/wsjt/WSJTX/bin/jt9 -8 " + depth_string + " /users/guido/JTDX/" + wavfilenameonly +"'" ;
                   + "ssh -i /home/ebaz/.ssh/id_rsa " + remote_user + "@" + remote_ip + " '" + remote_jt9 +" -8 " + depth_string + " " + remote_wavdir + wavfilenameonly +"'" ;
-
+*/
+  // Web Server METHOD
+  // build a string like this: curl -X POST -F "file=@231023_191845.wav" http://192.168.1.83:5000
+  cmnd_jt9 << "-c";
+  cmnd_jt9 << "curl -X POST -F \"file=@" + fname + "\" http://" + remote_ip + ":5000";
 
   if(ui) ui->DecodeButton->setChecked (true);
+  qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << " cmnd_jt9:";
   for(int i=0; i< cmnd_jt9.size();i++)
       printf("%s ",cmnd_jt9.at(i).toStdString().c_str());
-
+  printf(" was built.\r\n");
   proc_jt9.start("sh",cmnd_jt9);
 
-  bool  proc_jt9_started = proc_jt9.waitForStarted(1000);
-  if(proc_jt9_started)
-    qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": proc_jt9 started";
-  else
-    qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": proc_jt9 didn't start after 1 second";
+  //bool  proc_jt9_started = proc_jt9.waitForStarted(1000);
+  //if(proc_jt9_started)
+  //    qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << ": proc_jt9 started";
+  //else
+  //  qInfo() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << ": proc_jt9 didn't start after 1 second";
 
       //GG TEMPORARY!!! m_decoderBusy = true;
 
@@ -4246,7 +4263,7 @@ void MainWindow::proc_jt9_ReadFromStdout()                             //readFro
       dec_data.params.nagain=0; dec_data.params.nagainfil=0; dec_data.params.ndiskdat=0;
       m_manualDecode=false; ui->DecodeButton->setChecked (false);
       QFile {m_config.temp_dir ().absoluteFilePath (".lock")}.open(QIODevice::ReadWrite);
-      qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz") << ": decode finished";
+      qDebug() << QDateTime::currentDateTime().toString("hh:mm:ss:zzz").toStdString().c_str() << ": decode finished";
       decodeBusy(false); // shall be last line
       return;
     } else {
@@ -4470,7 +4487,7 @@ void MainWindow::proc_jt9_ReadFromStdout()                             //readFro
           pskSetLocal ();
           if(gridOK(grid) && !gridRR73(grid) && !decodedtext.isHint() && !decodedtext.isWrong())
           {
-            // qDebug() << "To PSKreporter:" << deCall << grid << frequency << msgmode << snr;
+            //qDebug() << "To PSKreporter:" << deCall << grid << frequency << msgmode << snr;
             psk_Reporter->addRemoteStation(deCall,grid,QString::number(frequency),msgmode,
                                            QString::number(snr),
                                            QString::number(m_jtdxtime->currentDateTime2().toTime_t()));
@@ -4842,17 +4859,33 @@ void MainWindow::guiUpdate()
         dphi[0] = 0;
         dphi[1] = 0;
         gen_ft8wave_(const_cast<int *>(itone),&nsym,&nsps,&bt,&fsample,&f0,foxcom_.wave,foxcom_.wave,&icmplx,&nwave, dphi);
-        printf(" dphi and wave generated at %s\r\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
-        float sub_2pi_f = 8.0 * atan(1.0) * f0 / fsample;
-        printf("           dphi[%d]=%f\r\n",0, dphi[1920*2]-sub_2pi_f);
-        for(int i=1; i<(nsym+1); i++ )
-          printf("itone[%d]=%d  dphi[%d]=%f\r\n",i-1,itone[i-1],i,dphi[i*1920*4+1920*2]-sub_2pi_f);
-        printf("           dphi[%d]=%f\r\n", nsym+1, dphi[(nsym+1)*1920*4 + 1920*2]-sub_2pi_f);
+        printf("%s: dphi and wave generated at \r\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
 
-        int FT8_msg_tx_size = sizeof(dphi)/sizeof(float);
-        printf("Saving /home/ebaz/FT8_msg_tx.txt size=%d bytes started at %s\n",FT8_msg_tx_size, m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
-        SaveFloatArray(QString("/home/ebaz/FT8_msg_tx.txt"), dphi, FT8_msg_tx_size);
-        printf("Saving /home/ebaz/FT8_msg_tx.txt ended at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+        printf("%s: set AD9851 modulator frequency and message\r\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+        //Set the AD9851 GFSK modulator frequency
+        QString dialfreq = ui->labDialFreq->text();
+        QStringList dialfreq1 = dialfreq.split(".");
+        QStringList dialfreq2 = dialfreq1[1].split(160); // it looks like a space but its value is 160
+        dialfreq = dialfreq1[0] + dialfreq2[0]+dialfreq2[1];
+        uint32_t dialfreq_int32 = dialfreq.toInt();
+        AD9851gfsk_SetFreqHz(&ad9851_gfsk, dialfreq_int32);
+        //Set the AD9851 GFSK modulator message
+        uint8_t symbols[79];
+        for(int i=0;i<79;i++)
+          symbols[i] = itone[i]; //convert from int to uint8_t
+        AD9851gfsk_SetMessage(&ad9851_gfsk, symbols);
+
+        //float sub_2pi_f = 8.0 * atan(1.0) * f0 / fsample;
+        //printf("           dphi[%d]=%f\r\n",0, dphi[1920*2]-sub_2pi_f);
+        for(int i=1; i<(nsym+1); i++ )
+          //printf("itone[%d]=%d  dphi[%d]=%f\r\n",i-1,itone[i-1],i,dphi[i*1920*4+1920*2]-sub_2pi_f);
+          printf("itone[%d]=%d\r\n",i-1,itone[i-1]);
+        //printf("           dphi[%d]=%f\r\n", nsym+1, dphi[(nsym+1)*1920*4 + 1920*2]-sub_2pi_f);
+
+        //int FT8_msg_tx_size = sizeof(dphi)/sizeof(float);
+        //printf("Saving /home/ebaz/FT8_msg_tx.txt size=%d bytes started at %s\n",FT8_msg_tx_size, m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
+        //SaveFloatArray(QString("/home/ebaz/FT8_msg_tx.txt"), dphi, FT8_msg_tx_size);
+        //printf("Saving /home/ebaz/FT8_msg_tx.txt ended at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
 
       }
       else if(m_modeTx=="FT4") {
@@ -7817,7 +7850,7 @@ void MainWindow::transmit (double snr)
           Q_EMIT sendMessage (NUM_FT8_SYMBOLS,1920.0,ui->TxFreqSpinBox->value()-m_XIT,toneSpacing,m_soundOutput,
                         m_config.audio_output_channel(),true,snr,m_TRperiod);
     printf("transmit with mModeTX=FT8 emitted at %s\n",m_jtdxtime->currentDateTimeUtc2().toString("hh:mm:ss.zzz").toStdString().c_str());
-
+    // Start a thread to send the samples for the 81 symbols to the AD9851 with ramp-up/down and GFSK
   }
   else if (m_modeTx == "FT4") {
     toneSpacing=-2.0;                     //Transmit a pre-computed, filtered waveform.

@@ -69,7 +69,8 @@ SOURCES += \
     lib/graycode65.f90 \
     lib/jt65_mod4.f90   \
     lib/genft8.f90  \
-    lib/gen65.f90
+    lib/gen65.f90 \
+    uio.cpp
 
 
 SOURCES += \
@@ -341,6 +342,7 @@ HEADERS += \
     sleep.h \
     soundin.h \
     soundout.h \
+    uio_c.h \
     widegraph.h \
     wsjtx_config.h \
     wsjtx_config.h.in \
