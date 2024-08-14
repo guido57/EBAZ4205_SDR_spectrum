@@ -105,9 +105,6 @@
 	compatible = "generic-uio";
 };
  
-&AD9851_axi_gpio_AD9851{
-	compatible = "generic-uio";
-};
 
 &AD9851_ad9851gfsk_0{
 	compatible = "generic-uio";
