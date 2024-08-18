@@ -24,7 +24,7 @@ It lets you to send commands to EBA4205 also to:
 
 # sdr-app usage
 
-## Ui controls
+## UI controls
 
 * IF Gain: it acts as an audio volume (there's no AGC)
 * FFT_Window: you can choose the FFT Windowing you prefer
