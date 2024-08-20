@@ -1,10 +1,13 @@
 # Overview
 
-This is directory containing all the programs built wit qt creator:
+In this directory there are all the programs built wit qt creator:
 
 * [sdr-app](sdr-app): C++ software receiving sampled data from EBAZ4205 and displaying spectrum and waterfall TODO) in its User Interface.
 * [myjtdx](myjtdx): C C++ Fortran User Interface to receive and decode FT8 and the other digital modes.
 * [vncfb](vncfb): C program for a vnc server reading from the framebuffer (no X or other windows manager)
+
+There is also [Hamlib](https://github.com/guido57/Hamlib) that you could need to rebuild if you need to change the rig module "IW5ALZ ZYNQ-7000" I created.
+
 
 # Qt5 Setup
 
